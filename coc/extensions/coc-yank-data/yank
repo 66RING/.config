@@ -1,0 +1,6031 @@
+af90dc2d9b68a38f1155f9123283e0b8|file:///Users/ring/a.py|2|1|V|python
+	    ring =1;
+7d4c8920c60419aaee9cd47c9a0396f7|file:///Users/ring/a.py|2|11|^v|python
+	;
+	;
+	;
+	;
+c443dbea698399e1aa5fe91c5f3cc3b4|file:///Users/ring/a.py|6|1|V|python
+	    a = 1
+80c19dc3f25d501bbe1e882b192d573e|file:///Users/ring/.vimrc|172|177|v|vim
+	, 'coc-rename',
+d163d31a6df41ab5c3628f543d50d777|file:///Users/ring/.vimrc|142|1|V|vim
+	function! s:check_back_space() abort
+	  let col = col('.') - 1
+	  return !col || getline('.')[col - 1]  =~# '\s'
+	endfunction
+81d5c3deaf3b07a9e7957c4ecaee7326|file:///Users/ring/.vimrc|37|1|V|vim
+	set autochdir
+e012dbab62287e87d419182fbe707bef|file:///Users/ring/.vimrc|38|1|V|vim
+	(sdfdsf
+6e981d3075a85084c7886eee4f554f5e|file:///Users/ring/.vimrc|37|1|V|vim
+	set showmatch
+96e3daf6082d78ad5cbb44b03496e931|file:///Users/ring/.vimrc|221|9|v|vim
+	python, C#, javascrip, PHP, etc
+1d549cc2a0a8119272a8e0af3624e09f|file:///Users/ring/.vimrc|169|1|V|vim
+	nmap <leader>rn <Plug>(coc-rename)
+dbd91461afd2f24edbfab422c6bbc0ca|file:///Users/ring/.vimrc|171|45|V|vim
+	" Highlight symbol under cursor on CursorHold
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+ce3f372a94d179db0a781f6d6df6f98c|file:///Users/ring/a.py|1|12|v|python
+	<++>
+9947c5c09e37e24f6b483b486969f68a|file:///Users/ring/a.py|2|1|V|python
+	
+	def 
+a2c94bc9aef896af19017c5be52951f3|file:///Users/ring/a.py|3|1|V|python
+	    ring = 0
+77eaf8ef3e0a6ff06b17ee3eb7e3e188|file:///Users/ring/.vimrc|168|1|V|vim
+	let g:python_highlight_all = 1
+bc6d6a3c1d41c435809f7dc0e3f0daa9|file:///Users/ring/.vimrc|164|1|V|vim
+	"************************
+	"*Part: python syntax
+	"*Desc:  
+185f278d9fbc98f26655b175ff661d7d|file:///Users/ring/.vimrc|164|1|V|vim
+	"************************
+4c41c0716998a019fee5c6a1025f03f0|file:///Users/ring/.vimrc|102|1|V|vim
+	    elseif &filetype == 'python'
+	        exec 'terminal time python %'
+23eeeb4347bdd26bfc6b7ee9a3b755dd|file:///Users/ring/.vimrc|104|26|v|vim
+	python
+06e519fde59b26b5a46269140ff5987a|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|14|9|v|cpp
+	int n
+9d2cd33614b468ea3b6d2aed7f6c81b9|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|26|5|V|cpp
+	    stack<int>s;
+0cf31b2c283ce3431794586df7b0996d|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|33|4|V|cpp
+	    
+198e0b4b83b50c27ba97c269a8713109|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|36|9|V|cpp
+	        int t = 
+612e538998ee2b78b19118873d1eeeef|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|44|13|V|cpp
+	        while(s.empty()){
+	            i
+426e0844d6c9b02d258b864793dcee6b|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|44|9|V|cpp
+	        }<++>
+0bddf3b8708c77d35f9afc6ac05783b2|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|38|13|V|cpp
+	            t = i;
+72de990f950ea4550af1bde962dee0a5|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|2|1|V|cpp
+	#include<iostream>
+2c4e7d4a1bf3b1f5604b9c2617db69ce|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<bits/stdc++.h>
+	using namespace std;
+	
+	void build(int e);
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[11][11] = {0};
+	
+	
+	int main(){
+	    int n,e;
+	    scanf("%d %d",&n,&e);
+	    build(e);
+	    dfs(n);
+	    bfs(n);
+	
+	
+	    return 0;
+	}
+	
+	
+	void build(int e){
+	    int i,j;
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        set[i][j] = set[j][i]=1;
+	    }
+	}
+	
+	void bfs(int n){
+	    stack<int>s;
+	    pa[11] = {0};
+	    int t;
+	    for(int k=0;k<n;k++){
+	        for(int i=0;i<n;i++){
+	            for(int j=i+1;j<n;j++){
+	                if(set[i][j]==1&&pa[j]==0){
+	                    pa[i] = pa[j] = -1;
+	                    s.push(j);
+	                }
+	            }
+	            if(!s.empty()){
+	                i=s.top();
+	                cout<<i;
+	            }else break ;
+	        }
+	    }
+	}
+	
+	
+	
+0d6a549a7d7ab2b3d005c852812783be|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|32|1|v|cpp
+	void bfs(int n){
+	    stack<int>s;
+	    pa[11] = {0};
+	    int t;
+	    for(int k=0;k<n;k++){
+	        for(int i=0;i<n;i++){
+	            for(int j=i+1;j<n;j++){
+	                if(set[i][j]==1&&pa[j]==0){
+	                    pa[i] = pa[j] = -1;
+	                    s.push(j);
+	                }
+	            }
+	            if(!s.empty()){
+	                i=s.top();
+	                cout<<i;
+	            }else break ;
+	        }
+	    }
+	}
+	
+	
+	
+c04dcce31fe9fbef3dc325b352ca2ae8|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|18|1|V|cpp
+	    bfs(n);
+2b74fa0f4fceb45a0eedbaf96e72302f|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|2|1|V|cpp
+	#include<bits/stdc++.h>
+f60be50875ede180e993ae30bf30e846|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|2|1|V|cpp
+	using namespace std;
+aa3882086a4f05967a460498b73ab776|file:///Users/ring/.vimrc|90|1|V|vim
+	noremap <LEADER><LEADER> f<++>
+5eb606f06693aa27c58b648892a5784a|file:///Users/ring/.vimrc|85|9|V|vim
+	"*Desc:  
+	"************************
+	" open a terminal window
+	noremap <LEADER>/ :terminal<CR>
+	" to next <++>
+56996935745a97632842aada0ff35d5d|file:///Users/ring/.vimrc|86|25|V|vim
+	"************************
+	" open a terminal window
+	noremap <LEADER>/ :terminal<CR>
+	" to next <++>
+	map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4i
+235e210fdf4ca61a0c9a1f1421d5ac71|file:///Users/ring/.vimrc|86|25|V|vim
+	"************************
+	" open a terminal window
+	noremap <LEADER>/ :terminal<CR>
+	" to next <++>
+	map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4j
+971b309624d4ada9c292c13a5fa95687|file:///Users/ring/.vimrc|89|7|v|vim
+	ext 
+1ffa6afae980d20b989794057fdf02ce|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|56|4|V|cpp
+	    
+	
+b57480ca0bd379dcf3ecca476d3db6bc|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|56|1|V|cpp
+	
+	    for(int i=0;i<n;i++){
+86eb9ba8673a49e67fcd56c609ed6771|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|64|23|V|cpp
+	        while(rear!=font){
+	            ar[++rear]=i;
+4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|64|9|V|cpp
+	        }
+99854efb088d0b16d35904f42dab5602|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|73|1|V|cpp
+	            if(!ar[j]&&set[i][j]){
+	                ar[j] = 1;
+	                queue[++rear] = j;
+	            }
+87e54d5fa0289118d9f3013d3bef3326|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|77|1|V|cpp
+	            if(!ar[j]&&set[i][j]){
+	                ar[j] = 1;
+	                queue[++rear] = j;
+	            }
+	            if(!ar[j]&&set[queue[++font]][j]){
+	                printf("%d",j);
+	            }
+067e279281a4c2ca828c0756397ec60d|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|73|1|V|cpp
+	                    printf("%d ",queue.[++font]);
+cc8d6bf83b7f00d44c633722094699db|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|70|1|V|cpp
+	                if(!ar[j]&&set[i][j]){
+	                    ar[j] = 1;
+	                    queue[++rear] = j;
+	                }
+4037578322e3c452419cf17a6f5a456c|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|66|9|V|cpp
+	        for(int j=i+1;j<n;j++){
+70f3e156d115ec02362dec89c21a69d4|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|67|13|V|cpp
+	            printf("{ %d ",i);
+df39dc6df9805b421c907ae63695db0f|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|75|17|V|cpp
+	                printf("%d ",queue[++font]);
+c154d19a335ad63b52491c17d485b69a|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	void build(int e);
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[11][11] = {0};
+	int visited[11] = {0};
+	
+	
+	int main(){
+	    int n,e;
+	    scanf("%d %d",&n,&e);
+	    build(e);
+	    dfs(n);
+	    bfs(n);
+	
+	
+	    return 0;
+	}
+	
+	
+	void build(int e){
+	    int i,j;
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        set[i][j] = set[j][i]=1;
+	    }
+	}
+	
+	
+	
+	void dfsP(int i,int n){
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for(int j=i;j<n;j++){
+	        if(!visited[j]&&set[i][j]){
+	            dfsP(j,n);
+	        }
+	    }
+	}
+	
+	void dfs(int n){
+	    for(int i=0;i<n;i++){
+	        if(!visited[i]){
+	            printf("{ ");
+	            dfsP(i,n);
+	            printf("}\n");
+	        }
+	    }
+	}
+	
+	
+	void bfs(int n){
+	    int *ar = (int*)malloc(sizeof(int)*n);
+	    int font=-1,rear=-1;
+	    int queue[11] = {0};
+	
+	    for(int i=0;i<n;i++){
+	        ar[i]=0;
+	    }
+	
+	    for(int i=0;i<n;i++){
+	        if(!ar[i]){
+	            queue[++rear] = i;
+	            printf("{ ");
+	            while(font<rear){
+	                printf("%d ",queue[++font]);
+	                for(int j=queue[font];j<n;j++){
+	                    if(!ar[j]&&set[queue[font]][j]){
+	                        ar[j] = 1;
+	                        queue[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	
+	    }  
+	    
+	}
+df86b0353b78303e60538e374370a9cf|file:///Users/ring/Documents/code/c/pintia_trains/7-6_connected_set.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	void build(int e);
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[11][11] = {0};
+	int visited[11] = {0};
+	
+	
+	int main(){
+	    int n,e;
+	    scanf("%d %d",&n,&e);
+	    build(e);
+	    dfs(n);
+	    bfs(n);
+	
+	
+	    return 0;
+	}
+	
+	
+	void build(int e){
+	    int i,j;
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        set[i][j] = set[j][i]=1;
+	    }
+	}
+	
+	
+	
+	void dfsP(int i,int n){
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for(int j=i;j<n;j++){
+	        if(!visited[j]&&set[i][j]){
+	            dfsP(j,n);
+	        }
+	    }
+	}
+	
+	void dfs(int n){
+	    for(int i=0;i<n;i++){
+	        if(!visited[i]){
+	            printf("{ ");
+	            dfsP(i,n);
+	            printf("}\n");
+	        }
+	    }
+	}
+	
+	
+	void bfs(int n){
+	    int *ar = (int*)malloc(sizeof(int)*n);
+	    int font=-1,rear=-1;
+	    int queue[11] = {0};
+	
+	    for(int i=0;i<n;i++){
+	        ar[i]=0;
+	    }
+	
+	    for(int i=0;i<n;i++){
+	        if(!ar[i]){
+	            queue[++rear] = i;
+	            ar[i] = 1;
+	            printf("{ ");
+	            while(font<rear){
+	                printf("%d ",queue[++font]);
+	                for(int j=queue[font];j<n;j++){
+	                    if(!ar[j]&&set[queue[font]][j]){
+	                        ar[j] = 1;
+	                        queue[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	
+	    }  
+	    
+	}
+587587c09af228a1a574375c98946194|file:///Users/ring/Documents/code/c/pintia_trains/teat.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	int main(){
+	    void set(int *a);
+	
+	    int a[2][2];
+	    a[0][1] = 1;
+	    a[1][0] = 2;
+	    set(&a[0][0]);
+	}
+	
+	void set(int *a){
+	    printf("%d",*(a+1));
+	    printf("%d",*(a+2));
+	}
+d7bde40f04b47acfe40ef6528b1c16e6|file:///Users/ring/Documents/code/c/pintia_trains/teat.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	void build(int e);
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[15][15] = {0};
+	// int visited[15] = {0};
+	///////
+	
+	#define MAXVEX 15
+	void DFS( int i);
+	void DFSTraverse();
+	void BFSTraverse();
+	
+	int G[MAXVEX][MAXVEX],Nv,Ne;
+	int visited[MAXVEX];
+	
+	
+	int main(){
+	    int n,e;
+	    scanf("%d %d",&n,&e);
+	    build(e);
+	    // dfs(n);
+	    // bfs(n);
+	    DFSTraverse();
+	    BFSTraverse();
+	
+	    return 0;
+	}
+	
+	
+	void build(int e){
+	    int i,j;
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        G[i][j] = G[j][i]=1;
+	    }
+	}
+	
+	
+	
+	void dfsP(int i,int n){
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for(int j=i;j<n;j++){
+	        if(!visited[j]&&set[i][j]){
+	            dfsP(j,n);
+	        }
+	    }
+	}
+	
+	void dfs(int n){
+	    for(int i=0;i<n;i++){
+	        if(!visited[i]){
+	            printf("{ ");
+	            dfsP(i,n);
+	            printf("}\n");
+	        }
+	    }
+	}
+	
+	/////
+	
+	void DFS( int i)
+	{
+	    int j;
+	
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for( j=0; j<Nv; j++)
+	    {
+	        if( G[i][j] && !visited[j])
+	        {
+	            //如果存在ij之间的连线且j并未被访问过
+	            DFS (j);
+	        }
+	    }
+	}
+	void DFSTraverse( )
+	{
+	    int i;
+	
+	    for( i=0; i<Nv; i++)
+	    {
+	        visited[i] = 0;  //初始化访问矩阵
+	    }
+	    for ( i=0; i<Nv; i++)
+	    {
+	        if( !visited[i])
+	        {
+	            printf("{ ");
+	            DFS(i);
+	            printf("}\n");
+	        }
+	    }
+	}
+	void BFSTraverse( )
+	{
+	    int q[MAXVEX]={0};  //用数组表示队列
+	    int rear=-1,front=-1;
+	    int i,j;
+	    int temp;
+	
+	    for( i=0; i<Nv; i++)
+	    {
+	        visited[i] = 0;
+	    }
+	
+	    for( i=0; i<Nv; i++){
+	        if( !visited[i]){
+	            printf("{ ");
+	            visited[i] =1;
+	            q[++rear] = i;  //入队
+	            while( front<rear ){   //判断队列是否为空
+	                temp =q[++front];  //出队
+	                printf("%d ",temp);
+	                for( j=0; j<Nv;j++){
+	                    if( G[temp][j] && !visited[j]){
+	                        visited[j] = 1;
+	                        q[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	    }
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	void bfs(int n){
+	    int *ar = (int*)malloc(sizeof(int)*n);
+	    int front=-1,rear=-1;
+	    int queue[11] = {0};
+	    int temp;
+	    
+	    for(int i=0;i<n;i++){
+	        ar[i]=0;
+	    }
+	
+	
+	    // int i,j;
+	    // for( i=0; i<n; i++){
+	    //     if( !ar[i]){
+	    //         printf("{ ");
+	    //         ar[i] =1;
+	    //         q[++rear] = i;  //入队
+	    //         while( front<rear ){   //判断队列是否为空
+	    //             temp =q[++front];  //出队
+	    //             printf("%d ",temp);
+	    //             for( j=0; j<n;j++){
+	    //                 if( set[temp][j] && !ar[j]){
+	    //                     ar[j] = 1;
+	    //                     q[++rear] = j;
+	    //                 }
+	    //             }
+	    //         }
+	    //         printf("}\n");
+	    //     }
+	    // }
+	    for(int i=0;i<n;i++){
+	        if(!ar[i]){
+	            queue[++rear] = i;
+	            ar[i] = 1;
+	            printf("{ ");
+	            while(front<rear){
+	                printf("%d ",queue[++front]);
+	                for(int j=queue[front];j<n;j++){
+	                    if(!ar[j]&&set[queue[front]][j]){
+	                        ar[j] = 1;
+	                        queue[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	
+	    }  
+	    
+	}
+	
+ed657ebc902016666eed552f12c16624|file:///Users/ring/Documents/code/c/pintia_trains/teat.cpp|32|1|V|cpp
+	void build(){
+	    int i,j;
+	    scanf("%d %d",&Nv,&Ne);
+	    int e = Ne;
+	    for( i=0; i<Nv; i++)
+	    {
+	        for( j=0; j<Nv; j++)
+	        {
+	            set[i][j] = 0;  //初始化
+	        }
+	    }
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        G[i][j] = G[j][i]=1;
+	    }
+	}
+3326c957ea56e5ac1c6b55a55cb53d8d|file:///Users/ring/Documents/code/c/pintia_trains/teat.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	void build();
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[15][15] = {0};
+	// int visited[15] = {0};
+	///////
+	
+	#define MAXVEX 15
+	void DFS( int i);
+	void DFSTraverse();
+	void BFSTraverse();
+	
+	int G[MAXVEX][MAXVEX],Nv,Ne;
+	int visited[MAXVEX];
+	
+	
+	int main(){
+	    int n,e;
+	    
+	    build();
+	    dfs(Nv);
+	    bfs(n);
+	
+	    return 0;
+	}
+	
+	
+	void build(){
+	    int i,j;
+	    scanf("%d %d",&Nv,&Ne);
+	    int e = Ne;
+	    for( i=0; i<Nv; i++)
+	    {
+	        for( j=0; j<Nv; j++)
+	        {
+	            set[i][j] = 0;  //初始化
+	        }
+	    }
+	    while(e--){
+	        scanf("%d %d",&i,&j);
+	        G[i][j] = G[j][i]=1;
+	    }
+	}
+	
+	
+	
+	void dfsP(int i,int n){
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for(int j=i;j<n;j++){
+	        if(!visited[j]&&set[i][j]){
+	            dfsP(j,n);
+	        }
+	    }
+	}
+	
+	void dfs(int n){
+	    for(int i=0;i<n;i++){
+	        if(!visited[i]){
+	            printf("{ ");
+	            dfsP(i,n);
+	            printf("}\n");
+	        }
+	    }
+	}
+	
+	/////
+	
+	void DFS( int i)
+	{
+	    int j;
+	
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for( j=0; j<Nv; j++)
+	    {
+	        if( G[i][j] && !visited[j])
+	        {
+	            //如果存在ij之间的连线且j并未被访问过
+	            DFS (j);
+	        }
+	    }
+	}
+	void DFSTraverse( )
+	{
+	    int i;
+	
+	    for( i=0; i<Nv; i++)
+	    {
+	        visited[i] = 0;  //初始化访问矩阵
+	    }
+	    for ( i=0; i<Nv; i++)
+	    {
+	        if( !visited[i])
+	        {
+	            printf("{ ");
+	            DFS(i);
+	            printf("}\n");
+	        }
+	    }
+	}
+	void BFSTraverse( )
+	{
+	    int q[MAXVEX]={0};  //用数组表示队列
+	    int rear=-1,front=-1;
+	    int i,j;
+	    int temp;
+	
+	    for( i=0; i<Nv; i++)
+	    {
+	        visited[i] = 0;
+	    }
+	
+	    for( i=0; i<Nv; i++){
+	        if( !visited[i]){
+	            printf("{ ");
+	            visited[i] =1;
+	            q[++rear] = i;  //入队
+	            while( front<rear ){   //判断队列是否为空
+	                temp =q[++front];  //出队
+	                printf("%d ",temp);
+	                for( j=0; j<Nv;j++){
+	                    if( G[temp][j] && !visited[j]){
+	                        visited[j] = 1;
+	                        q[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	    }
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	void bfs(int n){
+	    int *ar = (int*)malloc(sizeof(int)*n);
+	    int front=-1,rear=-1;
+	    int queue[11] = {0};
+	    int temp;
+	    
+	    for(int i=0;i<n;i++){
+	        ar[i]=0;
+	    }
+	
+	
+	    // int i,j;
+	    // for( i=0; i<n; i++){
+	    //     if( !ar[i]){
+	    //         printf("{ ");
+	    //         ar[i] =1;
+	    //         q[++rear] = i;  //入队
+	    //         while( front<rear ){   //判断队列是否为空
+	    //             temp =q[++front];  //出队
+	    //             printf("%d ",temp);
+	    //             for( j=0; j<n;j++){
+	    //                 if( set[temp][j] && !ar[j]){
+	    //                     ar[j] = 1;
+	    //                     q[++rear] = j;
+	    //                 }
+	    //             }
+	    //         }
+	    //         printf("}\n");
+	    //     }
+	    // }
+	    for(int i=0;i<n;i++){
+	        if(!ar[i]){
+	            queue[++rear] = i;
+	            ar[i] = 1;
+	            printf("{ ");
+	            while(front<rear){
+	                printf("%d ",queue[++front]);
+	                for(int j=queue[front];j<n;j++){
+	                    if(!ar[j]&&set[queue[front]][j]){
+	                        ar[j] = 1;
+	                        queue[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	
+	    }  
+	    
+	}
+	
+812f299e57b2e97a1ab3e3e6c9ef2218|file:///Users/ring/Documents/code/c/pintia_trains/teat.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	void build();
+	void dfs(int n);
+	void bfs(int n);
+	
+	int set[15][15] = {0};
+	int visited[15] = {0};
+	
+	
+	#define MAXVEX 15
+	
+	int Nv,Ne;
+	
+	int main(){
+	    int n,e;
+	    // scanf("%d %d",&n,&e);
+	    build();
+	    dfs(n);
+	    bfs(n);
+	    
+	
+	    return 0;
+	}
+	
+	
+	void build(){
+	    //用邻接矩阵表示图
+	    int i,j;
+	    int v1,v2;
+	    scanf("%d %d",&Nv,&Ne);
+	    for( i=0; i<Nv; i++)
+	    {
+	        for( j=0; j<Nv; j++)
+	        {
+	            set[i][j] = 0;  //初始化
+	        }
+	    }
+	    for( i=0; i<Ne; i++)  //注意这里是读入边
+	    {
+	        scanf("%d %d",&v1,&v2);
+	        set[v1][v2] = 1;
+	        set[v2][v1]= set[v1][v2];  //无向图对称
+	    }
+	}
+	
+	
+	
+	
+	void dfsP(int i,int n){
+	    visited[i] = 1;
+	    printf("%d ",i);
+	    for(int j=i;j<n;j++){
+	        if(!visited[j]&&set[i][j]){
+	            dfsP(j,n);
+	        }
+	    }
+	}
+	
+	void dfs(int n){
+	    for(int i=0;i<n;i++){
+	        if(!visited[i]){
+	            printf("{ ");
+	            dfsP(i,n);
+	            printf("}\n");
+	        }
+	    }
+	}
+	
+	
+	void bfs(int n){
+	    int *ar = (int*)malloc(sizeof(int)*n);
+	    int font=-1,rear=-1;
+	    int queue[11] = {0};
+	
+	    for(int i=0;i<n;i++){
+	        ar[i]=0;
+	    }
+	
+	    for(int i=0;i<n;i++){
+	        if(!ar[i]){
+	            queue[++rear] = i;
+	            ar[i] = 1;
+	            printf("{ ");
+	            while(font<rear){
+	                printf("%d ",queue[++font]);
+	                for(int j=queue[font];j<n;j++){
+	                    if(!ar[j]&&set[queue[font]][j]){
+	                        ar[j] = 1;
+	                        queue[++rear] = j;
+	                    }
+	                }
+	            }
+	            printf("}\n");
+	        }
+	
+	    }  
+	    
+	}
+	
+aa534851f4033c63968d3372117a4466|file:///Users/ring/.vimrc|100|1|V|vim
+	   "************************
+5daa30e3f114078e9342dc58f4cd31a1|file:///Users/ring/.vimrc|92|1|^v|vim
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+2d4b220137f785b1d6af69fa17337d72|file:///Users/ring/.vimrc|92|2|v|vim
+	 you can 
+fb883ad0027ffd73f41b3c7e22b06870|file:///Users/ring/.vimrc|96|3|V|vim
+	  set backup
+06a3217b475554052b468e4990916111|file:///Users/ring/.vimrc|17|1|V|vim
+	set ruler
+28624dd3b638eeb5ce12ea57d9818d06|file:///Users/ring/.vim/shot_cut_source/python_short_cut.vim|1|1|V|vim
+	autocmd Filetype python inoremap ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
+	autocmd Filetype python inoremap ,( ()<++><Esc>F)i
+	autocmd Filetype python inoremap ,[ []<++><Esc>F]i
+	autocmd Filetype python inoremap ," ""<++><Esc>F"i
+	autocmd Filetype python inoremap ,' ''<++><Esc>F'i
+	autocmd Filetype python inoremap ,< <><++><Esc>F>i
+	
+e048deb181177969e6b11216f3ae3091|file:///Users/ring/.vim/.vimrc|14|1|V|vim
+	source ~/.vim/shot_cut_source/golang_short_cut.vim
+85379ef507f0ab8a5043fe3f80e797a3|file:///Users/ring/.vim/.vimrc|14|1|V|vim
+	source ~/.vim/shot_cut_source/python_short_cut.vim
+49dfecbab65e133971e92bcd7c07cb9a|file:///Users/ring/.vim/.vimrc|13|31|v|vim
+	pp_short_cut
+84d1eeb92b8a6e03247681c92eda76b7|file:///private/tmp/zshbLPoyR|1|1|V|zsh
+	you-get -o ~/var/tem "https://www.bilibili.com/video/av65528947"
+a184e4dbe78973e40f940478a4bce932|file:///private/tmp/zshXpqky1|1|1|V|zsh
+	dd
+aed02978874cd1d5fa65b25b5cc09574|file:///Users/ring/.zshrc|43|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+a640fa169dd38fc1f8ce81a171687757|file:///Users/ring/.zshrc|42|1|V|zsh
+	bindkey '<tab>' history-incremental-search-backward
+3b7bc24e6e95303106508f0d358fa945|file:///Users/ring/a.java|1|1|V|java
+	// // // // package ring
+ef7296877313f6b5d7bd6bf49829d7a6|file:///Users/ring/a.java|1|1|V|java
+	{package ring}
+b2e05c4a9b2e07362f54c6a33b4788bc|file:///Users/ring/a.java|1|1|V|java
+	(public static class a{)
+3076133990b492f1db618b6ed883f655|file:///Users/ring/a.java|1|5|V|java
+	    (public static ())
+86ee2ba55aa03b06900298d3c1884440|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|35|9|v|cpp
+	int 
+ad55ea39a130a3b4ee73011b10da589b|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|39|21|V|cpp
+	                    set
+32c6ca8b555ce4420e315d433dc9f19d|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|38|20|v|cpp
+	set[i][j]>set[i][k]+set[k][j]
+c793fb08d36c8c628246f760e8340145|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|13|5|V|cpp
+	    for
+87c60070eac3838d715ef1e7450b672f|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|16|1|V|cpp
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            printf("%d ",set[i][j]);
+	        }
+	        printf("\n");
+	    }
+2b72399a02e7b9c36517d62b90e7531e|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|15|13|V|cpp
+	            printf("%d ",set[i][j]);
+a2cd506b6f2e7421ab257c81e927455e|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|17|9|V|cpp
+	        printf("\n");
+4b98caf9c9183d43cdd0eb89f875417a|file:///Users/ring/Documents/code/c/pintia_trains/7-7_six_degrees_of_space.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	
+	int set[1001][1001];
+	int cnt[1001] = {0};
+	
+	void build(int m);
+	void floyed(int n);
+	
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    for(int i=0;i<=n;i++){
+	        for(int j=0;j<=n;j++){
+	            set[i][j]=99999;
+	        }
+	    }
+	    build(m);
+	    floyed(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d: ",i);
+	        int sum=0;
+	        for(int j=1;j<=n;j++){
+	            if(set[i][j]<=6) sum++;
+	        }
+	        printf("%.2f%\n",double(sum)/n*100);
+	    }
+	
+	
+	    return 0;
+	}
+	
+	
+	void build(int m){
+	    int i,j;
+	    while(m--){
+	        scanf("%d %d",&i,&j);
+	        set[i][j]=set[j][i]=1;
+	    }
+	}
+	
+	
+	void floyed(int n){
+	    int i,j,k;
+	    for(k=1;k<=n;k++){
+	        for(i=1;i<=n;i++){
+	            for(j=1;j<=n;j++){
+	                if(i==j) set[i][j] =0;
+	                else if(set[i][j]>set[i][k]+set[k][j]){
+	                    set[i][j]=set[i][k]+set[k][j];
+	                }
+	            }
+	        }
+	    }
+	}
+9e575dd1c8fd6027c2ed2237e89d0b65|file:///Users/ring/.vimrc|272|1|V|vim
+	"Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
+195fec22303c63b13f238807f2d9358c|file:///Users/ring/.vimrc|271|1|V|vim
+	"Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
+d559275d77160ad9ad5e90b52940b733|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|31|15|V|cpp
+	              printf("%d ",set[i][j]);
+f97a602ab21e893fc4fddf95f98bed05|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|32|21|V|cpp
+	                    set[i][j]
+56c6705031c1ffe1cb52a63d9421f468|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|35|13|V|cpp
+	            printf("\n");
+b37fc15c38e1e337670943327e5e7015|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|44|1|V|cpp
+	    printf("%d %d %d",tar,tar2,set[tar][tar2]);
+a1116c8ce13af07500a658a192ad4284|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|29|5|V|cpp
+	    int max=0,tar,tar2;
+1882e5f867e6cff8b833d450435ba3c1|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|45|9|V|cpp
+	        ff
+044a60ecac1b97ae514761c2b544727a|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|34|1|V|cpp
+	                    if(set[i][j]>max){
+	                        max = set[i][j];
+	                        tar = i;
+	                        tar2 = j;
+	                    }
+d5e34f79b16efc8373c1960245e8fc93|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|48|25|v|cpp
+	,int i=1
+38973ceb5682d647240d7a456db94390|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|33|20|v|cpp
+	set[i][k]!=0&&set[k][j]!=0&&
+c990e498708866bd41cbeac291a5ff90|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|31|1|V|cpp
+	        for(int i=1;i<=n;i++){
+	            for(int j=1;j<=n;j++){
+	                if(set[i][k]!=0&&set[k][j]!=0&&set[i][j]>set[i][k]+set[k][j]){
+	                    set[i][j] = set[i][k]+set[k][j];
+	                }
+	            }
+	        }
+8bb4cf71b98cb5c058dcbf417bbba0ce|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|30|1|^v|cpp
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+8beb08fd7e764f90da56cd8f16d71b6d|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|32|1|V|cpp
+	            if(set[i][k]!=0&&set[k][j]!=0&&set[i][j]>set[i][k]+set[k][j]){
+	                set[i][j] = set[i][k]+set[k][j];
+	            }
+3f7a14076902f3a32566332fe0af96f1|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|30|1|V|cpp
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=9999;
+	        }
+	    }
+86ec1023c78b1b256a05809f23d14e67|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|31|1|V|cpp
+	        printf("%d \n",set[i][j]);
+456168e833eb45b23faaec9443f7056c|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|60|16|v|cpp
+	,min=max[1],tar=1
+e50cdb4a889a68a0d03abfcca1bba2e2|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|56|1|V|cpp
+	        printf(":%d\n",max[i]);
+bc7e1ed9326062866230e16adba84dc9|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	
+	int set[101][101];
+	
+	void creat(int n,int m);
+	void select(int n);
+	
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    creat(n,m);
+	    select(n);
+	
+	    return 0;
+	}
+	
+	
+	void creat(int n,int m){
+	    int i,j,a;
+	
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=9999;
+	        }
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&i,&j,&a);
+	        set[i][j]=set[j][i]=a;
+	    }
+	}
+	
+	
+	void select(int n){
+	    for(int k=1;k<=n;k++){
+	        for(int i=1;i<=n;i++){
+	            for(int j=1;j<=n;j++){
+	                if(i==j)set[i][j] = 0 ;
+	                else if(i!=j&&set[i][j]>set[i][k]+set[k][j]){
+	                    set[i][j] = set[i][k]+set[k][j];
+	                }
+	            }
+	        }
+	    }
+	
+	    int max[101]={0};
+	    int min,tar;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(set[i][j]>max[i]){
+	                max[i] = set[i][j];
+	            } 
+	        }
+	    }
+	
+	    min = max[1];tar=1;
+	    for(int i=1;i<=n;i++){
+	        if(max[i]<min){
+	            min = max[i];
+	            tar = i;
+	        }
+	    }
+	    printf("%d %d",tar,min);
+	}
+e862f7047f60ae2d7a431bfe0bf607fc|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|52|13|V|cpp
+	            if(set[i][j]==0)<++>
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|52|12|V|cpp
+	            
+bdd28b66e19da6e3cc7efc7d851d3f59|file:///Users/ring/Documents/code/c/pintia_trains/7-8_harry_potter.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	
+	int set[101][101];
+	
+	void creat(int n,int m);
+	void select(int n);
+	
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    creat(n,m);
+	    select(n);
+	
+	    return 0;
+	}
+	
+	
+	void creat(int n,int m){
+	    int i,j,a;
+	
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=9999;
+	        }
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&i,&j,&a);
+	        set[i][j]=set[j][i]=a;
+	    }
+	}
+	
+	
+	void select(int n){
+	    for(int k=1;k<=n;k++){
+	        for(int i=1;i<=n;i++){
+	            for(int j=1;j<=n;j++){
+	                if(i==j)set[i][j] = 0 ;
+	                else if(i!=j&&set[i][j]>set[i][k]+set[k][j]){
+	                    set[i][j] = set[i][k]+set[k][j];
+	                }
+	            }
+	        }
+	    }
+	
+	    int max[101]={0};
+	    int min,tar;
+	    int cnt = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            printf("%d ",set[i][j]);
+	            if(set[i][j]>max[i]){
+	                max[i] = set[i][j];
+	            } 
+	        }
+	        if(max[i]==9999) cnt++;
+	        printf(":%d\n",max[i]);
+	    }
+	    if(cnt!=n){
+	        min = max[1];tar=1;
+	        for(int i=1;i<=n;i++){
+	            if(max[i]<min){
+	                min = max[i];
+	                tar = i;
+	            }
+	        }
+	        printf("%d %d",tar,min);
+	    }else printf("0");
+	}
+2094f81b0dbd69b3bb603a542cc789cb|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|32|5|V|cpp
+	    for(int i=0)<++>
+fc55ab054df2d02be77216678ef20277|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|19|1|V|cpp
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            set[i][j]=9999;
+	        }
+	        dist[i]=pay[i]=9999;
+	    }
+85861d77f2b76d2b986e9d9ac7baeb81|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|36|5|V|cpp
+	        dist[i]=pay[i]=9999;
+a78bffaa806da1dd970839d8bf3bcf60|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|34|5|V|cpp
+	            set[i][j]=9999;
+fc1ab561f328ab9b9222a15ac1f6dfc5|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|46|17|V|cpp
+	                if()<++>
+0a59b296151686dcc983d6101ddf7832|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|58|9|V|cpp
+	        for(int j=0;j<n;j++){
+	
+35e87272aedfe79166378901dc387d81|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|51|4|V|cpp
+	                    if(payset[front][j]<pay[j]){
+	                        pay[j]=payset[front][j];
+	                    }
+548e6283d49c796c81c4628f860d2155|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|34|1|V|cpp
+	    int mt=9999,mp=9999;
+d21856a9962447c2ec29361cdc2e1550|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|21|1|V|cpp
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            set[i][j]=9999;
+	            payset[i][j]=9999;
+	        }
+	        dist[i]=pay[i]=9999;
+	    }
+b98113939aa285294137dfc90a0562bf|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|68|13|V|cpp
+	            payset[i][j]=9999;
+ac9ba08e27dc258d2ab0ced62edf4b67|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|55|45|v|cpp
+	+dist[front]
+9289657765b9d931349586db8b068d00|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|57|51|v|cpp
+	+pay[front]
+a7c3d637bd7c6198bfb0b4a6c96081f2|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|55|1|V|cpp
+	                    if(set[front][j]+dist[front]<dist[j]){
+	                        dist[j]=set[front][j]+dist[front];
+	                        if(payset[front][j]+pay[front]<pay[j]){
+	                            pay[j]=payset[front][j]+pay[front];
+	                        }
+	                    }
+bdfcd9d5b52121b5f37b68b4689163ff|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|62|1|V|cpp
+	                        if(payset[front][j]+pay[front]<pay[j]){
+	                            pay[j]=payset[front][j]+pay[front];
+	                        }
+0f83c2fa626654c537242e4cd2179d60|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|63|20|V|cpp
+	                    }<++>
+5996716cee99d19470000e8a30aa0034|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|64|1|V|cpp
+	                            pay[j]=payset[front][j]+pay[front];
+2525e321883dd2f248abbea3dfca06be|file:///Users/ring/Documents/code/c/pintia_trains/7-9_travel_plan.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	
+	void create(int n,int m);
+	void go(int s,int d,int n);
+	
+	int set[501][501];
+	int payset[501][501];
+	int dist[501],pay[501];
+	
+	
+	int main(){
+	    int n,m,s,d;
+	    scanf("%d %d %d %d",&n,&m,&s,&d);
+	    create(n,m);
+	    go(s,d,n);
+	}
+	
+	void create(int n,int m){
+	    int a,b,d,p;
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            set[i][j]=9999;
+	            payset[i][j]=9999;
+	        }
+	        dist[i]=pay[i]=9999;
+	    }
+	    
+	    while(m--){
+	        scanf("%d %d %d %d",&a,&b,&d,&p);
+	        set[a][b]=set[b][a]=d;
+	        payset[a][b] = payset[b][a] = p;
+	    }
+	}
+	
+	
+	void go(int s,int d,int n){
+	    int q[501];
+	    int visited[501]={0};
+	    int front=-1,rear=-1;
+	
+	    q[++rear]=s;
+	    pay[s]=dist[s]=0;
+	
+	    for(int i,cnt=0;cnt<n;cnt++){
+	        i=(cnt+s)%n;    // !!!!!!
+	        while(rear>front){
+	            front++;
+	            for(int j=0;j<n;j++){
+	                if(!visited[j]&&set[front][j]!=9999){
+	                    q[++rear]=j;
+	                    visited[j]=1;
+	
+	
+	
+	
+	                }
+	
+	                if(set[front][j]){
+	                    if(set[front][j]+dist[front]<dist[j]){
+	                        dist[j]=set[front][j]+dist[front];
+	                        pay[j]=payset[front][j]+pay[front];
+	                    }else if(set[front][j]+dist[front]==dist[j]){
+	                        if(payset[front][j]+pay[front]<pay[j]){
+	                            pay[j]=payset[front][j]+pay[front];
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	
+	//    for(int i=0;i<n;i++){
+	//        for(int j=0;j<n;j++){
+	//            printf("%5d %5d |",set[i][j],payset[i][j]);
+	//        }
+	//        printf("%5d %5d\n",dist[i],pay[i]);
+	//    }
+	
+	    printf("%d %d",dist[d],pay[d]);
+	
+	
+	}
+f0eaf229973a517f321be84f5e85648c|file:///Users/ring/.zshrc|41|1|V|zsh
+	bindkey -M vicmd "n" vi-forward-word-end
+7fa798f32f82d05a6bdb4ba523f5b3b9|file:///Users/ring/.zshrc|42|22|v|zsh
+	vi-forward-word-end
+5815427fc619c319b04a1156540e86f5|file:///Users/ring/.zshrc|42|1|V|zsh
+	bindkey -M vicmd "F" history-incremental-search-backward
+195fe59b6f103787a914aead0f3db502|file:///Users/ring/.zshrc|43|49|v|zsh
+	backward
+84770310cf899a9f97d56e761c9134af|file:///private/tmp/zshMSu3Lx|1|1|V|zsh
+	you-get 'https://www.bilibili.com/video/av46653815?p=1' 
+283de9011ab36b60f6ddca02595ef259|file:///private/tmp/zshMSu3Lx|1|54|^v|zsh
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+959e2b87250a0d3fc356178e9e981496|file:///private/tmp/zshMSu3Lx|10|1|V|zsh
+	you-get 'https://www.bilibili.com/video/av46653815?p=11' 
+cedf4f5bac157fe1644ac0c64eb5a00d|file:///private/tmp/zshMSu3Lx|1|1|V|zsh
+	you-get 'https://www.bilibili.com/video/av46653815?p=1' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=2' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=3' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=4' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=5' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=6' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=7' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=8' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=9' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=10' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=11' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=12' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=13' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=14' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=15' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=16' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=17' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=18' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=19' 
+	you-get 'https://www.bilibili.com/video/av46653815?p=20' 
+697dfb9b235783676b63d2f1ed07cad5|file:///Users/ring/.oh-my-zsh/themes/robbyrussell.zsh-theme|1|1|V|
+	<<<<<<< HEAD
+d5fcf6b2fa462bd7f230de4e26f7d1ea|file:///Users/ring/.oh-my-zsh/themes/robbyrussell.zsh-theme|3|1|V|
+	=======
+	local ret_status="%(?:%{$fg_bold[green]%}😏:%{$fg_bold[red]%}😈)"
+	PROMPT='${ret_status}%{$fg_bold[green]%}%c👉%{$reset_color%} $(git_prompt_info)'
+	>>>>>>> y style
+6411532ba4971f378391776a9db629d3|file:///Users/ring/.oh-my-zsh/themes/robbyrussell.zsh-theme|2|17|v|
+	cyan
+121df30aa6a92918d03ce08be5fb5a51|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|52|1|V|cpp
+	            if(set[i][j]>max[i]){
+	                max[i] = set[i][j];
+d104aa03b7c33cfc9cf7c3dd31917993|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|52|1|V|cpp
+	            if(set[i][j]>max[i]){
+50c0c373fae482a550b76e6dc0edaa9d|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|53|13|V|cpp
+	            } 
+1545e945d5c3e7d9fa642d0a57fc8432|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|52|9|v|cpp
+	     
+09ab89b289417c0d5c662080841094c7|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|54|9|V|cpp
+	        }
+	        printf(" \n",set[i][j]);
+128f60ad837f4c55eb1dc87c20a281c5|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|55|21|v|cpp
+	,set[i][j]);
+c4dc0981e951b06fbe8f3bfeaa0d2af1|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|50|21|V|cpp
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            printf("%d ",set[i][j]);
+	            max[i] += set[i][j];
+	        }
+	        printf(" \n",set[i][j]);
+865aff96b5cb43e06c6b815c234d9b55|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|55|16|v|cpp
+	" \n",set[i][j]
+31b191bb7f2968108e32b5a97da1602d|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|55|21|v|cpp
+	,set[i][j]
+6e30eab837d1ab2006124e4f8840487c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|68|1|V|cpp
+	        int sum=0;
+	        for(int i=1;i<=n;i++){
+	            sum += set[tar][i];
+	        }
+f783b93d8fd6185142e969ccfdb5318f|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	
+	int set[101][101];
+	
+	void creat(int n,int m);
+	void select(int n);
+	
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    creat(n,m);
+	    select(n);
+	
+	    return 0;
+	}
+	
+	
+	void creat(int n,int m){
+	    int i,j,a;
+	
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=9999;
+	        }
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&i,&j,&a);
+	        set[i][j]=set[j][i]=a;
+	    }
+	}
+	
+	
+	void select(int n){
+	    for(int k=1;k<=n;k++){
+	        for(int i=1;i<=n;i++){
+	            for(int j=1;j<=n;j++){
+	                if(i==j)set[i][j] = 0 ;
+	                else if(i!=j&&set[i][j]>set[i][k]+set[k][j]){
+	                    set[i][j] = set[i][k]+set[k][j];
+	                }
+	            }
+	        }
+	    }
+	
+	    int max[101]={0};
+	    int min,tar;
+	    int cnt = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            printf("%d ",set[i][j]);
+	            max[i] += set[i][j];
+	        }
+	        printf(" \n");
+	        if(max[i]==9999) cnt++;
+	    }
+	
+	    if(cnt!=n){
+	        min = max[1];tar=1;
+	        for(int i=1;i<=n;i++){
+	            if(max[i]<min){
+	                min = max[i];
+	                tar = i;
+	            }
+	        }
+	
+	        printf("%d %d",tar,max[tar]);
+	    }else printf("1");
+	}
+	
+cab8111fd0b710a336c898e539090e34|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|3|1|v|cpp
+	void
+c38f00fde7d6646a84f6bbfbdf96c3c2|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|21|5|V|cpp
+	    while
+011c5137c9d1ac34f9770a58036329cd|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|9|5|v|cpp
+	DisjointSe
+556e9a86db9c921373c6b5097817214a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|21|12|v|cpp
+	Heap
+dc2f55718683c0f12dc076a30f661b87|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|39|1|V|cpp
+	void insert(int n,int p){
+84263639e3ae796ab013458c0464cb79|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|39|18|v|cpp
+	,int p){
+8a10b8dca3564da4c6e1c450ecb5cfbd|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|39|18|v|cpp
+	,int p)
+b3f357a69054f3b3ba21b22cfa197e46|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|32|1|V|cpp
+	        scanf("%d %d %d",&a,&b,&p);
+	        set[a][b]=set[b][a]=p;
+2bfeab93ea87a74240d033e66b8aa62c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|28|1|V|cpp
+	        djset[i]=-1;
+7196d77020cbbe9c901b9a1161eaadde|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|28|9|v|cpp
+	djset
+fa246d0262c3925617b0c72bb20eeb1d|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|28|17|v|cpp
+	9999
+d507bc2f6febfe0a5fe3e2c387d234f0|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|33|1|V|cpp
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&p);
+	        set[a][b]=set[b][a]=p;
+	        insert(p);
+	    }
+1885e8d6b8a92c2232a6132cd360a28d|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|43|9|V|cpp
+	        int i;
+d4f1b061de162cad8709a35391f93095|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|47|1|V|cpp
+	        heap[++len].v1=a;
+65ed9931bcde02468aacbd0628fbe979|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|48|1|V|cpp
+	        heap[len].v2=b;
+810c2c0ea95dece0a125db0efe16249d|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|50|9|V|cpp
+	        for(i=len;p<heap[i/2].pay;i/=2){
+5ee3189c7958dde2689c331dedef80e0|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|50|13|V|cpp
+	            heap[i]=heap[i/2];
+b50ee937993df4df1977f7f829e9780a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|50|9|V|cpp
+	        }
+	        heap[i]=heap[len];
+f194583ff3bfd16829b1611ff741017b|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|56|1|V|cpp
+	                    int tem = heap[j*2];
+	                    heap[j*2]=heap[j*2+1];
+	                    heap[j*2+1]=tem;
+ed03b90fbc9519de378745c65e69e06e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|67|9|V|cpp
+	        int 
+7bc1be694e088fb0bd327c16548c09ef|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|61|1|v|cpp
+	                    
+859204f7a3c0205d871815a90b042210|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|10|1|V|cpp
+	void delet();
+34a57fa375013352939fdcb1cf606048|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|11|1|V|cpp
+	void 
+234087adb5be27bec454e5fe9edbb1cc|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|34|9|V|cpp
+	        djset[i=-1;
+4ca5656c7c66c13f8169e235e463f01b|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|28|5|V|cpp
+	    djset[0]=-1;
+64c7d1a4ddaccad4a4f3bf812d93774a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|79|12|v|cpp
+	djset[heap[i].v1]
+e3e3da76d84a076f65533a75c5e70521|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|97|1|V|cpp
+	    while(djset[x]!=0){
+	        x = djset[x];
+	    }
+28bc869451c7c5de823851b9ba972620|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|86|1|V|cpp
+	                joint(int x,int p);
+7f7adc663b20d7fcf716b3b2c1b70f1e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|83|29|v|cpp
+	heap[i].v1
+c342c93809c6a554b1b6a067d1c3908e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|20|5|V|cpp
+	    createTree();
+3897640537c00caaed8779468d6726aa|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|23|5|V|cpp
+	    for(int )<++>
+6c9b204c8c2146a6b1e75cb47c285a5c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|27|13|V|cpp
+	            if()<++>
+a9473ded85aa51851deb4859cdd53f98|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|95|16|V|cpp
+	                
+57e231fc312781d68db2364fcf0a8ae9|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|23|1|V|cpp
+	    if(djset[0]!=n-1){
+	        printf("-1");
+	    }else{
+	        for(int i=1;i<=n;i++){
+	
+	        }<++>
+	    }<++>
+4ef8b895cb051ddaeaa175f77c426016|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|7|1|V|cpp
+	void createHeap(int index);
+f51e40bb8abab1cb56fb563f1ac3d19e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|63|17|V|cpp
+	                if(j*2+1<len)<++>
+74181dba0cd1318a674b2369d145dad9|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|62|13|V|cpp
+	            int 
+65d0f134c5c0d96024c1cab93d7b4a3e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|67|17|V|cpp
+	                        tem = heap[j*2];
+2228ab3894f4a78a7503d04e0664814e|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|67|25|V|cpp
+	                        heap[j*2]=heap[j*2+1];
+416a73f608e2a7d15d4c74715b566690|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|67|25|V|cpp
+	                        heap[j*2+1]=tem;
+fc8a31418ac3b80c25fe4cd4b6250482|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|62|13|V|cpp
+	            int max=j*2;
+4750af5496fa57cb74fb22dd4a30abab|file:///Users/ring/.vimrc|86|9|v|vim
+	<LEADER>
+5bcfb5603499e904db231d4cddb04617|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|61|24|v|cpp
+	--){
+3a2f6d0de84e70f55a8d738d46143389|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|99|1|V|cpp
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+37f91a10810c37a0f946c88eecf0bb86|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|94|5|^v|cpp
+	           
+8a542275dc1b0737a1c565bb062b7bb1|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|93|1|V|cpp
+	    printf("joint: %d %d\n",heap[1].v1,heap[1].v2);
+c729d04f0f21b21a75696aafa5710e65|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|23|1|V|cpp
+	    for(int i=1;i<=m;i++){
+	        printf("%d  ",heap[i].pay);
+	        if(djset[i]!=0){
+	            cnt++;
+	        }
+	    }
+5a314aad6ab4346657748bf4f223d81c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|31|24|V|cpp
+	        if(djset[i]!=0){
+	            cnt++;
+d2afad62b575be1da2b7d3283289f354|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|34|1|V|cpp
+	    printf("\n");
+7d4318f83fe0d3f459b15d62f3ad3cc4|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|104|1|V|cpp
+	    len++;
+cfb4b6c05e26c35504d767f4114742a6|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|111|1|V|cpp
+	                printf("joint: %d %d\n",heap[i].v1,heap[i].v2);
+86a50aae61599777aeee2a5993ce7b97|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|106|21|v|cpp
+	joint: 
+aabbf95ed2d62702e07e7dfaa18859c0|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|112|33|^v|cpp
+	,heap[i].v1,heap[i].v2
+bbc2b1e958948a10411305ca027958c4|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|112|1|V|cpp
+	                printf("joint\n");
+ca400edaf4bf9ebd5c008e92ab20df60|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|112|1|V|cpp
+	                printf("joint");
+58fe895084037c202da7dae31e14fff4|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|116|21|v|cpp
+	joint
+268c231d820b0d7b4f7e08de5cab3a4c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|108|1|V|cpp
+	ddcontinue;
+bec84c7f7afdd8f563e5da5c5ea71853|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|109|13|V|cpp
+	                continue;
+3ffe993757e75eae0374b222bdb70236|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|107|1|V|cpp
+	            if(djset[heap[i].v1]&&djset[heap[i].v2]){
+	            }else if(!djset[heap[i].v1]&&!djset[heap[i].v1]){
+2954e92a9b4d0e998fe4893f8141649a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|107|13|v|cpp
+	else
+9e68883dceefbab24e01b5f0a619e516|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|107|17|v|cpp
+	heap[i].v1&&!heap[i].v2
+f3af638b73a5271b9e0ad45a201ba5da|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|106|1|V|cpp
+	            printf("%d %d",heap[i].v1,heap[i].v2);
+6b3fa5facc40b328e3ae639049f94e55|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|106|41|v|cpp
+	&&(!
+b6ef688996137b11c7ddbe49f9b446b9|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|127|1|V|cpp
+	        djset[x] = x;
+e0a316b64c0cb93e3c53a4eba30148b5|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|29|1|V|cpp
+	    printf("\n");
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d  ",djset[i]);
+	    }
+	    printf("\n");
+75c95d5c985cebd0f21e29b745ba62e9|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|24|1|V|cpp
+	        printf("%d  ",heap[i].pay);
+2e017bfacf9c63911b3bed53d60f1915|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+cf0e922d9b1627b74704ad923ed7be7f|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int set[1001][1001];
+	int djset[1001]={0};
+	Heap heap[1001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=m;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt!=n-1) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=set[j][i]=9999;
+	        }
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	        set[a][b]=set[b][a]=p;
+	        
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    while(len--){
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	            }        
+	        }
+	    }
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    while(djset[x]>0){
+	        x = djset[x];
+	    }
+	
+	    while(djset[p]>0){
+	        p = djset[p];
+	    }
+	
+	    if(x!=p){
+	        djset[x]--;
+	        djset[p]=x;
+	    }
+	}
+6f5320fbbb5e121c55ec5551c82127dc|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|110|5|V|cpp
+	    while(djset[x]>0){
+5125e2a8492e0af1e9625cc16da0591a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int set[1001][1001];
+	int djset[1001]={0};
+	Heap heap[1001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=m;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt!=n) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            set[i][j]=set[j][i]=9999;
+	        }
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	        set[a][b]=set[b][a]=p;
+	        
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    while(len--){
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	            }        
+	        }
+	    }
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    djset[x]=1;
+	    djset[p]=1;
+	    //while(djset[x]>0){
+	    //    x = djset[x];
+	    //}
+	
+	    //while(djset[p]>0){
+	    //    p = djset[p];
+	    //}
+	
+	    //if(x!=p){
+	    //    djset[x]--;
+	    //    djset[p]=x;
+	    //}
+	}
+7fb49926177d4942b8e0905507141e23|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|112|1|V|cpp
+	    //while(djset[x]>0){
+	    //    x = djset[x];
+	    //}
+	
+	    //while(djset[p]>0){
+	    //    p = djset[p];
+	    //}
+	
+	    //if(x!=p){
+	    //    djset[x]--;
+	    //    djset[p]=x;
+	    //}
+9b676c4aaaf941608a5d4d0374d3ec90|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|12|1|V|cpp
+	int set[1001][1001];
+983b9e14f63c0d1927551737d5eb33aa|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int djset[1001]={0};
+	Heap heap[1001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=m;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt!=n) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            set[i][j]=set[j][i]=9999;
+	//        }
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	//        set[a][b]=set[b][a]=p;
+	        
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    while(len--){
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	            }        
+	        }
+	    }
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    djset[x]=1;
+	    djset[p]=1;
+	}
+eaa7cc86a4787c691f8d6bfd91ded388|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int djset[1001]={0};
+	Heap heap[1001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=n;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt!=n) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            set[i][j]=set[j][i]=9999;
+	//        }
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	//        set[a][b]=set[b][a]=p;
+	        
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    while(len--){
+	        int is=0;
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                is=1;
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	            }        
+	        }
+	        if(is==1)break;
+	    }
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    djset[x]=1;
+	    djset[p]=1;
+	}
+ff20449b3aabf9fa0b4df1ab5d8f0815|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|38|11|V|cpp
+	//        for(int j=1;j<=n;j++){
+	//            set[i][j]=set[j][i]=9999;
+3236b5191df73a235532462213f41c7a|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|38|1|V|cpp
+	//        }
+77e96279d9cd6f5b7b8666ecff7f9fc3|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|50|9|V|cpp
+	//        set[a][b]=set[b][a]=p;
+	        
+6f3c3505946c9dc3b98a23f32278bccc|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int djset[3001]={0};
+	Heap heap[3001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=n;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt==n) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    while(len--){
+	        int is=0;
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                is=1;
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	            }        
+	        }
+	        if(is==1)break;
+	    }
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    djset[x]=1;
+	    djset[p]=1;
+	}
+dc6448d69fbdca6059614e1c7ff8600c|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|97|17|V|cpp
+	                break;
+46b448410eaa016713ed7785cf10e9d8|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|91|9|V|cpp
+	        int is=0;
+84c6e61d5626885016e1c627044ca571|file:///Users/ring/Documents/code/c/pintia_trains/7-10_road_to_village.cpp|1|1|V|cpp
+	#include<stdio.h>
+	
+	typedef struct {
+	    int v1,v2,pay;
+	}Heap;
+	
+	void createTree(int n);
+	void createSet(int n,int m);
+	void insert(int n);
+	void joint(int x,int p);   
+	
+	int djset[3001]={0};
+	Heap heap[3001];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createSet(n,m);
+	    createTree(m);
+	    
+	    int cnt=0;
+	    for(int i=1;i<=n;i++){
+	        if(djset[i]>0){
+	            cnt++;
+	        }
+	    }
+	
+	    if(cnt!=n) printf("-1");
+	    else printf("%d",djset[0]);
+	
+	    return 0;
+	}
+	
+	
+	void createSet(int n,int m){
+	    int a,b,p;
+	    for(int i=1;i<=n;i++){
+	        heap[i].pay=-1;
+	    }
+	
+	    insert(m);
+	}
+	
+	
+	void insert(int n){
+	    int len=0;
+	    int i,a,b,p;
+	    while(n--){
+	        scanf("%d %d %d",&a,&b,&p);
+	        heap[++len].v1=a;
+	        heap[len].v2=b;
+	        heap[len].pay=p;
+	    }
+	
+	    Heap tem;
+	    for(int i=len;i>0;i--){
+	        for(int j=len/2;j>0;j--){
+	            int t=j;
+	            while(t*2<=len){
+	
+	                int max=t*2;
+	                if(max+1<=len){
+	                    if(heap[max].pay<heap[max+1].pay){
+	                        max++;
+	                    }
+	                }
+	                if(heap[t].pay<heap[max].pay){
+	                    tem = heap[t];
+	                    heap[t]=heap[max];
+	                    heap[max]=tem;
+	                    t = max;
+	                }else break;
+	            }
+	        }
+	
+	        tem=heap[len];
+	        heap[len]=heap[1];
+	        heap[1]=tem;
+	        len--;
+	
+	    }
+	}
+	
+	void createTree(int m){
+	    int min,tar;
+	    int cnt=0,len=m;
+	    
+	    joint(heap[1].v1,heap[1].v2);
+	    cnt+=heap[1].pay;
+	    int is=1;
+	    while(is==1){
+	        is=0;
+	        for(int i=1;i<=m;i++){
+	            if((djset[heap[i].v1]&&!djset[heap[i].v2])||(!djset[heap[i].v1]&&djset[heap[i].v2])){
+	                is=1;
+	                joint(heap[i].v1,heap[i].v2);
+	                cnt+=heap[i].pay;
+	                break;
+	            }        
+	        }
+	        if(is==1)break;
+	    }
+	
+	    djset[0]=cnt;
+	}
+	
+	
+	
+	void joint(int x,int p){
+	    djset[x]=1;
+	    djset[p]=1;
+	}
+080f86ac1328e47d1006740d4535e1ce|file:///Users/ring/a.py|1|24|v|python
+	substitute/\a/*/g
+8a4780ef22fedeb197580fdf1d8ed330|file:///Users/ring/.vim/.vimrc|20|13|v|vim
+	badwolf
+fca8ac9172044baf20c9426d77bffe64|file:///Users/ring/.vimrc|211|7|v|vim
+	iamcco/mathjax-support-for-mkdp
+e08e974e1b24efb9ec02a85c3eb1e4e6|file:///Users/ring/.vimrc|227|1|V|vim
+	" snips
+4b4f7b7c19be1bc763ad4c9a3503f35d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/arithmetic.md|214|1|V|markdown
+	# KMP算法
+bf2d45971477f19ff5d1110d1d5447f0|file:///Users/ring/.vimrc|214|1|V|vim
+	" open tagbar 
+	Plug 'majutsushi/tagbar'
+6bc4634dc73901d04ed97619ae90e0e0|file:///Users/ring/.vimrc|214|1|V|vim
+	nmap <F6> :TagbarToggle<CR>
+	
+c84515cfc86a9e825039c8d3c6e9c3b6|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/arithmetic.md|211|28|V|markdown
+	高效模式串匹配算法，思路如下：
+	- 使用一个数组记录下
+e232338e2fd74f5ddcb1e1b93d8df1e9|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|10|12|v|cpp
+	char *s
+a87deb01c5f539e6bda34829c8ef2368|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|10|12|v|cpp
+	char
+663fd7e16ffcf2a4c7c3658a35f1b4a8|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|9|1|V|cpp
+	    int position;
+f3b13140d9f8c99df138ace4a3edbb1f|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|15|1|V|cpp
+	}<++>
+91f88ad1f2ebe995b125e733aff4dde3|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|13|5|V|cpp
+	    search
+763269a3bc49f2ecfb9e639531d0f0ea|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|13|5|V|cpp
+	    search(char *s, char *p)
+240bf022e685b0ee30ad9fe9e1fb5d5b|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|10|5|v|cpp
+	pattern
+76b6ac51e416e82219069ba4bb830567|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|17|1|V|cpp
+	    int slen = strlen(s);
+59d2591abb19bb3058e893b56ad9bc02|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|9|5|V|cpp
+	    int ma
+858aa8cee77c7c534dce3de199d0656b|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|47|5|V|cpp
+	    int j = 1;
+e3cc92c14a5e6dd1a7d94b6ff634d7fc|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|50|28|v|cpp
+	match
+0ed5b22d85e5dccc5db753a280635913|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|50|1|V|cpp
+	        while(match[j]!=0&&s[j]!=s[p]){
+	            j = match[p];
+	        }
+1892a845aa81b9ddb8b6ef6920d742bb|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|60|1|V|cpp
+	
+	            
+b51a5b3953b94a640621cfb7bb9d27b1|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|50|9|V|cpp
+	        while(match[j]!=0&&s[j]!=s[p]){
+	            j = match[p];
+16802ba762a8db05b0cad1f342ea86da|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<string.h>
+	
+	void createMatch(char *s);
+	int search(char *s,char *p);
+	int match[500];
+	
+	int main(){
+	    char simple[] = "haaadsafewnruzcewaradsfadsfiowe";
+	    char pattern[] = "warads";
+	    int position;
+	    createMatch(simple);
+	    position = search(simple,pattern);
+	    
+	    prinf("%d",position);
+	    
+	}
+	
+	int search(char *s,char *p){
+	    int slen = strlen(s);
+	    int plen = strlen(p);
+	
+	    int i,j;
+	    i=j=0;
+	    for(i=0;i<slen;i++){
+	        if(s[i]==p[j]){
+	            j++;
+	        }else{
+	            i--;
+	            j = match[j]+1;
+	        }
+	
+	        if(j==slen){
+	            return i-slen;
+	        }
+	    }<++>
+	}<++>
+	
+	
+	void createMatch(char *s){
+	    int len = strlen(s);
+	    for(int i=0;i<len;i++){
+	        s[i] = -1;
+	    }
+	
+	    int p=0;
+	    match[0]=-1;
+	    for(int j=1;j<len;j++){
+	
+	        if(s[j]==s[p]){
+	            match[j] = match[p];
+	            p++;
+	        }else{
+	            while(match[p]!=0&&s[j]!=s[p]){
+	                p = match[p];
+	            }
+	            match[j] = match[p];
+	        }
+	
+	
+	    }<++>
+	
+	}<++>
+	
+	
+	
+	
+78dcec7e214863d724934620a0ded3c7|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|21|13|V|cpp
+	            while(dd)<++>
+2546966086dc74bdbd0635aa260b8712|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|11|5|V|cpp
+	    char *match = (int*)malloc(sizeof(int)*plen);
+2af334cc96ab6a19586ea8db8e7bcbc5|file:///Users/ring/Documents/code/c/pintia_trains/KMP.cpp|37|5|V|cpp
+	    p=j=0;
+49c463eaef3b73d5ba0272aac69093dc|file:///Users/ring/.zshrc|10|1|V|zsh
+	LC_ALL="zh_CN.UTF-8"
+480155bb7cad9f632ff5d2610f4d1512|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|24|1|V|cpp
+	set[a][b]=set[b][a]=p;
+23934afccfa6efde391fd905490fed54|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|26|12|v|cpp
+	action[a].early<b+action[b].early
+03124a220e66545a02e2b5d435741ae7|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|26|12|v|cpp
+	action[b].early<action[a].early+t
+975ccba9374c2a3f8ef4e2bc8d8616eb|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|32|1|V|cpp
+	    action[m-1].last
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|34|8|V|cpp
+	        
+d2e8719f25a67a2b6f0c69891908b182|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|35|31|v|cpp
+	action[i].last-tree[j][i]
+40a28b561a6753f816c46af57dbbb8da|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|29|1|V|cpp
+	            action[b].last = 9999;
+f21f015b6be606c80c1cc40db55e61cd|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|34|5|V|cpp
+	            action[a].last = 9999;
+	            action[b].last = 9999;
+98bd1c45684cf587ac2347a92dd7bb51|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|40|41|v|cpp
+	last
+2b3de800b4576343a07e86b8c420e448|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|40|41|v|cpp
+	early
+7382e84fd3d2134f86986f50dc5292b1|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|24|1|V|cpp
+	                printf("i %d %d",,action[i].early,action[i].last);
+e5fcf1cc3d4085129a55970595a55492|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|20|1|V|cpp
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            printf("%d ",tree[i][j]);
+	            if(tree[i][j]!=0){
+	                printf("i %d %d",action[i].early,action[i].last);
+	                printf("j %d %d",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+03fd361216126573fdae66e5a6610cdb|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|32|5|V|cpp
+	            printf("%d ",tree[i][j]);
+9966480a5fa130cbb44dec5916b7891c|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|23|1|V|cpp
+	            if(tree[i][j]!=0){
+	                printf("i %d %d",action[i].early,action[i].last);
+	                printf("j %d %d",action[j].early,action[j].last);
+	            }
+4f515cacae9ef2988a407271b3d920b2|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	        }
+	        i++;
+	    }
+	    action[n].last = action[n].early;
+	    for(i=n;i>0;i--){
+	        for(int j=1;j<=n;j++){
+	            if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	                action[j].last = action[i].last-tree[j][i];
+	            }
+	        }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]<=0){
+	                printf("%d->%d\n",i,j);
+	            }
+	        }
+	    }
+	}
+	
+5ff55da63c823dfbb7e9586e9a5ba23f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|59|13|V|cpp
+	            if(action[]<++>)<++>
+341036ab17b0eab69df9bc44142d9d4a|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|69|1|V|cpp
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+dc66730180f7f3da29d9e5c1c47d2672|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|41|1|V|cpp
+	    int end[200] = {0};
+ae1bba0590885600a145e99060a5ed14|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|58|1|V|cpp
+	    action[n].last = action[n].early;
+d34ca1605ac19a70d02b5a12bf521c56|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|63|1|V|cpp
+	        if(end[i]){
+	            action[i].early = action[i].last;
+	        }
+f182d81dd145138d017b081c5ea7dba2|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d:",end[i]);
+	        for(int j=1;j<=n;j++){
+	
+	            printf("%d ",tree[i][j]);
+	        }
+	        printf("\n");
+	    }
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0){
+	                printf("i %d %d;",action[i].early,action[i].last);
+	                printf("j %d %d||",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	        }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = action[i].early;
+	        }
+	    }
+	    for(i=n;i>0;i--){
+	        for(int j=1;j<=n;j++){
+	            if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	                action[j].last = action[i].last-tree[j][i];
+	            }
+	        }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	            else if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]<=0){
+	                printf("0");
+	                return;
+	            }
+	
+	        }
+	    }
+	}
+	
+caaaf24efc5ef9976cd3898993b277bc|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|82|7|V|cpp
+	        break;
+0e0366eb6601c27758ebb716600ab8f1|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|68|1|V|cpp
+	            if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+1cbfb724ceee46cd879df7c7cfbe7dca|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|77|20|v|cpp
+	break
+31c290ea36e1c091079b3d80cf55fc7c|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|72|3|v|cpp
+	          if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].last<0){
+	                isG=0;
+	                return;
+	            }
+	            else 
+c579365043e89dc1809a197dad072621|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|98|1|V|cpp
+	            else if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]<=0){
+	                printf("0");
+	                return;
+	            }
+d3005c5787c515483018720cdeeb5c20|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|68|9|V|cpp
+	        }else{
+c1f208e9c71415ecbffe4a061a92c724|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|68|13|V|cpp
+	            isG = 1;
+5bce4ebf2ae1a7b62b8bb982ad6a24d6|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|66|9|V|cpp
+	        if(!end[i]){
+3855e18e28d5ccbce4a6e36b3ce49287|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|74|17|V|cpp
+	                isG++;
+0652ceee0e705935266b3e71a4d299d8|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|76|9|V|cpp
+	        if(isG==0) return;
+5a3d1d68e0904aa0a199dbde7c4e66f4|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d:",end[i]);
+	        for(int j=1;j<=n;j++){
+	
+	            printf("%d ",tree[i][j]);
+	        }
+	        printf("\n");
+	    }
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0){
+	                printf("i %d %d;",action[i].early,action[i].last);
+	                printf("j %d %d||",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	        }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = action[i].early;
+	        }
+	    }
+	    for(i=n;i>0;i--){
+	        isG = 1;
+	        for(int j=1;j<=n;j++){
+	            if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	                isG=0;
+	                return;
+	            }
+	            else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	                action[j].last = action[i].last-tree[j][i];
+	            }
+	        }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+8b200f66a13c00580b2dfd817fbd2afd|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|64|30|v|cpp
+	action[i].early;
+37cbf8f1d5e4f3a0c323a3db9b0cd968|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d:",end[i]);
+	        for(int j=1;j<=n;j++){
+	
+	            printf("%d ",tree[i][j]);
+	        }
+	        printf("\n");
+	    }
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0){
+	                printf("i %d %d;",action[i].early,action[i].last);
+	                printf("j %d %d||",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	            max = action[b].early;
+	        }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = max;
+	        }
+	    }
+	    for(i=n;i>0;i--){
+	        isG = 1;
+	        for(int j=1;j<=n;j++){
+	            if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	                isG=0;
+	                return;
+	            }
+	            else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	                action[j].last = action[i].last-tree[j][i];
+	            }
+	        }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+690e2a029f3dc80179f334ff4c71e076|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|79|27|v|cpp
+	++){
+2936599221f360d0f700c6c306f3dd75|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|81|20|v|cpp
+	action[temp].last-tree[i][temp]
+7f243894b21ac0dc66d14fd0f55b3e84|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|83|1|V|cpp
+	                if(action[temp].last-tree[i][temp]<=action[i].early){
+	                    action[i].early = action[temp].last-tree[i][temp];
+	                }
+e63ac7bb24713cd5ac15bf513015ed77|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|84|21|V|cpp
+	                    action[i].early = action[temp].last-tree[i][temp];
+550312942b57df50997274c4712624e2|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|100|5|^v|cpp
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+1dff74205e0a6b8d47f99ff90e583605|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|86|5|v|cpp
+	            if(action[temp].last-tree[i][temp]-action[i].early<0){
+	                    isG = 0;
+	                    return;
+	                }
+	                else 
+1a40d06070cfcdd7652199890be04fcf|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d:",end[i]);
+	        for(int j=1;j<=n;j++){
+	
+	            printf("%d ",tree[i][j]);
+	        }
+	        printf("\n");
+	    }
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0){
+	                printf("i %d %d;",action[i].early,action[i].last);
+	                printf("j %d %d||",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	            max = action[b].early;
+	        }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = max;
+	        }
+	    }
+	    
+	
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    isG = 1;
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+e03d9bad1999310c63d2f524d2ce1b7f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|90|68|v|cpp
+	arly
+274e88659689754106a3306bd381c452|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    for(int i=1;i<=n;i++){
+	        printf("%d:",end[i]);
+	        for(int j=1;j<=n;j++){
+	
+	            printf("%d ",tree[i][j]);
+	        }
+	        printf("\n");
+	    }
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            if(tree[i][j]!=0){
+	                printf("i %d %d;",action[i].early,action[i].last);
+	                printf("j %d %d||",action[j].early,action[j].last);
+	            }
+	        }
+	        printf("\n");
+	    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        if(action[b].early<action[a].early+t){
+	            action[b].early=action[a].early+t;
+	            max = action[b].early;
+	        }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = max;
+	        }
+	    }
+	    
+	
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    isG = 1;
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]-action[i].early<0){
+	                    isG = 0;
+	                    return;
+	                }
+	                else if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+cb0275bd5894b01e2a54c309687146d4|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|75|1|V|cpp
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]-action[i].early<0){
+	                    isG = 0;
+	                    return;
+	                }
+	                else if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+85614a317d9e423eb74bb6711942d8be|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|12|1|V|cpp
+	int out[200] = {0};
+e704b065a0df4e7e54a85cdcac3adf70|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|73|1|V|cpp
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    isG = 1;
+5dbd487983d3c4cbc417f7e9ee01efe7|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|89|24|V|cpp
+	                if(action[temp].last-tree[i][temp]-action[i].early<0){
+	                    isG = 0;
+59755c2b03975ae827bb933fa003b5f9|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|89|21|V|cpp
+	                    return;
+	                }
+ee5f317fa046c9a8cc36f63dece5101f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|92|17|V|cpp
+	                out[i]--;
+0bcca0da2ba49655aba4dc49dbf5cbd5|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|89|26|V|cpp
+	                if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+81789648c34c70b46164eb7a6f015c95|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|89|17|V|cpp
+	                }
+3ef871ec8ecab56d2722c7f94957bf66|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|89|20|v|cpp
+	tree[temp][i]+action[temp].early
+2a9f05cc1bcb8e1b0bea78bd68b9bd0a|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|109|5|V|cpp
+	    temp;
+c9fe8231853f363e12dbee8cd35d57c2|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|77|1|V|cpp
+	    isG = 1;
+a6b1edd56ea3d82f1efc81e4bab18724|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|121|17|v|cpp
+	if(action[temp].last-tree[i][temp]-action[i].early<0){
+	                    isG = 0;
+	                    return;
+	                }
+	                else 
+c12e7b5875b5c9bd7dff41e8a6bf3567|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        in[b]++;
+	     //   if(action[b].early<action[a].early+t){
+	     //       action[b].early=action[a].early+t;
+	     //       max = action[b].early;
+	     //   }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = max;
+	        }
+	    }
+	    
+	
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    int count=0;
+	    isG = 1;
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]!=0){
+	                in[i]--;
+	                if(tree[temp][i]+action[temp].early>action[i].early){
+	                    action[i].early = tree[temp][i]+action[temp].early;
+	                }
+	                if(in[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG = 0;
+	        return;
+	    }
+	
+	
+	    front=-1,rear=-1;
+	    int qu[200];
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+6b80feac5909d8e9454e729c1634a2a4|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 0;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    int i=0;
+	    while(i<m){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        in[b]++;
+	     //   if(action[b].early<action[a].early+t){
+	     //       action[b].early=action[a].early+t;
+	     //       max = action[b].early;
+	     //   }
+	        i++;
+	    }
+	
+	    for(i=1;i<=n;i++){
+	        if(end[i]){
+	            action[i].last = max;
+	        }
+	    }
+	    
+	
+	    
+	
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    int count=0;
+	    isG = 1;
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]!=0){
+	                in[i]--;
+	                if(tree[temp][i]+action[temp].early>action[i].early){
+	                    action[i].early = tree[temp][i]+action[temp].early;
+	                }
+	                if(in[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG = 0;
+	        return;
+	    }
+	
+	
+	    front=-1,rear=-1;
+	    int qu[200];
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]<=action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+51e46cee11782f965a236b0db3246b4d|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|82|1|V|cpp
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+a41d3188468cc097ff79c955e118f29c|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|85|1|V|cpp
+	            action[i].last = max;
+8d562ff9577c93a317f8bf410dfc9b25|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|77|1|V|cpp
+	    int front=-1,rear=-1;
+	    int q[200];
+	    int temp;
+	    int count=0;
+	    isG = 1;
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]!=0){
+	                in[i]--;
+	                if(tree[temp][i]+action[temp].early>action[i].early){
+	                    action[i].early = tree[temp][i]+action[temp].early;
+	                }
+	                if(in[i]==0){
+	                    q[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG = 0;
+	        return;
+	    }
+	
+	
+	    front=-1,rear=-1;
+	    int qu[200];
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear] = i;
+	            action[i].last = max;
+	        }
+	    }
+	
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+fc67e96f8918467c6125712595716c3f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|53|5|V|cpp
+	    int i=0;
+a806f83c6ff2763c8592f68f165ca7a4|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|64|9|V|cpp
+	        i++;
+90d76b27790c37e064b058a3e8fbcae0|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|88|20|^v|cpp
+	action[i].early<action[temp]+tree[temp][i]
+cedb1e0848aee2edcb13a39652954f55|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|100|5|V|cpp
+	    i
+6b5c8abebd407453498a859b26a39a9b|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|120|21|V|cpp
+	                    action
+a8886f078122018635058bb879bfd3fa|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|60|2|^v|cpp
+	//
+	//
+	//
+	//
+e74fe204984ecdb3bfb86a9ffabed1a6|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        action[i].early = 0;
+	        action[i].last = 9999;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        in[b]++;
+	 //       if(action[b].early<action[a].early+t){
+	 //           action[b].early=action[a].early+t;
+	 //           max = action[b].early;
+	 //       }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[200]={0};
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]!=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[200]={0};
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=n;i>0;i--){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]!=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+285f2b8938932809aaf286f35102f488|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|109|2|^v|cpp
+	//
+	//
+	//
+	//
+	//
+66c58af230fe8ad374c3b2e9d2890cce|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 99999;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        end[a] = 0;
+	        end[b] = 1;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[200]={0};
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]!=-1){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[200]={0};
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]!=0&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+690db9c1945ffe181ef0b15220e70303|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|59|19|V|cpp
+	        end[a] = 0;
+	        end[b] = 1;
+d9a25a3c40a2bc0c8eae7842e60a2e16|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int end[200] = {0};
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 99999;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[2000]={0};
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[2000]={0};
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+2625a5b8bd1de25168119b4160b1b562|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|11|1|V|cpp
+	int end[200] = {0};
+38861f3f127f0a4f147eaf34843bcb2b|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 99999;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[2000]={0};
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[2000]={0};
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-action[i].early-tree[i][j]==0){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+d3eb9a9233e52948740d7eb8c3062d14|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|51|26|v|cpp
+	99999
+773c1ba0a8b0eee30ca682a5a6441c2c|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|162|79|v|cpp
+	action[i].early-
+90c2ac180a753ab35650709267c6fb5f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int out[200] = {0};
+	int in[200] = {0};
+	int tree[200][200] = {0};  // 0 disconnect  1 indegree  2 outdegree
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	    return 0;
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 65535;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    int a,b,t;
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[2000];
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-tree[i][j]==action[i].early){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+b67ab15e78d10ddab1730f4b28e791ff|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|13|21|v|cpp
+	 // 0 disconnect  1 indegree  2 outdegree
+568cc4bf2ecf1758c9a827aabba05eae|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|55|5|V|cpp
+	    int a,b,t;
+8571133f765b82f3c6278d61a1324b96|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|75|1|V|cpp
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+1072edf0d0ed6864740700e9a3972415|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|206|1|V|cpp
+	        return;
+84379cba2b4e8b634554274a03fd1c69|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|107|1|V|cpp
+	    int qu[2000];
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+701582c3d1096f670dba03be08c8c030|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|67|1|V|cpp
+	    early(n);
+	    last(n);
+93951bc62f0a49def2ae70fd98f17002|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|11|6|^v|cpp
+	   
+	   
+30d2f40082659838fc76491e7e788f90|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	void early(int n);
+	void last(int n);
+	
+	int out[200];
+	int in[200];
+	int tree[200][200]; 
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	    return 0;
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    int a,b,t;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 65535;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	    early(n);
+	    last(n);
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	 //   int q[2000];
+	 //   int front=-1,rear=-1;
+	 //   int count=0;
+	 //   int temp;
+	 //
+	 //   for(int i=1;i<=n;i++){
+	 //       if(in[i]==0){
+	 //           q[++rear]=i;
+	 //       }
+	 //   }
+	 //   while(rear>front){
+	 //       temp=q[++front];
+	 //       count++;
+	 //       for(int i=1;i<=n;i++){
+	 //           if(tree[temp][i]>=0){
+	 //               if(action[i].early<action[temp].early+tree[temp][i]){
+	 //                   action[i].early=action[temp].early+tree[temp][i];
+	 //               }
+	 //               in[i]--;
+	 //               if(in[i]==0){
+	 //                   q[++rear]=i;
+	 //               }
+	 //           }
+	 //       }
+	 //   }
+	 //
+	 //
+	 //   if(count!=n){
+	 //       isG=0;
+	 //       return;
+	 //   }
+	
+	//    int qu[2000];
+	//    front=rear=-1;
+	//
+	//    for(int i=1;i<=n;i++){
+	//        if(action[i].early>max){
+	//            max = action[i].early;
+	//        }
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        if(out[i]==0){
+	//            qu[++rear]=i;
+	//            action[i].last = max;
+	//        }
+	//    }
+	//    while(rear>front){
+	//        temp=qu[++front];
+	//        for(int i=n;i>0;i--){
+	//            if(tree[i][temp]>=0){
+	//                if(action[temp].last-tree[i][temp]<action[i].last){
+	//                    action[i].last = action[temp].last-tree[i][temp];
+	//                }
+	//                out[i]--;
+	//                if(out[i]==0){
+	//                    qu[++rear] = i;
+	//                }
+	//            }
+	//        }
+	//    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-tree[i][j]==action[i].early){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+	
+	void last(int n){
+	
+	    int qu[2000];
+	    int front,rear,temp;
+	    int max=0;
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	}
+	
+	
+	void early(int n){
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	    }
+	}
+1f44126f11a776d653d7a4b8c3a3e522|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|142|5|V|cpp
+	        isG = 1;
+df84b501eb5f14cc39823d6cd6cdc97c|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|143|13|v|cpp
+	if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	                isG=0;
+	                return;
+	            }
+	            else 
+5e0ba018b38a9a8ee642d157e00efe03|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|72|5|V|cpp
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	 //   int q[2000];
+	 //   int front=-1,rear=-1;
+	 //   int count=0;
+	 //   int temp;
+	 //
+	 //   for(int i=1;i<=n;i++){
+	 //       if(in[i]==0){
+	 //           q[++rear]=i;
+	 //       }
+	 //   }
+	 //   while(rear>front){
+	 //       temp=q[++front];
+	 //       count++;
+	 //       for(int i=1;i<=n;i++){
+	 //           if(tree[temp][i]>=0){
+	 //               if(action[i].early<action[temp].early+tree[temp][i]){
+	 //                   action[i].early=action[temp].early+tree[temp][i];
+	 //               }
+	 //               in[i]--;
+	 //               if(in[i]==0){
+	 //                   q[++rear]=i;
+	 //               }
+	 //           }
+	 //       }
+	 //   }
+	 //
+	 //
+	 //   if(count!=n){
+	 //       isG=0;
+	 //       return;
+	 //   }
+	
+	//    int qu[2000];
+	//    front=rear=-1;
+	//
+	//    for(int i=1;i<=n;i++){
+	//        if(action[i].early>max){
+	//            max = action[i].early;
+	//        }
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        if(out[i]==0){
+	//            qu[++rear]=i;
+	//            action[i].last = max;
+	//        }
+	//    }
+	//    while(rear>front){
+	//        temp=qu[++front];
+	//        for(int i=n;i>0;i--){
+	//            if(tree[i][temp]>=0){
+	//                if(action[temp].last-tree[i][temp]<action[i].last){
+	//                    action[i].last = action[temp].last-tree[i][temp];
+	//                }
+	//                out[i]--;
+	//                if(out[i]==0){
+	//                    qu[++rear] = i;
+	//                }
+	//            }
+	//        }
+	//    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+454daef4fcdcadd960eb178ca2e313c9|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|25|1|V|cpp
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+21d93bbc3fbc82c3da76b266c69367ef|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	void early(int n);
+	void last(int n);
+	
+	int out[200];
+	int in[200];
+	int tree[200][200]; 
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    early(n);
+	    last(n);
+	    scan(n);
+	
+	    return 0;
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    int a,b,t;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 65535;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-tree[i][j]==action[i].early){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+	
+	void last(int n){
+	
+	    int qu[2000];
+	    int front,rear,temp;
+	    int max=0;
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	}
+	
+	
+	void early(int n){
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	    }
+	}
+afac702618cba042104351a8fe90d954|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int out[200];
+	int in[200];
+	int tree[200][200]; 
+	Action action[200];
+	int isG = 1;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	//    for(int i=1;i<=n;i++){
+	//        printf("%d:",end[i]);
+	//        for(int j=1;j<=n;j++){
+	//
+	//            printf("%d ",tree[i][j]);
+	//        }
+	//        printf("\n");
+	//    }
+	//    for(int i=1;i<=n;i++){
+	//        for(int j=1;j<=n;j++){
+	//            if(tree[i][j]!=0){
+	//                printf("i %d %d;",action[i].early,action[i].last);
+	//                printf("j %d %d||",action[j].early,action[j].last);
+	//            }
+	//        }
+	//        printf("\n");
+	//    }
+	    return 0;
+	}
+	
+	
+	void createTree(int n,int m){
+	    int max = 0;
+	    int a,b,t;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 65535;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+	    }
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+	    
+	
+	    
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[2000];
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",action[n].early);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-tree[i][j]==action[i].early){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+ac44f26838c259bddb5735a560abb81a|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|136|1|V|cpp
+	    //for(i=n;i>0;i--){
+	    //    isG = 1;
+	    //    for(int j=1;j<=n;j++){
+	    //        if(tree[j][i]!=0&&action[i].last-tree[j][i]-action[j].early<0){
+	    //            isG=0;
+	    //            return;
+	    //        }
+	    //        else if(tree[j][i]!=0&&action[i].last-tree[j][i]<action[j].last){
+	    //            action[j].last = action[i].last-tree[j][i];
+	    //        }
+	    //    }
+	    //}
+381225f1415544e7cbaa90acfb4e155f|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|61|1|V|cpp
+	  //      if(action[b].early<action[a].early+t){
+	  //          action[b].early=action[a].early+t;
+	  //          max = action[b].early;
+	  //      }
+bfbd90ac68b6e9875531fb6bfe5a7e50|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|62|1|V|cpp
+	
+	 //   for(i=1;i<=n;i++){
+	 //       if(end[i]){
+	 //           action[i].last = max;
+	 //       }
+	 //   }
+3e7f7ca3f59dbfd16cfd19b49e42b94a|file:///Users/ring/Documents/code/c/pintia_trains/7-11_key_action.cpp|1|1|V|cpp
+	#include<stdio.h>
+	#include<stdlib.h>
+	
+	typedef struct{
+	    int early,last;
+	}Action;
+	
+	void createTree(int n,int m);
+	void scan(int n);
+	
+	int out[200];
+	int in[200];
+	int tree[200][200]; 
+	Action action[200];
+	int isG = 1;
+	int max =0 ;
+	
+	int main(){
+	    int n,m;
+	    scanf("%d %d",&n,&m);
+	    createTree(n,m);
+	    scan(n);
+	
+	    return 0;
+	}
+	
+	
+	void createTree(int n,int m){
+	    int a,b,t;
+	    for(int i=1;i<=n;i++){
+	        for(int j=1;j<=n;j++){
+	            tree[i][j]=-1;
+	        }
+	        action[i].early = 0;
+	        action[i].last = 65535;
+	        in[i]=  0;
+	        out[i] = 0;
+	    }
+	    while(m--){
+	        scanf("%d %d %d",&a,&b,&t);
+	        tree[a][b] = t;
+	        out[a]++;
+	        in[b]++;
+	    }
+	    
+	
+	    
+	    int q[2000];
+	    int front=-1,rear=-1;
+	    int count=0;
+	    int temp;
+	
+	    for(int i=1;i<=n;i++){
+	        if(in[i]==0){
+	            q[++rear]=i;
+	        }
+	    }
+	    while(rear>front){
+	        temp=q[++front];
+	        count++;
+	        for(int i=1;i<=n;i++){
+	            if(tree[temp][i]>=0){
+	                if(action[i].early<action[temp].early+tree[temp][i]){
+	                    action[i].early=action[temp].early+tree[temp][i];
+	                }
+	                in[i]--;
+	                if(in[i]==0){
+	                    q[++rear]=i;
+	                }
+	            }
+	        }
+	    }
+	
+	
+	    if(count!=n){
+	        isG=0;
+	        return;
+	    }
+	
+	    int qu[2000];
+	    front=rear=-1;
+	
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early>max){
+	            max = action[i].early;
+	        }
+	    }
+	    for(int i=1;i<=n;i++){
+	        if(out[i]==0){
+	            qu[++rear]=i;
+	            action[i].last = max;
+	        }
+	    }
+	    while(rear>front){
+	        temp=qu[++front];
+	        for(int i=n;i>0;i--){
+	            if(tree[i][temp]>=0){
+	                if(action[temp].last-tree[i][temp]<action[i].last){
+	                    action[i].last = action[temp].last-tree[i][temp];
+	                }
+	                out[i]--;
+	                if(out[i]==0){
+	                    qu[++rear] = i;
+	                }
+	            }
+	        }
+	    }
+	}
+	
+	
+	
+	void scan(int n){
+	    if(isG==0){
+	        printf("0\n");
+	        return;
+	    }
+	    printf("%d\n",max);
+	    for(int i=1;i<=n;i++){
+	        if(action[i].early!=action[i].last)
+	            continue;
+	        for(int j=n;j>0;j--){
+	            if(tree[i][j]>=0&&action[j].early==action[j].last&&action[j].last-tree[i][j]==action[i].early){
+	                printf("%d->%d\n",i,j);
+	            }
+	
+	        }
+	    }
+	}
+	
+	
+5b1342f9709b642abd8b4da61750c06a|file:///private/tmp/zshWNTSWK|1|9|v|zsh
+	https://www.youtube.com/watch\?
+9c934d0603ee05cda798d8bdb2840c9b|file:///private/tmp/zshjy1kpq|1|1|V|zsh
+	you-get 'https://www.youtube.com/watch?v=mjREZoRqTWM'
+	you-get 'https://www.youtube.com/watch?v=KYvMERGto0o'
+	you-get 'https://www.youtube.com/watch?v=wWrxfcLtJGI'
+	you-get 'https://www.youtube.com/watch?v=rTC4JshmUog'
+	you-get 'https://www.youtube.com/watch?v=ZHRG5NaADjU'
+	you-get 'https://www.youtube.com/watch?v=Mm8G8F7lX1s'
+	you-get 'https://www.youtube.com/watch?v=88oR5GjjZ6k'
+	you-get 'https://www.youtube.com/watch?v=t-2i3rxIXX4'
+	you-get 'https://www.youtube.com/watch?v=Fimgf3yx85U'
+	you-get 'https://www.youtube.com/watch?v=GFA-gPjgmmI'
+	you-get 'https://www.youtube.com/watch?v=drOguXu4z38'
+	you-get 'https://www.youtube.com/watch?v=QlbAPjEsWS0'
+	you-get 'https://www.youtube.com/watch?v=cBGPX8LL22A'
+	you-get 'https://www.youtube.com/watch?v=UbjnDcHgmyI'
+	you-get 'https://www.youtube.com/watch?v=9i_MPsLcLVk'
+	you-get 'https://www.youtube.com/watch?v=HEy-StskvuI'
+	you-get 'https://www.youtube.com/watch?v=Tm_ShG0QNq8'
+bd9cc5d02ca3fad77234c5964f55ecfd|file:///Users/ring/.vimrc|287|1|v|vim
+	map <Right> <Nop>
+fa65cd26724b62ef519f0ec70236efa5|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|535|5|V|markdown
+	    - dsfa
+e556922668575e4d1a509771db52ed58|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|535|11|v|markdown
+	$D(p|q)$
+4889e3eb24d5becfa76adea05c484fbd|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|525|7|v|markdown
+	$Entropy = -\sum P(i)\log_2{P(i)}$
+	
+15fc3950b7c08c0b533f05a119795393|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|539|9|v|markdown
+	Entropy
+08ec187ed8176dafd361b6237589609b|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|539|1|V|markdown
+	    - $h(p) = -1\log_2{1}=0$
+995686fdcb9e77f43bda4ebdbcdb6437|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|540|33|v|markdown
+	= -1\log_2{1}
+10b206e463dd5d6ad8014d07d59ac7ea|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|533|8|v|markdown
+	H(p,q) = -\sum{p(x) \log_2{q(x)}}
+a959ebc6f2afca1e7d3966bf2ccaaf4c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|554|1|V|markdown
+	$$
+	\begin{align}
+	y &= \cos t + 1 \\
+	y &= 2sin t \\
+	\end{align}
+	$$
+13636f604905b7b0f3100e6bb237175d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|561|1|V|markdown
+	tf.losses.categorical_crossentropy(p,q);
+cdcf5d53ed6b7759d1a1dbaacf99df6c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|563|11|v|markdown
+	categorical_crossentropy
+43ae286a249404b0c4513468756de8a9|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|562|1|V|markdown
+	tf.losses.categorical_crossentropy(p,q); # 函数的形式
+32c2c7fb83d658f324afda233d4651d2|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|570|70|v|markdown
+	# 函数的形式
+	
+728ca665532fda00a3f64ea203e0b01a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|570|1|V|markdown
+	tf.losses.categorical_crossentropy(one_hot,logits,from_logits=True);  # 这样能处理logits转换成prob时的错误
+cda61fd92393b78fc32fd8a2f54cd782|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|571|44|v|markdown
+	logits,from_logits=True
+d9a4c5404b665b567bdbab1db2232dd7|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|571|52|v|markdown
+	# 这样能处理logits转换成prob时的错误
+5bb14faafd22e3ab602502e71cf3e494|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|648|1|V|markdown
+	$$loss = \sum_i(w\times x_i+b-y_i)^2 \tag{1}$$
+fc2e104f0d567c55b158d7bb89955c39|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|652|1|V|markdown
+	$$w^` = w - lr \times \frac{\partial{loss}}{\partial{w}} \tag{2}$$
+7ed634d801bad3315f551e2b73d06085|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|579|1|V|markdown
+	$loss = \sum_i(w\times x_i+b-y_i)^2 \tag{1}$$
+7756cf2fb7816188e0f1b508d8bae05c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|579|59|v|markdown
+	\tag{2}
+a3b53c6cecca3a92ab016d3c96e593dd|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|585|1|V|markdown
+	[w_grad] = tape.gradient(loss,[w])  # 自动求解参数的梯度,并返回相应的列表
+04b93e8d57fcad2d85eebf7b7382d511|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|583|1|V|markdown
+	with tf.GradientTape as tape:  # 把计算过程包在里面
+d9cffd6165fbde9de70000ba55bd121e|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|583|1|V|markdown
+	with tf.GradientTape() as tape:  # 把计算过程包在里面
+2dfe362f9fc5b471828c07e0ac836edf|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|587|51|v|markdown
+	把计算过程包在里面
+1d3bc67840179a3152c9620e51201257|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|588|1|V|markdown
+	grad1 = tape.gradient(loss,[w])  # 自动求解参数的梯度,并返回相应的列表
+044218cbb4db7f9a905cc610cb4b1e20|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|588|34|v|markdown
+	自动求解参数的梯度
+089761cd56f4c4187de59f65aa3fe619|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|588|33|v|markdown
+	 ,并返回相应的列表
+d7acacf2e6cef2a88bb7797a22a2e056|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|589|35|v|markdown
+	 自动求解参数的梯度,并返回相应的列表
+4c491ef0cb0b3eb971e84657c765f3bb|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|598|2|v|markdown
+	 连续的光滑的激活函数
+fe18110e73090d0af11be3062d37c488|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|613|6|V|markdown
+	     \mathbb{R}\setminus\mathbb{Q}.
+508ae96ca606dcae253cdd43dd950102|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|616|5|V|markdown
+	    - sehgnduxuex
+618622d0e4b634ddb06af462a89f7ed4|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|620|5|V|markdown
+	    - `tf.nn.relu()`
+b3c5b5b2369228e1e06d9be553cb680c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|598|1|V|markdown
+	当大于某个条件时激活  
+9fc0a20868cfa14eb787b1403064a999|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|597|1|V|markdown
+	因此在深度学习中就可模仿设点，设计神经网络，因此有了激活函数  
+	
+2572e44ab8c4fcc7b8806d87c08a16a4|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|597|1|V|markdown
+	因此在深度学习中就可模仿设点，设计神经网络，因此有了激活函数  
+70210ac76a94b30dd6df2badda7033cd|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|627|3|v|markdown
+	Mean Squared Error
+1cb1fcda97e90500e0e828ea2958833c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|517|1|V|markdown
+	$$loss=\frac{1}{N}\sum(y-out)^2$$
+bc2a742ef428a1ad57e4ced3a8934bea|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|519|1|V|markdown
+	loss1 = tf.reduce_mean(tf.square(y-out))
+	loss2 = tf.reduce_mean(tf.losses.MSE(y,out))
+42148ca61fa8b1ffb11880cd9baf3c2f|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|631|1|V|markdown
+	loss1 = tf.reduce_mean(tf.square(y-out))
+df437ef51f6b50611939c4d72076ba64|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|632|5|V|markdown
+	    - ``
+049b11c8384f5da60e3f195dd378199b|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|625|5|V|markdown
+	    - 常用于多分类问题，因为它把logits转换为prob
+3878d37ec48003e56304688ba3308222|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|630|5|V|markdown
+	    II
+cc84dc2e6f67fd756e2f40a8adf8f907|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|629|5|V|markdown
+	    $$
+bb0506510ed49b23b751162cd7d98eb9|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|612|1|V|markdown
+	        \begin{equation}
+	        f(x) = \begin{cases}
+	        0, & \text{if } x < 0  \\
+	        x, & \text{if } x \geq 0 
+	        \end{cases}
+	        \end{equation}
+f0aac25315a1bd9c2b200c81633e6b10|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|632|13|v|markdown
+	\text{if } x < 0
+65b4185ba8b540f65bed4bc4d0c253a2|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|656|1|V|markdown
+	#### 
+2e40c7c01da359985efb94b5e09197e1|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|653|9|v|markdown
+	mathrmt
+92f064b136ab3fd020347c5f60dffdf2|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|653|2|v|markdown
+	\frac{\partial y}{\partial x}
+68c5e27e15a04a84a8529baca470da45|file:///Users/ring/var/tem/himmelblau.py|1|1|V|python
+	inpormt
+fe498aa910351e83de04d71ae1804c5a|file:///Users/ring/var/tem/himmelblau.py|6|1|V|python
+	x = np.arange(-6,6,0.1)
+9c9ebad35bd37456f336b0a5f67f65ab|file:///Users/ring/var/tem/himmelblau.py|16|1|V|python
+	ax.set_xlabel('x')
+b2a876a5fb4976e5182b68c678c5767c|file:///Users/ring/var/tem/himmelblau.py|2|1|V|python
+	import matplotlib as plt
+93473a7344419b15c4219cc2b6c64c6f|file:///Users/ring/var/tem/himmelblau.py|2|1|v|python
+	import
+79922c8fc00dfdf845f35df192d94dd9|file:///Users/ring/var/tem/himmelblau.py|16|1|V|python
+	# ax = fig.gca(projection='3d')
+c928205b738e04e433a161d4a2976b17|file:///Users/ring/.config/ranger/rc.conf|31|20|v|conf
+	/home/${USER}
+d0cab90d8d20d57e2f2b9be52f7dd25d|file:///Users/ring/var/blog/_config.yml|76|8|v|yaml
+	next
+97ee0c4232909706d598d21ddfcfbde8|file:///Users/ring/var/blog/source/_posts/arithmetic.md|375|3|v|markdown
+	效率问题
+c5c214a46a7ba2f3d1815226b9a8df2e|file:///Users/ring/var/blog/source/_posts/arithmetic.md|388|1|V|markdown
+	--- 效率问题 ---
+78653064661c2e271f91a695adbf0e06|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|1|1|V|python
+	import tensorflow as tf
+	from tensorflow.keras import datasets
+	
+	tf.enable_eager_execution()
+	(x, y), (test_x, test_y) = datasets.fashion_mnist.load_data()
+	
+	print('datasets:', x.shape, y.shape, test_x.shape, test_y.shape)
+	
+	x = tf.convert_to_tensor(x, dtype=tf.float32) / 255
+	test_x = tf.convert_to_tensor(test_x, dtype=tf.float32) / 255
+	
+	db = tf.data.Dataset.from_tensor_slices((x, y)).batch(128)
+	test_db = tf.data.Dataset.from_tensor_slices((test_x, test_y)).batch(128)
+	lr = 0.001
+	
+	w1 = tf.Variable(tf.random.truncated_normal([784, 256], stddev=0.1))
+	w2 = tf.Variable(tf.random.truncated_normal([256, 125], stddev=0.1))
+	w3 = tf.Variable(tf.random.truncated_normal([125, 10], stddev=0.1))
+	b1 = tf.Variable(tf.zeros([256]))
+	b2 = tf.Variable(tf.zeros([125]))
+	b3 = tf.Variable(tf.zeros([10]))
+	
+	acc = 0
+	while acc<0.95:
+	    for step, (x, y) in enumerate(db):
+	        x = tf.reshape(x, [-1, 28*28])
+	        with tf.GradientTape() as tape:
+	            # tape.watch([w1, w2, w3, b1, b2, b3])
+	            h1 = x@w1 + b1
+	            h1 = tf.nn.relu(h1)
+	            h2 = h1@w2 + b2
+	            h2 = tf.nn.relu(h2)
+	            out = h2@w3 + b3
+	
+	            y_onehot = tf.one_hot(y, depth=10)
+	            loss = tf.compat.v1.losses.cross_entropy(out, y_onehot)
+	
+	        grads = tape.gradient(loss, [w1, b1, w2, b2, w3, b3])
+	
+	
+	        w1.assign_sub(lr * grads[0])
+	        b1.assign_sub(lr * grads[1])
+	        w2.assign_sub(lr * grads[2])
+	        b2.assign_sub(lr * grads[3])
+	        w3.assign_sub(lr * grads[4])
+	        b3.assign_sub(lr * grads[5])
+	
+	        if step % 100 == 0:
+	            print(step/100, loss)
+	
+8617a6c09eb76d9882db8ee31a420654|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|2|1|V|python
+	import 
+715fee921a5ae3445a4fa0f13b75babf|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|7|1|V|python
+	    x = tf.convert_to_tensor(x, dtype=tf.float32)/255
+3693fb6bb805cc2fc1746f1a3c9f05b4|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|14|1|V|python
+	db = tf.data.Dataset.from_tensor_slices((x, y))
+7a7f3f3fd680bfa36b0d757a43ac58ad|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|15|1|V|python
+	db = db.map(preprocess).shuffle(10000).batch(batchsz)
+edb1a064f22aaa5e820582f13a893922|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|18|29|v|python
+	.shuffle(10000)
+ad907dd4d15184e3f659e503fd917c2d|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|25|1|V|python
+	    layers.Dense(256, activation=tf.nn.relu),
+e8bf0f1472e1c147cdce4fe2daa2ff25|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/fasion_mnist/fasion_mnist.py|42|1|V|python
+	            # x:[b, 28, 28] => [b, 784]
+	            # y:[b]
+	            x = tf.reshape(x, [-1, 28*28])
+3f95f23d0e4c08915c5a9f2d84ae3146|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|664|25|v|markdown
+	`summary_writer 
+66a6973a50e51f1b55037859cdd6fb08|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|666|14|V|markdown
+	        - 喂数据点：
+	            - 
+31c98eecba34bc0b360811d5fc92ebf6|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|669|1|V|markdown
+	with summary_writer.as_default():
+	    tf.summary.scalar('NAME1', float(LOSS), step=STEP)  # (图的名字,数据,坐标(默认是x轴))
+a27a6549ade38cc036f7b8c58a840510|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|674|16|v|markdown
+	scalar
+456ca334384f52f799537a2510cb70df|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|674|31|v|markdown
+	float(LOSS)
+522f694f92e679d874a1cc2b2616c3d7|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|674|41|v|markdown
+	STEP
+12ba79da281720c8f1f1853ce4b0fffe|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|691|10|v|markdown
+	`loss_meter = metrics.Mean()`
+	
+4547d9305f787710d7af49f06d07a3f1|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|691|41|v|markdown
+	loss_meter
+3d6c9ac08ada31c184094bbc67afe00d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|691|55|v|markdown
+	Mean
+901889f4f34f8ca18ac2f53d1fed346e|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|708|5|v|markdown
+	while
+d876ed4207d6d120f91a66c41864b10d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|708|11|v|markdown
+	acc < 0.95:
+4771beb5fac4328cd1ee59be8db1fac2|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|708|1|^v|markdown
+	    
+	    
+	    
+	    
+	    
+	
+	    
+	    
+	    
+	    
+	
+	    
+	    
+	    
+	
+	    
+	    
+	
+	    
+	    
+	    
+	
+	    
+cd80b509bec011210452ac2848b0ba08|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|710|1|V|markdown
+	        # x:[b, 28, 28] => [b, 784]
+	        # y:[b]
+	        x = tf.reshape(x, [-1, 28*28])
+	
+52583d5d22e22c2860be741b289ca1ae|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|715|13|V|markdown
+	            loss_mse = tf.reduce_mean(tf.losses.MSE(y_onehot, logits))
+	            loss_ce = tf.losses.categorical_crossentropy(y_onehot, logits, from_logits=True)
+aae50246ac3700d671f5299bb3eeff59|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|715|13|V|markdown
+	            loss_mse = tf.reduce_mean(tf.losses.MSE(y_onehot, logits))
+faab27c05d00aba1bf6e811b6cb51b91|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|722|13|V|markdown
+	            # loss_ce = tf.cast(loss_ce, dtype=tf.float32)
+	            # loss_mse = tf.cast(loss_mse, dtype=tf.float32)
+f2744551092feb3c2a75db8c0ba32c02|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|723|13|V|markdown
+	            print(step/100, 'loss:', float(loss_ce), float(loss_mse))
+914379b198e6d7e348530a26a0bcc93c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|721|31|v|markdown
+	# 测试
+fca3ffea6534176432f58b5a22ed22e1|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|738|20|v|markdown
+	steps
+64286eb8fc6f85b5725686b5eaa7f197|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|727|1|V|markdown
+	network.compile(
+	        optimizer=optimizers.Adam(lr=0.01),    # 指定优化器
+	        loss=tf.loss.CategoricalCrossentropy(from_logits=True),   # 指定loss函数
+	        metrics=['accuracy']     # 指定测试标准
+	    )
+	
+	network.fit(
+	        db,   # 要训练的数据集
+	        epochs=10,    # 训练的周期
+	        validation_data=db_test,    # 用于做测试的数据集,一般写作ds_val
+	        validation_freq=2    # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+	    )
+	
+	network.evaluate(ds_val)    # 训练完后对模型的评估,传入一个数据集
+	
+	pred = network(x)
+30433afb46a8c65782c650b65e174577|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|8|46|v|python
+	batchsz
+9c8870437f9d6c9c9e5ac5d26df1eb9d|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|7|5|V|python
+	    y = 
+09fcf862519c7d5cc006745753654ad0|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|6|1|V|python
+	    x = tf.cast(x, dtype=tf.float32)
+d33ec2b0bbea6d471a4706cea030e1e3|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|7|29|v|python
+	float32
+341cd7e45ec821e8f250deff4107b332|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|14|1|V|python
+	db = tf.data.Datasets.from_tensor_slices((x, y))
+	db = db.map(preprocess).shuffle(10000).batch(batchsz)
+c5d6b15ae7fc1b93ffb5d9def0f3367f|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|18|19|v|python
+	map(preprocess).shuffle(10000).
+9c6e7d6e26577f40e535c8cca34cb3bc|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerase_compile%26fit/compile_fit.py|18|34|v|python
+	.shuffle(10000).
+20f35e630daf44dbfa4c3f68f5399d8c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|490|1|v|markdown
+	model
+0cae390ca8aa481115d42a7d74ae9cdd|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|708|1|V|markdown
+	network = Sequential([...])   # 如果是别的没学到的话...
+1b4f044d9e4851d5040e6cd98bc4a810|file:///Users/ring/.bash_profile|49|1|V|sh
+	# added by Anaconda3 2019.10 installer
+	# >>> conda init >>>
+	# !! Contents within this block are managed by 'conda init' !!
+	__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/ring/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+	if [ $? -eq 0 ]; then
+	    \eval "$__conda_setup"
+	else
+	    if [ -f "/Users/ring/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+	        . "/Users/ring/opt/anaconda3/etc/profile.d/conda.sh"
+	        CONDA_CHANGEPS1=false conda activate base
+	    else
+	        \export PATH="/Users/ring/opt/anaconda3/bin:$PATH"
+	    fi
+	fi
+	unset __conda_setup
+	# <<< conda init <<<
+d7835a17d8f2c40839f7e453442b6259|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|5|1|V|markdown
+	`pip install pipenv
+c40961449fa1179fbf2fd474f02efd3e|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|21|1|^v|markdown
+	   
+	
+	   
+	   
+	
+	   
+	   
+	
+	   
+	   
+	
+	   
+	   
+	
+	   
+	   
+	
+	   
+	   
+4c0af04d877a4ecbb5b799e37cdaa16e|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|73|1|V|markdown
+	pipenv shell
+5e056c500a1c4b6a7110b50d807bade5|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/Pipfile|3|8|v|config
+	https
+e42dc74fc55d3c62c153f7219fc589fe|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/Pipfile|3|8|v|config
+	://pypi.org/simple
+c252d3a92dddf2175e7e4a5c9d8aee9f|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|19|40|v|markdown
+	python interpreter
+24e3c73210886b5e8d11c5c155ae2ce2|file:///Users/ring/.vimrc|216|9|v|vim
+	fuzzy finder
+50925b6276c836348d855ca09fadcdba|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|15|16|v|markdown
+	t
+	pipenv install  # create virtual environmen
+6c80748056c68870655c15fa0aeca7f9|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/universe/pipenv_manual.md|20|16|v|markdown
+	# show location of this python interpreter
+	pipenv shell  # 
+ae4ff06f3cc95a9e1e009a5cd7bf8951|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/Pipfile|3|8|v|config
+	https://pypi.tuna.tsinghua.edu.cn/simple
+627410ede08b775ff44414858042986f|file:///Users/ring/Documents/code/py/spider/Pipfile|3|8|v|config
+	https://pypi.org/simple
+d7f2e7affcae471086ccc8eaa5538720|file:///Users/ring/.zshrc|6|1|V|zsh
+	# alias python="/usr/local/bin/python3.7"
+	# alias pip="/usr/local/bin/pip3.7"
+e71163226849ce899f8655af5b60c296|file:///Users/ring/.vimrc|282|1|V|vim
+	" C
+	Plug 'octol/vim-cpp-enhanced-highlight'
+	"" Highlighting of class scope is disabled by default. To enable set
+	"let g:cpp_class_scope_highlight = 1
+	"" Highlighting of member variables is disabled by default. To enable set
+	"let g:cpp_member_variable_highlight = 1
+	"" Highlighting of class names in declarations is disabled by default. To enable set
+	"let g:cpp_class_decl_highlight = 1
+	"" Highlighting of POSIX functions is disabled by default. To enable set
+	"let g:cpp_posix_standard = 1
+	"" There are two ways to highlight template functions. Either
+	"" let g:cpp_experimental_simple_template_highlight = 1
+	"" which works in most cases, but can be a little slow on large files. Alternatively set
+	"let g:cpp_experimental_template_highlight = 1
+3c82a37c4bf3a4e539739c0688bc26d4|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|3|9|v|cpp
+	MAXSIZA 
+b6203b520807d3d289b28a410004f089|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|15|1|V|cpp
+	    for(int i=0;i<n;i++){
+	
+	    }<++>
+d428fca5f92a1fb0ae6da2e3024638c8|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|25|9|V|cpp
+	        size
+08125771f76bc5a8b30ae86dc46559b9|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|6|9|v|cpp
+	[11]
+ad2e8033332df6562ca404fdc48a6026|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|10|1|V|cpp
+	int getNum(char p[11]);
+	void insert(int tar, char p[11]);
+f3acb7f3669445f3cb7972591a70fe83|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|52|5|V|cpp
+	    hash[tar].phone = p;
+f64cdf292f19e1aa8c7e604fca883825|file:///Users/ring/Documents/code/c/pintia_trains/7-14_phone_mader.cpp|54|5|V|cpp
+	    hash[tar].cnt++;
+	    strcpy(hash->phone, p);
+50c2906826a1628dc4cb26f971639548|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|752|3|v|markdown
+	keras.layers.Layer()
+	
+5f8689351f5abb4fd9d13c809cf237ab|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|767|1|V|markdown
+	        self.kernel = self.add_variable('name1', [inp_dim, outp_dim])
+50484c19f1afdaf3841a0d821ed393d2|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|768|14|v|markdown
+	kernel
+dbdd651ac3f5a5ababa290d1dcfd91cf|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|768|49|v|markdown
+	inp_dim
+2c04f98759d784b2d79bd72e8df2457c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|775|1|v|markdown
+	       
+fe1029a004458821f22637a21883de9a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|782|1|V|markdown
+	- save/load
+d3a5b392586875f8baa5bcf15d413766|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|784|5|V|markdown
+	    - dd
+e23e575729ef6a8066531c29a3231978|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|782|1|V|markdown
+	- save/load weights
+49ebf2da0cfe9108cea405377d630854|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|791|1|V|markdown
+	save/load weights
+	
+	``` python
+	# save
+	model.save_weights('PATH')
+	
+	# load
+	model = create_model()
+	model.load_weights('PATH')
+	```
+6d1060db1dffbe66c8db87e91d8a177a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|791|1|V|markdown
+	save/load weights
+	
+	``` python
+	# save
+	model.save_weights('PATH')
+	
+	# load
+	model = create_model()
+	model.load_weights('PATH')
+	```
+	
+63f4f1e9b725370f459720575cd5f953|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|802|11|v|markdown
+	weights
+c332808de97208644ef120859f2aa96a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|806|11|v|markdown
+	_weights
+0f490ca7d26834bfbd95ea41b03716a1|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|809|1|V|markdown
+	model = create_model()
+c3447e324cab6265404b33081d57433f|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|809|1|V|markdown
+	model.load_weights('PATH')
+1e3dab21fa88b9239f92dbf6236a3202|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|802|1|V|markdown
+	**save/load entire model**
+	
+	``` python
+	# save
+	model.save('PATH')
+	
+	# load
+	model = tf.keras.models.load_model('PATH')  # 不需要人工创建网络
+	```
+ec4d1eb36b22d19728e9d1d23ca84d1c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|812|8|v|markdown
+	load
+7c10823384f671da269524a71be271c3|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|812|9|v|markdown
+	entire 
+fbc816b63e5f893a3f326e480a0f2fff|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|816|1|V|markdown
+	model.save('PATH')
+c58709e5cb5fbf13100ca622bd1db9a4|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|819|1|V|markdown
+	model = tf.keras.models.load_model('PATH')  # 不需要人工创建网络
+a2c622a8036c13c7d8f1702f9e0d1e00|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|1|1|V|python
+	import tensorflow as tf
+	from tensorflow importo
+95c388a761278ef1d6f7945bc9d0859e|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|11|37|v|python
+	fashion_mnist
+5e85ad2ea3cd24877335fe647bfd71d8|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|14|1|V|python
+	(x,)<++>
+ab9db20d17238451402fe71edd2ef585|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|16|1|V|python
+	y = tf.one_hot(y, depth=10)
+153a209ae06540f27d2736e52c7ce35b|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|22|1|V|python
+	db = tf.data.Dataset.from_tensor_slices((x, y))
+	db = db.map(preprocess).shuffle(10000).batch(batchsz)
+636876841981a197c73beb4b64be0a24|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|26|30|v|python
+	shuffle(10000).
+5e8ff9bf55ba3508199d22e984129be6|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|28|1|v|python
+	sample
+40757c7d9e400804b1aa13a7ab12fe96|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|29|10|v|python
+	db_iter
+590f53e8699817c6fa498cc11a4cbe63|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|37|15|v|python
+	self
+3f2fbe902265f2bc3e432217714a3516|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|38|1|V|python
+	        self.kernel = self.add_variable('w', [inp_dim, outp_dim])
+14b36e00c8e69be001922b8dc31c31b9|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|51|1|V|python
+	        self.fc1 = MyDense(32*32*3, 256)
+c07c2c348d8653df4fc10096306a9146|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|53|28|v|python
+	32*32*3
+2bd5de019b7d8030bff9d450800121a6|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|54|29|v|python
+	2*32*3
+00bc755bae87587766d242bf7cac5ea0|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|41|5|V|python
+	    def _all(inp_dim):
+d99b05df622123afbe900098e9e09eea|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|58|1|V|python
+	        res = self.fc1(inputs)
+f719e2519a059439972954f906fe2bc4|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|59|1|V|python
+	        res = tf.nn.relu(res)
+9d5dcaa795f4632be8f86ccd7fbb39e8|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|73|24|v|python
+	Catestro
+2764ca9d34e90313978d044f27ae433b|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|80|20|v|python
+	step
+20ec31432a905f2bd386811588eb394e|file:///Users/ring/Documents/code/py/Tensorflow%2BOpenCv/kerasAPI/CIFAR10.py|86|27|v|python
+	ckpt/weights.ckpt
+448b2bde654d2a25f26f7b82cde02b34|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|228|4|v|markdown
+	.sha
+e04aa5104d082e4a51d241391941ba26|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|768|32|v|markdown
+	variable
+b68c3feda9c8c0c11b45c1e7460a2589|file:///Users/ring/.vimrc|282|5|V|vim
+	" C/C++
+	Plug 'octol/vim-cpp-enhanced-highlight'
