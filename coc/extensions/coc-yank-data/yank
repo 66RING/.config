@@ -6029,3 +6029,459 @@ e04aa5104d082e4a51d241391941ba26|file:///Users/ring/Documents/Typora%E7%AC%94%E8
 b68c3feda9c8c0c11b45c1e7460a2589|file:///Users/ring/.vimrc|282|5|V|vim
 	" C/C++
 	Plug 'octol/vim-cpp-enhanced-highlight'
+f6926ea62344ab65dbf72862e49cd87b|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|729|1|V|markdown
+	network.compile(
+	        optimizer=optimizers.Adam(lr=0.01),    # 指定优化器
+	        loss=tf.loss.CategoricalCrossentropy(from_logits=True),   # 指定loss函数
+	        metrics=['accuracy']     # 指定测试标准
+	    )
+	
+	network.fit(
+	        db,   # 要训练的数据集
+	        epochs=10,    # 训练的周期
+	        validation_data=db_test,    # 用于做测试的数据集,一般写作ds_val
+	        validation_freq=2    # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+	    )
+	
+	network.evaluate(ds_val)    # 训练完后对模型的评估,传入一个数据集
+e3c4968ab754cef58cc5af99e269791a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|844|47|v|markdown
+	 # 指定优化器
+6651e61a3308c92c9ae9123ae66cfbae|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|731|69|v|markdown
+	指定loss函数
+	        metrics=['accuracy']     # 指定测试标准
+	    )
+	
+	network.fit(
+	        db,   # 要训练的数据集
+	        epochs=10,    # 训练的周期
+	        validation_data=db_test,    # 用于做测试的数据集,一般写作ds_val
+	        validation_freq=2    # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+	    )
+	
+	network.evaluate(ds_val)    # 训练完后对模型的评估,传入一个数据集
+	
+	pred = network(x)
+	# 或 pred = network.predict(x)    预测
+	```
+	
+	
+	#### 自定义网络
+	
+	- keras.Sequential(layer1, layer2, ...)
+	    - 参数要继承自`keras.layers.Layer()`
+	    - 建立好网络后variable(w和b)是没有的
+	        - 法1:指定输入shape`network.build(input_shape=(None, 28*28))`
+	        - 法2:自动识别`network(x)`
+	            - 这个的原理是调用了类中的call()方法,相当于network.__call__(x)。同理自定义类中也可如此
+	- keras.layers.Layer()
+	    - 任何要自定义的层要继承自它
+	- keras.Model()
+	    - compile/fit/evaluate
+	    - Sequential也是继承自该类，所以自定义的网络应该继承这个
+	
+	``` python
+	class MyDense(layers.Layer):    # 自定义层继承
+	    
+	    def __init__(self, inp_dim, outp_dim):
+	        super(MyDense, self).__init__() 
+	        self.kernel = self.add_weight('name1', [inp_dim, outp_dim])   # 用母类的add_weight而不是用tf.variable
+	        self.bias = self.add_weight('name2', [outp_dim])    # name是给母类管理用的
+	        
+	    def call(self, inputs, training=None):
+	        out = inputs @ self.kernel + self.bias
+	        return out
+	
+	# 对比
+	layers.Dense(256, activation=tf.nn.relu),
+	
+	# 同理Model自定义方法也一样
+	```
+	
+	#### 模型的加载与保持
+	
+	- save/load weights
+	    - 只保存模型参数
+	    - 缺点是没有源代码，网络不得而知
+	- save/load entire model
+	    - 简单粗暴的
+	- saved_model 
+	    - 通用的保存格式
+	    
+	**save/load weights**
+	
+	``` python
+	# save
+	model.save_weights('PATH')
+	
+	# load
+	model = create_model()    # 需要人工创建网络
+	model.load_weights('PATH')
+	```
+	
+	**save/load entire model**
+	
+	``` python
+	# save
+	model.save('PATH')
+	
+	# load
+	model = tf.keras.models.load_model('PATH')  # 不需要人工创建网络
+	```
+	
+	**saved model**
+	
+	``` python
+	# save
+	tf.saved_model.saved(model, 'PATH')   # 标准的，可供其他模型使用的保存
+	
+	# load
+	imported = tf.saved_model.load(path)   
+	
+	# 还原除网络
+	f = imported.signature['serving_defaut']
+	```
+	
+	
+	
+	### 过拟合和欠拟合
+	现实情况是我们并不知道模型的符合什么分布  
+	
+	- model capacity,模型的学习能力
+	    - 显然项越多越高
+	- underfitting
+	    - 模型的表达能力弱于真实数据，如用直线拟合双曲线
+	- overfitting
+	    - 模型的表达能力大于真实数据，把不必要的噪声也拟合进来了
+	
+	#### 交叉验证
+	检查欠拟合和过拟合的方法   
+	
+	一般情况下会把数据集切分(splitting)成三份,作用分别是train，test，evaluate
+	
+	``` python
+	network.compile(
+	        optimizer=optimizers.Adam(lr=0.01),   
+	        loss=tf.loss.CategoricalCrossentropy(from_logits=True), 
+200195f55ead4498a176ab127d1c8553|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|845|67|v|markdown
+	# 指定loss函数
+96a2f775fbdb2c826334332d53b6839f|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|846|32|v|markdown
+	  # 指定测试标准
+a3bebd70acd7f4a28629fe613f4731bf|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|736|17|v|markdown
+	要训练的数据集
+	        epochs=10,    # 训练的周期
+	        validation_data=db_test,    # 用于做测试的数据集,一般写作ds_val
+	        validation_freq=2    # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+	    )
+	
+	network.evaluate(ds_val)    # 训练完后对模型的评估,传入一个数据集
+	
+	pred = network(x)
+	# 或 pred = network.predict(x)    预测
+	```
+	
+	
+	#### 自定义网络
+	
+	- keras.Sequential(layer1, layer2, ...)
+	    - 参数要继承自`keras.layers.Layer()`
+	    - 建立好网络后variable(w和b)是没有的
+	        - 法1:指定输入shape`network.build(input_shape=(None, 28*28))`
+	        - 法2:自动识别`network(x)`
+	            - 这个的原理是调用了类中的call()方法,相当于network.__call__(x)。同理自定义类中也可如此
+	- keras.layers.Layer()
+	    - 任何要自定义的层要继承自它
+	- keras.Model()
+	    - compile/fit/evaluate
+	    - Sequential也是继承自该类，所以自定义的网络应该继承这个
+	
+	``` python
+	class MyDense(layers.Layer):    # 自定义层继承
+	    
+	    def __init__(self, inp_dim, outp_dim):
+	        super(MyDense, self).__init__() 
+	        self.kernel = self.add_weight('name1', [inp_dim, outp_dim])   # 用母类的add_weight而不是用tf.variable
+	        self.bias = self.add_weight('name2', [outp_dim])    # name是给母类管理用的
+	        
+	    def call(self, inputs, training=None):
+	        out = inputs @ self.kernel + self.bias
+	        return out
+	
+	# 对比
+	layers.Dense(256, activation=tf.nn.relu),
+	
+	# 同理Model自定义方法也一样
+	```
+	
+	#### 模型的加载与保持
+	
+	- save/load weights
+	    - 只保存模型参数
+	    - 缺点是没有源代码，网络不得而知
+	- save/load entire model
+	    - 简单粗暴的
+	- saved_model 
+	    - 通用的保存格式
+	    
+	**save/load weights**
+	
+	``` python
+	# save
+	model.save_weights('PATH')
+	
+	# load
+	model = create_model()    # 需要人工创建网络
+	model.load_weights('PATH')
+	```
+	
+	**save/load entire model**
+	
+	``` python
+	# save
+	model.save('PATH')
+	
+	# load
+	model = tf.keras.models.load_model('PATH')  # 不需要人工创建网络
+	```
+	
+	**saved model**
+	
+	``` python
+	# save
+	tf.saved_model.saved(model, 'PATH')   # 标准的，可供其他模型使用的保存
+	
+	# load
+	imported = tf.saved_model.load(path)   
+	
+	# 还原除网络
+	f = imported.signature['serving_defaut']
+	```
+	
+	
+	
+	### 过拟合和欠拟合
+	现实情况是我们并不知道模型的符合什么分布  
+	
+	- model capacity,模型的学习能力
+	    - 显然项越多越高
+	- underfitting
+	    - 模型的表达能力弱于真实数据，如用直线拟合双曲线
+	- overfitting
+	    - 模型的表达能力大于真实数据，把不必要的噪声也拟合进来了
+	
+	#### 交叉验证
+	检查欠拟合和过拟合的方法   
+	
+	一般情况下会把数据集切分(splitting)成三份,作用分别是train，test，evaluate
+	
+	``` python
+	network.compile(
+	        optimizer=optimizers.Adam(lr=0.01),   
+	        loss=tf.loss.CategoricalCrossentropy(from_logits=True),   
+	        metrics=['accuracy']   
+	    )
+	
+	network.fit(
+	        db,  
+884c8d92fb497cf080949b03ed601306|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|736|15|v|markdown
+	# 要训练的数据集
+	        epochs=10,    # 训练的周期
+	        validation_data=db_test,    # 用于做测试的数据集,一般写作ds_val
+	        validation_freq=2    # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+	    )
+	
+	network.evaluate(ds_val)    # 训练完后对模型的评估,传入一个数据集
+	
+	pred = network(x)
+	# 或 pred = network.predict(x)    预测
+	```
+	
+	
+	#### 自定义网络
+	
+	- keras.Sequential(layer1, layer2, ...)
+	    - 参数要继承自`keras.layers.Layer()`
+	    - 建立好网络后variable(w和b)是没有的
+	        - 法1:指定输入shape`network.build(input_shape=(None, 28*28))`
+	        - 法2:自动识别`network(x)`
+	            - 这个的原理是调用了类中的call()方法,相当于network.__call__(x)。同理自定义类中也可如此
+	- keras.layers.Layer()
+	    - 任何要自定义的层要继承自它
+	- keras.Model()
+	    - compile/fit/evaluate
+	    - Sequential也是继承自该类，所以自定义的网络应该继承这个
+	
+	``` python
+	class MyDense(layers.Layer):    # 自定义层继承
+	    
+	    def __init__(self, inp_dim, outp_dim):
+	        super(MyDense, self).__init__() 
+	        self.kernel = self.add_weight('name1', [inp_dim, outp_dim])   # 用母类的add_weight而不是用tf.variable
+	        self.bias = self.add_weight('name2', [outp_dim])    # name是给母类管理用的
+	        
+	    def call(self, inputs, training=None):
+	        out = inputs @ self.kernel + self.bias
+	        return out
+	
+	# 对比
+	layers.Dense(256, activation=tf.nn.relu),
+	
+	# 同理Model自定义方法也一样
+	```
+	
+	#### 模型的加载与保持
+	
+	- save/load weights
+	    - 只保存模型参数
+	    - 缺点是没有源代码，网络不得而知
+	- save/load entire model
+	    - 简单粗暴的
+	- saved_model 
+	    - 通用的保存格式
+	    
+	**save/load weights**
+	
+	``` python
+	# save
+	model.save_weights('PATH')
+	
+	# load
+	model = create_model()    # 需要人工创建网络
+	model.load_weights('PATH')
+	```
+	
+	**save/load entire model**
+	
+	``` python
+	# save
+	model.save('PATH')
+	
+	# load
+	model = tf.keras.models.load_model('PATH')  # 不需要人工创建网络
+	```
+	
+	**saved model**
+	
+	``` python
+	# save
+	tf.saved_model.saved(model, 'PATH')   # 标准的，可供其他模型使用的保存
+	
+	# load
+	imported = tf.saved_model.load(path)   
+	
+	# 还原除网络
+	f = imported.signature['serving_defaut']
+	```
+	
+	
+	
+	### 过拟合和欠拟合
+	现实情况是我们并不知道模型的符合什么分布  
+	
+	- model capacity,模型的学习能力
+	    - 显然项越多越高
+	- underfitting
+	    - 模型的表达能力弱于真实数据，如用直线拟合双曲线
+	- overfitting
+	    - 模型的表达能力大于真实数据，把不必要的噪声也拟合进来了
+	
+	#### 交叉验证
+	检查欠拟合和过拟合的方法   
+	
+	一般情况下会把数据集切分(splitting)成三份,作用分别是train，test，evaluate
+	
+	``` python
+	network.compile(
+	        optimizer=optimizers.Adam(lr=0.01),   
+	        loss=tf.loss.CategoricalCrossentropy(from_logits=True),   
+	        metrics=['accuracy']   
+	    )
+	
+	network.fit(
+	        db,   # 
+e0a9f5b630946ac2d5f1805b359952cb|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|736|15|v|markdown
+	# 要训练的数据集
+30fd441027b4a87519c8fd443d89e663|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|737|20|v|markdown
+	   # 训练的周期
+928af265f7d973c8e7370f8655c548eb|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|738|34|v|markdown
+	   # 用于做测试的数据集,一般写作ds_val
+a8b76d1c35fbf6d21510232d8504f7aa|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|739|27|v|markdown
+	   # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+b53567959961a106a4eb19ff084b18dd|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|742|26|v|markdown
+	   # 训练完后对模型的评估,传入一个数据集
+2a8ea173d3eb094918fac8fb0264e612|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|744|17|V|markdown
+	pred = network(x)
+	# 或 pred = network.predict(x)    预测
+d095a7e432c72d83ba4f506c84fa4004|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|850|14|v|markdown
+	 # 要训练的数据集
+dccff1d91b9936fcb4b8a0d22923b234|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|851|19|v|markdown
+	    # 训练的周期
+e363e72dedba65fafdcdcc8a274be369|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|852|33|v|markdown
+	    # 用于做测试的数据集,一般写作ds_val
+763bef91ad8cf437a2e9eca40e5aab33|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|853|29|v|markdown
+	 # 测试的周期,如这里一共10个epochs,每2个epochs就进行一次测试
+e40b4046a594d8e42dae3671a7af9e00|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|856|27|v|markdown
+	  # 训练完后对模型的评估,传入一个数据集
+d3e0e9244a79fa06441b135130ea7e1d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|857|1|V|markdown
+	# 这也是
+098f6bcd4621d373cade4e832627b4f6|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|840|85|v|markdown
+	test
+94d2f2aabfda3169d54a9531cdb99890|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|840|95|v|markdown
+	evaluate
+95c011463a76aea8cdea52cb232ae898|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|837|6|v|markdown
+	交叉验证
+6857ae674e9a5320bd76409fb6522060|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|880|1|V|markdown
+	- L1-regularization
+7d39d9e4c1af0012d79ba04713f9a68d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|881|1|V|markdown
+	    - loss加上lambda约束的一范式
+e2adb4d8be89e047d2776597db4f42e8|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|895|28|v|markdown
+	# 这是范式里面的参数w1,w2...b1,b2...取法很灵活
+2787910b1b16428d65412fca2718a92e|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|878|29|v|markdown
+	decade
+6d1d901c2b7cfe9b66586f426a0387ce|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|906|1|V|markdown
+	 904 ##### Momentum 动量
+24202d15137c2e40ab325032cb083569|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|908|1|V|markdown
+	optimizer = SGD(learing_rate=0.02, momentum=0.9)
+8b7e7a5042b628c66683f8edec5dd219|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|911|13|v|markdown
+	ing_rate
+9d975148cd7d9913f20908669061482a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|910|13|v|markdown
+	Adom
+4599e64bf1ff7d14b996ca293e1b3ec9|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|920|34|v|markdown
+	, momentum=0.9
+6d6bfc9ede872a3b188f6cece10edee5|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|938|29|v|markdown
+	  # 如果是别的没学到的话...
+01b3a86339c513c975eb0af17fff29fa|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|938|23|v|markdown
+	...])
+097d727d80ac45a4ca379529bb8f0d6d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|938|23|v|markdown
+	layers.Dense(256, activation='relu'),
+	                      layers.Dropout(0.5),    # 0.5 rate to dropout
+	
+767c057393e3582e42c4334763309b9c|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|942|3|V|markdown
+	  ...
+5bad8b7335f9f2bd7787a757af6c6606|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|17|1|V|javascript
+	var TOKEN_BLOCK_START = 'block-start';
+	var TOKEN_BLOCK_END = 'block-end';
+14511f2f5564650d129ca7cabc333278|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|19|26|v|javascript
+	block
+ac2bf15bbb729dcc823887572192a692|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|19|26|v|javascript
+	-start
+4026e70b85f41d665802c0515845616f|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|20|24|v|javascript
+	block-end
+cbf93909e6306c77448f7d284de0be5a|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|19|26|v|javascript
+	block-start
+c78cb8035c3f5571051c426e9958bf29|file:///Users/ring/var/blog/node_modules/nunjucks/src/lexer.js|10|1|V|javascript
+	var VARIABLE_START = '{{';
+	var VARIABLE_END = '}}';
+ecf1af8bbe2a3020d96fe7ea971a03ad|file:///Users/ring/var/blog/_config.yml|96|8|v|yaml
+	hexo
+d14ef9bb897763b0e514b88930984897|file:///Users/ring/var/blog/_config.yml|96|8|v|yaml
+	huweihuang
+1072bc960be396acc407e9ccb5f71388|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|981|1|V|markdown
+	``` python
+6cd475e996f898c8adae0caf6f19d432|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|981|1|^v|markdown
+	# 
+	# 
+	# 
+bb5ea812333c2020dd2315a5e3ad092d|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|980|62|v|markdown
+	通道层数,
+41785fa08babf67a326322a2a6ad8a4a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|995|1|V|markdown
+	O _ {j} = \sum {x _ {ij} * w _ {ij}}
