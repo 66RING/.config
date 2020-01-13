@@ -6485,3 +6485,624 @@ bb5ea812333c2020dd2315a5e3ad092d|file:///Users/ring/Documents/Typora%E7%AC%94%E8
 	通道层数,
 41785fa08babf67a326322a2a6ad8a4a|file:///Users/ring/Documents/Typora%E7%AC%94%E8%AE%B0/Major/tensorflow_learning/OpenCV%2Btensorflow.md|995|1|V|markdown
 	O _ {j} = \sum {x _ {ij} * w _ {ij}}
+b613371536e217e95cef77c15640ce2a|file:///usr/ring/var/dwm/config.mk|17|1|V|make
+	# freetype
+	FREETYPELIBS = -lfontconfig -lXft
+	FREETYPEINC = /usr/include/freetype2
+88c189a42c87aa49d667fc8ab76bc323|file:///usr/ring/var/st/config.mk|26|1|V|make
+	FREE
+ecec46b8aa4616c9aa608fa429a6b938|file:///usr/ring/var/st/config.mk|28|1|V|make
+	FREETYPELIBS = -lfontconfig -lXft
+a2f9b0d2a8ec8a2ead504700d5b881cb|file:///usr/ring/var/st/config.mk|29|9|v|make
+	LIBS
+e7e97c86b7153bfd8c073cdd8ffa3d49|file:///usr/ring/var/st/config.mk|29|15|v|make
+	-lfontconfig -lXft
+b9f95bc2dcc5a4573a798beaafc72f43|file:///usr/ring/var/st/config.mk|28|1|V|make
+	#FREETYPELIBS = -lfontconfig -lXft
+	#FREETYPEINC = /usr/include/freetype2
+72bfa63c110a7c73072874a0ed1bba45|file:///usr/ring/.zshrc|17|1|V|zsh
+	#>>> conda initialize >>>
+	# !! Contents within this block are managed by 'conda init' !!
+	__conda_setup="$('/Users/ring/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+	if [ $? -eq 0 ]; then
+	    eval "$__conda_setup"
+	else
+	    if [ -f "/Users/ring/anaconda3/etc/profile.d/conda.sh" ]; then
+	        . "/Users/ring/anaconda3/etc/profile.d/conda.sh"
+	    else
+	        export PATH="/Users/ring/anaconda3/bin:$PATH"
+	    fi
+	fi
+	unset __conda_setup
+	# <<< conda initialize <<<
+	#alias python="/usr/local/bin/python3.7"
+899bf973bcd732ea9224f3889811a3c0|file:///usr/ring/.zshrc|148|1|V|zsh
+	plugins=(git)
+8b54e24a5fbb07fe6f7c786267a7dce8|file:///usr/ring/var/st/config.h|90|1|V|cpp
+		/* 8 normal colors */
+		"black",
+		"red3",
+		"green3",
+		"yellow3",
+		"blue2",
+		"magenta3",
+		"cyan3",
+		"gray90",
+	
+		/* 8 bright colors */
+		"gray50",
+		"red",
+		"green",
+		"yellow",
+		"#5c5cff",
+		"magenta",
+		"cyan",
+		"white",
+	
+		[255] = 0,
+	
+		/* more colors can be added after 255 to use with DefaultXX */
+		"#cccccc",
+		"#555555",
+		"black",
+	};
+06a111f79f2311543f642fae5607551d|file:///usr/ring/var/st/config.h.rej|34|1|V|diff
+	+  /* 8 normal colors */
+	+  [0] = "#000000", /* black   */
+	+  [1] = "#ff5555", /* red     */
+	+  [2] = "#50fa7b", /* green   */
+	+  [3] = "#f1fa8c", /* yellow  */
+	+  [4] = "#bd93f9", /* blue    */
+	+  [5] = "#ff79c6", /* magenta */
+	+  [6] = "#8be9fd", /* cyan    */
+	+  [7] = "#bbbbbb", /* white   */
+	+
+	+  /* 8 bright colors */
+	+  [8]  = "#44475a", /* black   */
+	+  [9]  = "#ff5555", /* red     */
+	+  [10] = "#50fa7b", /* green   */
+	+  [11] = "#f1fa8c", /* yellow  */
+	+  [12] = "#bd93f9", /* blue    */
+	+  [13] = "#ff79c6", /* magenta */
+	+  [14] = "#8be9fd", /* cyan    */
+	+  [15] = "#ffffff", /* white   */
+	+
+	+  /* special colors */
+	+  [256] = "#282a36", /* background */
+	+  [257] = "#f8f8f2", /* foreground */
+	+};
+c845415245962dd7316191fbed316d05|file:///usr/ring/var/st/config.h|91|1|^v|cpp
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+ceb86a55f41fc9ce3d1da63adefb1080|file:///usr/ring/var/st/config.h|118|2|V|cpp
+	 * foreground, background, cursor, reverse cursor
+df0153b59a3de348edeb6f81f75a26a5|file:///usr/ring/var/st/config.h.rej|62|1|V|diff
+	+ * foreground, background, cursor
+83c12b85e1f73dd7aca01a9f819a129c|file:///usr/ring/var/st/config.h|120|1|V|cpp
+	unsigned int defaultfg = 7;
+	unsigned int defaultbg = 258;
+	static unsigned int defaultcs = 256;
+91010086966f3ace9780437e6bbc7445|file:///usr/ring/var/st/config.h.rej|67|1|V|diff
+	+unsigned int defaultfg = 257;
+	+unsigned int defaultbg = 256;
+	+static unsigned int defaultcs = 257;
+43fd72c33cf5ed50f496ba2ade067dad|file:///usr/ring/var/st/config.h|120|1|^v|cpp
+	+
+	+
+	+
+f5ddaf0ca7929578b408c909429f68f2|file:///usr/ring/.zshrc|3|17|v|zsh
+	local
+0bca257b6f7866ff5362718e8319fe13|file:///usr/ring/.zshrc|4|16|v|zsh
+	local/
+5af8847bac9aa897846700a82754a6d7|file:///usr/ring/var/st/x.c.rej|7|1|V|diff
+	+	if (!xw.pointerisvisible) {
+	+		XDefineCursor(xw.dpy, xw.win, xw.vpointer);
+	+		xw.pointerisvisible = 1;
+	+		if (!IS_SET(MODE_MOUSEMANY))
+	+			xsetpointermotion(0);
+	+	}
+	+
+44cee3fd0ce65ea6977c8429df83398d|file:///usr/ring/var/st/x.c|689|1|^v|c
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+c6b638cb84ffb0651f45ce02e661e276|file:///usr/ring/var/st/x.c|1090|2|V|c
+		Cursor cursor;
+fec1c67291cfb058328909c1993b4587|file:///usr/ring/var/st/x.c.rej|25|1|V|diff
+	+	Pixmap blankpm;
+0fc4357c8356c0d7de6a014f0206614d|file:///usr/ring/var/st/config.h.rej|7|1|V|diff
+	+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+35c70ad96558f0665df7c07a7b082c38|file:///usr/ring/var/st/config.h|205|4|^v|cpp
+	ShiftMask
+	ShiftMask
+7b1357db9455e5a1d97ee8e239e90f8c|file:///usr/ring/var/st/config.h|205|29|v|cpp
+	Page_Up,     
+e159fa7467938719c473830720d3a902|file:///usr/ring/var/st/config.h|205|29|v|cpp
+	Page_Up
+0d3e1697dc94b35c5c59fc2277b1543b|file:///usr/ring/var/st/config.h|206|29|v|cpp
+	Page_Down
+12dd54ec1642f647ba9d37cbb6733165|file:///usr/ring/var/st/config.h|205|1|V|cpp
+		{ ShiftMask,            XK_i,           kscrollup,      {.i =  1} },
+		{ ShiftMask,            XK_k,           kscrolldown,    {.i =  1} },
+da2b621c73c5d565c834923f5023b5c9|file:///usr/ring/var/st/config.h|207|26|^v|cpp
+	            
+	            
+c00c06529a5a62e1d48393ffafbaed21|file:///tmp/zsh862q4M|1|1|V|zsh
+	iav
+31ebcb51a5e978ffd60a9123f0a74477|file:///usr/ring/var/st/config.h|118|35|v|cpp
+	 reverse cursor
+	
+9dfb15f2515c30f98b5a9978ea2931e8|file:///usr/ring/var/st/config.h|91|1|V|cpp
+	  /* 8 normal colors */
+	  [0] = "#000000", /* black   */
+	  [1] = "#ff5555", /* red     */
+	  [2] = "#50fa7b", /* green   */
+	  [3] = "#f1fa8c", /* yellow  */
+	  [4] = "#bd93f9", /* blue    */
+	  [5] = "#ff79c6", /* magenta */
+	  [6] = "#8be9fd", /* cyan    */
+	  [7] = "#bbbbbb", /* white   */
+	
+	  /* 8 bright colors */
+	  [8]  = "#44475a", /* black   */
+	  [9]  = "#ff5555", /* red     */
+	  [10] = "#50fa7b", /* green   */
+	  [11] = "#f1fa8c", /* yellow  */
+	  [12] = "#bd93f9", /* blue    */
+	  [13] = "#ff79c6", /* magenta */
+	  [14] = "#8be9fd", /* cyan    */
+	  [15] = "#ffffff", /* white   */
+	
+	  /* special colors */
+	  [256] = "#282a36", /* background */
+	  [257] = "#f8f8f2", /* foreground */
+	};
+1b728535798ad2b6b38719b29d9e7d14|file:///usr/ring/var/st/config.h|121|1|V|cpp
+	unsigned int defaultfg = 257;
+	unsigned int defaultbg = 256;
+	static unsigned int defaultcs = 257;
+7ee7c76405d45dcc2a3ce4e4046a144d|file:///usr/ring/var/st/config.h|205|1|V|cpp
+		{ MODKEY,            XK_Page_Up,     kscrollup,      {.i = 1} },
+		{ MODKEY,            XK_Page_Down,   kscrolldown,    {.i = 1} },
+03020e0f3d1d71b098cf2a8beddf2df4|file:///usr/ring/var/st/config.h|207|23|^v|cpp
+	      
+	      
+a25fe57b342959c01dfc177b56b2614d|file:///usr/ring/var/dwm/config.h.rej|7|1|V|diff
+	+	{ MODKEY,                       XK_k,      hidewin,        {0} },
+	+	{ MODKEY|ShiftMask,             XK_k,      restorewin,     {0} },
+3992912e263f3f11cf18196a46b77342|file:///usr/ring/var/dwm/dwm.c|756|3|V|c
+			occ |= c->tags;
+f12fdb9d870b716d75f2fa070eac2628|file:///usr/ring/var/dwm/dwm.c.rej|8|1|V|diff
+	+		occ |= c->tags == 255 ? 0 : c->tags;
+34089eda3b3bb444e28206d8e1a8e912|file:///usr/ring/var/dwm/dwm.c.rej|14|1|V|diff
+	+		/* do not draw vacant tags */
+	+		if (!(occ & 1 << i || m->tagset[m->seltags] & 1 << i))
+	+		continue;
+	+
+5b52dc57b4860c4330395155461d6343|file:///usr/ring/var/dwm/dwm.c|769|1|V|c
+			if (occ & 1 << i)
+				drw_rect(drw, x + boxs, boxs, boxw, boxw,
+					m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
+					urg & 1 << i);
+988b234087552f9ad6598aa4e1011c0e|file:///usr/ring/var/dwm/dwm.c|756|1|^v|c
+	+
+	+
+	+
+	+
+28c75657340f3c4e7734060f1f3253cf|file:///usr/ring/var/dwm/dwm.c.rej|7|1|V|diff
+	+static void setgaps(int oh, int ov, int ih, int iv);
+	+static void incrgaps(const Arg *arg);
+	+static void incrigaps(const Arg *arg);
+	+static void incrogaps(const Arg *arg);
+	+static void incrohgaps(const Arg *arg);
+	+static void incrovgaps(const Arg *arg);
+	+static void incrihgaps(const Arg *arg);
+	+static void incrivgaps(const Arg *arg);
+	+static void togglegaps(const Arg *arg);
+	+static void defaultgaps(const Arg *arg);
+390a20bbaa1db8acf63c7afbd8eda966|file:///usr/ring/var/dwm/dwm.c|217|1|^v|c
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+2510681a5856ecf1e678c8ef784dff13|file:///usr/ring/.zshrc|28|1|V|zsh
+	bindkey -M vicmd "i" up-line-or-history
+eb2e9977fa9187605f588aab2078f805|file:///usr/ring/var/dwm/config.h|80|10|v|cpp
+	|ShiftMask
+b270a34bd81d467d6a1bb08bd2a93745|file:///usr/ring/var/dwm/config.h|73|1|V|cpp
+	static const char *termcmd[]  = { "st", NULL };
+34c8f77334d5e763041bbfc306768b0f|file:///usr/ring/var/dwm/config.h|74|20|v|cpp
+	termcmd
+6e9efe1eb4f2930acf0e0a3c9e338fa5|file:///usr/ring/var/dwm/config.h|81|1|V|cpp
+		{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+988fd738de9c6d177440c5dcf69e73ce|file:///usr/ring/var/dwm/config.h|82|37|v|cpp
+	Return
+41b394758330c83757856aa482c79977|file:///usr/ring/var/dwm/config.h|95|34|v|cpp
+	          
+176b8d40b761a7c63d1d44cb3c06f877|file:///usr/ring/var/dwm/config.h|92|34|^v|cpp
+	          
+	          
+d4fd3871aea5fa7f0df6a7abd6421024|file:///usr/ring/var/dwm/config.h|103|43|v|cpp
+	  setlayout,      {0} },
+5eb53825827e5c42884829af9c0054ec|file:///usr/ring/var/dwm/config.h|73|41|v|cpp
+	"su root", "0229ljl", "cd ~" ,
+3f644f39e5f817ed43836c34a21e5126|file:///usr/ring/var/st/config.h|199|1|V|cpp
+		{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+		{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+8d749aef12b506f1aff0f9ece2e6dbbc|file:///usr/ring/var/st/config.h|201|4|v|cpp
+	TERMMOD
+e6f3f11c684a872b6f0660481f75c4e2|file:///usr/ring/var/st/config.h|201|1|V|cpp
+		{ ControlMask,              XK_C,           clipcopy,       {.i =  0} },
+		{ ControlMask,              XK_V,           clippaste,      {.i =  0} },
+2b78fbaacd4207e793d3c6931ab074e8|file:///usr/ring/var/st/st.h.orig|84|1|V|cpp
+	void kscrolldown(const Arg *);
+	void kscrollup(const Arg *);
+fdb9cee7373e0a7b8766659dd1f3a9e6|file:///usr/ring/.zshrc|52|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+7efb1b14f3e4572fc7652e89d4ceb73e|file:///tmp/zsh0vDS6u|1|1|V|zsh
+	sdfasdfasdfasdfasdfavv
+84cc9705e27335f6428c806896f19e99|file:///tmp/zshSGS83k|1|1|V|zsh
+	 sdfdfv
+0cc51ff96dcd2f5e51149bfe13638537|file:///etc/X11/xinit/xinitrc|51|1|V|sh
+	exec dwm
+1a991fd5ca77c0b0a8f629ec548f1bb8|file:///usr/ring/var/st/config.h|201|4|^v|cpp
+	MODKEY
+	MODKEY
+44555ce334e4417e06aacfce544bd88b|file:///usr/ring/var/st/config.h|201|26|^v|cpp
+	  
+	  
+76cb52088651b7ad731072ac3f686ef9|file:///usr/ring/var/dwm/config.h|80|4|^v|cpp
+	MODKEY
+	MODKEY
+	MODKEY
+f9a69b6a1a1265890d35e8004c66b3ec|file:///usr/ring/var/dwm/config.h|60|1|V|cpp
+	#define MODKEY Mod1Mask
+d63f407f17dd2eab9a8be1e7fcdd7746|file:///usr/ring/var/dwm/config.h|61|9|v|cpp
+	MODKEY Mod1Mask
+90307eb332a51378ee3ccadf2d603916|file:///usr/ring/var/dwm/config.h|61|9|v|cpp
+	MODKEY
+1dd32a98e8cff06cb479a5ca38394ee0|file:///usr/ring/var/dwm/config.h|81|4|^v|cpp
+	Mod4Mask
+	Mod4Mask
+	Mod4Mask
+9d84c98b09539140315b394b73eb913c|file:///usr/ring/var/st/README.md|1|1|V|markdown
+	st - simple terminal
+	--------------------
+	st is a simple terminal emulator for X which sucks less.
+	
+	
+	Requirements
+	------------
+	In order to build st you need the Xlib header files.
+	
+	
+	Installation
+	------------
+	Edit config.mk to match your local setup (st is installed into
+	the /usr/local namespace by default).
+	
+	Afterwards enter the following command to build and install st (if
+	necessary as root):
+	
+	    make clean install
+	
+	
+	Running st
+	----------
+	If you did not install st with make clean install, you must compile
+	the st terminfo entry with the following command:
+	
+	    tic -sx st.info
+	
+	See the man page for additional details.
+	
+	Credits
+	-------
+	Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
+	
+17fb47ff9edcebf6272da1c5269f1c91|file:///usr/ring/.zshrc|75|1|V|zsh
+	# xauth
+	DISPLAY=:0
+7b0484a1ed699f943f5fb1b0778b1041|file:///usr/ring/.zshrc|75|1|V|zsh
+	export DISPLAY
+	
+887904812217cca9bc2b9adb875daf42|file:///usr/ring/.zshrc|78|19|v|zsh
+	/root
+739614e6e102b07fc6aa0a313336e4d0|file:///usr/ring/var/dwm/config.h|75|39|v|cpp
+	google-chrome-stable
+cd87cd5ef753a06ee79fc75dc7cfe66c|file:///usr/ring/var/dwm/config.h|18|41|v|cpp
+	eeeeee
+8e530ccf2b84dc59c627b76e01516ffa|file:///usr/ring/var/dwm/config.h|19|40|v|cpp
+	#005577
+cdc228f94ce4a45c13eec3dad76ae05d|file:///usr/ring/var/dwm/config.h|75|39|v|cpp
+	chromium
+8505aa856874319e53c1180378da4d75|file:///usr/ring/.zprofile|2|5|v|zsh
+	exec 
+ae94a559d5c298af8e89a72865fb8b63|file:///usr/ring/.zprofile|2|2|V|zsh
+	    startx
+	fi
+a503151db7ddbf8c4d7b81f686269f4e|file:///usr/ring/.zprofile|1|1|V|zsh
+	if[[ ! $DISPLAY && $XDG_VTNR -eq 1]];then
+b878ab222629ac7ff0854515f6cc2850|file:///usr/ring/.zshrc|6|1|V|zsh
+	alias ra='ranger'
+ad92694923612da0600d7be498cc2e08|file:///usr/ring/.zshrc|7|13|v|zsh
+	ranger
+001c1eff7d47fcb373d7b192653e3d3b|file:///usr/ring/var/dwm/dwm.c|1571|1|V|c
+		system("cd ~/.dwm; ./autostart_blocking.sh");
+4d73022a8754c6cb2a184f153b16bda3|file:///usr/ring/scripts/autostart.sh|4|1|V|sh
+	/bin/zsh ~/scripts/dwm-status.sh &
+9acb44549b41563697bb490144ec6258|file:///usr/ring/scripts/autostart.sh|5|23|v|sh
+	status
+eb7ad9d0e504ba3569368c2fb7cc3747|file:///usr/ring/scripts/autostart.sh|1|1|V|sh
+	
+	# 别人的外姐显示器的脚本
+	# xrandr --auto --output HDMI1 --same-as eDP1 --size 分辨率
+	/bin/zsh ~/scripts/dwm-status.sh &
+	/bin/zsh ~/scripts/wp-autochange.sh &
+1b95d35ee14d8c00766293d83210a054|file:///usr/ring/.vimrc|92|1|^v|vim
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+5428ca91f98786bd73f039ece86cbcd0|file:///usr/ring/.vimrc|92|1|^v|vim
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+16170c14972a7a27d901baf2775c1e43|file:///usr/ring/.vimrc|106|1|V|vim
+	" Uncomment the following to have Vim jump to the last position when       
+ae4512310a7f6ab013739ad00c3f6389|file:///usr/ring/.vimrc|105|1|V|vim
+	" reopening a file                                                         
+b2a93850b32b508c086fb841d547f0c1|file:///usr/ring/scripts/autostart.sh|6|1|V|sh
+	picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
+abc37411dde0b18da8dc021a0b832773|file:///usr/ring/var/dwm/dwm.c|1570|10|v|c
+	cd ~/scripts; 
+056f7302026f2261e6d0fa913a7c3484|file:///usr/ring/.zprofile|5|1|V|zsh
+	export GTK_IM_MODULE=fcitx
+	export QT_IM_MODULE=fcitx
+	export XMODIFIERS="@im=fcitx"
+4cc41b78d5472c16e04a8deaa1f0813a|file:///usr/ring/.xprofile|1|1|V|
+	picom -o 0.95 -i 0.88 --detect-rounded-cor    ners --vsync --blur-background-fixed -f -D     5 -c -b
+94e3053c1204419b7ab59bf97670e193|file:///usr/ring/.zprofile|5|1|V|zsh
+	export GTK_IM_MODULE=fcitx
+	export QT_IM_MODULE=fcitx
+7150d12f51b9cf030f879ccade5e7ff0|file:///usr/ring/.zprofile|5|1|V|zsh
+	export XMODIFIERS="@im=fcitx"
+f46e2d3f5f3ed2f93bae1ee4cdd4ea68|file:///usr/ring/scripts/tap-to-click.sh|1|1|V|sh
+	#!/bin/bash
+d0bfed6abd79623d1ea64b0d7c9cfe21|file:///usr/ring/scripts/autostart.sh|3|1|V|sh
+	picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
+	/bin/bash ~/scripts/tap-to-click.sh &
+3f918e834d255b126bd3d07c573a98a9|file:///usr/ring/scripts/autostart.sh|3|1|V|sh
+	## 别人的外接显示器脚本
+	## xrandr --auto --output HDMI1 --same-as eDP1 --size 分辨率
+	#/bin/zsh ~/scripts/dwm-status.sh &
+	#/bin/zsh ~/scripts/wp-autochange.sh &
+25470700d1c4a609402825c7cf9edde1|file:///usr/ring/scripts/autostart.sh|5|1|V|sh
+	#/bin/zsh ~/scripts/inverse-scroll.sh &
+	#/bin/zsh ~/scripts/setxmodmap-colemak.sh &
+	#nm-applet &
+	#xfce4-power-manager &
+	#xfce4-volumed-pulse &
+	#/bin/zsh ~/scripts/run-mailsync.sh &
+	#~/scripts/autostart_wait.sh &
+889f0ec16b4137f5c011bade432bf86c|file:///usr/ring/scripts/scripts/autostart.sh|3|1|V|sh
+	xrandr --auto --output HDMI1 --same-as eDP1 --size 1920x1080
+	/bin/bash ~/scripts/dwm-status.sh &
+	/bin/bash ~/scripts/wp-autochange.sh &
+	picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
+	/bin/bash ~/scripts/tap-to-click.sh &
+	/bin/bash ~/scripts/inverse-scroll.sh &
+	/bin/bash ~/scripts/setxmodmap-colemak.sh &
+	nm-applet &
+	xfce4-power-manager &
+	xfce4-volumed-pulse &
+	/bin/bash ~/scripts/run-mailsync.sh &
+	~/scripts/autostart_wait.sh &
+d6c60b6624926dadf74bf41206cab46a|file:///tmp/zsh5l0Ovg|1|1|V|zsh
+	dasfadfads
+63012f7d54ec43cd1af4d9640a4fa08c|file:///usr/share/nvim/runtime/doc/provider.txt|157|1|V|help
+	Nvim has no direct connection to the system clipboard. Instead it depends on
+	a |provider| which transparently uses shell commands to communicate with the
+952bc27dc740e058c110c71c36bd38ab|file:///usr/share/nvim/runtime/doc/provider.txt|158|1|V|help
+	a |provider| which transparently uses shell commands to communicate with the
+	system clipboard or any other clipboard "backend".
+59b7f6d046ef316fc4b0dbf9b95b7b98|file:///usr/ring/.vimrc|47|9|v|vim
+	Y "+y
+	noremap P "+p
+	
+	"************************
+	"*Part: split the screen
+	"*Desc:  
+	"************************
+	map sl :set splitright<CR>:vsplit<CR>
+	map sj :set nosplitright<CR>:vsplit<CR>
+	map si :set nosplitbelow<CR>:split<CR>
+	map sk :set splitbelow<CR>:split<CR>
+	"=== split screen movement===
+	noremap <LEADER>w <C-w>w
+	noremap <LEADER>i <C-w>k
+	noremap <LEADER>k <C-w>j
+	noremap <LEADER>j <C-w>h
+	noremap <LEADER>l <C-w>l
+	"=== split operation===
+	map s<up> :res-5<CR>
+	map s<down> :res+5<CR>
+	map s<left> :vertical resize+5<CR>
+	map s<right> :vertical resize-5<CR>
+	
+	
+	"************************
+	"*Part: quick operation
+	"*Desc:  
+	"************************
+	map S :w<CR>
+	map s <nop>
+	map Q :q<CR>
+	map R :source $MYVIMRC<CR>
+	
+	
+	"************************
+	"*Part: something Useful
+	"*Desc:  
+	"************************
+	" open a terminal window
+	noremap <LEADER>/ :terminal<CR>
+	" exit terminal mode
+	tnoremap <LEADER><Esc> <C-\><C-n>
+	" to next <++>
+	map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+	
+	"undo the changes made previously
+	"if has("vms")
+	"  set nobackup
+	"else
+	"  if has('persistent_undo')
+	"    set undofile
+	"  endif
+	"endif
+	
+	"************************
+	"*Part: last position
+	"*Desc: Uncomment the following to have Vim jump to the last position when       
+	"************************
+	if has("autocmd")                                                          
+	  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif                                                        
+	endif
+	
+	
+	" Start interactive EasyAlign in visual mode (e.g. vipga)
+	xmap ga <Plug>(EasyAlign)
+	" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+	nmap ga <Plug>(EasyAlign)
+	
+	"************************
+	"*Part: quick run code
+	"*Desc:  
+	"************************
+	map <F5> :call RunCode()<CR>
+	func! RunCode()
+	    exec "w" 
+	    if &filetype == 'c' 
+	        exec 'terminal time ./%<'
+	    elseif &filetype == 'cpp'
+	        exec 'terminal time ./%<'
+	    elseif &filetype == 'python'
+	        exec 'terminal time python %'
+	    elseif &filetype == 'java'
+	        exec 'terminal time java %'
+	    elseif &filetype == 'sh'
+	        :!time bash %
+		elseif &filetype == 'markdown'
+			exec 'MarkdownPreviewStop'
+			exec 'MarkdownPreview'
+		elseif &filetype == 'vimwiki'
+			exec 'MarkdownPreviewStop'
+			exec 'MarkdownPreview'
+	    endif                                                                              
+	endfunc
+	
+	map <F6> :call CompileGcc()<CR>
+	func! CompileGcc()
+	    exec "w" 
+	    if &filetype == 'c' 
+	        exec '! clang % -o %<'
+	    elseif &filetype == 'cpp'
+	        exec '! clang++ % -o %<'
+	    endif                                                                              
+	
+	endfunc
+	
+	
+	"************************
+	"*Part: setting for neovim
+	"*Desc:  
+	"************************
+	autocmd FileType json syntax match Comment +\/\/.\+$+
+4b8884ba6083ce54cd255c3d40edaa89|file:///tmp/zshIrUDmJ|7|1|V|zsh
+	adsfs
+1273f67fb9d296d27a57eb0a2b16396b|file:///usr/ring/.zshrc|14|1|V|zsh
+	# arch jetbrains GUI
+	export _JAVA_AWT_WM_NONREPARENTING=1
+125f8f6da70786e9f7e2b399744aa885|file:///usr/ring/var/st/config.h|201|26|^v|cpp
+	     
+	     
+3bdca26da092b853f5219bfbe23e8b3c|file:///usr/ring/var/st/config.h|201|4|v|cpp
+	ControlMask
+d741ae0f27b98a535da4dbb215c0c30e|file:///usr/ring/Documents/code/py/Tensorflow%2BOpenCv/Pipfile|9|1|V|config
+	tensorflow = "*"
+87cfcfa451275b3d26fa3727950f079c|file:///usr/ring/scripts/scripts/autostart.sh|11|1|V|sh
+	xfce4-power-manager &
+0ec18d2b7da5cd71d7439c4ab500d88e|file:///usr/ring/var/dwm/config.h|75|1|V|cpp
+	static const char *browsercmd[]  = { "google-chrome-stable", NULL };
+15438d792723a2a0a2901f5d317fdfe9|file:///usr/ring/var/dwm/config.h|76|39|v|cpp
+	trayer
+172522ec1028ab781d9dfd17eaca4427|file:///usr/ring/var/dwm/config.h|76|45|v|cpp
+	david
+106a6c241b8797f52e1e77317b96a201|file:///usr/ring/var/dwm/config.h|76|40|v|cpp
+	home
+beef876dd2fc6a2bd3ced57c4516d043|file:///usr/ring/var/dwm/config.h|76|20|v|cpp
+	browse
+e72f743c28d6f0d1efec7ee2c58d1e31|file:///usr/ring/var/dwm/config.h|84|1|V|cpp
+		{ SUPER,                        XK_c,      spawn,          {.v = browsercmd } },
+bd32b087ea6ae9bb911ed1a2c4664f9e|file:///usr/ring/var/dwm/config.h|85|67|v|cpp
+	browsercmd
+c935da815e02685e52ca26d8d03aa9a1|file:///tmp/zsheHV4Pj|1|1|V|zsh
+	systemctl --type=service 
+4dbc1d519ccdcecea379044f1d120e7e|file:///etc/shadowsocks/gui-config.json|15|1|V|json
+				"server": "hk20-server.shadowflycn.com",
+5d37cff24d43b85d6246734a26eddadc|file:///etc/shadowsocks/gui-config.json|15|1|V|json
+				"server": "hk20-server.shadowflycn.com",
+				"server_port": 60227,
+22612f2e210adf3ceeaab1ff47abe094|file:///usr/ring/scripts/autostart_wait.sh|4|1|V|sh
+	electron-ssr &
+2fc975a891d2012bba93a877b7137fa4|file:///etc/vconsole.conf|1|1|V|
+	FONT=/usr/share/fonts/DejaVu Sans Mono Nerd Font Complete Windows Compatible.ttf
