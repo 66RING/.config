@@ -5,12 +5,14 @@ alias vi='/usr/bin/nvim'
 alias s='neofetch'
 alias ra='ranger'
 alias m='neomutt'
+alias lock='xscreensaver-command --lock'
 
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 # source virtualenvwrapper.sh
 export PIPENV_IGNORE_VIRTUALENVS=1 
+
 
 
 plugins=(git
@@ -25,11 +27,13 @@ bindkey -M vicmd "h" vi-insert
 bindkey -M vicmd "H" vi-insert-bol
 bindkey -M vicmd "j" vi-backward-char
 bindkey -M vicmd "l" vi-forward-char
-bindkey -M vicmd "J" vi-beginning-of-line
-bindkey -M vicmd "L" vi-end-of-line
+bindkey -M vicmd "J" vi-backward-word
+bindkey -M vicmd "L" vi-forward-word
 bindkey -M vicmd "k" down-line-or-history
 bindkey -M vicmd "i" up-line-or-history
 bindkey -M vicmd "I" up-line-or-history
+bindkey -M vicmd "gg" vi-beginning-of-line
+bindkey -M vicmd "G" vi-end-of-line
 bindkey -M vicmd "u" undo
 bindkey -M vicmd "=" vi-repeat-search
 bindkey -M vicmd "n" vi-forward-word-end

@@ -7106,3 +7106,1257 @@ c935da815e02685e52ca26d8d03aa9a1|file:///tmp/zsheHV4Pj|1|1|V|zsh
 	electron-ssr &
 2fc975a891d2012bba93a877b7137fa4|file:///etc/vconsole.conf|1|1|V|
 	FONT=/usr/share/fonts/DejaVu Sans Mono Nerd Font Complete Windows Compatible.ttf
+dce3690b11f4785f3e3cf89079d29d71|file:///usr/ring/.config/ranger/rc.conf|35|1|V|conf
+	map <C-f> fzf_select
+767c1adb2495b0b975c920fd4e98593f|file:///usr/ring/.config/ranger/rc.conf|34|1|V|conf
+	# search
+6f2dc1823aaf6958c3cf4cbc6eed074e|file:///usr/ring/.vimrc|79|1|V|vim
+	noremap <C-o> :prev
+fcb08b164ac83e09964deb24f2d2e80b|file:///usr/ring/.vimrc|80|16|v|vim
+	prev
+19814b9c3fb2fdeeb8136563d118b672|file:///usr/ring/var/dwm/config.h|77|1|V|cpp
+	static const char scratchpadname[] = "scratchpad";
+ddd00e8aa510789a93c3dc71795f73f0|file:///usr/ring/var/dwm/config.h|79|19|v|cpp
+	scratchpadname
+0b872b9f12a9f7dbe18009a374b1bd5e|file:///usr/ring/var/dwm/config.h|79|30|v|cpp
+	"scratchpad"
+651f3ee82ab154cf367d6dc04c506cf1|file:///usr/ring/var/dwm/config.h|79|1|V|cpp
+	static const char *upvol[] = {"amixer", "set", "Master", "5%+", NULL};
+aa1be0c56bd4fffe125adadc90457e26|file:///usr/ring/var/dwm/config.h|80|1|V|cpp
+	static const char *updowm[] = {"amixer", "set", "Master", "5%-", NULL};
+88538b6bccb05fb1d3d298f9e62c19ba|file:///usr/ring/var/dwm/config.h|81|20|v|cpp
+	updowm
+1b69f6c1e12346071eb0c0eaffc0c4e8|file:///usr/ring/var/dwm/config.h|81|34|v|cpp
+	amixer
+0dbaa0babf66c34c44a7882434819a98|file:///usr/ring/var/dwm/config.h|81|48|v|cpp
+	"Master"
+1b20d33c65ed111fd16c5af467034062|file:///usr/ring/var/dwm/config.h|81|1|V|cpp
+	static const char *lightup[] = {"light", "-A", "10", NULL};
+33941ea2ecea39d3dd2d8cc4fa615cf7|file:///usr/ring/var/dwm/config.h|82|31|v|cpp
+	amixer", "set", "Master", "5%-
+287c41e726a00159129380397b66d4ab|file:///usr/ring/var/dwm/config.h|93|1|V|cpp
+		{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+f568c3d38ae35a163e40eb1fa4a056d9|file:///usr/ring/var/dwm/config.h|97|1|V|cpp
+		{ F11,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+d8a48040e04e5fda35946a76b40d9056|file:///usr/ring/var/dwm/config.h|94|4|^v|cpp
+	F1
+	F2
+	F3
+	F1
+	F1
+7082ba7cb93d00eabbf8e127f524900c|file:///usr/ring/var/dwm/config.h|94|30|^v|cpp
+	XK_grave
+	XK_grave
+	XK_grave
+	XK_grave
+	XK_grave
+b0b27ea9c1cf743eea99a868eac95b44|file:///usr/ring/var/dwm/config.h|94|38|v|cpp
+	glescratch
+5c14cbbb19c04859c2ff7a21a1f409ce|file:///usr/ring/var/dwm/config.h|95|35|v|cpp
+	togglescratch
+3398e9d23852bc67383cd4630b7007ac|file:///usr/ring/var/dwm/config.h|94|48|v|cpp
+	scratchpadcmd
+def9cbe59ce34853e7081f62b095e348|file:///usr/ring/var/dwm/config.h|94|35|v|cpp
+	mute
+3147010b38c778a08479e9a2c179bc3d|file:///usr/ring/scripts/switch-mute.sh|1|1|V|sh
+	amixer set Master toglle
+b284388d0310326b4291b5bdff470eb7|file:///usr/ring/.xinitrc|64|1|V|sh
+	xmodmap -e "keycode 121 = F1"
+5f5ce68152e3ef6dce62be7803abd1d6|file:///usr/ring/var/dwm/config.h|89|2|^v|cpp
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+ecfb9f08f09baba9587e427bc8a820b1|file:///usr/ring/var/shadowsocksr/shadowsocks/crypto/openssl.py|53|34|v|python
+	cleanup
+86266ee937d97f812a8e57d22b62ee29|file:///usr/ring/.config/electron-ssr/shadowsocksr/shadowsocks/crypto/openssl.py|53|34|v|python
+	reset
+4b9001c9c058a8b31dda357f499e0687|file:///usr/ring/var/shadowsocksr/shadowsocks/crypto/openssl.py|1|1|V|python
+	#!/usr/bin/env python
+	#
+	# Copyright 2015 clowwindy
+	#
+	# Licensed under the Apache License, Version 2.0 (the "License"); you may
+	# not use this file except in compliance with the License. You may obtain
+	# a copy of the License at
+	#
+	#     http://www.apache.org/licenses/LICENSE-2.0
+	#
+	# Unless required by applicable law or agreed to in writing, software
+	# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+	# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+	# License for the specific language governing permissions and limitations
+	# under the License.
+	
+	from __future__ import absolute_import, division, print_function, \
+	    with_statement
+	
+	from ctypes import c_char_p, c_int, c_long, byref,\
+	    create_string_buffer, c_void_p
+	
+	from shadowsocks import common
+	from shadowsocks.crypto import util
+	
+	__all__ = ['ciphers']
+	
+	libcrypto = None
+	loaded = False
+	
+	buf_size = 2048
+	
+	
+	def load_openssl():
+	    global loaded, libcrypto, buf
+	
+	    libcrypto = util.find_library(('crypto', 'eay32'),
+	                                  'EVP_get_cipherbyname',
+	                                  'libcrypto')
+	    if libcrypto is None:
+	        raise Exception('libcrypto(OpenSSL) not found')
+	
+	    libcrypto.EVP_get_cipherbyname.restype = c_void_p
+	    libcrypto.EVP_CIPHER_CTX_new.restype = c_void_p
+	
+	    libcrypto.EVP_CipherInit_ex.argtypes = (c_void_p, c_void_p, c_char_p,
+	                                            c_char_p, c_char_p, c_int)
+	
+	    libcrypto.EVP_CipherUpdate.argtypes = (c_void_p, c_void_p, c_void_p,
+	                                           c_char_p, c_int)
+	
+	    if hasattr(libcrypto, "EVP_CIPHER_CTX_cleanup"):
+	        libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)
+	    else:
+	        libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,)
+	    libcrypto.EVP_CIPHER_CTX_free.argtypes = (c_void_p,)
+	
+	    libcrypto.RAND_bytes.restype = c_int
+	    libcrypto.RAND_bytes.argtypes = (c_void_p, c_int)
+	
+	    if hasattr(libcrypto, 'OpenSSL_add_all_ciphers'):
+	        libcrypto.OpenSSL_add_all_ciphers()
+	
+	    buf = create_string_buffer(buf_size)
+	    loaded = True
+	
+	
+	def load_cipher(cipher_name):
+	    func_name = 'EVP_' + cipher_name.replace('-', '_')
+	    cipher = getattr(libcrypto, func_name, None)
+	    if cipher:
+	        cipher.restype = c_void_p
+	        return cipher()
+	    return None
+	
+	def rand_bytes(length):
+	    if not loaded:
+	        load_openssl()
+	    buf = create_string_buffer(length)
+	    r = libcrypto.RAND_bytes(buf, length)
+	    if r <= 0:
+	        raise Exception('RAND_bytes return error')
+	    return buf.raw
+	
+	class OpenSSLCrypto(object):
+	    def __init__(self, cipher_name, key, iv, op):
+	        self._ctx = None
+	        if not loaded:
+	            load_openssl()
+	        cipher = libcrypto.EVP_get_cipherbyname(common.to_bytes(cipher_name))
+	        if not cipher:
+	            cipher = load_cipher(cipher_name)
+	        if not cipher:
+	            raise Exception('cipher %s not found in libcrypto' % cipher_name)
+	        key_ptr = c_char_p(key)
+	        iv_ptr = c_char_p(iv)
+	        self._ctx = libcrypto.EVP_CIPHER_CTX_new()
+	        if not self._ctx:
+	            raise Exception('can not create cipher context')
+	        r = libcrypto.EVP_CipherInit_ex(self._ctx, cipher, None,
+	                                        key_ptr, iv_ptr, c_int(op))
+	        if not r:
+	            self.clean()
+	            raise Exception('can not initialize cipher context')
+	
+	    def update(self, data):
+	        global buf_size, buf
+	        cipher_out_len = c_long(0)
+	        l = len(data)
+	        if buf_size < l:
+	            buf_size = l * 2
+	            buf = create_string_buffer(buf_size)
+	        libcrypto.EVP_CipherUpdate(self._ctx, byref(buf),
+	                                   byref(cipher_out_len), c_char_p(data), l)
+	        # buf is copied to a str object when we access buf.raw
+	        return buf.raw[:cipher_out_len.value]
+	
+	    def __del__(self):
+	        self.clean()
+	
+	    def clean(self):
+	        if self._ctx:
+	            if hasattr(libcrypto, "EVP_CIPHER_CTX_cleanup"):
+	                libcrypto.EVP_CIPHER_CTX_cleanup(self._ctx)
+	            else:
+	                libcrypto.EVP_CIPHER_CTX_reset(self._ctx)
+	            libcrypto.EVP_CIPHER_CTX_free(self._ctx)
+	
+	
+	ciphers = {
+	    'aes-128-cbc': (16, 16, OpenSSLCrypto),
+	    'aes-192-cbc': (24, 16, OpenSSLCrypto),
+	    'aes-256-cbc': (32, 16, OpenSSLCrypto),
+	    'aes-128-cfb': (16, 16, OpenSSLCrypto),
+	    'aes-192-cfb': (24, 16, OpenSSLCrypto),
+	    'aes-256-cfb': (32, 16, OpenSSLCrypto),
+	    'aes-128-ofb': (16, 16, OpenSSLCrypto),
+	    'aes-192-ofb': (24, 16, OpenSSLCrypto),
+	    'aes-256-ofb': (32, 16, OpenSSLCrypto),
+	    'aes-128-ctr': (16, 16, OpenSSLCrypto),
+	    'aes-192-ctr': (24, 16, OpenSSLCrypto),
+	    'aes-256-ctr': (32, 16, OpenSSLCrypto),
+	    'aes-128-cfb8': (16, 16, OpenSSLCrypto),
+	    'aes-192-cfb8': (24, 16, OpenSSLCrypto),
+	    'aes-256-cfb8': (32, 16, OpenSSLCrypto),
+	    'aes-128-cfb1': (16, 16, OpenSSLCrypto),
+	    'aes-192-cfb1': (24, 16, OpenSSLCrypto),
+	    'aes-256-cfb1': (32, 16, OpenSSLCrypto),
+	    'bf-cfb': (16, 8, OpenSSLCrypto),
+	    'camellia-128-cfb': (16, 16, OpenSSLCrypto),
+	    'camellia-192-cfb': (24, 16, OpenSSLCrypto),
+	    'camellia-256-cfb': (32, 16, OpenSSLCrypto),
+	    'cast5-cfb': (16, 8, OpenSSLCrypto),
+	    'des-cfb': (8, 8, OpenSSLCrypto),
+	    'idea-cfb': (16, 8, OpenSSLCrypto),
+	    'rc2-cfb': (16, 8, OpenSSLCrypto),
+	    'rc4': (16, 0, OpenSSLCrypto),
+	    'seed-cfb': (16, 16, OpenSSLCrypto),
+	}
+	
+	
+	def run_method(method):
+	
+	    cipher = OpenSSLCrypto(method, b'k' * 32, b'i' * 16, 1)
+	    decipher = OpenSSLCrypto(method, b'k' * 32, b'i' * 16, 0)
+	
+	    util.run_cipher(cipher, decipher)
+	
+	
+	def test_aes_128_cfb():
+	    run_method('aes-128-cfb')
+	
+	
+	def test_aes_256_cfb():
+	    run_method('aes-256-cfb')
+	
+	
+	def test_aes_128_cfb8():
+	    run_method('aes-128-cfb8')
+	
+	
+	def test_aes_256_ofb():
+	    run_method('aes-256-ofb')
+	
+	
+	def test_aes_256_ctr():
+	    run_method('aes-256-ctr')
+	
+	
+	def test_bf_cfb():
+	    run_method('bf-cfb')
+	
+	
+	def test_rc4():
+	    run_method('rc4')
+	
+	
+	if __name__ == '__main__':
+	    test_aes_128_cfb()
+3b3b8e1af3fc71c4dc4b59375dbce6c8|file:///usr/ring/.config/electron-ssr/gui-config.json|223|15|v|json
+	hk2-server.shadowflycn.com
+f1f17934834ae2613699701054ef9684|file:///usr/ring/var/shadowsocksr/config.json|2|16|v|json
+	0.0.0.0
+c42af2fa7356818e0389593714f59b52|file:///usr/ring/var/shadowsocksr/config.json|4|20|v|json
+	8388
+0f1352c0d4d77ab0e34666f8aa04eaa5|file:///usr/ring/.config/electron-ssr/gui-config.json|218|17|v|json
+	RP95iZ
+a35554192e1e82d26b2896c41fcaedd6|file:///usr/ring/.config/electron-ssr/gui-config.json|215|15|v|json
+	aes-256-cfb
+23456e334edfeab778c0aaaebc107ee9|file:///usr/ring/var/shadowsocksr/config.json|9|16|v|json
+	aes-128-ctr
+731c83db8d2ff01bdc000083fd3c3740|file:///etc/v2ray/config.json|18|13|v|json
+	1080
+cfee190cd8d0221c2309b6d3a521e4ea|file:///etc/v2ray/config.json|6|1|V|json
+	    // By default, V2Ray writes access log to stdout.
+	    // "access": "/path/to/access/log/file",
+	
+	    // By default, V2Ray write error log to stdout.
+	    // "error": "/path/to/error/log/file",
+	
+	    // Log level, one of "debug", "info", "warning", "error", "none"
+cf1e8c14e54505f60aa10ceb8d5d8ab3|file:///usr/ring/tem/config.json|14|21|v|json
+	server
+6412121cbb2dc2cb9e460cfee7046be2|file:///usr/ring/tem/config.json|15|17|v|json
+	10086
+9df864028743e438755a322953475266|file:///usr/ring/tem/config.json|16|28|v|json
+	b831381d-6324-4d53-ad4f-8cda48b30811
+54eb9695a393cfb9ffde7493f8e26b0b|file:///usr/ring/var/dwm/config.h|94|34|v|cpp
+	XF86AudioLowerVolume
+41f984bb082af806e510740db289125d|file:///usr/ring/var/dwm/config.h|94|75|v|cpp
+	toggle
+9a6470fd54bf1fbdf19176ae5cc4b1a7|file:///usr/ring/var/dwm/config.h|61|1|V|cpp
+	#define SUPER  Mod4Mask
+fc91b14eef9c58c4cad8fdf87b4c0bea|file:///usr/ring/var/dwm/config.h|62|9|v|cpp
+	SUPER
+be50501c54e056581eb3f6c64ec2de70|file:///usr/ring/var/dwm/config.h|62|18|v|cpp
+	Mod4Mask
+7096424afee9d384ee6c491ec2f2f2d5|file:///usr/ring/var/dwm/config.h|62|1|V|cpp
+	#define VOLMUTE  0x1008ff12
+5415e9052565ecaf84f33d7f20996fd9|file:///usr/ring/var/dwm/config.h|63|12|v|cpp
+	MUTE
+94d28c3926c1024dad79073e0e961025|file:///usr/ring/var/dwm/config.h|63|18|v|cpp
+	0x1008ff12
+3741323aa99ac7d8ab981060e93e84c6|file:///usr/ring/var/dwm/config.h|65|9|v|cpp
+	VOLMUTE
+b8114d6ee7fd7cb9070b237461324297|file:///usr/ring/var/dwm/config.h|102|33|v|cpp
+	XF86XK_AudioLowerVolume,
+d4fef653a42497461722a0d05826f7c8|file:///usr/ring/var/dwm/config.h|100|49|v|cpp
+	voldowm
+fbe5ed41f17900a3530df39e77c3caa2|file:///usr/ring/var/dwm/config.h|101|47|v|cpp
+	volup
+5dcca707fa6b3a3fb4a5db2f3f8e7c6a|file:///usr/ring/var/dwm/config.h|102|50|v|cpp
+	lightdowm
+bcad78c2cf231b4139f8d3606867ad48|file:///usr/ring/var/dwm/config.h|103|48|v|cpp
+	lightup
+2f0c39509dbfa90b8e30e43597df0ecb|file:///usr/ring/var/dwm/config.h|85|32|v|cpp
+	amixer", "set", "Master", "5%+"
+a9ced3338a5e0b7c632433e418806efe|file:///usr/ring/var/dwm/config.h|85|41|v|cpp
+	"-c", "1",
+83194cd1027eff79a275ce2f5bc75c3d|file:///usr/ring/var/dwm/config.h|62|21|v|cpp
+	1008ff12
+695892d4bf05d45a92719bf75ad1af4a|file:///usr/ring/var/dwm/config.h|63|21|v|cpp
+	1008ff11
+	
+b9c118a24290fa088b1c883c8ec4007d|file:///usr/ring/scripts/switch-mute.sh|1|1|V|sh
+	amixer -c 1 set Master toggle
+f03bde11d261f185cbacfa32c1c6538c|file:///usr/ring/scripts/switch-mute.sh|2|17|v|sh
+	Master
+aeba38ee78a6f1db4839fc1059c98d17|file:///usr/ring/var/dwm/config.h|85|53|v|cpp
+	"set", "Master", 
+2ccbaf0f0aacb7c6c596db692ff34e12|file:///usr/ring/var/dwm/config.h|85|1|V|cpp
+	static const char *upvol[] = {"pamixer", "-i", "1", "10", NULL};
+0b5c70b04b84af2d83e58f375e040a5b|file:///usr/ring/var/dwm/config.h|87|1|V|cpp
+	static const char *dowmvol[] = {"amixer", "-c", "1","set", "Master", "5%-", NULL};
+280289d58e4151d723d15761d7dde81d|file:///usr/ring/var/dwm/config.h|86|20|v|cpp
+	upvol
+f56c456fe42db6078902bde1ad9442a1|file:///usr/ring/var/dwm/config.h|86|1|V|cpp
+	static const char *dowmvol[] = {"pamixer", "-i", "1", "10", NULL};
+34bf3a2b3f000de55a265fb9ac5ed05c|file:///usr/ring/var/dwm/config.h|85|48|v|cpp
+	"1",
+d9a8fb05423ee44d4bdb93a58204fb0c|file:///usr/ring/var/dwm/config.h|87|52|v|cpp
+	switch_mute.sh
+0988d58e5f5fd2eb532406eef3a97eff|file:///usr/ring/var/dwm/config.h|87|34|v|cpp
+	/usr/ring/scripts/switch-mute.sh
+b593aa6d140e0c7444ace47a201798df|file:///usr/ring/.config/ranger/rc.conf|4|1|V|conf
+	set colorscheme scheme
+68934a3e9455fa72420237eb05902327|file:///usr/ring/.config/ranger/rc.conf|2|24|v|conf
+	false
+0974ad290d7c42c23783eef34abc8356|file:///usr/ring/.config/ranger/scope.sh|129|9|^v|sh
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	#
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	#
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+17ecac4dcc0f6b25b508f9a5c19cae2d|file:///usr/ring/.vimrc|100|1|V|vim
+	"else
+ddf546e4f17018e8e29880e6709c913f|file:///usr/ring/.vimrc|97|1|V|vim
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+d59798275a74005f16c3f1d8b93a8377|file:///usr/ring/.vimrc|101|1|V|vim
+	"if has("vms")
+	"  set nobackup
+	"  if has('persistent_undo')
+	"    set undofile
+	"  endif
+	"endif
+d81742cfe57b1f4df1c345d3efec07ac|file:///usr/ring/.vimrc|81|1|V|vim
+	noremap <C-o> :prev<CR>
+	noremap <C-n> :n<CR>
+f4df1dc1c51096805ed022a4110ef165|file:///usr/ring/.config/ranger/rc.conf|2|1|V|conf
+	RANGER_LOAD_DEFAULT_RC FALSE
+acf8c40143d9d48a4befa35944e80856|file:///usr/ring/.config/ranger/rc.conf|7|27|v|conf
+	iterm2
+538ee8731c9f4f92b0d69a1c1ff2f018|file:///usr/ring/.config/ranger/scope.sh|113|9|^v|sh
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	  
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+	# 
+946003f97ccc52d5d3b54ac0ec31bbfc|file:///usr/ring/.zshrc|14|32|v|zsh
+	FALSE
+1694ece19895dc6b30906aa32ab04774|file:///usr/ring/.zshrc|14|1|V|zsh
+	export RANGER_LOAD_DEFAULT_R = false
+1fb14d590a80f3eb0871bd27c484c017|file:///usr/ring/.config/ranger/rc.conf|1|1|V|conf
+	# ranger with my config
+7c2f782cb6bd22194187ee3eb7306fcd|file:///usr/ring/.zshrc|14|1|V|zsh
+	export RANGER_LOAD_DEFAULT_RC=FALSE
+1f436c52bdb83cfc97a7e56db866b897|file:///etc/resolv.conf|2|11|v|resolv
+	 .168.1.1
+aad65f6f306b50963928cfd7db7f6110|file:///etc/resolv.conf|2|1|V|resolv
+	nameserver 192.168.1.1
+66efff4c945d3c3b87fc271b47d456db|file:///etc/resolv.conf|3|12|v|resolv
+	192.168.1.1
+4bc672332eaf517acc92fb3cefcb048d|file:///usr/ring/.vimrc|88|1|V|vim
+	cmap :w !sudo tee %
+49326c6cc8008670fd7ea17efef08d7c|file:///usr/ring/scripts/dwm-status-refresh.sh|65|25|v|sh
+	acpitool -B | grep -E 'Remaining capacity' | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc
+463cdad4e15c506da83993ca38c99dfd|file:///usr/ring/scripts/dwm-status-refresh.sh|96|9|v|sh
+	🔋";
+a3aafff73cc7e6e2524efd00451e7a06|file:///usr/ring/scripts/dwm-status-refresh.sh|98|9|v|sh
+	🔌";
+edb8fdc191f7996ab033146799c0f09a|file:///usr/ring/.xinitrc|56|6|v|sh
+	/usr/ring/scripts/startdwm
+ecf4da31d75d41f7eb2a912ba3ed1c42|file:///usr/ring/scripts/dwm-status-refresh.sh|90|8|v|sh
+	ercent
+ce5379a4dae2eaa17d2ef67a6629f96b|file:///usr/ring/scripts/dwm-status-refresh.sh|84|5|V|sh
+	    total_charge=$(acpi -b | awk '{ print $3, $4 }' | tr -d ',');
+e8dfecb1a25115640d390f9162b198b6|file:///usr/ring/scripts/startdwm|2|5|V|
+	    # Log stderror to a file 
+ca4399fc92420e2a65829a8768afae8f|file:///usr/ring/scripts/dwm-status-refresh.sh|99|7|v|sh
+	# acpi can give Unknown or Charging if charging, https://unix.stackexchange.com/questions/203741/lenovo-t440s-battery-status-unknown-but-charging
+d9c0d5aeb2e80d85b6682ef5c9a920e7|file:///usr/ring/scripts/dwm-status-refresh.sh|121|71|v|sh
+	, $(get_time_until_charged )
+738c6f5ff41006e7c73d21bf92959f04|file:///usr/ring/scripts/dwm-status-refresh.sh|68|17|v|sh
+	ACPITOOL -B | GREP -E 'PRESENT RATE' | AWK '{PRINT $4}' | GREP -EO "[0-9]+" | PASTE -SD+ | BC
+5032ec22797d180caebc2840dff74694|file:///usr/ring/scripts/dwm-status-refresh.sh|68|17|v|sh
+	acpitool -B | grep -E 'Present rate' | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc
+9de2a76534480d9db130dd6c462b561a|file:///usr/ring/scripts/dwm-status-refresh.sh|74|6|V|sh
+	    else
+	        seconds="";
+0e5243d9965540f62aac19a985f3f33e|file:///usr/ring/scripts/dwm-status-refresh.sh|72|5|v|sh
+	then
+f8ffaa808c2bb9d75f8fad580b9ebe77|file:///usr/ring/scripts/dwm-status-refresh.sh|73|1|V|sh
+	        seconds="";
+874ab70da01fb66ff03ce0fd95eb7fa7|file:///usr/ring/scripts/dwm-status-refresh.sh|81|37|v|sh
+	 +%T
+a22f235c96d6117d57bc9e36a17e2834|file:///usr/ring/scripts/dwm-status-refresh.sh|72|1|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+2d368d70c6e748e2da0841cb98737dff|file:///usr/ring/scripts/dwm-status-refresh.sh|77|1|V|sh
+		    #seconds=$(bc <<< "scale = 10; ($sum_remaining_charge / $present_rate) * 3600");
+e663f07c8aaf23fb10d2db4860ae15a7|file:///usr/ring/scripts/dwm-status-refresh.sh|75|9|V|sh
+	        p
+b6b1eb5be785e7858cbb196993fad39a|file:///usr/ring/scripts/dwm-status-refresh.sh|68|19|v|sh
+	pito
+f4f8967d146d9c3090f1866658247dce|file:///usr/ring/scripts/dwm-status-refresh.sh|71|5|V|sh
+	    seconds="";
+11fb1fdca7971ab0f34174d6f0ed6059|file:///usr/ring/scripts/dwm-status-refresh.sh|74|6|V|sh
+		    seconds=$(bc <<< "scale = 10; ($sum_remaining_charge / $present_rate) * 3600");
+b94f6c9c90abb60603fe6f7dc90c28be|file:///usr/ring/scripts/dwm-status-refresh.sh|65|25|v|sh
+	ACPITOOL -B | GREP -E 'REMAINING CAPACITY' | AWK '{PRINT $4}' | GREP -EO "[0-9]+" | PASTE -SD+ | BC
+45cff63f2b8f56ffc0e8c61bf1d3b7c0|file:///usr/ring/scripts/dwm-status-refresh.sh|80|1|V|sh
+		pretty_time=$(date -u -d ${seconds} +%T);
+7c94772dc968be98aa370c3dd0c27390|file:///usr/ring/scripts/dwm-status-refresh.sh|81|14|v|sh
+	$(date -u -d 
+525de4446f4c3317f3aaea5db3d6951b|file:///usr/ring/scripts/dwm-status-refresh.sh|80|1|V|sh
+		# pretty_time=$(date -u -d "${seconds}" +%T);
+89c96d96ffea7f221c7f5142c44e8014|file:///usr/ring/scripts/dwm-status-refresh.sh|81|16|v|sh
+	date -u -d "
+02b2eb37b97c3eb3e002b1279b50c1c0|file:///usr/ring/scripts/dwm-status-refresh.sh|81|26|v|sh
+	" +%T
+8138b491fabfb26b1521ceea0b527754|file:///usr/ring/scripts/dwm-status-refresh.sh|75|9|V|sh
+	        seconds=0;
+0422dfc7a7e26d5cc5b771cd35f4b917|file:///usr/ring/scripts/dwm-status-refresh.sh|167|1|V|sh
+	xsetroot -name "  💿$(print_mem)M ⬇️$vel_recv ⬆️$vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
+0653891fa2cbb272a542520164933b6f|file:///usr/ring/scripts/dwm-status-refresh.sh|168|18|v|sh
+	 💿$(print_mem)M ⬇️$vel_recv ⬆️$vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) 
+bd741e760f7a43a1dbbe5c91f71b3e03|file:///usr/ring/scripts/autostart.sh|6|1|V|sh
+	picom -o 0.95 -i 0.78 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b
+ff9483d210113a41726ad784fe809efe|file:///usr/ring/tm|10|1|V|
+	map K scrollAHalfPageDown
+08a38277b0309070706f6652eeae9a53|file:///usr/ring/tm|11|22|v|
+	Down
+d515911b44b82c7c9e9019309b0b53a3|file:///usr/ring/tm|12|1|V|
+	map I Scroll a half page up
+668c8d0475a152bb5a6ff996d7b681c9|file:///usr/ring/tm|12|1|V|
+	map <a-w> closeCurrentTab
+1f79f57f0879ac5738c4060ce9ff6244|file:///usr/ring/tm|13|16|v|
+	CurrentTab
+bde4fb07da351ced2b36bfe589b169ee|file:///usr/ring/tm|14|1|V|
+	map <a-t> Create new tab
+955f5be4e3f63d16be048b1a7d581c9a|file:///usr/ring/tm|1|1|V|
+	# Insert your preferred key mappings here.
+	map k scrollDown
+	map i scrollUp
+	map j scrollLeft
+	map l scrollRight
+	map J goOneTabLeft
+	map L goOneTabRight
+	map <a-j> goBackInHistory
+	map <a-l> goForwardInHistory
+	map K scrollAHalfPageDown
+	map I scrollAHalfPageUp
+	map <a-w> closeCurrentTab
+	map <a-t> closeNewTab
+	map <a-r> reloadThePage
+22931d2a78e7f37030cbcdc148e01760|file:///usr/ring/var/dwm/config.h|94|34|^v|cpp
+	 
+	 
+	 
+	 
+3602b348464a3c2bb6db6bfd40514ccc|file:///usr/ring/tem.md|1|1|V|markdown
+	# Insert your preferred key mappings here.
+	map k scrollDown
+	map i scrollUp
+	map j scrollLeft
+	map l scrollRight
+	map J previousTab
+	map L nextTab
+	map K scrollPageDown
+	map I scrollPageUp
+	map <a-j> goBack
+	map <a-l> goForward
+	map <a-w> removeTab
+	map <a-t> createTab
+	map <a-r> reload
+	map <a-T> restoreTab
+5626b09081789e1980ac89a2c32bc23d|file:///usr/ring/var/vimium/README.md|28|1|V|markdown
+	|-----|-----------|
+194fd01eed9cbffcb181220a23bc0b14|file:///usr/ring/var/vimium/README.md|38|1|V|markdown
+	|<a-T
+fb9261ad67bae5038e4442ad56cbf958|file:///usr/ring/var/vimium/README.md|40|1|V|markdown
+	|-------|-----------------------|
+4b2a0e42d69061d08fa60a772981ab45|file:///usr/ring/var/vimium/README.md|40|3|^v|markdown
+	<
+	<
+	<
+	<
+	<
+	<
+bf924d9c183f8eb52916ab4236caac8e|file:///usr/ring/var/vimium/README.md|40|10|^v|markdown
+	>
+	>
+	>
+	>
+	>
+	>
+d6173469e2d971528b28cf53c1a2d3de|file:///usr/ring/var/vimium/README.md|40|1|V|markdown
+	|---------------|-----------------------
+23aa3b64c2471eeedf675f2b016536c5|file:///usr/ring/var/dwm/config.h|81|1|V|cpp
+	static const char *trayercmd[]  = { "/usr/ring/scripts/tr-toggle.sh", NULL };
+8a6d38cc5a46b7cdd363bb29233bfd74|file:///usr/ring/var/dwm/config.h|82|20|v|cpp
+	trayercmd
+2814cbcb8701ed7b884cca1536afb752|file:///usr/ring/var/dwm/config.h|82|33|v|cpp
+	/usr/ring/scripts/tr-toggle.sh
+51a23af1d80cf8f55981bb2fee6560c6|file:///usr/ring/var/dwm/config.h|66|1|V|cpp
+	#define LIGHTUP   0x1008ff02
+95668290f3e9ba8c5b0f32fad23df0b0|file:///usr/ring/var/dwm/config.h|67|9|v|cpp
+	LIGHTUP
+a4f67c8138a736c45fc94b7976b53219|file:///usr/ring/var/dwm/config.h|105|1|V|cpp
+		{ 0,                            LIGHTUP,   spawn,          {.v = lightup       } },
+5144a37b82f2618852d23544a387a7be|file:///usr/ring/var/st/config.h|175|14|v|cpp
+	Mod1Mask
+e3d5e88745fd884d551c7f25237a5b5e|file:///usr/ring/var/st/config.h|198|29|v|cpp
+	Prior
+26f6e108f3104e03da4be03b0462465f|file:///usr/ring/var/st/config.h|199|26|v|cpp
+	XK_Next
+cc00b32fae1803964d7af6f211f93ed6|file:///usr/ring/.config/fontconfig/fonts.conf|33|1|V|
+	Testing area
+6732cd23cbdc0957776bd72c7b9c4d68|file:///usr/ring/.config/fontconfig/_fonts.conf|2|1|V|xml
+	<fontconfig>
+	    <dir>~/.fonts</dir>
+	    <match target="font">
+	        <edit name="rgba" mode="assign">
+	            <const>none</const>
+	        </edit>
+	    </match>
+	    <match target="font">
+	        <edit name="hinting" mode="assign">
+	            <bool>true</bool>
+	        </edit>
+	    </match>
+	    <match target="font">
+	        <edit name="hintstyle" mode="assign">
+	            <const>hintfull</const>
+	        </edit>
+	    </match>
+	    <match target="font">
+	        <edit name="antialias" mode="assign">
+	            <bool>true</bool>
+	        </edit>
+	    </match>
+	    <match target="font">
+	        <edit mode="assign" name="lcdfilter">
+	            <const>lcddefault</const>
+	        </edit>
+	    </match>
+	    <match target="font">
+	        <edit mode="assign" name="embeddedbitmap">
+	            <bool>false</bool>
+	        </edit>
+	    </match>
+	</fontconfig>
+ed53a67e733e849a2401bdd248c693a6|file:///usr/ring/.config/fontconfig/fonts.conf|37|1|V|xml
+	     <family>sans-serif</family>
+	     <prefer>
+542796fe290b6a43cd42255eeec24f54|file:///usr/ring/.config/fontconfig/fonts.conf|37|5|^v|xml
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+5e68e4e4c7e00d8b386a08be60e82476|file:///usr/ring/.config/fontconfig/fonts.conf|52|9|V|xml
+	        <family>DejaVu Serif</family>
+459d24b63e5a5fda317e0ae30e044e04|file:///usr/ring/.config/fontconfig/fonts.conf|49|24|v|xml
+	Serif
+740c2a26bcb936dd937c1b5e7e241db1|file:///usr/ring/.config/fontconfig/fonts.conf|42|9|V|xml
+	        <family>DejaVu Sans Mono Nerd</family>
+e9897dc40bd45cefd018474a201e5db5|file:///usr/ring/.config/fontconfig/fonts.conf|61|8|V|xml
+	       <family>Noto Mono</family>
+06a605208c855dc2444d8826278dd9b7|file:///usr/ring/.config/fontconfig/fonts.conf|35|1|V|xml
+	
+	    <alias>
+	        <family>DejaVu-Sans-Mono-Nerd</family>
+	      <family>sans-serif</family>
+	      <prefer>
+	        <family>DejaVu Sans Mono Nerd</family>
+	        <family>Noto Sans</family>
+	        <family>Noto Color Emoji</family>
+	        <family>Noto Emoji</family>
+	      </prefer> 
+	    </alias>
+	   
+	    <alias>
+	      <family>serif</family>
+	      <prefer>
+	        <family>DejaVu Sans Mono Nerd</family>
+	        <family>DejaVu Sans</family>
+	        <family>Noto Serif</family>
+	        <family>Noto Color Emoji</family>
+	        <family>Noto Emoji</family>
+	      </prefer>
+	    </alias>
+	   
+	    <alias>
+	     <family>monospace</family>
+	      <prefer>
+	        <family>DejaVu Sans Mono Nerd</family>
+	       <family>Noto Mono</family>
+	       <family>Noto Color Emoji</family>
+	       <family>Noto Emoji</family>
+	      </prefer>
+	    </alias>
+9b3cc0d65e2c7f783770ee7881da4cd4|file:///usr/ring/var/dwm/config.h|14|40|v|cpp
+	monospace
+d8414208d08bac7c66bd31ec652eef83|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	dejavu
+1f3870be274f6c49b3e31a0c6728957f|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	apple
+781f4cb83459a0b07c4d95236037fa70|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	AppleColorEmoji
+b09de0534545acff9249a32cd463b1ff|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	Apple Color Emoji:style=RegularApple Garamond:style=Bold:
+9f3e0e42a8819592e2030c6cd14172a3|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	Apple Garamond:style=Bold
+d2203cb1237cb6460cbad94564e39345|file:///usr/ring/var/dwm/config.h|13|66|v|cpp
+	Regular
+c5a6559201546710bd4f6646ed535ff7|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	Apple Color Emoji:style=Normal
+834f091ce2efce2606c97802cff84a31|file:///usr/ring/var/dwm/config.h|13|42|v|cpp
+	Apple Garamond:style=Regular
+fac0068da5fcfaa59da83ed438557e1e|file:///usr/ring/var/st/config.h|8|1|V|cpp
+	static char *font = "Liberation Mono:pixelsize=30:antialias=true:autohint=true";
+3098fee62edb75d9e0dbd4be909541c8|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	Liberation Mono
+80f4f1f4aedbc7254bce302862db0ba4|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	DejaVu-Sans-Mono-Nerd-Font-Complete-mono
+336fbff3af7f9736cc848001e32dd2f1|file:///usr/ring/.config/fontconfig/fonts.conf1|39|15|v|xml
+	zh_CN
+510cc5d21f12739ff47d6aaf437f2fd1|file:///usr/ring/.config/fontconfig/fonts.conf|5|1|V|xml
+	  <match target="font">
+	    <edit mode="assign" name="rgba">
+	      <const>rgb</const>
+	    </edit>
+	  </match>
+	
+	  <match target="font">
+	    <edit mode="assign" name="hintstyle">
+	      <const>hintfull</const>
+	    </edit>
+	  </match>
+	
+	  <match target="font">
+	    <edit mode="assign" name="antialias">
+	      <bool>true</bool>
+	    </edit>
+	  </match>
+	
+	  <match target="font">
+	    <edit name="lcdfilter" mode="assign">
+	      <const>lcddefault</const>
+	    </edit>
+	  </match>
+	
+	<!-- Default font (no fc-match pattern) -->
+	  <match>
+	    <edit mode="prepend" name="family">
+	      <string>Noto Sans</string>
+	    </edit>
+	  </match>
+	
+	<!-- Default font for the zh_CN locale (no fc-match pattern) -->
+	  <match>
+	    <test compare="contains" name="lang">
+	      <string>en_US</string>
+	    </test>
+	    <edit mode="prepend" name="family">
+	      <string>Noto Sans CJK SC</string>
+	    </edit>
+	  </match>
+	
+799a0b11d33352c77088b73a329d351a|file:///usr/ring/.config/fontconfig/fonts.conf|79|1|V|xml
+	      <family>Noto Sans</family>
+8914892a3c29d8d868590910dc02daf8|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	Noto Sans
+f28d66f709c9fa9c692165156302ed4f|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	</family>
+0a792f6e1510963857e9c27c7a632899|file:///usr/ring/.config/fontconfig/fonts.conf|103|7|V|xml
+	      <family>Meslo LG L DZ</family>
+93c50a8f15826bda8692b4b34384d5cf|file:///usr/ring/.config/fontconfig/fonts.conf|103|15|v|xml
+	Meslo LG L DZ
+ffb67aee203e2e3456be6c135b0526f8|file:///usr/ring/.config/fontconfig/fonts.conf|114|1|V|xml
+	  <dir>~/.fonts</dir>
+980d14c0c85495b48b9a9134658e6121|file:///usr/ring/.config/fontconfig/fonts.conf|115|8|v|xml
+	fonts
+9a8165f3c9d32bfb7de1e1b2f81484bb|file:///usr/ring/.config/fontconfig/fonts.conf|115|3|V|xml
+	  <dir>/usr/share/fonts</dir>
+1ec8e22f99fe06bf3c3cf983b434b9c4|file:///usr/ring/.config/fontconfig/fonts.conf|104|1|V|xml
+	      <family>Meslo LG L DZ</family>
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+	      <family>Noto Color Emoji</family>
+	      <family>Noto Emoji</family>
+00ae7c8f919e1f9e3c2321df36cccf8e|file:///usr/ring/.config/fontconfig/fonts.conf|92|1|V|xml
+	      <family>Noto Serif CJK SC</family>
+	      <family>Noto Serif CJK TC</family>
+	      <family>Noto Serif CJK JP</family>
+	      <family>Noto Serif CJK KR</family>
+	      <family>Noto Color Emoji</family>
+	      <family>Noto Emoji</family>
+b80e7888989d4ba4c44d99822df5dfac|file:///usr/ring/.config/fontconfig/fonts.conf|80|1|V|xml
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+	      <family>Noto Color Emoji</family>
+	      <family>Noto Emoji</family>
+6f1dafe23ecb6b0f5aefe750d94536aa|file:///usr/ring/.config/fontconfig/fonts.conf|115|3|V|xml
+	  <dir>fonts</dir>
+e21f3d2050d0b998b920a143b6fd34d8|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	Noto Sans</
+2ca9f9ce112243f0333caa763941d482|file:///usr/ring/.config/fontconfig/fonts.conf|78|1|V|xml
+	    <prefer>
+	      <family>Noto Sans</family>
+7dc55d2bd77ba5ba845ed02c307fbee2|file:///usr/ring/.config/fontconfig/fonts.conf|79|1|V|xml
+	      <family>AppleGaramond</family>
+957b395492683d088f5f676ffd0a082f|file:///usr/ring/.config/fontconfig/fonts.conf|106|1|V|xml
+	      <family>Dejavu</family>
+	      <family>Meslo LG L DZ</family>
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+	      <family>Noto Color Emoji</family>
+3ff2745ec58b9ac5e11b330df1ddcc87|file:///usr/ring/.config/fontconfig/fonts.conf|93|1|V|xml
+	      <family>Noto Serif</family>
+	      <family>Noto Serif CJK SC</family>
+	      <family>Noto Serif CJK TC</family>
+	      <family>Noto Serif CJK JP</family>
+	      <family>Noto Serif CJK KR</family>
+	      <family>Noto Color Emoji</family>
+a28f43852a68dfdd7e53260ff4de16d5|file:///usr/ring/.config/fontconfig/fonts.conf|80|1|V|xml
+	      <family>Noto Sans</family>
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+	      <family>Noto Color Emoji</family>
+674703e3004f29049746c16d968a8c52|file:///usr/ring/.config/fontconfig/fonts.conf|113|1|V|xml
+	      <family>Noto Emoji</family>
+d0aaebd3082ade5960e82c26e1a6139c|file:///usr/ring/.config/fontconfig/fonts.conf|85|5|V|xml
+	      <family>Noto Color Emoji</family>
+c926f487b387b4e5aa20c3384db391eb|file:///usr/ring/.config/fontconfig/fonts.conf|101|7|V|xml
+	      <family>Dejavu</family>
+44772de07d2ae56f3f1cebf2cae4c377|file:///usr/ring/.config/fontconfig/fonts.conf|103|1|V|xml
+	      <family>Meslo LG L DZ</family>
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+c8e94af6258ac6b5cdc4a151172fb26d|file:///usr/ring/.config/fontconfig/fonts.conf|91|1|V|xml
+	      <family>Noto Serif</family>
+	      <family>Noto Serif CJK SC</family>
+	      <family>Noto Serif CJK TC</family>
+	      <family>Noto Serif CJK JP</family>
+	      <family>Noto Serif CJK KR</family>
+b1a7629f02ecf470ebc49fcad739e431|file:///usr/ring/.config/fontconfig/fonts.conf|80|1|V|xml
+	      <family>Noto Sans</family>
+	      <family>Noto Sans CJK SC</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+3d3e6d41a7e30b9c563c902466491f42|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	AppleGaramond<
+428b1fe0f96c384f772347b46a134a8c|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	AppleGaramond
+6bc97de200705fc2f719ae709821b80d|file:///usr/ring/.config/fontconfig/fonts.conf|4|8|v|xml
+	~/.fonts
+91df8a5ff39c460e7463fa037e576e9b|file:///usr/ring/.config/fontconfig/fonts.conf_|9|1|V|xml
+	    <match target="font">
+	        <edit name="hinting" mode="assign">
+	            <bool>true</bool>
+	        </edit>
+	    </match>
+ecf489b1a1f807bbeb4e4585cdb5f7c6|file:///usr/ring/.config/fontconfig/fonts.conf|12|3|^v|xml
+	  
+	  
+	  
+	  
+	  
+f1840d0bba4398162233acc5298aa9e2|file:///usr/ring/.config/fontconfig/fonts.conf|23|3|V|xml
+	  <!--
+a9ce8c87b08ced99c816e6f17c62a65e|file:///usr/ring/.config/fontconfig/fonts.conf|12|3|V|xml
+	  <match target="font">
+	      <edit name="hinting" mode="assign">
+	          <bool>true</bool>
+	      </edit>
+	  </match>
+b4d93de28d90239baf8394509f537056|file:///usr/ring/.config/fontconfig/fonts.conf|41|12|v|xml
+	<edit mode="prepend" name="family">
+	      <string>Noto Sans</string>
+	    </edit>
+	
+3d945423f8e9496c429a5d8c65b4604f|file:///usr/ring/.config/fontconfig/fonts.conf|39|62|v|xml
+	Ubuntu
+71095c56c641f2c4a4f189b9dfcd7a38|file:///usr/ring/.config/fontconfig/fonts.conf|50|15|v|xml
+	en_US
+5a0324895e4428d92bbf7e41bce96d39|file:///usr/ring/.config/fontconfig/fonts.conf|52|9|V|xml
+	        </test>
+fde25da58efb05d135f2077713c0bd4f|file:///usr/ring/.config/fontconfig/fonts.conf|56|15|v|xml
+	Noto Sans CJK SC
+8f71be86fbc49cfc13974afbdda2ace0|file:///usr/ring/.config/fontconfig/fonts.conf|49|1|V|xml
+	    <test compare="contains" name="lang">
+	      <string>zh</string>
+	    </test>
+d7fec6c5901654cd28dd730c7a56cd65|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	Noto Serif
+2f3f439d2ba32bbaf13b92f34a3b8ef6|file:///usr/ring/.config/fontconfig/fonts.conf|79|15|v|xml
+	DejaVu-Sans-Mono-Nerd-Font-Complete-Mono
+940ff6c680bf9f780f24788762740a62|file:///usr/ring/.config/fontconfig/fonts.conf|74|1|V|xml
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="same">
+	      <string>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</string>
+	    </edit>
+	  </match>
+6d3c1a22ea15a6ddf11b58c586587705|file:///usr/ring/.config/fontconfig/fonts.conf|73|1|V|xml
+	<!-- Default serif fonts -->
+acac00431ea43babc0d62dcbf13a2e30|file:///usr/ring/.config/fontconfig/fonts.conf|83|14|v|xml
+	serif
+ed2c156c30846fbd46cd02504081a5ef|file:///usr/ring/.config/fontconfig/fonts.conf|111|15|v|xml
+	Noto Sans CJK KR
+aab7aa49d9f8ff03e06c6b810260e733|file:///usr/ring/.config/fontconfig/fonts.conf|107|29|V|xml
+	      <family>Noto Sans</family>
+	      <family>Noto Sans CJK SC</family>
+9ff3bab23d1fabd3a5c9c2c05d1c6217|file:///usr/ring/.config/fontconfig/fonts.conf|107|7|V|xml
+	      <family>Noto Sans CJK TC</family>
+	      <family>Noto Sans CJK JP</family>
+1b79a7633dda54474bf473b5e4be7579|file:///usr/ring/.config/fontconfig/fonts.conf|113|7|V|xml
+	      <family>Noto Serif</family>
+	      <family>Noto Serif CJK SC</family>
+d59ee88cd787d0b578ff3f7d4e8e1d64|file:///usr/ring/.config/fontconfig/fonts.conf|113|7|V|xml
+	      <family>Noto Serif CJK TC</family>
+	      <family>Noto Serif CJK JP</family>
+98d183cae27854e5b3114405c0b287f4|file:///usr/ring/.config/fontconfig/fonts.conf|113|7|V|xml
+	      <family>Noto Serif CJK KR</family>
+3e6c49525fd8d4fe53b21e41fbaa6e6b|file:///usr/ring/.config/fontconfig/fonts.conf|119|9|V|xml
+	      <family>Meslo LG L DZ</family>
+	      <family>Noto Sans CJK SC</family>
+cceaf52ad6d8ab27c0a9c4081f359cd9|file:///usr/ring/.config/fontconfig/fonts.conf|120|7|V|xml
+	      <family>Noto Sans CJK JP</family>
+	      <family>Noto Sans CJK KR</family>
+17eaf691e7a3537d9f5bd7f7488f6e45|file:///usr/ring/.config/fontconfig/fonts.conf|107|1|V|xml
+	      <family>AppleColorEmoji</family>
+ad979c7e793fdfcf433455757d107677|file:///usr/ring/.config/fontconfig/fonts.conf|108|1|V|xml
+	      <family>EmojiOne</family>
+	      <family>AppleColorEmoji</family>
+aea1fc38a48f00fb89565b2f88938667|file:///usr/ring/.config/fontconfig/fonts.conf|99|1|V|xml
+	      <string>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</string>
+40b3cbf59b956d772fb5d432aa1121ee|file:///usr/ring/.config/fontconfig/fonts.conf|40|1|V|xml
+	    <!--
+	    <edit mode="prepend" name="family">
+	      <string>Noto Sans</string>
+	    </edit>
+	    -->  
+0dbe08fb9c3b77d58077a7f94b93bfa5|file:///usr/ring/.config/fontconfig/fonts.conf|66|1|V|xml
+	<!-- ^^^ CN part  ^^^ -->
+da74e2b401a5de19946ede2b08d4ac20|file:///usr/ring/.config/fontconfig/fonts.conf|117|5|V|xml
+	    <prefer>
+b45cffe084dd3d20d928bee85e7b0f21|file:///usr/ring/.config/fontconfig/fonts.conf|105|8|v|xml
+	string
+c9f4f2b7a3526b49a2dc0f35b2d0f1a0|file:///usr/ring/.config/fontconfig/fonts.conf|52|15|v|xml
+	adobe-source-han-serif
+560a6af3ca9eed524280933b0c6f3ecb|file:///usr/ring/.config/fontconfig/fonts.conf|39|62|v|xml
+	DejaVu Sans Mono
+a0cf2f68a13e39e67530763819aa80f8|file:///usr/ring/.config/fontconfig/fonts.conf|70|1|V|xml
+	<!-- Default serif fonts -->
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>scan</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="same">
+	      <string>adobe-source-han-serif</string>
+	    </edit>
+	  </match>
+	      
+	<!-- Default scan fonts -->
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="same">
+	      <string>Lucida MAC</string>
+	    </edit>
+	  </match>
+	
+	<!-- Default monospace fonts -->
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>monospace</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="same">
+	      <string>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</string>
+	    </edit>
+	  </match>
+1d5693569dfc89b3774295f4e15f8437|file:///usr/ring/.config/fontconfig/fonts.conf|42|1|V|xml
+	<!--  CN part   -->
+2810a5d9737cf9dcf833136f6c16a779|file:///usr/ring/.config/fontconfig/fonts.conf|55|1|V|xml
+	<!-- Default sans-serif font -->
+60f27eeefb9ecba6c51cebd1634c0490|file:///usr/ring/.config/fontconfig/fonts.conf|42|1|V|xml
+	<!-- Default font for the zh_CN locale (no fc-match pattern) -->
+666ddb16f6079ad2c9ba6d7a91657064|file:///usr/ring/.config/fontconfig/fonts.conf|37|40|v|xml
+	 -->
+468e41c989ae5bbfae8b41b66f395741|file:///usr/ring/.config/fontconfig/fonts.conf|37|1|V|xml
+	<!-- Default font (no fc-match pattern)
+	  <match>
+	    <edit name="family" mode="assign" binding="same"><string>adobe-source-han-serif</string></edit>
+	  </match>
+	-->
+	
+64383995fefe9842a73b783031330e03|file:///usr/ring/.config/fontconfig/fonts.conf|92|13|v|xml
+	sans-serif
+6b9b794e4fc8a58d17659af84984e1b2|file:///usr/ring/.config/fontconfig/fonts.conf|77|15|v|xml
+	Roboto
+303ffc39417f055adfc04b07eb366ccb|file:///usr/ring/.config/fontconfig/fonts.conf|39|1|V|xml
+	  <match>
+	    <test compare="contains" name="lang">
+	      <string>zh</string>
+	    </test>
+	    <test name="family">
+	      <string>serif</string>
+	    </test>
+	    <edit mode="prepend" name="family">
+	      <string>adobe-source-han-serif</string>
+	    </edit>
+	  </match>
+	
+	  <match target="pattern">
+	    <test compare="contains" name="lang">
+	      <string>zh</string>
+	    </test>
+	    <test qual="any" name="family">
+	      <string>sans-serif</string></test>
+	    <edit name="family" mode="prepend" binding="same">
+	      <string>adobe-source-han-sans-cn-fonts</string>
+	    </edit>
+	  </match>
+e0ab07457c3bd9e9e6deccdc4724616f|file:///usr/ring/.config/fontconfig/fonts.conf|39|5|v|xml
+	 Default font for the zh_CN locale (no fc-match pattern) 
+3f50a4d74a59578578fed3eb2fa2bfa6|file:///usr/ring/.config/fontconfig/fonts.conf|45|15|v|xml
+	Source Han Sans CN
+bd3571d8ec3281e618dc99c67c5ae697|file:///usr/ring/.config/fontconfig/fonts.conf|85|15|v|xml
+	Source Han Serif CN
+b06ee88cc6db3cc6280f26d7824faf03|file:///usr/ring/.config/fontconfig/fonts.conf|61|15|v|xml
+	adobe-source-han-sans-cn-fonts
+0ddd63424b5af786fdd47bcc9209bcf3|file:///usr/ring/.config/fontconfig/fonts.conf|85|32|v|xml
+	sans
+6bd715e6d77d7666f1f80a3c4497afac|file:///usr/ring/.config/fontconfig/fonts.conf|104|15|v|xml
+	Lucida MAC
+727fa461710a7ba72003d7f2a848a616|file:///usr/ring/.config/fontconfig/fonts.conf|112|15|v|xml
+	Lucida MAC Bold
+fa79fb198c9621c6c2e99e61e91ddfad|file:///usr/ring/.config/fontconfig/fonts.conf|112|36|v|xml
+	-cn-fonts
+989cf4d305ad0627104a926c9ee0910b|file:///usr/ring/.config/fontconfig/fonts.conf|140|1|V|xml
+	      <family>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</family>
+8611d3db05b8e80d9aef96041894ce0a|file:///usr/ring/.config/fontconfig/fonts.conf|112|15|v|xml
+	adobe-source-han-sans
+54580ad1dfafec29241b2449afb0c5f8|file:///usr/ring/.config/fontconfig/fonts.conf|112|15|v|xml
+	SourceHanSansCN-Regula
+a2e039a8e561c3396c6abfd566448d3b|file:///usr/ring/.config/fontconfig/fonts.conf|112|15|v|xml
+	SourceHanSansCN-Regular
+432a5a3729f02a60033228ec8aadcf80|file:///usr/ring/.config/fontconfig/fonts.conf|129|33|v|xml
+	 Font:style=Book
+b5f3ad67b92522416c28ed4a65925308|file:///usr/ring/.config/fontconfig/fonts.conf|129|15|v|xml
+	DejaVu Sans Mono for Powerline
+5386f7efda03815a2205cde66a573076|file:///usr/ring/.config/fontconfig/fonts.conf|129|1|V|xml
+	      <family> DejaVuSansMono Nerd Font Mono</family>
+5ba112da5cb1b752a8eed0e187d3bb60|file:///usr/ring/.config/fontconfig/fonts.conf|149|7|V|xml
+	      <family>Noto Sans CJK TC</family>
+2d5e39866b934c79383358a15d5a9186|file:///usr/ring/.config/fontconfig/fonts.conf|131|7|V|xml
+	      <family>Apple Color Emoji</family>
+406b0defb1ec99ee25c3987a3f130258|file:///usr/ring/.config/fontconfig/fonts.conf|130|5|V|xml
+	      <family>EmojiOne</family>
+07f978771c055c10c6b1efd74660e625|file:///usr/ring/.config/fontconfig/fonts.conf|129|1|V|xml
+	      <family>DejaVuSansMono Nerd Font Mono</family>
+b0cac3af8bfaf340943508d811fa22a2|file:///usr/ring/.config/fontconfig/fonts.conf|129|15|v|xml
+	DejaVuSansMono Nerd Font Mono
+156d0562c899763d989fe7d22ec04805|file:///usr/ring/.config/fontconfig/fonts.conf|129|39|v|xml
+	 Mono
+2c831f03a2fb0d41e993fc73c91a8fd4|file:///usr/ring/.config/fontconfig/fonts.conf|129|33|v|xml
+	,思源黑体 C
+91382ac707e689b50dfa68653c26bdbc|file:///usr/ring/.config/fontconfig/fonts.conf|85|15|v|xml
+	adobe-source-han-serif-cn-fonts
+0b46c1e2bcba08509694fde0c7981823|file:///usr/ring/.config/fontconfig/fonts.conf|85|26|v|xml
+	Sans
+4acbf87e236c1d300f88f21e1f481cbd|file:///usr/ring/.config/fontconfig/fonts.conf|85|34|v|xml
+	,思源黑体 CN
+e4c43cd3a5bc2f83dc2e49e6f9e0c26b|file:///usr/ring/.config/fontconfig/fonts.conf|85|15|v|xml
+	Source Han Serif CN Medium
+3fa41f6beef6c149bfb97b1814bde18d|file:///usr/ring/.config/fontconfig/fonts.conf|104|15|v|xml
+	SourceHanSerifCN-Medium
+2ef81a77e3d9f0351dc04fa6e0f725cc|file:///usr/ring/.config/fontconfig/fonts.conf|112|29|v|xml
+	:style=Bold
+02b8cfa97e2b0f45bf9b46c622351be4|file:///usr/ring/.config/fontconfig/fonts.conf|112|21|v|xml
+	Garamond Bold
+c1f2df134c6fa8969d46ab73583c84ff|file:///usr/ring/.config/fontconfig/fonts.conf|130|15|v|xml
+	Apple Color Emoji
+9b239e0f158a1dddf88079013a9c6636|file:///usr/ring/.config/fontconfig/fonts.conf|104|29|v|xml
+	:style=Regular
+2157b764e41a6ed825abee66415f7772|file:///usr/ring/.config/fontconfig/fonts.conf|131|15|v|xml
+	.Apple Color Emoji
+83cae4e78efd1db7c2fb7b210a6f8ae3|file:///usr/ring/.config/fontconfig/fonts.conf|131|1|V|xml
+	      <family>.Apple Color Emoji UI</family>
+3ad2623f6c3d9f4b8ca119ad1ca9ead2|file:///usr/ring/.config/fontconfig/fonts.conf|104|15|v|xml
+	Apple Garamond
+9373400632d94db7c47719addb80b8db|file:///usr/ring/.config/fontconfig/fonts.conf|130|1|V|xml
+	      <family>Source Han Serif CN Medium</family>
+ce2cb42930b54499651e4e3694cf8300|file:///usr/ring/.config/fontconfig/fonts.conf|130|7|V|xml
+	      <family>Source Han Sans CN</family>
+114c3050111d8b8ddd830b99ccebd246|file:///usr/ring/.config/fontconfig/fonts.conf|112|25|v|xml
+	Bold
+a47fb40153a7583f98213d03259c9676|file:///usr/ring/.config/fontconfig/fonts.conf|112|15|v|xml
+	LucidaMacBold
+d3ebccacbc5ef2a7a9e4e1585d3a9516|file:///usr/ring/.config/fontconfig/fonts.conf|134|15|v|xml
+	EmojiOne
+092987a19f24d86e77c3ef98c63bd9db|file:///usr/ring/.config/fontconfig/fonts.conf|134|1|V|xml
+	      <family>Braille</family>
+eceb5badcb37676a17f0f39b86d461c1|file:///usr/ring/.config/fontconfig/fonts.conf|132|15|v|xml
+	.Apple Color Emoji UI
+8d3478308f69cd295d408b56a9f163c0|file:///usr/ring/.config/fontconfig/fonts.conf|104|15|v|xml
+	Lucida Mac
+2a87e057b44b842b5073f610a552befe|file:///usr/ring/.config/fontconfig/fonts.conf|154|5|V|xml
+	      <family>.Apple Color Emoji UI</family>
+	      <family>AppleColorEmoji</family>
+0db01fe035018d67b8103c41da242621|file:///usr/ring/.config/fontconfig/fonts.conf|144|5|V|xml
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+9f6290f4436e5a2351f12e03b6433c3c|file:///usr/ring/.config/fontconfig/fonts.conf|144|15|v|xml
+	Apple
+1be91657130f7c7ff60097ae25d0c015|file:///usr/ring/.config/fontconfig/fonts.conf|144|14|v|xml
+	> Color Emoji
+89fd9819cff55b2f9aa23f85b04e7621|file:///usr/ring/.config/fontconfig/fonts.conf|144|1|V|xml
+	      <family>Noto Color Emoji</family>
+	      <family>EmojiOne</family>
+ba323c3f5b3f1b536461d41cc7f1ba60|file:///usr/ring/.config/fontconfig/conf.d/01-emoji.conf|7|21|v|xml
+	emoji
+deb82ec7e7a996fcab1c77be9fcb3a73|file:///usr/ring/.config/fontconfig/conf.d/01-emoji.conf|1|1|V|xml
+	<?xml version='1.0'?>
+	<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+	<fontconfig>
+	  <!-- Emoji config -->
+	  <alias>
+	    <family>Apple Color Emoji</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Segoe UI Emoji</family>
+	    <prefer><family>.Apple Color Emoji UI</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Segoe UI Symbol</family>
+	    <prefer><family>.Apple Color Emoji UI</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Noto Emoji</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Noto Color Emoji</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Symbola</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>Android Emoji</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	  <alias>
+	    <family>EmojiSymbols</family>
+	    <prefer><family>Apple Color Emoji</family></prefer>
+	  </alias>
+	</fontconfig>
+b2daffcd3a9f848272890c5e6eefb4d4|file:///usr/ring/var/st/config.h|9|1|V|cpp
+	static char *font = "DejaVuSansMono Nerd Font Mono:pixelsize=30:antialias=true:autohint=true";
+82399c0eb416d9635550b0356bcc3a36|file:///usr/ring/var/st/config.h|10|43|v|cpp
+	:pixelsize=30:antialias=true:autohint=true
+471bd2443519287c36f9b0d24df8134c|file:///usr/ring/var/st/config.h.rej|7|1|V|diff
+	+/* Spare fonts */
+	+static char *font2[] = {
+	+/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
+	+/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+	+};
+	+
+5d53bff1a04e04d666d4def8e1aa61b7|file:///usr/ring/var/st/config.h|10|1|^v|cpp
+	+
+	+
+	+
+	+
+	+
+	+
+a01a2e4eb32a1f5ef5434e5c2d3a0127|file:///usr/ring/var/st/config.h|13|3|v|cpp
+	Hack Nerd Font Mono
+83106ad8b5d95aa0659e176b2d7ab9fd|file:///usr/ring/var/st/config.h|16|1|V|cpp
+	static char *font2[] = {"Apple Color Emoji"};
+4af910e3063c0377f7d9e041da58a15e|file:///usr/ring/.config/fontconfig/fonts.conf|144|15|v|xml
+	Braille
+bb335aa7a1c73b99c65d03c13489e626|file:///usr/ring/var/st/config.h|12|3|v|cpp
+	Inconsolata for Powerline
+14c283e34740348799ca7907c98df698|file:///usr/ring/var/st/config.h|13|1|V|cpp
+		"AppleColorEmoji:pixelsize=11:antialias=true:autohint=true",
+9010f9db6d11edaf3c42b01dddd080b5|file:///usr/ring/var/st/config.h|12|1|V|cpp
+		"Braille:pixelsize=30:antialias=true:autohint=true",
+1fe41171094a1a67f87218a8181efae8|file:///usr/ring/var/st/config.h|14|1|V|cpp
+		"AppleColorEmoji:pixelsize=30:antialias=true:autohint=true",
+499b5248759a34212831b5aa509e27cb|file:///usr/ring/var/st/config.h|13|1|V|cpp
+		"Lucida Mac:pixelsize=30:antialias=true:autohint=true",
