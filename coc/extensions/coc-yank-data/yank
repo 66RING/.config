@@ -8360,3 +8360,2493 @@ bb335aa7a1c73b99c65d03c13489e626|file:///usr/ring/var/st/config.h|12|3|v|cpp
 		"AppleColorEmoji:pixelsize=30:antialias=true:autohint=true",
 499b5248759a34212831b5aa509e27cb|file:///usr/ring/var/st/config.h|13|1|V|cpp
 		"Lucida Mac:pixelsize=30:antialias=true:autohint=true",
+3d437fa8b5d44c9f70e632307c5c362f|file:///usr/ring/.config/fontconfig/fonts.conf|154|1|V|xml
+	      <family>Apple Garamond Light</family>
+c11bb7eec8b60626961f63cda07648ac|file:///usr/ring/.config/fontconfig/fonts.conf|37|1|V|xml
+	<!--
+407191c5505e96506a2a11d953a852d0|file:///usr/ring/.config/fontconfig/fonts.conf|145|1|V|xml
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+	      <family>EmojiOne</family>
+44cc2744531b82325b345a91d892b137|file:///usr/ring/.config/fontconfig/fonts.conf|151|5|V|xml
+	      <family>.Apple Color Emoji UI</family>
+	      <family>AppleColorEmoji</family>
+	      <family>EmojiOne</family>
+26503378383fba05fa8aecc76244b2a2|file:///usr/ring/.config/fontconfig/fonts.conf|37|1|V|xml
+	
+	<!-- Default font for the zh_CN locale (no fc-match pattern) -->
+	<!-- Map all regular CN fonts to Source Han fonts-->
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Zen Hei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Micro Hei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Micro Hei Light</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>Microsoft YaHei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimHei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimSun</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Serif CN Medium</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimSun-18030</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Serif CN Medium</string>
+	    </edit>
+	  </match>
+	
+	
+	<!-- Default font for the en_US locale (no fc-match pattern) -->
+	  <match>
+	    <test qual="any" name="family">
+	      <string>serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>Lucida Mac</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>sans-serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>LucidaMacBold</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>monospace</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</string>
+	    </edit>
+	  </match>
+	
+	
+	<!-- Fallback fonts preference order -->
+	  <alias>
+	    <family>sans-serif</family>
+	    <prefer>
+	      <family>Source Han Sans CN</family>
+	      <family>DejaVuSansMono Nerd Font Mono</family>
+	      <family>Braille</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+	
+	
+	  <alias>
+	    <family>serif</family>
+	    <prefer>
+	      <family>Source Han Serif CN Medium</family>
+	      <family>DejaVuSansMono Nerd Font Mono</family>
+	      <family>Braille</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+	
+	  <alias>
+	    <family>monospace</family>
+	    <prefer>
+	      <family>Source Han Serif CN Medium</family>
+	      <family>DejaVuSansMono Nerd Font Mono</family>
+	      <family>Braille</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>AppleColorEmoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+c31df825d52bfb1a17c1adea82359717|file:///usr/ring/.config/fontconfig/fonts.conf|112|31|v|xml
+	,Noto Sans CJK TC Medium
+79dab3622cea920959f9ccc78b4f5467|file:///usr/ring/.config/fontconfig/fonts.conf|129|1|V|xml
+	      <family>Noto Sans CJK HK</family>
+e0196103d68b0403c80f2809119d8bda|file:///usr/ring/.config/fontconfig/fonts.conf|4|1|V|xml
+	    <dir>/usr/share/fonts</dir>
+e04098505ace4cd438f2591da1c37343|file:///usr/ring/.config/fontconfig/fonts.conf|5|10|v|xml
+	/usr/share
+1af5e4e63ff704e2eccd99d5b59a026d|file:///usr/ring/.config/fontconfig/fonts.conf|39|1|V|xml
+	<!-- Default font for the zh_CN locale (no fc-match pattern) -->
+	<!-- Map all regular CN fonts to Source Han fonts-->
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Zen Hei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Micro Hei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>WenQuanYi Micro Hei Light</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>Microsoft YaHei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimHei</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Sans CN</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimSun</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Serif CN Medium</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>SimSun-18030</string>
+	    </test>
+	    <edit name="family" mode="assign" binding="same">
+	      <string>Source Han Serif CN Medium</string>
+	    </edit>
+	  </match>
+	
+	
+	<!-- Default font for the en_US locale (no fc-match pattern) -->
+	  <match>
+	    <test qual="any" name="family">
+	      <string>serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>Lucida Mac</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>sans-serif</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>LucidaMacBold</string>
+	    </edit>
+	  </match>
+	  <match target="pattern">
+	    <test qual="any" name="family">
+	      <string>monospace</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+	      <string>DejaVu-Sans-Mono-Nerd-Font-Complete-Mono</string>
+	    </edit>
+	  </match>
+	
+	
+	<!-- Fallback fonts preference order -->
+	  <alias>
+	    <family>sans-serif</family>
+	    <prefer>
+	      <family>Source Han Sans CN</family>
+	      <family>Noto Sans CJK HK</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+	
+	
+	  <alias>
+	    <family>serif</family>
+	    <prefer>
+	      <family>Source Han Serif CN Medium</family>
+	      <family>Noto Sans CJK HK</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>Apple Color Emoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+	
+	  <alias>
+	    <family>monospace</family>
+	    <prefer>
+	      <family>Source Han Serif CN Medium</family>
+	      <family>Noto Sans CJK HK</family>
+	      <family>Noto Sans CJK TC</family>
+	      <family>.Apple Color Emoji UI</family>
+	      <family>AppleColorEmoji</family>
+	      <family>EmojiOne</family>
+	    </prefer>
+	  </alias>
+	
+27f98d2b8ac1cdbf9e1dd9fd31c25eb4|file:///usr/ring/var/dwm/config.h|19|41|v|cpp
+	37474f
+15a7016d3d34e2ad034cd8568551f4bc|file:///usr/ring/var/dwm/config.h|19|49|v|cpp
+	 //37474f
+	
+a754824a4821cdc12266f8d49e6a1c05|file:///usr/ring/var/dwm/config.h|19|49|v|cpp
+	 //37474f
+7f4807bfbefece1687e93f53e10c410f|file:///usr/ring/var/dwm/config.h|19|41|v|cpp
+	66CCFF
+c861dc10b676a5504518a4fe387a2fd0|file:///usr/ring/var/dwm/config.h|19|40|v|cpp
+	0000FF
+a2b39a6ce99d1144adbd678b2835d29d|file:///usr/ring/var/dwm/config.h|19|41|v|cpp
+	7AFFBD
+d12519dc084b624aa9319c1eb780a664|file:///usr/ring/var/dwm/config.h|19|41|v|cpp
+	7ABDFF
+8d2f887c95f29b1910b06631d1795333|file:///usr/ring/var/dwm/config.h|19|41|v|cpp
+	0099C
+f833a90f32cda18e572afea83fa56292|file:///usr/ring/var/st/config.h|12|47|v|cpp
+	autohint=true
+0933edf0f7a0795f98529b6f85b50279|file:///usr/ring/var/st/config.h|14|39|v|cpp
+	:autohint=true
+74f028cc1c67ac71d2afdc40d9145917|file:///usr/ring/.config/ranger/rc.conf|5|27|v|conf
+	urxvt
+61ae15c5f7956f2170ccfc3e10ff4b3e|file:///usr/ring/.config/ranger/scope.sh|112|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	 
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+f6bdcb81f3b5159b44869dc4490ef53a|file:///usr/ring/.config/ranger/scope.sh|93|1|^v|sh
+	        #
+	        #
+	        #
+	
+336b953ea710e0783203cdec135d384a|file:///usr/ring/.config/ranger/scope.sh|93|9|^v|sh
+	#
+	#
+	#
+12a0642e57ef75af81512460fcf105aa|file:///usr/ring/.config/ranger/scope.sh|129|56|v|sh
+	x-7z-compressed
+0fea1189f998de7fef1b7f634ef5afb0|file:///usr/ring/.config/ranger/scope.sh|117|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+7a97f79d52125b276f3b3dea691dec04|file:///usr/ring/.config/ranger/scope.sh|113|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+e11439824cc5cba00285044c52f1aede|file:///usr/ring/.config/ranger/rc.conf|3|3|v|conf
+	image 
+fe33580c5f7fd251a355a8f7e7762860|file:///usr/ring/.config/ranger/rc.conf|4|1|V|conf
+	set preview_images true
+59b514174bffe4ae402b3d63aad79fe0|file:///usr/ring/.config/ranger/rc.conf|5|13|v|conf
+	images
+b326b5062b2f0e69046810717534cb09|file:///usr/ring/.config/ranger/rc.conf|5|20|v|conf
+	true
+099656d295dddb05f803c2395113930c|file:///usr/ring/.config/ranger/rc.conf|4|1|V|conf
+	set preview_images false
+31420ab7d63bbd13156874d834e6e8d6|file:///usr/ring/.vimrc|114|1|V|vim
+	:smile:
+518c1736437a6d9d80deeb351cbbacb5|file:///usr/ring/.vimrc|104|1|V|vim
+	let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+	let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+	let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+	let g:gitgutter_sign_modified_removed = emoji#for('collision')
+	
+	for e in emoji#list()
+	  call append(line('$'), printf('%s (%s)', emoji#for(e), e))
+	endfor
+	set completefunc=emoji#complete
+4b406c5a484e8beed9a8827e5c9bb465|file:///usr/ring/var/dwm/config.h|44|1|V|cpp
+		{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+763f7f1aec350cd1a46238d1d5c3c229|file:///usr/ring/var/dwm/config.h|45|5|v|cpp
+	Firefox
+0d080c30fecec740785fced1fea8f086|file:///usr/ring/var/dwm/config.h|45|35|v|cpp
+	1 << 
+24a43a806f1ed291e0e6d718fed5ccc2|file:///usr/ring/var/dwm/config.h|45|1|V|cpp
+		{ "QQ",       NULL,       NULL,       4 << 9,       1,           -1 },
+b8549b1d6f0ef4d326dc0d02b98712cd|file:///usr/ring/var/dwm/config.h|45|1|V|cpp
+		{ "qq",       NULL,       NULL,       4 << 9,       1,           -1 },
+774d4aff1819be845be0166e4abde8ea|file:///usr/ring/var/st/config.h|10|21|v|cpp
+	"DejaVuSansMono Nerd Font Mono:pixelsize=30:antialias=true:autohint=true";
+	
+b2796a3a6d3a9295e7596e310ed2af86|file:///usr/ring/var/st/config.h|13|1|V|cpp
+		"AppleColorEmoji:pixelsize=30:antialias=true",
+45fe1f9b3e7022413dd744ccbacc3c12|file:///usr/ring/var/dwm/config.h|45|1|V|cpp
+		{ "netease-cloud-music",       NULL,       NULL,       4 << 9,       1,           -1 },
+544641b4c9e17de5886ba3016e317193|file:///usr/ring/var/dwm/config.h|46|5|v|cpp
+	netease-cloud-music
+c69719e4c0d6c981f4728ece175bb6c4|file:///usr/ring/var/dwm/config.h|46|1|V|cpp
+		{ "ss-qt5",       NULL,       NULL,       4 << 9,       1,           -1 },
+e07140835a5d806251bad51cb2f80a63|file:///usr/ring/var/dwm/config.h|47|5|v|cpp
+	ss-qt5
+3469089c5c2c2cf811229602e8129263|file:///usr/ring/var/dwm/dwm.c.rej|7|1|V|diff
+	+	int sfx, sfy, sfw, sfh; /* stored float geometry, used on mode revert */
+d614b2ee765bc6afe67c28ae2677a091|file:///usr/ring/var/dwm/dwm.c.rej|13|1|V|diff
+	+	unsigned char expandmask;
+	+	int expandx1, expandy1, expandx2, expandy2;
+	+	Bool wasfloating, isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
+c26f15e86e3de4c398a8273272aba034|file:///usr/ring/var/dwm/dwm.c|101|3|v|c
+	Bool
+482b79db72799677e2e86c7c577411cd|file:///usr/ring/var/dwm/dwm.c.rej|23|1|V|diff
+	+	c->sfx = c->x;
+	+	c->sfy = c->y;
+	+	c->sfw = c->w;
+	+	c->sfh = c->h;
+c6beca8ac2ae10b80d86ce5f21b50bea|file:///usr/ring/var/dwm/dwm.c.rej|29|1|V|diff
+	+	c->wasfloating = False;
+	+	c->expandmask = 0;
+7efbbfed7278326a8b9f49a45a14d110|file:///usr/ring/var/dwm/dwm.c.rej|53|1|V|diff
+	+			if ((m = recttomon(c->x, c->y, nw, nh))) {
+	+				if (m != selmon) 
+	+					sendmon(c, m);
+e5797ee74f287ecc0fbef802130483e4|file:///usr/ring/var/dwm/dwm.c.rej|63|1|V|diff
+	+	Monitor *oldm = selmon;
+32a32e978db87e959b337b1a0545df60|file:///usr/ring/var/dwm/dwm.c|1844|1|V|c
+		if (!arg || !arg->v || arg->v != selmon->lt[selmon->sellt])
+2c1c1ccf24d524c4df52b69c6a72dfc2|file:///usr/ring/var/dwm/dwm.c.rej|72|1|V|diff
+	+	if(!arg || !arg->v || arg->v != selmon->lt[selmon->sellt]) {
+7353b26edba10908a1744af58ff71161|file:///usr/ring/var/dwm/dwm.c.rej|74|1|V|diff
+	+		if (!selmon->lt[selmon->sellt]->arrange) {
+	+			for (Client *c = selmon->clients ; c ; c = c->next) {
+	+				if(!c->isfloating) {
+	+					/*restore last known float dimensions*/
+	+					resize(c, selmon->mx + c->sfx, selmon->my + c->sfy,
+	+					       c->sfw, c->sfh, False);
+	+				}
+	+			}
+	+		}
+	+	}
+4031c1ada0a7434844f4ac280677e03e|file:///usr/ring/var/dwm/dwm.c|2086|1|V|c
+		if (selmon->sel->isfloating)
+			resize(selmon->sel, selmon->sel->x, selmon->sel->y,
+				selmon->sel->w, selmon->sel->h, 0);
+2cb3374bb4a77eb11500cb79681e2356|file:///usr/ring/var/dwm/dwm.c.rej|94|1|V|diff
+	+	if(selmon->sel->isfloating) {
+	+		/*restore last known float dimensions*/
+	+		resize(selmon->sel, selmon->mx + selmon->sel->sfx, selmon->my + selmon->sel->sfy,
+	+		       selmon->sel->sfw, selmon->sel->sfh, False);
+	+	} else {
+	+		if (selmon->sel->isfullscreen)
+	+			setfullscreen(selmon->sel, False);
+	+		/*save last known float dimensions*/
+	+		selmon->sel->sfx = selmon->sel->x - selmon->mx;
+	+		selmon->sel->sfy = selmon->sel->y - selmon->my;
+	+		selmon->sel->sfw = selmon->sel->w;
+	+		selmon->sel->sfh = selmon->sel->h;
+	+	}
+cef30d5e7e8fc0e526abd745d64d9f61|file:///usr/ring/var/dwm/dwm.c|2086|1|^v|c
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+	+
+f8320b26d30ab433c5a54546d21f414c|file:///usr/ring/var/dwm/dwm.c|1214|19|v|c
+	False
+242927592c8266c20f5b18be9f9372e1|file:///usr/ring/var/dwm/dwm.c.rej|40|1|V|diff
+	+			if ((m = recttomon(nx, ny, c->w, c->h))) {
+	+				if (m != selmon) 
+	+					sendmon(c, m);
+56c628c3c19839b532df4d77e1d5f9a7|file:///usr/ring/var/dwm/dwm.c|198|1|V|c
+	static void movemouse(const Arg *arg);
+0a2f97a0ae4c0415b0edc975c1dc041a|file:///usr/ring/var/dwm/dwm.c|2570|1|V|c
+	static void
+	moveresize(const Arg *arg)
+	{
+		XEvent ev;
+		Monitor *m = selmon;
+		
+		if(!(m->sel && arg && arg->v && m->sel->isfloating))
+	return;
+	
+		
+		resize(m->sel, m->sel->x + ((int *)arg->v)[0],
+	    m->sel->y + ((int)arg->v)[1], m->sel->w + ((int)arg->v)[2], m->sel->h + ((int*)arg->v)[3], True);
+	
+		
+		while(XCheckMaskEvent(dpy, EnterWindowMask, &ev));
+	}
+fab2e149f530a91c48d5d30328c7b329|file:///usr/ring/var/dwm/dwm.c|326|17|v|c
+	(int)(
+0e2c970b89665333bcfe8a8bb5b451f3|file:///usr/ring/var/dwm/dwm.c|326|18|v|c
+	(int*)
+9e1e6f3e903ece733ba526f969500dd3|file:///usr/ring/var/dwm/dwm.c|321|1|V|c
+		if(!(m->sel && arg && arg->v && m->sel->isfloating))
+	        return;
+8f02dc4bd6d29cc4ead16bb2a37b98d1|file:///usr/ring/var/dwm/config.h|151|1|V|cpp
+	    { MODKEY,					    XK_Down,	moveresize,		{.v = (int []){ 0, 25, 0, 0 }}},
+	    { MODKEY,					    XK_Up,		moveresize,		{.v = (int []){ 0, -25, 0, 0 }}},
+	    { MODKEY,					    XK_Right,	moveresize,		{.v = (int []){ 25, 0, 0, 0 }}},
+	    { MODKEY,					    XK_Left,	moveresize,		{.v = (int []){ -25, 0, 0, 0 }}},
+	    { MODKEY|ShiftMask,			    XK_Down,	moveresize,		{.v = (int []){ 0, 0, 0, 25 }}},
+	    { MODKEY|ShiftMask,			    XK_Up,		moveresize,		{.v = (int []){ 0, 0, 0, -25 }}},
+	    { MODKEY|ShiftMask,			    XK_Right,	moveresize,		{.v = (int []){ 0, 0, 25, 0 }}},
+	    { MODKEY|ShiftMask,			    XK_Left,	moveresize,		{.v = (int []){ 0, 0, -25, 0 }}},
+a62340ee5462bbad2bbd744545458c44|file:///usr/ring/var/dwm/config.h|157|1|V|cpp
+	    { MODKEY|ShiftMask,			    XK_Down,	moveresize,		{.v = (int []){ 0, 0, 0, 25 }}},
+	    { MODKEY|ShiftMask,			    XK_Up,		moveresize,		{.v = (int []){ 0, 0, 0, -25 }}},
+	    { MODKEY|ShiftMask,			    XK_Right,	moveresize,		{.v = (int []){ 0, 0, 25, 0 }}},
+	    { MODKEY|ShiftMask,			    XK_Left,	moveresize,		{.v = (int []){ 0, 0, -25, 0 }}},
+3e301b1e0d4d457d55c30bdbe82e427e|file:///usr/ring/var/dwm/config.h|161|36|^v|cpp
+				   
+				   
+				   
+				   
+3c2ab0ff8df69ab0b7167799ac196ce7|file:///usr/ring/var/dwm/config.h|153|7|^v|cpp
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+	MODKEY
+92b09c7c48c520c3c55e497875da437c|file:///usr/ring/var/dwm/config.h|155|26|v|cpp
+	Right
+945d5e233cf7d6240f6b783b36a374ff|file:///usr/ring/var/dwm/config.h|156|26|v|cpp
+	Left
+629cd3b9ce88d453842bff191870d621|file:///usr/ring/var/dwm/config.h|50|1|V|cpp
+		{ "electronic-wechat",       NULL,       NULL,       4 << 9,       1,           -1 },
+d227db81108a4f68347b10ca4c22f546|file:///usr/ring/var/dwm/config.h|51|5|v|cpp
+	electronic-wechat
+eae1ad56654351b17aad6dd642012a0b|file:///usr/ring/var/dwm/config.h|51|1|V|cpp
+		{ "transmission-qt",       NULL,       NULL,       4 << 9,       1,           -1 },
+2aa5d444dcb653004b765844255280a7|file:///usr/ring/var/dwm/config.h|52|5|v|cpp
+	transmission-qt
+8b6cf52b773f85b24ee18ef05807448d|file:///usr/ring/var/dwm/config.h|52|2|V|cpp
+		{ "",       NULL,       NULL,       4 << 9,       1,           -1 },
+3ecc2e5206252a84eb4d78e576ff76ce|file:///usr/ring/.config/ranger/scope.sh|83|13|V|sh
+	            lynx -dump -- "${FILE_PATH}" && exit 5
+	            elinks -dump "${FILE_PATH}" && exit 5
+01ff808da2d559c2860a76584177db5d|file:///usr/ring/.config/ranger/scope.sh|129|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+29aa34b5e22ba4f030dd0724cd57333e|file:///usr/ring/var/dwm/config.h|51|1|V|cpp
+		{ "transmission-gtk",       NULL,       NULL,       4 << 9,       1,           -1 },
+84277bf3e96220912abce854cfa9cfde|file:///usr/ring/var/dwm/config.h|52|17|v|cpp
+	-gtk
+892f4f5aae5f13c0087dae15f22d0174|file:///usr/ring/.config/ranger/rc.conf|5|20|v|conf
+	./scope.sh
+	
+f5eb17d79998f4579da6db2c98cdd48d|file:///usr/ring/.config/ranger/rc.conf|5|1|V|conf
+	set preview_script /usr/ring/.config/ranger/scope.sh
+6d728dda84c5eeb7864368f456a9cec2|file:///usr/ring/var/dwm/config.h|155|7|^v|cpp
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+	ALTKEY
+2e922637c0c3347555338d754f3c18ee|file:///usr/ring/.zshrc|15|1|V|zsh
+	export ranger_load_default_rc=false
+16518154fcc12cb9c715478443414867|file:///usr/ring/var/dwm/config.h|51|5|v|cpp
+	electronic
+e1cf44e89b83a81e82724df36f288302|file:///usr/ring/var/dwm/config.h|51|18|v|cpp
+	qt-wechat
+dd55f1a878bac681b0c756bc564c8434|file:///usr/ring/.config/ranger/rc.conf|5|1|V|conf
+	set use_preview_script true
+	set preview_script ~/.config/ranger/scope.sh
+471b1a0f62a0944161ba3ffa3f7dc500|file:///usr/ring/.config/ranger/scope.sh|93|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+ec2d1dad91590433b269d9ce8f1bc780|file:///usr/ring/.config/ranger/scope.sh|45|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	 
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+a4187c975033c955eee9b5a85cc581b2|file:///usr/ring/.config/ranger/scope.sh|61|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+327c73a20237ccdb9ee0d64a96e3ea07|file:///usr/ring/.config/ranger/scope.sh|113|9|^v|sh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	 
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+aa29595f695138c9d92428c9a9317adc|file:///usr/ring/.config/ranger/scope.sh|1|1|V|sh
+	#!/usr/bin/env bash
+	
+	set -o noclobber -o noglob -o nounset -o pipefail
+	IFS=$'\n'
+	
+	# If the option `use_preview_script` is set to `true`,
+	# then this script will be called and its output will be displayed in ranger.
+	# ANSI color codes are supported.
+	# STDIN is disabled, so interactive scripts won't work properly
+	
+	# This script is considered a configuration file and must be updated manually.
+	# It will be left untouched if you upgrade ranger.
+	
+	# Meanings of exit codes:
+	# code | meaning    | action of ranger
+	# -----+------------+-------------------------------------------
+	# 0    | success    | Display stdout as preview
+	# 1    | no preview | Display no preview at all
+	# 2    | plain text | Display the plain content of the file
+	# 3    | fix width  | Don't reload when width changes
+	# 4    | fix height | Don't reload when height changes
+	# 5    | fix both   | Don't ever reload
+	# 6    | image      | Display the image `$IMAGE_CACHE_PATH` points to as an image preview
+	# 7    | image      | Display the file directly as an image
+	
+	# Script arguments
+	FILE_PATH="${1}"         # Full path of the highlighted file
+	PV_WIDTH="${2}"          # Width of the preview pane (number of fitting characters)
+	PV_HEIGHT="${3}"         # Height of the preview pane (number of fitting characters)
+	IMAGE_CACHE_PATH="${4}"  # Full path that should be used to cache image preview
+	PV_IMAGE_ENABLED="${5}"  # 'True' if image previews are enabled, 'False' otherwise.
+	
+	FILE_EXTENSION="${FILE_PATH##*.}"
+	FILE_EXTENSION_LOWER=$(echo ${FILE_EXTENSION} | tr '[:upper:]' '[:lower:]')
+	
+	# Settings
+	HIGHLIGHT_SIZE_MAX=262143  # 256KiB
+	HIGHLIGHT_TABWIDTH=8
+	HIGHLIGHT_STYLE='pablo'
+	PYGMENTIZE_STYLE='autumn'
+	
+	
+	handle_extension() {
+	    case "${FILE_EXTENSION_LOWER}" in
+	        # Archive
+	         a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
+	         rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
+	             atool --list -- "${FILE_PATH}" && exit 5
+	             bsdtar --list --file "${FILE_PATH}" && exit 5
+	             exit 1;;
+	         rar)
+	             # Avoid password prompt by providing empty password
+	             unrar lt -p- -- "${FILE_PATH}" && exit 5
+	             exit 1;;
+	         7z)
+	             # Avoid password prompt by providing empty password
+	             7z l -p -- "${FILE_PATH}" && exit 5
+	             exit 1;;
+	
+	         # PDF
+	         pdf)
+	             # Preview as text conversion
+	             pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | fmt -w ${PV_WIDTH} && exit 5
+	             mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | fmt -w ${PV_WIDTH} && exit 5
+	             exiftool "${FILE_PATH}" && exit 5
+	             exit 1;;
+	         
+	         # BitTorrent
+	         torrent)
+	             transmission-show -- "${FILE_PATH}" && exit 5
+	             exit 1;;
+	         
+	         # OpenDocument
+	         odt|ods|odp|sxw)
+	             # Preview as text conversion
+	             odt2txt "${FILE_PATH}" && exit 5
+	             exit 1;;
+	         
+	         # HTML
+	         htm|html|xhtml)
+	             # Preview as text conversion
+	             w3m -dump "${FILE_PATH}" && exit 5
+	             lynx -dump -- "${FILE_PATH}" && exit 5
+	             elinks -dump "${FILE_PATH}" && exit 5
+	             ;; # Continue with next handler on failure
+	    esac
+	}
+	
+	handle_image() {
+	    local mimetype="${1}"
+	    case "${mimetype}" in
+	        # SVG
+	         image/svg+xml)
+	              convert "${FILE_PATH}" "${IMAGE_CACHE_PATH}" && exit 6
+	              exit 1;;
+	         
+	         # Image
+	         image/*)
+	             local orientation
+	             orientation="$( identify -format '%[EXIF:Orientation]\n' -- "${FILE_PATH}" )"
+	             # If orientation data is present and the image actually
+	             # needs rotating ("1" means no rotation)...
+	             if [[ -n "$orientation" && "$orientation" != 1 ]]; then
+	                 # ...auto-rotate the image according to the EXIF data.
+	                 convert -- "${FILE_PATH}" -auto-orient "${IMAGE_CACHE_PATH}" && exit 6
+	             fi
+	         
+	             # `w3mimgdisplay` will be called for all images (unless overriden as above),
+	             # but might fail for unsupported types.
+	             exit 7;;
+	
+	        # Video
+	        # video/*)
+	        #     # Thumbnail
+	        #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+	        #     exit 1;;
+	        # PDF
+	        # application/pdf)
+	        #     pdftoppm -f 1 -l 1 \
+	        #              -scale-to-x 1920 \
+	        #              -scale-to-y -1 \
+	        #              -singlefile \
+	        #              -jpeg -tiffcompression jpeg \
+	        #              -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
+	        #         && exit 6 || exit 1;;
+	
+	        ## Preview archives using the first image inside.
+	        ## (Very useful for comic book collections for example.)
+	        # application/zip|application/x-rar|application/x-7z-compressed|\
+	        #     application/x-xz|application/x-bzip2|application/x-gzip|application/x-tar)
+	        #     local fn=""; local fe=""
+	        #     local zip=""; local rar=""; local tar=""; local bsd=""
+	        #     case "${mimetype}" in
+	        #         application/zip) zip=1 ;;
+	        #         application/x-rar) rar=1 ;;
+	        #         application/x-7z-compressed) ;;
+	        #         *) tar=1 ;;
+	        #     esac
+	        #     { [ "$tar" ] && fn=$(tar --list --file "${FILE_PATH}"); } || \
+	        #     { fn=$(bsdtar --list --file "${FILE_PATH}") && bsd=1 && tar=""; } || \
+	        #     { [ "$rar" ] && fn=$(unrar lb -p- -- "${FILE_PATH}"); } || \
+	        #     { [ "$zip" ] && fn=$(zipinfo -1 -- "${FILE_PATH}"); } || return
+	        #
+	        #     fn=$(echo "$fn" | python -c "import sys; import mimetypes as m; \
+	        #             [ print(l, end='') for l in sys.stdin if \
+	        #               (m.guess_type(l[:-1])[0] or '').startswith('image/') ]" |\
+	        #         sort -V | head -n 1)
+	        #     [ "$fn" = "" ] && return
+	        #     [ "$bsd" ] && fn=$(printf '%b' "$fn")
+	        #
+	        #     [ "$tar" ] && tar --extract --to-stdout \
+	        #         --file "${FILE_PATH}" -- "$fn" > "${IMAGE_CACHE_PATH}" && exit 6
+	        #     fe=$(echo -n "$fn" | sed 's/[][*?\]/\\\0/g')
+	        #     [ "$bsd" ] && bsdtar --extract --to-stdout \
+	        #         --file "${FILE_PATH}" -- "$fe" > "${IMAGE_CACHE_PATH}" && exit 6
+	        #     [ "$bsd" ] || [ "$tar" ] && rm -- "${IMAGE_CACHE_PATH}"
+	        #     [ "$rar" ] && unrar p -p- -inul -- "${FILE_PATH}" "$fn" > \
+	        #         "${IMAGE_CACHE_PATH}" && exit 6
+	        #     [ "$zip" ] && unzip -pP "" -- "${FILE_PATH}" "$fe" > \
+	        #         "${IMAGE_CACHE_PATH}" && exit 6
+	        #     [ "$rar" ] || [ "$zip" ] && rm -- "${IMAGE_CACHE_PATH}"
+	        #     ;;
+	    esac
+	}
+	
+	handle_mime() {
+	    local mimetype="${1}"
+	    case "${mimetype}" in
+	        # Text
+	        text/* | */xml)
+	            # Syntax highlight
+	            if [[ "$( stat --printf='%s' -- "${FILE_PATH}" )" -gt "${HIGHLIGHT_SIZE_MAX}" ]]; then
+	                exit 2
+	            fi
+	            if [[ "$( tput colors )" -ge 256 ]]; then
+	                local pygmentize_format='terminal256'
+	                local highlight_format='xterm256'
+	            else
+	                local pygmentize_format='terminal'
+	                local highlight_format='ansi'
+	            fi
+	            highlight --replace-tabs="${HIGHLIGHT_TABWIDTH}" --out-format="${highlight_format}" \
+	                --style="${HIGHLIGHT_STYLE}" --force -- "${FILE_PATH}" && exit 5
+	            # pygmentize -f "${pygmentize_format}" -O "style=${PYGMENTIZE_STYLE}" -- "${FILE_PATH}" && exit 5
+	            exit 2;;
+	
+	        # Image
+	        image/*)
+	            # Preview as text conversion
+	            img2txt --gamma=0.6 --width="${PV_WIDTH}" -- "${FILE_PATH}" && exit 4
+	            exiftool "${FILE_PATH}" && exit 5
+	            exit 1;;
+	
+	        # Video and audio
+	        video/* | audio/*)
+	            mediainfo "${FILE_PATH}" && exit 5
+	            exiftool "${FILE_PATH}" && exit 5
+	            exit 1;;
+	    esac
+	}
+	
+	handle_fallback() {
+	    echo '----- File Type Classification -----' && file --dereference --brief -- "${FILE_PATH}" && exit 5
+	    exit 1
+	}
+	
+	
+	MIMETYPE="$( file --dereference --brief --mime-type -- "${FILE_PATH}" )"
+	if [[ "${PV_IMAGE_ENABLED}" == 'True' ]]; then
+	    handle_image "${MIMETYPE}"
+	fi
+	handle_extension
+	handle_mime "${MIMETYPE}"
+	handle_fallback
+	
+	exit 1
+cd05106b2f913677f06adad7496c6336|file:///usr/ring/.config/ranger/backup/scope.sh|266|1|V|sh
+	    handle_image "${MIMETYPE}"
+5b12e4d4590710a5f25474d2dbb2af6a|file:///usr/ring/.config/ranger/backup/scope.sh|102|9|^v|sh
+	#
+	#
+	#
+	#
+	 
+	#
+	#
+	#
+	#
+	#
+a1798d386181e1ae40a222ae82cbaf13|file:///usr/ring/.config/ranger/backup/scope.sh|98|1|V|sh
+	    local DEFAULT_SIZE="1920x1080"
+9e523ae15b61dc766f5c818726881ecf|file:///usr/ring/.config/ranger/backup/scope.sh|99|25|v|sh
+	1920x1080
+58a1b65fd75c00afbf23723c830f7e20|file:///usr/ring/var/dwm/config.h|51|1|V|cpp
+		{ "Transmission",       NULL,       NULL,       4 << 9,       1,           -1 },
+eb2d9ac048f63b514bd26677c6142d1f|file:///usr/ring/var/dwm/config.h|52|5|v|cpp
+	Transmission
+0e24e7b7280fcbde75e39bc9f43b9811|file:///usr/ring/scripts/wp-change.sh|2|69|v|sh
+	iews
+ff818309626116f3829ded3114788404|file:///usr/ring/.config/ranger/rc.conf|29|11|v|conf
+	fzf_select
+044bd9554a698998f179c68a9c18d3b1|file:///usr/ring/.config/ranger/rc.conf|31|1|V|conf
+	map cw eval fm.execute_console("bulkrename") if fm.thisdir.marked_items else fm.open_console("rename ")
+2b6cc82022f0b2a9fb93290085db2f8f|file:///usr/ring/.config/ranger/rc.conf|32|5|v|conf
+	cw eval fm.execute_console("bulkrename") if fm.thisdir.marked_items else fm.open_console("rename ")
+ec506e0df7f5266afbce96125af750c4|file:///usr/ring/.config/ranger/rc.conf|32|1|V|conf
+	map yp yank dir
+747959c162ab32b134a02c3ae868bfce|file:///usr/ring/.config/ranger/rc.conf|32|6|V|conf
+	map yp yank dir
+	map yp yank dir
+936db27a24b3052adaf60fc67288eb7b|file:///usr/ring/.config/ranger/scope.sh|128|9|^v|sh
+	 
+	 
+	 
+	 
+	 
+e9e6080c9c59a029796309ce261ee2b8|file:///usr/ring/.config/ranger/rc.conf|7|27|v|conf
+	ueberzug
+3067c6bb4c7dd79bf483b7de2d490ea2|file:///usr/ring/.config/ranger/scope.sh|103|9|^v|sh
+	# 
+	# 
+	# 
+	  
+	# 
+	# 
+	# 
+	# 
+	# 
+d169668abdd73ae15a3075d600075a14|file:///usr/ring/scripts/autostart_wait.sh|5|1|V|sh
+	emoji-keyboard &
+b4f652b1caef4d4da53a164b76b3e471|file:///usr/ring/scripts/autostart_wait.sh|4|1|V|sh
+	fcitx &
+db3e55f787c25c4e0cb93c0f12011746|file:///usr/ring/scripts/autostart_wait.sh|5|1|v|sh
+	fcitx
+398c948a424aade25c2b7fae499afb7c|file:///usr/ring/Pictures/wallpapers/wallpapers/README.md|1|1|V|markdown
+	# Luke's Wallpapers
+af945f66384df057792702c386e012ae|file:///usr/ring/Pictures/wallpapers/wallpapers/README.md|1|1|V|markdown
+	One of the more common requests I get is to share one of the images I have as a wallpaper or decoration in a video, so here's my entire wallpaper folder.
+c374d4a76c8e8bcb3659ea677eafb343|file:///tmp/zshOys0lp|1|1|V|zsh
+	pip list | awk '{print $1}'
+4d9b668ac00360447b20aa0eaa7cb366|file:///tmp/zshJyP2Aq|1|1|V|zsh
+	pip list | awk '$1>2 {print $1}'
+5e096226631f4d979af8ab0283144791|file:///usr/ring/.vimrc|297|1|V|vim
+	Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
+decc35f9461793ac6ffed4253a82e972|file:///usr/ring/var/dwm/config.h|52|1|V|cpp
+		{ "uget",                NULL,       NULL,       9,            1,           -1 },
+1af561a1ca8cf0d161ef5492bd184597|file:///usr/ring/var/dwm/config.h|53|5|v|cpp
+	uget
+a127fd1f86e4ab650f2216f09992afa4|file:///usr/ring/var/dwm/config.h|53|27|v|cpp
+	      
+2e221f47d6e76beeec058faee5c8e640|file:///usr/ring/var/shadowsocksr/config.json|4|20|v|json
+	60277
+bf0b00016b27e3dcab6ee5ebab3878dc|file:///usr/ring/.config/ranger/commands.py|12|39|V|python
+	from ranger.api.commands import Command
+	import os
+43cd7317f7cd6ff78caacc0e7360aeea|file:///usr/ring/var/dwm/config.h|54|1|V|cpp
+		{ "goldendick",          NULL,       NULL,       9,            1,           -1 },
+46c1d1ad9809f8086ac19e3eb1401aa1|file:///usr/ring/var/dwm/config.h|45|54|^v|cpp
+	9
+	9
+	9
+	9
+925c9ef67d2332758718f6f9d510bb31|file:///usr/ring/var/dwm/config.h|44|51|v|cpp
+	1<<8
+5a5dc9f9a0aeaa8bdfb7d006b757ce4c|file:///usr/ring/var/dwm/config.h|49|51|^v|cpp
+	9
+	9
+	9
+	9
+	9
+	9
+	9
+66c74e10404319091a78ea5601b499cc|file:///usr/ring/var/dwm/config.h|54|2|V|cpp
+		{ "goldendick",          NULL,       NULL,       4<<8,            1,           -1 },
+da65b38d1760699f87d9168846442fe9|file:///usr/ring/var/dwm/config.h|50|2|V|cpp
+		//{ "transmission-gtk",    NULL,       NULL,       4<<8,            1,           -1 },
+5c9e13f28cac7f7a2b3cea544fbae7b0|file:///usr/ring/var/st/config.h|12|1|V|cpp
+		"Source Code Pro for Powerline:pixelsize=30:antialias=true",
+96a46ebb1fbe0a29bccf0e082e4c030a|file:///usr/ring/var/st/config.h|10|1|v|cpp
+	DejaVu Sans Mono Nerd Font:pixelsize=30:antialias=true:autohint=true";
+	
+7223dc71ee256a828ad4d9fb1ca2af34|file:///usr/ring/var/st/config.h|13|3|v|cpp
+	Source Code Pro for Powerline
+6f6017f057443a5bac81a0961a03ac10|file:///usr/ring/.config/ranger/rifle.conf|131|1|V|cfg
+	mime ^video|audio, has vlc,      X, flag f = vlc -- "$@"
+186e99d0efb9251346e667e30ede305f|file:///usr/ring/var/dwm/config.h|93|1|V|cpp
+	static const char *lockon[]  = { "xscreensaver-command --lock", NULL };
+e55956712ba10f451fdfb3d431f4452c|file:///usr/ring/var/dwm/config.h|93|56|v|cpp
+	tr-toggle
+9b8eb14f9a783ce0eca2d288ae68b776|file:///usr/ring/var/dwm/config.h|117|1|V|cpp
+		{ 0,                            LOCK,      spawn,          {.v = lockon       } },
+8c41c303ef604d679df9b9db527e16fb|file:///usr/ring/var/dwm/config.h|112|34|v|cpp
+	     LOCK
+2684bc40376b6d945e886b93762e9f0d|file:///usr/ring/var/dwm/config.h|112|67|v|cpp
+	lockon
+f23cdf83fb9094495321a76cb4f7e993|file:///usr/ring/var/dwm/config.h|112|67|v|cpp
+	wpcmd
+3abdc71a0387bc08498ddab7d3538ea0|file:///usr/ring/var/st/config.h|13|3|v|cpp
+	Source Code Pro Semibold
+5900a15502ca2c4fe82a30764762b2ca|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	DejaVu Sans Mono Nerd Font
+faa0e92b66ee8900e712a9a87fc2d434|file:///usr/ring/var/st/config.h|12|21|v|cpp
+	for Powerline
+625c6f83191b5abca037dc56a1f6e8ea|file:///usr/ring/var/st/config.h|9|38|v|cpp
+	Semibold
+85f86ef978c89763e4994df442285c23|file:///usr/ring/var/st/config.h|15|8|v|cpp
+	DejaVuSansMono Nerd Font
+9a0ff8053f7c678fe91e8645494a0499|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	Apple Fonts
+acc9437c85a3f74da968acc520b66736|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	Source Code Pro
+1309c0f81550fc8faab19374856046af|file:///usr/ring/var/st/config.h|12|2|^v|cpp
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+87e3ddcf374875c0a93177573a7753c3|file:///usr/ring/var/st/config.h|17|2|V|cpp
+		"EmojiOne:pixelsize=30:antialias=true",
+4fcdaa83eedc53607fdae8708da8b4fa|file:///usr/ring/var/st/config.h|12|2|V|cpp
+		"JoyPixels:pixelsize=30:antialias=true",
+c4af35503fb95822f638bac9d1eacc3a|file:///usr/ring/var/st/config.h|14|4|V|cpp
+	    "AppleColorEmoji:pixelsize=30:antialias=true",
+fdf25d3d06bf8f3aa10e6d6690bcbf51|file:///usr/ring/var/st/config.h|17|2|V|cpp
+		//".Apple Color Emoji UI:pixelsize=30:antialias=true",
+69c337f8182efde3a7391253191931c7|file:///usr/ring/var/st/config.h|17|2|V|cpp
+		".Apple Color Emoji UI:pixelsize=30:antialias=true",
+5fee9ae66afb81e09ce486e32a0db2b1|file:///usr/ring/var/st/config.h|12|20|v|cpp
+	:pixelsize=30:antialias=true
+35975005e43fa267dac5fe6142f0261c|file:///usr/ring/var/st/config.h|12|2|^v|cpp
+	//
+	//
+	//
+	//
+	//
+	//
+8592aa50054e6edd6d34d6ec46f883e5|file:///usr/ring/var/st/config.h|14|2|V|cpp
+		"Source Code Pro for Powerline:pixelsize=30:antialias=true",
+		"Source Code Pro Semibold:pixelsize=30:antialias=true",
+9a36bbcfd194abb0e273ce1e542aa227|file:///usr/ring/var/st/config.h|14|3|V|cpp
+		"Apple Color Emoji:pixelsize=30:antialias=true",
+		".Apple Color Emoji UI:pixelsize=30:antialias=true",
+84007254535344342e9e48fd9904535f|file:///usr/ring/var/st/config.h|14|5|V|cpp
+	    "DejaVuSansMono Nerd Font Mono:pixelsize=30:antialias=true:autohint=true",
+54088029df00ae6622629acb33f46fac|file:///usr/ring/.oh-my-zsh/themes/robbyrussell.zsh-theme|1|18|v|
+	_bold
+f97ad8ee52c2710838243fdd089a47ea|file:///usr/ring/.vimrc|301|1|V|vim
+	let g:python_highlight_all = 1
+	Plug 'sheerun/vim-polyglot'
+88225ccd956832b34c45a086b483e645|file:///usr/ring/.vimrc|297|14|v|vim
+	vim-python-pep8-indent
+2f771e621df364d6a5dac00b75a17a72|file:///usr/ring/.vimrc|299|7|v|vim
+	tweekmonster/braceless
+cc82cccd7706288cb8bd8ad3dfef69d5|file:///usr/ring/.config/electron-ssr/logs/shadowsocksr-client.log|541|122|v|
+	Creation of this event was denied due to rate limiting
+	
+cf291fd15bbaf1f59e61451bd9232a12|file:///usr/ring/scripts/autostart.sh|10|1|V|sh
+	#/bin/bash ~/scripts/setxmodmap-colemak.sh &
+213761cd98b1e3bea7c059563fc36dfb|file:///usr/ring/scripts/autostart.sh|12|1|v|sh
+	xfce4-volumed-pulse
+8a5747fa3dd46a30e02d3f58e055be01|file:///usr/ring/scripts/autostart.sh|12|1|V|sh
+	xfce4-volumed-pulse &
+9cf42e4be711f81c4970f4b2e3e6b905|file:///usr/ring/scripts/dwmbar-functions/dwm_alsa.sh|10|11|v|sh
+	amixer -c 1 get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/"
+8549f19f34b13b1115c2781e2849267e|file:///usr/ring/scripts/dwmbar-functions/dwm_alsa.sh|10|1|V|sh
+	    VOL=$(amixer -c 1 get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
+33326a15feff9607cb026384cd7b8eb9|file:///tmp/zshlNykFp|1|47|v|zsh
+	.*\[(.*)%\]
+0e9f4324484bf586f5c2153ce5668102|file:///tmp/zshIcvC8n|1|49|v|zsh
+	\[(.*)%\]
+74569bde0440c71aa99307929a30edae|file:///tmp/zshuMSoEp|1|1|V|zsh
+	amixer -c 1 get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*\[(.*)\].*\[(.*)\].*/\3/"
+0c6c63680fbf3c0b9b72ee1ddd8b164b|file:///usr/ring/scripts/dwmbar-functions/dwm_vpn.sh|10|11|v|sh
+	nmcli -a
+6689e717d62bafcea5d70a8211be183e|file:///usr/ring/scripts/autostart.sh|11|1|V|sh
+	NetworkManager &
+c8067d06c376085f0339441b196abb47|file:///tmp/zshJuhxDp|1|20|v|zsh
+	MSFT0001:00 06CB:CD3E Touchpad
+0f9c27a5556e37c84b850e0f274f0647|file:///usr/ring/.vimrc|318|1|V|vim
+	imap <c-space> <Nop>
+393b32756c31eb0996f4731cb5b43f60|file:///usr/ring/.xprofile|4|1|V|
+	fcitx -d -r --enable sogou-qimpanel
+6103f56239c5e49e5e413ad2c95065b2|file:///usr/ring/var/dwm/config.h|54|1|V|cpp
+		{ "GoldenDict",          NULL,       NULL,       4<<8,            1,           -1 },
+01fed6cb3a21f0bff39ee44f23fe9711|file:///usr/ring/var/dwm/config.h|55|5|v|cpp
+	GoldenDict
+e4e5d5b075f4b4ffe06b928ae4737a6c|file:///usr/ring/var/dwm/config.h|55|1|V|cpp
+		{ "Steam",          NULL,       NULL,       4<<8,            1,           -1 },
+4db4563826bad0eb2f60ee6e42d0ea4b|file:///usr/ring/var/dwm/config.h|56|5|v|cpp
+	Steam
+9c7537132dde714eeffc9a81c7eb2016|file:///usr/ring/var/dwm/config.h|52|1|V|cpp
+		{ "uget-gtk",                NULL,       NULL,       4<<8,            1,           -1 },
+3ab7b0fcca22ef12f178d236a0f79efd|file:///usr/ring/var/st/config.h|12|3|v|cpp
+	Source Code Pro for Powerline:pixelsize=30:antialias=true
+90645c0c43d592fc9e54de297217a4e3|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	DejaVu Sans Mono Nerd Font:pixelsize=30:antialias=true:autohint=true
+f5ea9b5e47ef26c39e61fa28fdc36a68|file:///usr/ring/var/st/config.h|9|21|v|cpp
+	"DejaVu Sans Mono Nerd Font:pixelsize=30:antialias=true:autohint=true"
+6dc220855725bc096ee5271688502b78|file:///usr/ring/var/st/config.h|13|2|V|cpp
+		"Source Code Pro Semibold:pixelsize=30:antialias=true",
+ab207d68bceeb59bb7344dfc5a2c45eb|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	DejaVu Sans Mono Nerd Font:style=bold
+d6bbb9b84cd4a2b7d448ca836a6a8346|file:///usr/ring/var/st/config.h|12|1|V|cpp
+		"Source Han Sans CN:pixelsize=30:antialias=true",
+7394ef2df2e37e2bce45e8e9649f1810|file:///usr/ring/.config/ranger/rifle.conf|57|1|V|cfg
+	ext html = nvim "$@"
+372f78712d58955ce3cd59d5a26b922c|file:///usr/ring/.config/ranger/rifle.conf|145|1|V|cfg
+	ext pdf, has llpp,     X, flag f = llpp "$@"
+3f420f985f692a9810002bb08904c0be|file:///usr/ring/.config/ranger/rifle.conf|145|14|v|cfg
+	llpp
+5ae937b9c92bfd3c4a0aa597bb08ee7c|file:///usr/ring/.config/ranger/rifle.conf|159|1|V|cfg
+	ext docx?, has catdoc,       terminal = catdoc -- "$@" | "$PAGER"
+bb262978b18b42876c68d8f0bd7ee1f3|file:///usr/ring/.config/ranger/rifle.conf|159|16|v|cfg
+	catdoc
+ce4bbd48186d0f74541feb629915f576|file:///usr/ring/.config/ranger/rifle.conf|157|1|V|cfg
+	ext pdf, has open,     X, flag f = open "$@"
+c2f2fdcdcca4eaec0bb51f7f3f15fe43|file:///usr/ring/.config/ranger/rifle.conf|160|1|V|cfg
+	ext docx?, has wps,       terminal = catdoc -- "$@" | "$PAGER"
+7cef8a734855777c2a9d0caf42666e69|file:///usr/ring/.config/ranger/rifle.conf|159|15|v|cfg
+	open
+326dc23c97532827f12e426e72d90450|file:///usr/ring/.config/ranger/rifle.conf|162|1|V|cfg
+	ext docx, has wps,     X, flag f = wps "$@"
+0bbe36a9d5e37a03354db0aa6a94dd29|file:///usr/ring/.config/ranger/rifle.conf|163|5|v|cfg
+	docx
+9335d5fdb1b8edae3f8055d6217e2c11|file:///usr/ring/.config/ranger/rifle.conf|145|1|V|cfg
+	ext pdf, has wpspdf,   X, flag f = wpspdf "$@"
+50ec25fb7644eb73d0419bcdba4b773a|file:///usr/ring/var/dwm/config.h|138|1|V|cpp
+		{ MODKEY|ShiftMask,             XK_f,      fullscreen,     {0} },
+83c0d14fed7a5a4149b17b107d2d6aac|file:///usr/ring/var/dwm/config.h|140|47|v|cpp
+	setlayout
+74ba0736dad9b7236e2c7db4f4f4b874|file:///usr/ring/var/dwm/config.h|139|45|v|cpp
+	fullscreen
+ae282452d0c2c9af9f98202daa306c37|file:///usr/ring/var/dwm/config.h|140|52|v|cpp
+	yout
+f9b69428a4e65636b8cbba3ccc54e812|file:///usr/ring/var/dwm/config.h|139|45|v|cpp
+	fullscreen,
+f4eb93db0a88da4dd2824b5475403619|file:///usr/ring/.config/electron-ssr/gui-config.json|223|15|v|json
+	hk2-s
+f528764d624db129b32c21fbca0cb8d6|file:///usr/ring/.config/electron-ssr/shadowsocksr/config.json|5|23|v|json
+	127.0.0.1
+ccea4b3f3fd961ead108a12a44ee1740|file:///usr/ring/.config/electron-ssr/gui-config.json|218|17|v|json
+	PO3DfT
+c427376d1106ce9d4a1fcac8e73e23e5|file:///usr/ring/.config/electron-ssr/shadowsocksr/config.json|8|5|V|json
+	    "password": "m",
+a7cab7f8ffd57c3313af59a4fe6010f4|file:///usr/ring/.config/electron-ssr/gui-config.json|219|17|v|json
+	auth_aes128_md5
+2d9a66e8cd03ca20cad71cf63600d7dd|file:///usr/ring/.config/electron-ssr/gui-config.json|216|13|v|json
+	http_simple
+683ca3c4043fb12d3bb49c2470a087ea|file:///usr/ring/.config/electron-ssr/gui-config.json|217|18|v|json
+	download.windowsupdate.com
+5b99d52d00bd689170b1e961afaa0571|file:///usr/ring/.oh-my-zsh/themes/robbyrussell.zsh-theme|1|1|V|
+	PROMPT="%(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)"
+	PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
+	
+	ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
+	ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+	ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
+	ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+d47f643cfabe4673e8531c027dad9414|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|32|v|
+	➜:%{$
+8df1907c91b4edec541be0afaca58a43|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|1|V|
+	PROMPT="%(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)"
+16104d2c92a525594898f94b2d043086|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|2|9|v|
+	%(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)
+86cda5c224bb6a82e16b69be14007cbb|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|2|32|v|
+	[\u@%c]
+bf3abf99f10549f52ceefb8795017bb7|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|2|1|V|
+	PROMPT="%(?:%{$fg_bold[green]%}[\u@%c]:%{$fg_bold[red]%}[\u@%c])"
+	PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
+db11a5a88532a9124e0f59ce545c62f4|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|3|1|V|
+	PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
+c1616f3c8962623e339417e6c16a5fb9|file:///usr/ring/.zshrc|112|12|v|zsh
+	robbyrussell
+9ceb99487808b71dc0aa41e6200892be|file:///usr/ring/.zshrc|112|1|V|zsh
+	ZSH_THEME="robbyrussell"
+19bc94493f0287f61894b786fb73e78a|file:///usr/ring/.zshrc|102|1|V|zsh
+	# If you come from bash you might have to change your $PATH.
+	# export PATH=$HOME/bin:/usr/local/bin:$PATH
+	
+	# Path to your oh-my-zsh installation.
+14a2b67fc16e414a724817f67d0468ab|file:///usr/ring/.zshrc|104|1|V|zsh
+	# Set name of the theme to load --- if set to "random", it will
+	# load a random theme each time oh-my-zsh is loaded, in which case,
+	# to know which specific one was loaded, run: echo $RANDOM_THEME
+	# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+	#ZSH_THEME="robbyrussell"
+106fc2669bcbc0f5eced5f3db07f4dbc|file:///usr/ring/.zshrc|106|1|V|zsh
+	# Set list of themes to pick from when loading at random
+	# Setting this variable when ZSH_THEME=random will cause zsh to load
+	# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+	# If set to an empty array, this variable will have no effect.
+	# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+	
+	# Uncomment the following line to use case-sensitive completion.
+	# CASE_SENSITIVE="true"
+	
+	# Uncomment the following line to use hyphen-insensitive completion.
+	# Case-sensitive completion must be off. _ and - will be interchangeable.
+	# HYPHEN_INSENSITIVE="true"
+	
+	# Uncomment the following line to disable bi-weekly auto-update checks.
+	# DISABLE_AUTO_UPDATE="true"
+	
+	# Uncomment the following line to automatically update without prompting.
+	# DISABLE_UPDATE_PROMPT="true"
+	
+	# Uncomment the following line to change how often to auto-update (in days).
+	# export UPDATE_ZSH_DAYS=13
+	
+	# Uncomment the following line if pasting URLs and other text is messed up.
+	# DISABLE_MAGIC_FUNCTIONS=true
+	
+	# Uncomment the following line to disable colors in ls.
+	# DISABLE_LS_COLORS="true"
+	
+	# Uncomment the following line to disable auto-setting terminal title.
+	# DISABLE_AUTO_TITLE="true"
+	
+	# Uncomment the following line to enable command auto-correction.
+	# ENABLE_CORRECTION="true"
+	
+	# Uncomment the following line to display red dots whilst waiting for completion.
+	# COMPLETION_WAITING_DOTS="true"
+	
+	# Uncomment the following line if you want to disable marking untracked files
+	# under VCS as dirty. This makes repository status check for large repositories
+	# much, much faster.
+	# DISABLE_UNTRACKED_FILES_DIRTY="true"
+	
+	# Uncomment the following line if you want to change the command execution time
+	# stamp shown in the history command output.
+	# You can set one of the optional three formats:
+	# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+	# or set a custom format using the strftime function format specifications,
+	# see 'man strftime' for details.
+	# HIST_STAMPS="mm/dd/yyyy"
+	
+	# Would you like to use another custom folder than $ZSH/custom?
+	# ZSH_CUSTOM=/path/to/new-custom-folder
+	
+	# Which plugins would you like to load?
+	# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+	# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+	# Example format: plugins=(rails git textmate ruby lighthouse)
+	# Add wisely, as too many plugins slow down shell startup.
+00544625bc79301ba34ea81736964134|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|3|11|v|
+	%{$fg[green]%}%c
+9f27410725ab8cc8854a2769c7a516b8|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|2|24|v|
+	green
+935034ce8fb2fd83d5d2749535f97f1c|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|1|V|
+	
+	————————————————
+	
+	版权声明：本文为CSDN博主「Andyjicw」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上
+4a57638aedab705796e0158bcde01c76|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|4|1|V|
+	PROMPT='%{$fg[green]%}%m@%{$fg[magenta]%}%(?..%?%1v)%n:%{$reset_color%}%{$fg[cyan]%}%~#'green
+3d6a07507800538890c84fcf645c86b9|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|1|V|
+	
+	————————————————
+	
+	版权声明：本文为CSDN博主「Andyjicw」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+	
+	原文链接：https://blog.csdn.net/jichunw/article/details/80088995
+c6c0578010232c90dcc29168e9220d8d|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|4|1|V|
+	PROMPT='%{$fg_bold[red]%}-> %{$fg_bold[green]%}%p%{$fg[cyan]%}%d %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$reset_color%}~#:'
+855caea067b9d87064f917a70a6d848a|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|1|V|
+	
+	PROMPT='%{$fg_bold[red]%}-> %{$fg_bold[green]%}%p%{$fg[cyan]%}%d %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$fg[magenta]%}%(?..%?%1v)%{$reset_color%}~#: '    
+46e870250d90ae5edf6b40ecd68b273b|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|4|29|v|
+	%{$fg_bold[magenta]%}%n%{$fg_bold[cyan]%}@%{$fg[green]%}%m
+9f1e76abcfd26867f4d14acfcb9387c6|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|71|v|
+	%{$fg_bold[green]%}[%n@%c]
+a3083dc8068f9d5f532a79c52034b253|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|1|V|
+	PROMPT="%(?:%{$fg_bold[magenta]%}[%n%{$fg_bold[cyan]%}@%{$fg[green]%}%c]:%{$fg_bold[red]%}[%n@%c])"
+	PROMPT+='%{$reset_color%} $(git_prompt_info)'
+600821fbf505f7da50f9fe1a2e689d57|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|4|9|v|
+	%{$fg_bold[red]%}
+4c2a4a7078da0ac6733464eacfd00f86|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|42|v|
+	magenta
+91bfaf2acf1bd80e1ef4303cbdc5e59f|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|1|V|
+	PROMPT="%(?:%{$fg_bold[red]%}[%{$fg_bold[magenta]%}%n%{$fg_bold[cyan]%}@%{$fg[green]%}%c]:%{$fg_bold[red]%}[%n@%c])"
+0da8230064e52187137103f94949fd73|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|7|1|V|
+	PROMPT="%(?:%{$fg_bold[magenta]%}[%n%{$fg_bold[cyan]%}@%{$fg[green]%}%c]:%{$fg_bold[red]%}[%n@%c])"
+d487dd0b55dfcacdd920ccbdaeafa351|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|42|v|
+	yellow
+96ac1b5511df3c9570ac25695edc8578|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|73|v|
+	%{$fg[cyan]%}
+fe01d67a002dfa0f3ac084298142eccd|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|42|v|
+	orange
+48d6215903dff56238e52e8891380c8f|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|6|95|v|
+	blue
+0e2777f01e510c62275decd45c953b10|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|4|48|V|
+	PROMPT='%{$fg_bold[red]%}-> %{$fg_bold[magenta]%}%n%{$fg_bold[cyan]%}@%{$fg[green]%}%m %{$fg_bold[green]%}%p%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$fg[magenta]%}%(?..%?%1v)%{$fg_bold[blue]%}? %{$fg[yellow]%}# '  
+	
+6bc5ba4c9cbcee1f97021f928db2b46e|file:///usr/ring/.oh-my-zsh/themes/mytheme.zsh-theme|1|1|V|
+	PROMPT="%(?:%{$fg_bold[red]%}[%{$fg_bold[magenta]%}%n%{$fg_bold[cyan]%}@%{$fg[green]%}%c]:%{$fg_bold[red]%}[%n@%c])"
+	PROMPT+='%{$reset_color%} $(git_prompt_info)'
+ae7c4c2f14a5c953431d5fdbfc4b3070|file:///usr/ring/var/ssr/shadowsocksr-3.1.2/config.json|8|18|v|json
+	CXH1198039762a
+e12e5aead6f3bfccffe09ca84905eab0|file:///usr/ring/var/ssr/shadowsocksr-3.1.2/config.json|5|23|v|json
+	47.112.27.55
+acf922154627f6788918f03c42b123cd|file:///usr/ring/var/ssr/shadowsocksr-3.1.2/config.json|4|20|v|json
+	3633
+6822129919aa85a7a5d6b937323e588a|file:///usr/ring/var/ssr/shadowsocksr-3.1.2/config.json|5|23|v|json
+	.0.0.0
+fcd1b16013caa4309bdd76575628a58e|file:///usr/ring/var/st/config.h.rej|7|1|V|diff
+	+	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+d6b76f4fecd4ded212b9d011d4686627|file:///usr/ring/var/st/st.h.rej|7|1|V|diff
+	+void newterm(const Arg *);
+400db74716dad2586390c8dcc3a244cb|file:///usr/ring/var/st/config.h|223|4|v|cpp
+	MODKEY|ControlMask
+741568c2418765292bbe90a089c8765f|file:///usr/ring/var/st/config.h|220|4|v|cpp
+	SUPER|MODKEY
+1f27b2704289099fcf27fa097bb64df1|file:///usr/ring/Documents/code/py/spider/Maoyan/test.py|1|1|V|python
+	import re
+	import requests
+	import selenium
+	import pyquery
+	import pymysql
+	import pymongo
+	import redis
+	import flask
+	import django
+	import jupyter
+dab19e82e1f9a681ee73346d3e7a575e|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|19|21|v|python
+	www.baidu.com
+ace0a5c596c5d6b62689e3bf4ba6032b|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|19|21|v|python
+	https://emojipedia.org/unicode-11.0/
+2a3bebb169ea51a84d48ba23c0069413|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|13|V|python
+	            print
+8e67c8378204da5960c77297ad108d0c|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|1|V|python
+	            f.wite(item[0]+\t+item[1]+\n)
+a3166f198847c35da3f19b6c2bf4ff0c|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|13|v|python
+	f.wite
+75055c8dd8a3d5b1dd406642ebcedaef|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|1|V|python
+	            f.wite(item[0]+'\t'+item[1]+'\n')
+ebe70d42dd92f97896ab313defe687a1|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|26|13|V|python
+	            print(item[0]+\t+item[1]+\n)
+f7531e2d0ea27233ce00b5f01c5bf335|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|30|5|v|python
+	print
+0ce782a5dacab05c4149e5a3a78925f4|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|31|14|v|python
+	hmtl
+80342ad079462cdc1a52511ddcf7eff6|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|30|30|v|python
+	emojipedia.org/unicode-11.0/
+c07aaa3725e11b6d767e1b5f2ba0d96c|file:///usr/ring/Documents/code/py/spider/unicode_emoji/list.txt|28|1|V|text
+	💕	Hearts
+29dbbdb3f53fbd1f4a0f7b0cf578b0d5|file:///usr/ring/Documents/code/py/spider/unicode_emoji/list.txt|1|1|V|text
+	🍂	/fathers-day/
+	💪	/graduation/
+	🔥	/halloween/
+	🕎	/hearts/
+	🍂	
+	👨	
+	💪	
+	🎓	
+	🔥	
+	🎃	
+	🕎	
+	💕	
+	🍂	 Fall / Autumn</a></li>
+	<li><a href=
+	💪	 Festivus</a></li>
+	<li><a href=
+	🔥	 Guy Fawkes</a></li>
+	<li><a href=
+	🕎	 Hanukkah</a></li>
+	<li><a href=
+	🍂	Fall / Autumn
+	👨	Father’s Day
+	💪	Festivus
+	🎓	Graduation
+	🔥	Guy Fawkes
+	🎃	Halloween
+	🕎	Hanukkah
+	💕	Hearts
+03c6d02f63054512fa617674d8ed0616|file:///usr/ring/Documents/code/py/spider/duowan/spiderv3%28other%29.py|6|1|V|python
+	from multiprocessing import Pool
+da5a1816a2ac5932e0f04b1fc58e2cc7|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|52|5|V|python
+	    main()
+338bb0b43e35b79876d4edcf87886284|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|50|13|v|python
+	'<++>',
+43a1437f7f656cd8be7c996c58719e0a|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|34|53|v|python
+	10.0
+75d5222c1c56faa0c21b947d6a65751a|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|33|5|V|python
+	    list= [''<++>]<++>
+713a00a2111d0ec52707d3ccb09bb47f|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|34|1|V|python
+	#    html = '''</a></li>
+	#<li><a href="/fall-autumn/"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+	#<li><a href="/fathers-day/"><span class="emoji">👨</span> Father’s Day</a></li>
+	#<li><a href="/festivus/"><span class="emoji">💪</span> Festivus</a></li>
+	#<li><a href="/graduation/"><span class="emoji">🎓</span> Graduation</a></li>
+	#<li><a href="/guy-fawkes/"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+	#<li><a href="/halloween/"><span class="emoji">🎃</span> Halloween</a></li>
+	#<li><a href="/hanukkah/"><span class="emoji">🕎</span> Hanukkah</a></li>
+	#<li><a href="/hearts/"><span class="emoji">💕</span> Hearts</a></li>
+	#<li><a href="/holi/">'''
+040eeb8499b818e50ffb3fb40c2cb478|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|1|V|python
+	    with open('list.txt', 'a') as f:
+	        for item in result:
+	            f.write(item[0]+'\t'+item[1]+'\n')
+	            print(item[0]+'\t'+item[1]+'\n')
+	        f.close()
+	
+63a0ba6ce76415ce8c65e62310864f25|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|32|1|V|python
+	    from multiprocessing import Pool
+d04561ad98b365b04043acba32a359a4|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|1|V|python
+	    with open('list.txt', 'a') as f:
+	        for item in result:
+	            f.write(item[0]+'\t'+item[1]+'\n')
+	            print(item[0]+'\t'+item[1]+'\n')
+	        f.close()
+10ae9fc7d453b0dd525d0edf2ede7961|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|32|16|v|python
+	list
+18a5a132015479a38fce1a043b64f4d2|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|33|9|V|python
+	        for item in result:
+8a20950a0ba77c639ba102798944eff5|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|33|17|v|python
+	item[0]+'\t'+item[1]
+642b0f09433ff1d4ffd63a2240a6b6e2|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|42|1|V|python
+	        print(html) 
+d8742358eb4461059eb442843a0f1c42|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|1|V|python
+	    pattern = re.compile('<li>.*?<span class="emoji">(.*?)</span>\s(.*?)<.*?', re.S)
+7f59d3ba70adbfa85918dbe917c5c3d9|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|23|29|v|python
+	.*?<span class="emoji">
+eac828e40705bfafd82ef1a82e3f5ab8|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|23|36|v|python
+	span
+554680b9b859e5b8818866bc9bb0fa4e|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|23|39|v|python
+	.*?)<
+c5e96c29b4387ccaa23a2217a4629946|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|5|V|python
+	    result = re.match(catch)<++>
+87ee0cd6d5160033e8b4fd72aaefc230|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|5|v|python
+	splice
+27a62ae7ebd195827b2ec5d26b838b40|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|46|5|^v|python
+	    
+	    
+d41f2d9592b6d8e1db94d6b41fb79850|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|26|1|V|python
+	    print(html)
+2886dfbc478fbebc46b79d17764cc7e9|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|24|24|v|python
+	'<ul>.*?</ul>'
+a8982eb2a988054aa4d8d792dd074cca|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|21|v|python
+	catch
+16fa5489ed9ceaf50bdc4f110b27d005|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|29|15|v|python
+	re.findall(pattern, html)
+0adf12e56f0efe8317b0995fe8f8ad2a|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|12|v|python
+	re.match('<ul>.*?</ul>', html)
+	
+fc35fdc70d5fc69d269883a822c7a53e|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|5|v|python
+	html
+0a33d42852737542bf9c8315a1812561|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|29|1|V|python
+	    #result = re.findall(pattern, html)
+2d8b354e76006c78bc840f89628f2fd6|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|22|v|python
+	<ul>(.*?)</ul>
+f9dbb7b95897fb0e5939dd80679a0615|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|28|17|v|python
+	.group(1)
+3b393ba5c62178401d157ecafe0f3e63|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|27|25|v|python
+	'<ul>(.*?)</ul>'
+78b94ac016f63f16185689caa18e8507|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|27|5|V|python
+	    result = re.findall(catch, html)
+b4a88417b3d0170d754c647c30b7216a|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|27|11|v|python
+	result
+fb29dfed2b381b16e4504b66ae229aed|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|25|5|V|python
+	    #res = re.match('^<ul>(.*?)</ul>$', html)
+3da0980d84eb97fffb09d5406e912df0|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|26|11|v|python
+	result[0]
+cc93ff22b835fdd3503ad38dbb53f0dc|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|45|5|V|python
+	        html = '''<ul>abc</ul>'''
+a25f5a594b1cf9e752798c89b6179150|file:///usr/ring/Documents/code/py/spider/unicode_emoji/emoji.py|52|5|V|python
+	    main('1')
+b10d4e9bfce33e975839de8bdc2e9844|file:///usr/ring/Documents/code/py/spider/unicode_emoji/fail_list.txt|1|1|V|text
+	4.0
+	4.1
+	1.1
+	5.0
+	5.1
+	3.1
+	3.0
+	6.0
+	5.2
+	3.2
+	6.1
+	8.0
+	7.0
+	10.0
+	11.0
+	12.0
+	9.0
+	13.0
+	1
+	1
+	1
+	1
+	1
+ae2c163ad5eb824b4b0750d579248309|file:///usr/ring/Documents/code/py/spider/unicode_emoji/fail_list.txt|1|1|V|text
+	.0
+	4.1
+	1.1
+	5.0
+	5.1
+	3.1
+	3.0
+	6.0
+	5.2
+	3.2
+	6.1
+	8.0
+	7.0
+	10.0
+	11.0
+	12.0
+	9.0
+	13.0
+	1
+	1
+	1
+	1
+	1
+6f62bdcb0876c84763c92fb3ba17afa3|file:///usr/ring/scripts/dmenu-select-emoji.sh|1|1|V|sh
+	grep -v "#" PATH | dmenu -i -l 20 -fn Monospace-18 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
+5ffb5f0d0de78321df46fc7c93ca64a3|file:///usr/ring/scripts/dmenu-emoji-selection.sh|3|13|v|sh
+	PATH
+c7f234345ef0d88ddf0c3b9c905f1f41|file:///usr/ring/scripts/dmenu-emoji-selection.sh|3|1|V|sh
+	grep -v "#" ./static/emoji_unicode.txt | dmenu -i -l 20 -fn Monospace-18 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
+50c8188aaff61bcba489a96e06e3ef0c|file:///usr/ring/scripts/dmenu-emoji-selection.sh|5|45|v|sh
+	xclip -o -selection clipboard
+33725ae45554f7df620475cd286ec563|file:///usr/ring/xorg.conf.new|1|1|V|xf86conf
+	Section "ServerLayout"
+571993f6f27d9070c8e4bd4f59b03901|file:///usr/ring/var/dwm/config.h|93|55|v|cpp
+	tr-toggle.sh
+be4117b0c842c4be8f9960294bdc2cd1|file:///usr/ring/scripts/dmenu-emoji-selection.sh|3|51|v|sh
+	.txt
+9e8159144aad96a620cbee84defde02a|file:///usr/ring/.zshrc|19|1|V|zsh
+	         emoji
+1e10cd385ab9239c0f043b113d725eb1|file:///usr/ring/.zshrc|25|1|V|zsh
+	bindkey -v
+	bindkey -M vicmd "h" vi-insert
+	bindkey -M vicmd "H" vi-insert-bol
+	bindkey -M vicmd "j" vi-backward-char
+	bindkey -M vicmd "l" vi-forward-char
+	bindkey -M vicmd "J" vi-backward-word
+	bindkey -M vicmd "L" vi-forward-word
+	bindkey -M vicmd "k" down-line-or-history
+	bindkey -M vicmd "i" up-line-or-history
+	bindkey -M vicmd "I" up-line-or-history
+	bindkey -M vicmd "gg" vi-beginning-of-line
+	bindkey -M vicmd "G" vi-end-of-line
+	bindkey -M vicmd "u" undo
+	bindkey -M vicmd "=" vi-repeat-search
+	bindkey -M vicmd "n" vi-forward-word-end
+	bindkey -M vicmd "f" history-incremental-search-backward
+	bindkey -M vicmd "F" history-incremental-search-forward
+	
+	# 自动改变光标的函数
+	function zle-keymap-select {
+		if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
+			echo -ne '\e[1 q'
+		elif [[ ${KEYMAP} == main ]] || [[ ${KEYMAP} == viins ]] || [[ ${KEYMAP} = '' ]] || [[ $1 = 'beam' ]]; then
+			echo -ne '\e[5 q'
+	  fi
+	}
+	zle -N zle-keymap-select
+	
+	# Use beam shape cursor on startup.
+	echo -ne '\e[5 q'
+2e086a0d6eeeb98c79bdb7ad4027b02f|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|1|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+49500a4c629f3ce68ef5e57d9e064424|file:///usr/ring/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh|34|14|v|zsh
+	http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor
+ae8b5aa26a3ae31612eec1d1f6ffbce9|file:///usr/ring/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh|36|50|v|zsh
+	66666
+916892e8806b2c4f4164aadb6356b0f9|file:///usr/ring/scripts/static/emoji_unicode|103|1|V|
+	‍	Zero Width Joiner
+d64b39228832040b16b8350f84e119c7|file:///usr/ring/.zshrc|111|1|V|zsh
+	# Set list of themes to pick from when loading at random
+	# Setting this variable when ZSH_THEME=random will cause zsh to load
+	# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+	# If set to an empty array, this variable will have no effect.
+	# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+eec4140dc4fd8633e44462d8f45ff270|file:///usr/ring/.zshrc|111|43|V|zsh
+	# Uncomment the following line to use case-sensitive completion.
+	# CASE_SENSITIVE="true"
+389773ca89b86a33a54e1e90836b48c8|file:///usr/ring/.zshrc|111|1|V|zsh
+	
+	# Uncomment the following line to use hyphen-insensitive completion.
+	# Case-sensitive completion must be off. _ and - will be interchangeable.
+	# HYPHEN_INSENSITIVE="true"
+1981be6808373a1f089218ff3c2340d3|file:///usr/ring/.zshrc|111|1|V|zsh
+	# Uncomment the following line to disable bi-weekly auto-update checks.
+	# DISABLE_AUTO_UPDATE="true"
+35ebcb7af21b912ca6ccfa12f7dd2e54|file:///usr/ring/.zshrc|111|1|V|zsh
+	
+	# Uncomment the following line to automatically update without prompting.
+0e8725fc5562a7f75be228849a1f9b64|file:///usr/ring/.zshrc|111|1|V|zsh
+	# DISABLE_UPDATE_PROMPT="true"
+81169103fc861ba76d87caabb3465bfd|file:///usr/ring/.zshrc|111|1|V|zsh
+	# Uncomment the following line to change how often to auto-update (in days).
+	# export UPDATE_ZSH_DAYS=13
+36fb0b811633be77c01ac55ea62f7a19|file:///usr/ring/.zshrc|109|1|V|zsh
+	# Uncomment the following line to disable colors in ls.
+	# DISABLE_LS_COLORS="true"
+4daa04f3185ae6b1901268411b07762f|file:///usr/ring/.zshrc|109|1|V|zsh
+	# Uncomment the following line to disable auto-setting terminal title.
+	# DISABLE_AUTO_TITLE="true"
+f9579bc7a2097a18f09c0a5f58d179d6|file:///usr/ring/.zshrc|109|1|V|zsh
+	# Uncomment the following line to enable command auto-correction.
+	# ENABLE_CORRECTION="true"
+05b1cab061d19fd08ae58a793e804ab3|file:///usr/ring/.zshrc|112|1|V|zsh
+	# Uncomment the following line if you want to disable marking untracked files
+	# under VCS as dirty. This makes repository status check for large repositories
+	# much, much faster.
+	# DISABLE_UNTRACKED_FILES_DIRTY="true"
+fc70872e4ec595b954a6ba6246da7750|file:///usr/ring/.zshrc|112|1|V|zsh
+	# Uncomment the following line if you want to change the command execution time
+	# stamp shown in the history command output.
+	# You can set one of the optional three formats:
+	# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+	# or set a custom format using the strftime function format specifications,
+	# see 'man strftime' for details.
+	# HIST_STAMPS="mm/dd/yyyy"
+38cf9cc8fd993ec0e8032bfd369c5575|file:///usr/ring/.zshrc|112|1|V|zsh
+	# Would you like to use another custom folder than $ZSH/custom?
+	# ZSH_CUSTOM=/path/to/new-custom-folder
+20338bd8f8c7efd4f0e70b93084056b6|file:///usr/ring/.zshrc|112|1|V|zsh
+	# Which plugins would you like to load?
+	# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+	# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+	# Example format: plugins=(rails git textmate ruby lighthouse)
+	# Add wisely, as too many plugins slow down shell startup.
+0c8f7c5e54b05fbc345babd1094357d1|file:///usr/ring/.zshrc|114|1|V|zsh
+	# User configuration
+67549231496b97ba4786bf28ff10c9d7|file:///usr/ring/.zshrc|114|1|V|zsh
+	# export MANPATH="/usr/local/man:$MANPATH"
+75214addcc054b8c1fcce240743a7cee|file:///usr/ring/.zshrc|114|1|V|zsh
+	# You may need to manually set your language environment
+	# export LANG=en_US.UTF-8
+cafd31bf08fd14c0568ab3fe71f67445|file:///usr/ring/.zshrc|114|1|V|zsh
+	# Preferred editor for local and remote sessions
+	# if [[ -n $SSH_CONNECTION ]]; then
+	#   export EDITOR='vim'
+	# else
+	#   export EDITOR='mvim'
+	# fi
+	
+	# Compilation flags
+	# export ARCHFLAGS="-arch x86_64"
+	
+	# Set personal aliases, overriding those provided by oh-my-zsh libs,
+	# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+	# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+	# For a full list of active aliases, run `alias`.
+	#
+	# Example aliases
+	# alias zshconfig="mate ~/.zshrc"
+	# alias ohmyzsh="mate ~/.oh-my-zsh"
+d809907ed33db6f12e29f2fd7aacaae0|file:///usr/ring/Video/ribs/code.txt|1|10|v|text
+	https://www.youtube.com/watch?v=mjREZoRqTWM
+edb66c19e458fac2a592c2cf41f12175|file:///usr/ring/Documents/code/py/spider/Maoyan/test.py|3|1|V|python
+	import selenium
+be9c11307b7bebebc4b4cb931c3ee488|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|65|9|^v|zsh
+	-M
+	-M
+a9a7b7bc81ad5a4fbf689878c8fe2c98|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|65|9|^v|zsh
+	-M vicmd
+	-M vicmd
+	-M vicmd
+	-M vicmd
+	-M vicmd
+	-M vicmd
+	-M vicmd
+0bc4e4042a456503f2f157a5c69e9e18|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|36|1|V|zsh
+	#bindkey '^?' backward-delete-char
+a91a77b9d92019537364b2764affd15a|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|38|1|V|zsh
+	#bindkey '^w' backward-kill-word
+81bb590b5c043ca1eee7af42613b79bb|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|62|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+cbce978d429337e339f4f2696c71836e|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|63|7|V|zsh
+	#bindkey '^?' backward-delete-char
+	#bindkey '^w' backward-kill-word
+79db666b2756ca24163caf3718c88fb8|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|80|1|V|zsh
+	# 自动改变光标的函数
+02f0ac36cd0903c84c2045e4dc2493b1|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|40|1|V|zsh
+	# allow ctrl-r and ctrl-s to search the history
+	bindkey '^r' history-incremental-search-backward
+	bindkey '^s' history-incremental-search-forward
+d9534efa355facef72ee524d8f3c0a05|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|41|11|V|zsh
+	bindkey '^j' beginning-of-line
+	bindkey '^l' end-of-line
+0236bc122b8740972653135382ff49f3|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|37|1|V|zsh
+	bindkey '^h' backward-delete-char
+2f1c5b28b496f4662b7ebc23ebb94e63|file:///usr/ring/scripts/dwm-status-refresh.sh|167|1|V|sh
+	# xsetroot -name "  💿$(print_mem)M ⬇️$vel_recv ⬆️$vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
+b168e125f8ea424fadd3d90115812132|file:///usr/ring/scripts/dwm-status-refresh.sh|8|1|V|sh
+	#function get_bytes {
+	#	# Find active network interface
+	#	interface=$(ip route get 8.8.8.8 2>/dev/null| awk '{print $5}')
+	#	line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
+	#	eval $line
+	#	now=$(date +%s%N)
+	#}
+	
+	# Function which calculates the speed using actual and old byte number.
+	# Speed is shown in KByte per second when greater or equal than 1 KByte per second.
+	# This function should be called each second.
+	
+	# function get_velocity {
+	#	value=$1
+	#	old_value=$2
+	#	now=$3
+	#
+	#	timediff=$(($now - $old_time))
+	#	velKB=$(echo "1000000000*($value-$old_value)/1024/$timediff" | bc)
+	#	if test "$velKB" -gt 1024
+	#	then
+	#		echo $(echo "scale=2; $velKB/1024" | bc)MB/s
+	#	else
+	#		echo ${velKB}KB/s
+	#	fi
+	#}
+	
+	## Get initial values
+	#get_bytes
+	#old_received_bytes=$received_bytes
+	#old_transmitted_bytes=$transmitted_bytes
+	#old_time=$now
+dc4f705fea0f76143b2aaf359197ffbd|file:///usr/ring/scripts/dwm-status-refresh.sh|29|1|V|sh
+	#!/bin/bash
+	
+	get_time_until_charged() {
+	
+		# parses acpitool's battery info for the remaining charge of all batteries and sums them up
+		sum_remaining_charge=$(acpitool -B | grep -E 'Remaining capacity' | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc);
+	
+		# finds the rate at which the batteries being drained at
+		present_rate=$(acpitool -B | grep -E 'Present rate' | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc);
+	
+		# divides current charge by the rate at which it's falling, then converts it into seconds for `date`
+	    if [ $present_rate -eq 0 ];
+	    then
+	        seconds=0;
+	    else
+		    seconds=$(bc <<< "scale = 10; ($sum_remaining_charge / $present_rate) * 3600");
+	    fi
+	
+		# prettifies the seconds into h:mm:ss format
+		# pretty_time=$(date -u -d "${seconds}" +%T);
+	    pretty_time=(${seconds} / 60);
+	
+		echo $pretty_time;
+	}
+103796256549bb41021361ec5495d95e|file:///usr/ring/scripts/dwm-status-refresh.sh|81|7|v|sh
+	cat /tmp/r2d2
+25cd2849f234a2fd5612e2830a13eeec|file:///usr/ring/scripts/dwm-status-refresh.sh|112|60|v|sh
+	$(show_record)
+2c9e7b5b86aa31b772cf4ed6857b2526|file:///usr/ring/scripts/dwm-status-refresh.sh|79|1|V|sh
+	show_record(){
+		test -f /tmp/r2d2 || return
+		rp=$(cat /tmp/r2d2 | awk '{print $2}')
+		size=$(du -h $rp | awk '{print $1}')
+		echo " $size $(basename $rp)"
+	}
+0242a25a1b97669d5b8762bc959bc56a|file:///usr/ring/scripts/dwm-status-refresh.sh|99|1|V|sh
+	# get_bytes
+	
+	# Calculates speeds
+	# vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
+	# vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
+	
+0306116a4f3554b56fc735e0d4914da7|file:///usr/ring/scripts/dwm-status-refresh.sh|101|1|V|sh
+	## Update old values to perform new calculations
+	#old_received_bytes=$received_bytes
+	#old_transmitted_bytes=$transmitted_bytes
+	#old_time=$now
+ad5a5c5f7e9c50355a639b176c94fdd9|file:///usr/ring/scripts/dwm-status-refresh.sh|35|1|V|sh
+		# total_charge=$(expr $(acpi -b | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc));
+	
+		# get amount of batteries in the device
+		# battery_number=$(acpi -b | wc -l);
+	
+		# percent=$(expr $total_charge / $battery_number);
+d9f58bc456c0b2d8e9e56113296f9c88|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|1|1|V|zsh
+	## Updates editor information when the keymap changes.
+	#function zle-keymap-select() {
+	#  # update keymap variable for the prompt
+	#  VI_KEYMAP=$KEYMAP
+	#
+	#  zle reset-prompt
+	#  zle -R
+	#}
+	#
+	#zle -N zle-keymap-select
+	#
+	#function vi-accept-line() {
+	#  VI_KEYMAP=main
+	#  zle accept-line
+	#}
+	#
+	#zle -N vi-accept-line
+	#
+	#
+	#bindkey -v
+	#
+	## use custom accept-line widget to update $VI_KEYMAP
+	#bindkey -M vicmd '^J' vi-accept-line
+	#bindkey -M vicmd '^M' vi-accept-line
+	#
+	## allow v to edit the command line (standard behaviour)
+	#autoload -Uz edit-command-line
+	#zle -N edit-command-line
+	#bindkey -M vicmd 'v' edit-command-line
+	#
+	## allow ctrl-p, ctrl-n for navigate history (standard behaviour)
+	#bindkey '^P' up-history
+	#bindkey '^N' down-history
+	#
+	## allow ctrl-h, ctrl-w, ctrl-? for char and word deletion (standard behaviour)
+	#bindkey '^?' backward-delete-char
+	#bindkey '^h' backward-delete-char
+	#bindkey '^w' backward-kill-word
+	#
+	## allow ctrl-r and ctrl-s to search the history
+	#bindkey '^r' history-incremental-search-backward
+	#bindkey '^s' history-incremental-search-forward
+	#
+	## allow ctrl-a and ctrl-e to move to beginning/end of line
+	#bindkey '^a' beginning-of-line
+	#bindkey '^e' end-of-line
+	#
+	## if mode indicator wasn't setup by theme, define default
+	#if [[ "$MODE_INDICATOR" == "" ]]; then
+	#  MODE_INDICATOR="%{$fg_bold[red]%}<%{$fg[red]%}<<%{$reset_color%}"
+	#fi
+	#
+	#function vi_mode_prompt_info() {
+	#  echo "${${VI_KEYMAP/vicmd/$MODE_INDICATOR}/(main|viins)/}"
+	#}
+	#
+	## define right prompt, if it wasn't defined by a theme
+	#if [[ "$RPS1" == "" && "$RPROMPT" == "" ]]; then
+	#  RPS1='$(vi_mode_prompt_info)'
+	#fi
+a6f5b02fda7b975b5e7fa99c113dfcb3|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|132|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+803f645e2ab3e5ba217f3f2011ab8623|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|110|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+4e95a5e15dd2cc6e3f9d57dd8332504c|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|24|1|^v|zsh
+	#
+	#
+	#
+	#
+535a6fdad68297a7b23b082e87f017cf|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|28|1|^v|zsh
+	#
+	#
+	#
+	#
+	#
+2e883601ee7b84784116f53458a08d6d|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|33|1|V|zsh
+	# allow ctrl-p, ctrl-n for navigate history (standard behaviour)
+	bindkey '^p' up-history
+	bindkey '^n' down-history
+80c6577f6939743b260947b8b3fc4f11|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|40|1|V|zsh
+	#
+	## if mode indicator wasn't setup by theme, define default
+	#if [[ "$MODE_INDICATOR" == "" ]]; then
+	#  MODE_INDICATOR="%{$fg_bold[red]%}<%{$fg[red]%}<<%{$reset_color%}"
+	#fi
+	#
+	#function vi_mode_prompt_info() {
+	#  echo "${${VI_KEYMAP/vicmd/$MODE_INDICATOR}/(main|viins)/}"
+	#}
+	#
+	## define right prompt, if it wasn't defined by a theme
+	#if [[ "$RPS1" == "" && "$RPROMPT" == "" ]]; then
+	#  RPS1='$(vi_mode_prompt_info)'
+39925e9a38474f15be541f4b6ada5c2f|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|38|1|V|zsh
+	bindkey '^j' beginning-of-line
+bdeae78710f87f8e74bacc444cc0538c|file:///usr/ring/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh|122|1|V|zsh
+	#bindkey '^e' end-of-line
+6f9be6a0b0a3b0a1708fba3207eef4a5|file:///usr/ring/scripts/README.md|1|1|V|markdown
+	# Some scripts
+90fe9e33e16a5bbef0864f6b0e46ad91|file:///usr/ring/.zshrc|15|1|V|zsh
+	export XDG_CONFIG_HOME="$HOME/.config"
+b76c7837ab2b4222a03a4f2205b30698|file:///usr/ring/var/bspwm/.gitignore_|1|1|V|
+	*.o
+	st
+	*.orig
+	*.rej
+062b3efe41f6baa8f4f503319cd407ae|file:///usr/ring/var/bspwm/.gitignore|6|1|V|
+	*.orig
+91b01f958ca50c74133c21feb6f83c01|file:///usr/ring/var/bspwm/.gitignore|6|1|V|
+	*.rej
+e4550dbcb81430fd96b8f0517bfff768|file:///usr/ring/var/dwm/config.h|89|36|v|cpp
+	dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL 
+d5c89c3a7c0beb8958491432e2f8a7cf|file:///usr/ring/.config/sxhkd/sxhkdrc|12|2|V|conf
+		dmenu_run
+3bcd9aca9f519317167ccf45443eb07f|file:///usr/ring/var/dwm/config.h|14|40|v|cpp
+	Lucida Mac:size=25
+1f63c137eb9bbb2c95a5d588a2a8dd4e|file:///usr/ring/.config/sxhkd/sxhkdrc|12|1|v|conf
+	dmenufont
+837cc564a59bc302087fd577a6b07d72|file:///usr/ring/.config/sxhkd/sxhkdrc|11|67|v|conf
+	col_gray1
+5a53fe95545cceabdf6585ca9c853f51|file:///usr/ring/.config/sxhkd/sxhkdrc|11|83|v|conf
+	col_gray3
+8c7313f086bf6861ac70d4cfec3905b3|file:///usr/ring/.config/sxhkd/sxhkdrc|11|99|v|conf
+	col_cyan
+a60b4a7a8e1db20b60a89a17d785424d|file:///usr/ring/.config/sxhkd/sxhkdrc|11|115|v|conf
+	col_gray4
+492ab7822f3859ff4f9923a586812340|file:///usr/ring/.config/sxhkd/sxhkdrc|11|1|V|conf
+	    dmenu_run", "-m", dmenumon, "-fn", Lucida Mac:size=25, "-nb", #222222, "-nf", #bbbbbb, "-sb", #0099CC, "-sf", #ffffff, NULL
+25befaf2efd73f2ccd5ed3f46a1103f5|file:///tmp/zshzi2dXX|1|15|v|zsh
+	-m dmenumon, "
+4a053164d2f279927b800f4116479e53|file:///tmp/zshzi2dXX|1|87|v|zsh
+	, NULL
+f0e2cee9376264592c8b463fb7495331|file:///tmp/zshnoBiLX|1|1|V|zsh
+	dmenu_run -fn "Lucida Mac:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
+6d63a86a528a4febdbb34e6106944bc0|file:///usr/ring/.config/sxhkd/sxhkdrc|26|9|v|conf
+	alt + {
+1d6426f93b272e151e9ad279329c8ee6|file:///usr/ring/.config/sxhkd/sxhkdrc|26|9|v|conf
+	alt + 
+bf0e7540dce155beb0bbc730c8f8d2d5|file:///usr/ring/.config/sxhkd/sxhkdrc|30|9|v|conf
+	{_,shift + }
+cae97a297183cf31050c5ea5c258eb70|file:///usr/ring/.config/sxhkd/sxhkdrc|15|5|v|conf
+	chromuim
+41ef25b6d7127cc1e208196b73347aae|file:///usr/ring/.config/sxhkd/sxhkdrc|146|1|V|conf
+	# volume up
+ddb18b3a8323b21a3b7826ac4455a43d|file:///usr/ring/var/dwm/config.h|74|19|v|cpp
+	0x1008ff13
+2424cc9ff19972395b3d1e4e69b2f89e|file:///usr/ring/var/dwm/config.h|73|19|v|cpp
+	0x1008ff11
+abcb4b1d52041e45590cf781ae669f6f|file:///usr/ring/var/dwm/config.h|76|19|v|cpp
+	0x1008ff02
+43c22a94ad452172673c785859bd9df8|file:///usr/ring/var/dwm/config.h|75|19|v|cpp
+	0x1008ff03
+3e6e9495b3f3511fc45b1d4576644202|file:///usr/ring/.config/sxhkd/sxhkdrc|151|1|V|conf
+	    pamixer -i 7
+3f85dffe55c9ef3d55c2ad90c3199118|file:///usr/ring/.config/sxhkd/sxhkdrc|50|1|V|conf
+	super + {t,shift + t,shift + f,f}
+		bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+3cc931808f2e27d54f2fca00f18b8b45|file:///usr/ring/.config/sxhkd/sxhkdrc|52|12|v|conf
+	shift + t
+1fe5cd7f931e537d93ff6dd2bc3ca061|file:///usr/ring/.config/sxhkd/sxhkdrc|53|21|v|conf
+	,pseudo_tiled
+d7060c6a5b8e6d10796f02fae260c38a|file:///usr/ring/.config/sxhkd/sxhkdrc|52|12|v|conf
+	shift + 
+85377b547025700a462a40f4e7a62259|file:///usr/ring/.config/bspwm/bspwmrc|17|1|V|sh
+	bspc rule -a mplayer2 state=floating
+6117fcfb047f96a9b9e0a5ffdbb1cc8e|file:///usr/ring/.config/bspwm/bspwmrc|18|14|v|sh
+	mplayer2
+3aca1616f750b720f13e2b0c85288a5a|file:///usr/ring/.config/bspwm/bspwmrc|18|1|V|sh
+	bspc rule -a goldendict state=floating
+b2a6bc5e7e1d83c007a4843b0a43a5ec|file:///usr/ring/.config/bspwm/bspwmrc|19|14|v|sh
+	goldendict
+9f814d5fddf832c1b13513fee9e4f4d8|file:///usr/ring/.config/bspwm/bspwmrc|19|1|V|sh
+	bspc rule -a uGet state=floating
+6fa74855b20595c69b77a80f87f9e8f2|file:///usr/ring/.config/bspwm/bspwmrc|20|14|v|sh
+	uGet
+b67f5448c01b952f5de20e79a354cae4|file:///usr/ring/.config/bspwm/bspwmrc|17|1|V|sh
+	bspc rule -a mplayer2 state=floating
+	bspc rule -a Goldendict state=floating
+	bspc rule -a uGet state=floating
+	bspc rule -a Transmission state=floating
+26bbaa918e3cb15d0cc77674f2c7f554|file:///usr/ring/.config/sxhkd/sxhkdrc|118|1|V|conf
+	super + alt + {j,k,i,l}
+		bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+71f262d796bed1ab30e8a2d5a8ddee6f|file:///usr/ring/.config/sxhkd/sxhkdrc|118|27|v|conf
+	bottom
+7c4f29407893c334a6cb7a87bf045c0d|file:///usr/ring/.config/sxhkd/sxhkdrc|118|46|v|conf
+	right
+811882fecd5c7618d7099ebbd39ea254|file:///usr/ring/.config/sxhkd/sxhkdrc|118|46|v|conf
+	left
+3abef28a7308286a7e8c0bc9b7b72f90|file:///usr/ring/.config/yabar/yabar.conf|1|26|v|
+	, ...
+f58c8c8f6463da18a75139751628e834|file:///usr/ring/.config/.gitignore|8|14|v|
+	.subscribe.update.last
+	
+e07f9fbeb6d062fda4f2c1a60b495e49|file:///usr/ring/.config/.gitignore|8|15|v|
+	electron-ssr/Cache/data_0
+	
+f901e16572496193c71fe8c839fa3c0d|file:///usr/ring/.config/.gitignore|9|1|V|
+	electron-ssr/Cache/data_1
+	electron-ssr/Cache/data_2
+	electron-ssr/Cache/data_3
+	electron-ssr/Cache/f_000001
+	electron-ssr/Cache/index
+	electron-ssr/Cookies
+	electron-ssr/Cookies-journal
+	electron-ssr/GPUCache/data_0
+	electron-ssr/GPUCache/data_1
+	electron-ssr/GPUCache/data_2
+	electron-ssr/GPUCache/data_3
+	electron-ssr/GPUCache/index
+	electron-ssr/Local Storage/file__0.localstorage
+	electron-ssr/Local Storage/file__0.localstorage-journal
+	electron-ssr/Preferences
+	electron-ssr/SS
+	electron-ssr/SingletonCookie
+	electron-ssr/SingletonLock
+	electron-ssr/gui-config.json
+	electron-ssr/logs/shadowsocksr-client.log
+	electron-ssr/pac.txt
+	electron-ssr/sentry/scope.json
+	electron-ssr/shadowsocksr/.gitignore
+	electron-ssr/shadowsocksr/.travis.yml
+	electron-ssr/shadowsocksr/CHANGES
+	electron-ssr/shadowsocksr/CONTRIBUTING.md
+	electron-ssr/shadowsocksr/Dockerfile
+	electron-ssr/shadowsocksr/LICENSE
+	electron-ssr/shadowsocksr/MANIFEST.in
+	electron-ssr/shadowsocksr/README.md
+	electron-ssr/shadowsocksr/README.rst
+	electron-ssr/shadowsocksr/apiconfig.py
+	electron-ssr/shadowsocksr/asyncmgr.py
+	electron-ssr/shadowsocksr/config.json
+	electron-ssr/shadowsocksr/configloader.py
+	electron-ssr/shadowsocksr/db_transfer.py
+	electron-ssr/shadowsocksr/debian/changelog
+	electron-ssr/shadowsocksr/debian/compat
+	electron-ssr/shadowsocksr/debian/config.json
+	electron-ssr/shadowsocksr/debian/control
+	electron-ssr/shadowsocksr/debian/copyright
+	electron-ssr/shadowsocksr/debian/docs
+	electron-ssr/shadowsocksr/debian/init.d
+	electron-ssr/shadowsocksr/debian/install
+	electron-ssr/shadowsocksr/debian/rules
+	electron-ssr/shadowsocksr/debian/shadowsocks.default
+	electron-ssr/shadowsocksr/debian/shadowsocks.manpages
+	electron-ssr/shadowsocksr/debian/source/format
+	electron-ssr/shadowsocksr/debian/sslocal.1
+	electron-ssr/shadowsocksr/debian/ssserver.1
+	electron-ssr/shadowsocksr/importloader.py
+	electron-ssr/shadowsocksr/initcfg.bat
+	electron-ssr/shadowsocksr/initcfg.sh
+	electron-ssr/shadowsocksr/initmudbjson.sh
+	electron-ssr/shadowsocksr/logrun.sh
+	electron-ssr/shadowsocksr/mudb.json
+	electron-ssr/shadowsocksr/mujson_mgr.py
+	electron-ssr/shadowsocksr/mysql.json
+	electron-ssr/shadowsocksr/run.sh
+	electron-ssr/shadowsocksr/server.py
+	electron-ssr/shadowsocksr/server_pool.py
+	electron-ssr/shadowsocksr/setup.py
+	electron-ssr/shadowsocksr/setup_cymysql.sh
+	electron-ssr/shadowsocksr/shadowsocks/__init__.py
+	electron-ssr/shadowsocksr/shadowsocks/asyncdns.py
+	electron-ssr/shadowsocksr/shadowsocks/common.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/__init__.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/ctypes_libsodium.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/ctypes_openssl.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/openssl.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/rc4_md5.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/sodium.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/table.py
+	electron-ssr/shadowsocksr/shadowsocks/crypto/util.py
+	electron-ssr/shadowsocksr/shadowsocks/daemon.py
+	electron-ssr/shadowsocksr/shadowsocks/encrypt.py
+	electron-ssr/shadowsocksr/shadowsocks/encrypt_test.py
+	electron-ssr/shadowsocksr/shadowsocks/eventloop.py
+	electron-ssr/shadowsocksr/shadowsocks/local.py
+	electron-ssr/shadowsocksr/shadowsocks/logrun.sh
+	electron-ssr/shadowsocksr/shadowsocks/lru_cache.py
+	electron-ssr/shadowsocksr/shadowsocks/manager.py
+	electron-ssr/shadowsocksr/shadowsocks/obfs.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/__init__.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/auth.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/auth_chain.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/http_simple.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/obfs_tls.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/plain.py
+	electron-ssr/shadowsocksr/shadowsocks/obfsplugin/verify.py
+	electron-ssr/shadowsocksr/shadowsocks/ordereddict.py
+	electron-ssr/shadowsocksr/shadowsocks/run.sh
+	electron-ssr/shadowsocksr/shadowsocks/server.py
+	electron-ssr/shadowsocksr/shadowsocks/shell.py
+	electron-ssr/shadowsocksr/shadowsocks/stop.sh
+	electron-ssr/shadowsocksr/shadowsocks/tail.sh
+	electron-ssr/shadowsocksr/shadowsocks/tcprelay.py
+	electron-ssr/shadowsocksr/shadowsocks/udprelay.py
+	electron-ssr/shadowsocksr/shadowsocks/version.py
+	electron-ssr/shadowsocksr/stop.sh
+	electron-ssr/shadowsocksr/switchrule.py
+	electron-ssr/shadowsocksr/tail.sh
+	electron-ssr/shadowsocksr/tests/aes-cfb1.json
+	electron-ssr/shadowsocksr/tests/aes-cfb8.json
+	electron-ssr/shadowsocksr/tests/aes-ctr.json
+	electron-ssr/shadowsocksr/tests/aes.json
+	electron-ssr/shadowsocksr/tests/assert.sh
+	electron-ssr/shadowsocksr/tests/chacha20.json
+	electron-ssr/shadowsocksr/tests/client-multi-server-ip.json
+	electron-ssr/shadowsocksr/tests/coverage_server.py
+	electron-ssr/shadowsocksr/tests/fastopen.json
+	electron-ssr/shadowsocksr/tests/ipv6-client-side.json
+	electron-ssr/shadowsocksr/tests/ipv6.json
+	electron-ssr/shadowsocksr/tests/jenkins.sh
+	electron-ssr/shadowsocksr/tests/libsodium/install.sh
+	electron-ssr/shadowsocksr/tests/nose_plugin.py
+	electron-ssr/shadowsocksr/tests/rc4-md5.json
+	electron-ssr/shadowsocksr/tests/salsa20-ctr.json
+	electron-ssr/shadowsocksr/tests/salsa20.json
+	electron-ssr/shadowsocksr/tests/server-multi-passwd-client-side.json
+	electron-ssr/shadowsocksr/tests/server-multi-passwd-table.json
+	electron-ssr/shadowsocksr/tests/server-multi-passwd.json
+	electron-ssr/shadowsocksr/tests/server-multi-ports.json
+	electron-ssr/shadowsocksr/tests/setup_tc.sh
+	electron-ssr/shadowsocksr/tests/socksify/install.sh
+	electron-ssr/shadowsocksr/tests/socksify/socks.conf
+	electron-ssr/shadowsocksr/tests/table.json
+	electron-ssr/shadowsocksr/tests/test.py
+	electron-ssr/shadowsocksr/tests/test_command.sh
+	electron-ssr/shadowsocksr/tests/test_daemon.sh
+	electron-ssr/shadowsocksr/tests/test_large_file.sh
+	electron-ssr/shadowsocksr/tests/test_udp_src.py
+	electron-ssr/shadowsocksr/tests/test_udp_src.sh
+	electron-ssr/shadowsocksr/tests/workers.json
+	electron-ssr/shadowsocksr/utils/README.md
+	electron-ssr/shadowsocksr/utils/autoban.py
+	electron-ssr/shadowsocksr/utils/fail2ban/shadowsocks.conf
+	emoji-keyboard.json
+	fcitx/cached_layout
+	fcitx/clipboard/history.dat
+	fcitx/conf/fcitx-autoeng.config
+	fcitx/conf/fcitx-chttrans.config
+	fcitx/conf/fcitx-classic-ui.config
+	fcitx/conf/fcitx-clipboard.config
+	fcitx/conf/fcitx-imselector.config
+	fcitx/conf/fcitx-keyboard.config
+	fcitx/conf/fcitx-notify.config
+	fcitx/conf/fcitx-pinyin-enhance.config
+	fcitx/conf/fcitx-quickphrase.config
+	fcitx/conf/fcitx-spell.config
+	fcitx/conf/fcitx-unicode.config
+	fcitx/conf/fcitx-xim.config
+	fcitx/conf/fcitx-xkb.config
+	fcitx/config
+	fcitx/data/layout_override
+	fcitx/dbus/d00f1405741d4847989362f85a763136-0
+	fcitx/dbus/d00f1405741d4847989362f85a763136-1
+	fcitx/googlepinyin/userdict_pinyin.dat
+	fcitx/log/crash.log
+	fcitx/profile
+	google-chrome/BrowserMetrics-spare.pma
+	google-chrome/CertificateRevocation/5632/LICENSE
+	google-chrome/CertificateRevocation/5632/_metadata/verified_contents.json
+	google-chrome/CertificateRevocation/5632/crl-set
+	google-chrome/CertificateRevocation/5632/manifest.fingerprint
+	google-chrome/CertificateRevocation/5632/manifest.json
+	google-chrome/Default/.com.google.Chrome.EQAsUt
+	google-chrome/Default/.com.google.Chrome.drO8Eh
+	google-chrome/Default/000011.ldb
+	google-chrome/Default/000016.log
+	google-chrome/Default/AutofillStrikeDatabase/000003.log
+	google-chrome/Default/AutofillStrikeDatabase/CURRENT
+	google-chrome/Default/AutofillStrikeDatabase/LOCK
+	google-chrome/Default/AutofillStrikeDatabase/LOG
+	google-chrome/Default/AutofillStrikeDatabase/LOG.old
+	google-chrome/Default/AutofillStrikeDatabase/MANIFEST-000001
+	google-chrome/Default/Bookmarks
+	google-chrome/Default/BudgetDatabase/000003.log
+	google-chrome/Default/BudgetDatabase/CURRENT
+	google-chrome/Default/BudgetDatabase/LOCK
+	google-chrome/Default/BudgetDatabase/LOG
+	google-chrome/Default/BudgetDatabase/LOG.old
+	google-chrome/Default/BudgetDatabase/MANIFEST-000001
+	google-chrome/Default/CURRENT
+	google-chrome/Default/Cookies
+	google-chrome/Default/Cookies-journal
+	google-chrome/Default/Current Session
+	google-chrome/Default/Current Tabs
+	google-chrome/Default/Extension State/000003.log
+	google-chrome/Default/Extension State/CURRENT
+	google-chrome/Default/Extension State/LOCK
+	google-chrome/Default/Extension State/LOG
+	google-chrome/Default/Extension State/LOG.old
+	google-chrome/Default/Extension State/MANIFEST-000001
+	google-chrome/Default/Favicons
+	google-chrome/Default/Favicons-journal
+	google-chrome/Default/Feature Engagement Tracker/AvailabilityDB/000003.log
+	google-chrome/Default/Feature Engagement Tracker/AvailabilityDB/CURRENT
+	google-chrome/Default/Feature Engagement Tracker/AvailabilityDB/LOCK
+	google-chrome/Default/Feature Engagement Tracker/AvailabilityDB/LOG
+	google-chrome/Default/Feature Engagement Tracker/AvailabilityDB/LOG.old
+b7da515738c85fce4c096d299afd7396|file:///usr/ring/.config/.gitignore|9|15|v|
+	Default/Feature Engagement Tracker/AvailabilityDB/MANIFEST-000001
+	
+02656a2cecf0074e6d72e35358682020|file:///usr/ring/.config/.gitignore|10|9|v|
+	gtkfilechooser.ini
+	
+a60fc8f05c5e428b5c0b7aa317d1bdcb|file:///usr/ring/.config/.gitignore|11|15|v|
+	lazygit/config.yml
+	
+254b8c30feed959b4a19a7a8e10be0fb|file:///usr/ring/.config/.gitignore|12|1|V|
+	jesseduffield/lazygit/state.yml
+8621e0e61680c11af7249aa3c676e161|file:///usr/ring/.config/.gitignore|12|7|v|
+	applications-merged/xdg-desktop-menu-dummy.menu
+	
+2dccd1ab3e03990aea77359831c85ca2|file:///usr/ring/.config/.gitignore|14|7|v|
+	cookie
+3a3dbc20c586ba6c8b79fe97f5b1c645|file:///usr/ring/.config/.gitignore|15|1|V|
+	pulse/d00f1405741d4847989362f85a763136-card-database.tdb
+	pulse/d00f1405741d4847989362f85a763136-default-sink
+	pulse/d00f1405741d4847989362f85a763136-default-source
+	pulse/d00f1405741d4847989362f85a763136-device-volumes.tdb
+	pulse/d00f1405741d4847989362f85a763136-runtime
+	pulse/d00f1405741d4847989362f85a763136-stream-volumes.tdb
+381387211926da6f7afdeeefd1a2cfc8|file:///usr/ring/.config/.gitignore|15|17|v|
+	config.ini
+	
+1eb5941c8ca05101eaa55b5610e103fd|file:///usr/ring/.config/.gitignore|16|5|v|
+	vlc-qt-interface.conf
+a77e326448d1b139b69b65650a4fcd63|file:///usr/ring/.config/.gitignore|17|1|V|
+	vlc/vlcrc
+a0801ee434d7d0a31d998603412a54c1|file:///usr/ring/.config/.gitignore|26|8|v|
+	/global.py.json
+	
+810735b9b4ba8e1cc277a5cbe9f4d80a|file:///usr/ring/.config/.gitignore|27|5|v|
+	/user
+966fbf4ef2365330eb1c75b490212967|file:///usr/ring/.config/.gitignore|28|8|v|
+	/he.dic
+0c69c31a65f707020a6d1d6a6a26f05a|file:///usr/ring/.config/.gitignore|29|1|V|
+	enchant/he.exc
+1cf47a107a8a0b8186a8a72d65f2df0d|file:///usr/ring/.config/.gitignore|29|6|v|
+	/accels
+081ee513452dcc3b6d8b588ce25fc93f|file:///usr/ring/.config/.gitignore|30|5|v|
+	/muttrc
+18690c795937f0b09f148f531908f53c|file:///usr/ring/.config/.gitignore|31|20|v|
+	/OfflineLibrary.db
+97aa2f83a9a11cfa3d67a064bf6ff7af|file:///usr/ring/.config/.gitignore|32|19|V|
+	netease-cloud-music/OnlineLibrary.db
+	netease-cloud-music/netease-cloud-music.ini
+3da912e671fce9e5d8af189c8d55d966|file:///usr/ring/.config/.gitignore|32|1|V|
+	ranger/backup/commands.py
+afcb7bbf777d730d96a0ccf60dd9df3b|file:///usr/ring/.config/.gitignore|32|20|v|
+	/settings.json
+fb30123f6a547baade90d7f2e802eb94|file:///usr/ring/.config/.gitignore|33|13|v|
+	/dht.dat
+2708abfa6c8c97520801c5e896d86bc6|file:///usr/ring/.config/.gitignore|34|1|V|
+	transmission/settings.json
+e4f447f599eb430835c43007b8c634ed|file:///usr/ring/.config/.gitignore|34|5|v|
+	/RSS-built-in.json
+9026b8627fa29a94265bfdf97649e8fa|file:///usr/ring/.config/.gitignore|35|1|V|
+	uGet/Setting.json
+d3b2c5c72584653bdabe7df8a4cdb8ce|file:///usr/ring/.config/.gitignore|35|1|V|
+	uGet/category/0000.json
+48dfe7cae7eb2388000fb339ceb0171a|file:///usr/ring/.config/.gitignore|35|6|v|
+	/terminal/accels.scm
+87fab4e48b03e625453bff30c1f102d4|file:///usr/ring/.config/.gitignore|37|8|v|
+	/global.py.json
+8d6cf9181ae3e6cbd3391f794fb0dc2a|file:///usr/ring/.config/.gitignore|26|7|V|
+	calibred
+	conf
+04cd5407ee0f3640b4f6852de98555a2|file:///usr/ring/.config/.gitignore|32|1|V|
+	coc/*
+eb00fd0cf913db8e97ff1e905d2ba5ae|file:///usr/ring/.config/.gitignore|32|1|V|
+	coc/extensions
