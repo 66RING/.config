@@ -1,6 +1,7 @@
 configstore
 chromium
 google/*
+.DS_Store
 
 
 
