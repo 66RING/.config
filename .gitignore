@@ -17,7 +17,6 @@ vlc
 Kingsoft
 chromium
 Electron
-coc
 fcitx
 
 QtProject.conf
@@ -32,3 +31,4 @@ uGet
 xfce4
 calibre
 dconf
+coc/*
