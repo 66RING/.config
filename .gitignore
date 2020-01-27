@@ -1,8 +1,6 @@
 configstore
-chromium
-google/*
+google
 .DS_Store
-
 
 tencent-qq
 electron-ssr
@@ -32,3 +30,4 @@ xfce4
 calibre
 dconf
 coc/*
+coc/extensions
