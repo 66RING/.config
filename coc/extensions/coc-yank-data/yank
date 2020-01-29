@@ -10850,3 +10850,1336 @@ d3b2c5c72584653bdabe7df8a4cdb8ce|file:///usr/ring/.config/.gitignore|35|1|V|
 	coc/*
 eb00fd0cf913db8e97ff1e905d2ba5ae|file:///usr/ring/.config/.gitignore|32|1|V|
 	coc/extensions
+22f4052509bf7b65c8adccd93e840685|file:///usr/ring/scripts/dwmbar-functions/dwm_alsa.sh|14|33|v|sh
+	["$VOL" -eq 0 ]
+cc68c4ca52fddaa04508e2328f67d2e1|file:///usr/ring/scripts/dwmbar-functions/dwm_alsa.sh|24|12|v|sh
+	[ "$ISMUTE" == "off" ]
+dac0f7f7be3ec67d4db05036e4b0c6d9|file:///usr/ring/scripts/autostart_wait.sh|5|1|V|sh
+	xscreensaver &
+8cb9b5653055f5657f19b5e654d2711c|file:///usr/ring/scripts/dmenu-emoji-selection.sh|3|1|V|sh
+	grep -v "#" /usr/ring/scripts/static/emoji_unicode | dmenu -i -l 20 -fn Monospace-18 | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
+cc3fa242ce5a475b0c4107b74653a5da|file:///tmp/zshEus7hc|1|69|v|zsh
+	-fn Monospace-18
+a3fd27e2bbcda0c7be0037ee70829384|file:///tmp/zshgxX1P7|1|69|v|zsh
+	Monospace
+d8061616339fc0176e64ccad90c282af|file:///tmp/zshDzvVy9|1|82|v|zsh
+	| awk '{print $1}'
+d086cdd1b354df214a8b549ba835e6e6|file:///usr/ring/.config/sxhkd/sxhkdrc|156|1|V|conf
+	XF86AudioMute
+4a548addbfb239bbd12f5afe11a4b6dc|file:///usr/ring/.config/dunst/dunstrc|146|17|v|cfg
+	middle
+c2f0ff6f59aafe19b7134462d21a70cb|file:///usr/ring/.config/polybar/launch.sh|10|9|v|sh
+	mybar
+9fc90958c18e30aa2cc4111bb965f1aa|file:///usr/ring/.config/polybar/launch.sh|10|10|v|sh
+	xample
+1a79a4d60de6718e8e5b326e338ae533|file:///usr/ring/.config/polybar/config|30|6|v|dosini
+	example
+3ed6c3fc74b2907b810b13e062535809|file:///usr/ring/.config/polybar/config|183|1|^v|dosini
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+55803ff7a0535f3f8d275e537b731312|file:///usr/ring/.config/bspwm/bspwmrc|24|1|V|sh
+	bspc rule -a Transmission state=floating
+8fbdac3b50bce2cf6b5759846df53cce|file:///usr/ring/.config/bspwm/bspwmrc|25|1|V|sh
+	bspc rule -a transmission-gtk state=floating
+a7401f7e66cb5701af9731c8ef0c1eb0|file:///usr/ring/.config/bspwm/bspwmrc|26|14|v|sh
+	transmission-gtk
+ad27034358c25c6da161f44ac81e0ee8|file:///tmp/zshcEeh8u|1|1|v|zsh
+	sudo pacman -S
+2e7b23012b90cf88ee2ae1fce377b06c|file:///usr/ring/.config/bspwm/bspwmrc|17|1|V|sh
+	# bspc rule -a Chromium     desktop='^2'
+bdba3c5e730d4decb267fe8ca192f238|file:///usr/ring/.config/bspwm/bspwmrc|22|27|v|sh
+	state=floating
+	
+14449a7c48f1c754aea5e79d2f00b17a|file:///usr/ring/.config/bspwm/bspwmrc|21|27|v|sh
+	desktop='^2'
+	
+d6bb92cc64f55080bd668248dc2cf69e|file:///usr/ring/.config/bspwm/bspwmrc|21|1|V|sh
+	bspc rule -a Chromium     state=floating
+08a2b4ad3d9269da555ad581d12e2de7|file:///usr/ring/.config/bspwm/bspwmrc|21|1|V|sh
+	bspc rule -a mplayer2     state=floating
+4e65d83c3b4ad8d7165df768be889cdb|file:///usr/ring/.config/bspwm/bspwmrc|17|29|v|sh
+	desktop='^2'
+a1e67a0aaba4bd6dbcafe6d653f4c344|file:///usr/ring/.config/bspwm/bspwmrc|21|1|V|sh
+	bspc rule -a GoldenDict       desktop='^8' state=floating
+c4e327cc215704b5d01ab7a13e1393ab|file:///usr/ring/.config/polybar/config|113|1|V|dosini
+	pin-workspaces = true
+d8c3187d41cb9de43cdea1d344761306|file:///usr/ring/.config/bspwm/bspwmrc|7|17|v|sh
+	I II III IV V VI VII VIII IX X
+	
+38e6ff247337ed65294825d4fef84d1c|file:///usr/ring/.config/polybar/config|128|1|V|dosini
+	; Separator in between workspaces
+922e9bc0f4d84e1525a76be2b0f017a0|file:///usr/ring/.config/polybar/config|129|1|V|dosini
+	;label-separator = |
+d0e71467b46d6554ca80d4dc423005dd|file:///usr/ring/.config/polybar/config|64|1|V|dosini
+	label-separator = |
+d304ba20e96d87411588eeabac850e34|file:///usr/ring/.config/polybar/config|61|1|v|dosini
+	label
+2b3b64e19b3d6d5e63814700132d9649|file:///usr/ring/.config/polybar/config|61|1|V|dosini
+	modules-separator = |
+c13367945d5d4c91047b3b50234aa7ab|file:///usr/ring/.config/polybar/config|129|13|v|dosini
+	code
+e72f4545eb68c96c754f91fc01573517|file:///usr/ring/.config/polybar/config|130|13|v|dosini
+	office
+73b0472d43069103642ffa07997ff20a|file:///usr/ring/.config/polybar/config|131|13|v|dosini
+	graphics
+b83a886a5c437ccd9ac15473fd6f1788|file:///usr/ring/.config/polybar/config|132|13|v|dosini
+	mail
+026cf23dc6f62eb67f9435aa0a6d57b1|file:///usr/ring/.config/polybar/config|54|1|V|dosini
+	font-0 = fixed:pixelsize=10;1
+cec315e3d0975e5cc2811d5d8725f149|file:///usr/ring/.config/polybar/config|54|10|v|dosini
+	fixed
+2fb389d7c8d12325f3c508b6934daf2a|file:///usr/ring/var/dwm/config.h|14|40|v|cpp
+	unicode-emoji
+fcca5e8d17e46f9d9bba927096555fda|file:///usr/ring/list.txt|3|1|V|text
+	glib-networkingo
+8c989da87b49aff7ecd75b0d06db9883|file:///usr/ring/list.txt|3|1|V|text
+	glib-networking
+7c2b23766ea315949b6b2e81e9ec1b5e|file:///usr/ring/var/st/config.h|9|22|v|cpp
+	DejaV
+449694ed97e9460f9d060cd8d6e04695|file:///usr/ring/var/st/config.h|9|48|v|cpp
+	SauceCodePro Nerd Font Mono
+17b9dd6c58833364f97f144e2825bd58|file:///usr/ring/.config/polybar/config|131|1|^v|dosini
+	
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+	;
+8dd059bfe1aa4735e1e0be6d7c2f37b6|file:///usr/ring/.config/polybar/config|56|10|v|dosini
+	siji
+9a1797df38c06ca0624c3e3776b0a895|file:///usr/ring/.config/polybar/config|60|39|v|dosini
+	alsa 
+0700608234095562d8b3a501c312834e|file:///usr/ring/.config/polybar/config|60|50|v|dosini
+	xkeyboard 
+061552d3b488c78cc6ca9468c7479df4|file:///usr/ring/.config/polybar/config|60|17|v|dosini
+	filesystem 
+a1641e94bb029a9ded8cc229e08e9ce3|file:///usr/ring/.config/polybar/config|54|1|V|dosini
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = SauceCodePro Nerd Font Mono:pixelsize=10;1
+3de1024e5559a7793658189116356db6|file:///usr/ring/.config/polybar/config|59|10|v|dosini
+	unifont
+e228cf9ac3b05923f223a4d2c30d23ae|file:///usr/ring/.config/polybar/config|286|19|v|dosini
+	 muted
+61ad9d7b3f9476737c526dfc06124dc5|file:///usr/ring/.config/polybar/config|64|27|v|dosini
+	 alsa 
+f5b1fac15d4fc90e8087493955034402|file:///usr/ring/.config/polybar/config|64|43|v|dosini
+	 xkeyboard 
+94c035cfa6668cd7aea4b33676e6f937|file:///usr/ring/.config/polybar/config|61|10|v|dosini
+	FontAwesome
+0979c75ec6e0a3127d3f25d8380f0b69|file:///usr/ring/.config/polybar/config|58|1|V|dosini
+	font-0 = SauceCodePro Nerd Font Mono:pixelsize=10;1
+	font-1 = SauceCodePro Nerd Font Mono:fontformat=truetype:size=8:antialias=false;0
+	font-2 = Font Awesome 5 Free:pixelsize=10;1
+	font-3 = Font Awesome 5 Free:size=10;0
+8458e1d26e5825906f184fcda20433b0|file:///usr/ring/.config/polybar/config|60|10|v|dosini
+	Font Awesome 5 Free
+983b8b21513b020d2c6412448e1f100a|file:///usr/ring/.config/polybar/config|56|11|v|dosini
+	SauceCodePro Nerd Font
+50f6a780bd7a136746bd52a528f9e939|file:///usr/ring/.config/polybar/config|54|1|^v|dosini
+	;
+	;
+	;
+d7315844f47be7fc895d73e282d255cf|file:///usr/ring/.config/polybar/config_|1|1|V|dosini
+	;==========================================================
+	;
+	;
+	;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+	;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+	;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+	;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+	;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+	;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+	;
+	;
+	;   To learn more about how to configure Polybar
+	;   go to https://github.com/polybar/polybar
+	;
+	;   The README contains a lot of information
+	;
+	;==========================================================
+	
+	[colors]
+	;background = ${xrdb:color0:#222}
+	background = #222
+	background-alt = #444
+	;foreground = ${xrdb:color7:#222}
+	foreground = #dfdfdf
+	foreground-alt = #555
+	primary = #ffb52a
+	secondary = #e60053
+	alert = #bd2c40
+	
+	[bar/mybar]
+	;monitor = ${env:MONITOR:HDMI-1}
+	width = 100%
+	height = 35
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #f00
+	
+	border-size = 4
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 2
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = Font Awesome 5 Free Mono:pixelsize=10;1
+	
+	
+	modules-left = bspwm 
+	modules-center = mpd
+	modules-right = xbacklight-acpi pulseaudio memory cpu wlan eth battery temperature date powermenu
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	;wm-restack = bspwm
+	;wm-restack = i3
+	
+	;override-redirect = true
+	
+	scroll-up = bspwm-desknext
+	scroll-down = bspwm-deskprev
+	
+	;scroll-up = i3wm-wsnext
+	;scroll-down = i3wm-wsprev
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	;[module/xwindow]
+	;type = internal/xwindow
+	;label = %title:0:30:...%
+	;
+	;[module/xkeyboard]
+	;type = internal/xkeyboard
+	;blacklist-0 = num lock
+	;
+	;format-prefix = " "
+	;format-prefix-foreground = ${colors.foreground-alt}
+	;format-prefix-underline = ${colors.secondary}
+	;
+	;label-layout = %layout%
+	;label-layout-underline = ${colors.secondary}
+	;
+	;label-indicator-padding = 2
+	;label-indicator-margin = 1
+	;label-indicator-background = ${colors.secondary}
+	;label-indicator-underline = ${colors.secondary}
+	;
+	;[module/filesystem]
+	;type = internal/fs
+	;interval = 25
+	;
+	;mount-0 = /
+	;
+	;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+	;label-unmounted = %mountpoint% not mounted
+	;label-unmounted-foreground = ${colors.foreground-alt}
+	
+	[module/bspwm]
+	type = internal/bspwm
+	
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	label-occupied = %index%
+	label-occupied-padding = 2
+	
+	label-urgent = %index%!
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	label-empty = %index%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-padding = 2
+	
+	;label-separator = |
+	
+	
+	;[module/i3]
+	;type = internal/i3
+	;format = <label-state> <label-mode>
+	;index-sort = true
+	;wrapping-scroll = false
+	;
+	;; Only show workspaces on the same output as the bar
+	;;pin-workspaces = true
+	;
+	;label-mode-padding = 2
+	;label-mode-foreground = #000
+	;label-mode-background = ${colors.primary}
+	;
+	;; focused = Active workspace on focused monitor
+	;label-focused = %index%
+	;label-focused-background = ${colors.background-alt}
+	;label-focused-underline= ${colors.primary}
+	;label-focused-padding = 2
+	;
+	;; unfocused = Inactive workspace on any monitor
+	;label-unfocused = %index%
+	;label-unfocused-padding = 2
+	;
+	;; visible = Active workspace on unfocused monitor
+	;label-visible = %index%
+	;label-visible-background = ${self.label-focused-background}
+	;label-visible-underline = ${self.label-focused-underline}
+	;label-visible-padding = ${self.label-focused-padding}
+	;
+	;; urgent = Workspace with urgency hint set
+	;label-urgent = %index%
+	;label-urgent-background = ${colors.alert}
+	;label-urgent-padding = 2
+	;
+	;; Separator in between workspaces
+	;; label-separator = |
+	;
+	;
+	;[module/mpd]
+	;type = internal/mpd
+	;format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+	;
+	;icon-prev = 
+	;icon-stop = 
+	;icon-play = 
+	;icon-pause = 
+	;icon-next = 
+	;
+	;label-song-maxlen = 25
+	;label-song-ellipsis = true
+	;
+	[module/xbacklight]
+	type = internal/xbacklight
+	
+	format = <label> <bar>
+	label = BL
+	
+	bar-width = 10
+	bar-indicator = |
+	bar-indicator-foreground = #fff
+	bar-indicator-font = 2
+	bar-fill = ─
+	bar-fill-font = 2
+	bar-fill-foreground = #9f78e1
+	bar-empty = ─
+	bar-empty-font = 2
+	bar-empty-foreground = ${colors.foreground-alt}
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	
+	[module/cpu]
+	type = internal/cpu
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #f90000
+	label = %percentage:2%%
+	
+	[module/memory]
+	type = internal/memory
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #4bffdc
+	label = %percentage_used%%
+	
+	[module/wlan]
+	type = internal/network
+	interface = wlp1s0
+	interval = 3.0
+	
+	format-connected = <ramp-signal> <label-connected>
+	format-connected-underline = #9f78e1
+	label-connected = %essid%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	ramp-signal-0 = 
+	ramp-signal-1 = 
+	ramp-signal-2 = 
+	ramp-signal-3 = 
+	ramp-signal-4 = 
+	ramp-signal-foreground = ${colors.foreground-alt}
+	
+	[module/eth]
+	type = internal/network
+	interface = net0
+	interval = 3.0
+	
+	format-connected-underline = #55aa55
+	format-connected-prefix = " "
+	format-connected-prefix-foreground = ${colors.foreground-alt}
+	label-connected = %local_ip%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	[module/date]
+	type = internal/date
+	interval = 5
+	
+	date =
+	date-alt = " %Y-%m-%d"
+	
+	time = %H:%M (%a)
+	time-alt = %H:%M:%S (%a)
+	
+	format-prefix = 
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #0a6cf5
+	
+	label = %date% %time%
+	
+	[module/pulseaudio]
+	type = internal/pulseaudio
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL %percentage%%
+	label-volume-foreground = ${root.foreground}
+	
+	label-muted = 🔇 muted
+	label-muted-foreground = #666
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/alsa]
+	type = internal/alsa
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL
+	label-volume-foreground = ${root.foreground}
+	
+	format-muted-prefix = " "
+	format-muted-foreground = ${colors.foreground-alt}
+	label-muted = sound muted
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP0
+	full-at = 98
+	
+	format-charging = <animation-charging> <label-charging>
+	format-charging-underline = #ffb52a
+	
+	format-discharging = <animation-discharging> <label-discharging>
+	format-discharging-underline = ${self.format-charging-underline}
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = ${colors.foreground-alt}
+	format-full-underline = ${self.format-charging-underline}
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-foreground = ${colors.foreground-alt}
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-foreground = ${colors.foreground-alt}
+	animation-charging-framerate = 750
+	
+	animation-discharging-0 = 
+	animation-discharging-1 = 
+	animation-discharging-2 = 
+	animation-discharging-foreground = ${colors.foreground-alt}
+	animation-discharging-framerate = 750
+	
+	[module/temperature]
+	type = internal/temperature
+	thermal-zone = 0
+	warn-temperature = 60
+	
+	format = <ramp> <label>
+	format-underline = #f50a4d
+	format-warn = <ramp> <label-warn>
+	format-warn-underline = ${self.format-underline}
+	
+	label = %temperature-c%
+	label-warn = %temperature-c%
+	label-warn-foreground = ${colors.secondary}
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	ramp-foreground = ${colors.foreground-alt}
+	
+	[module/powermenu]
+	type = custom/menu
+	
+	expand-right = true
+	
+	format-spacing = 1
+	
+	label-open = 
+	label-open-foreground = ${colors.secondary}
+	label-close =  cancel
+	label-close-foreground = ${colors.secondary}
+	label-separator = |
+	label-separator-foreground = ${colors.foreground-alt}
+	
+	menu-0-0 = reboot
+	menu-0-0-exec = menu-open-1
+	menu-0-1 = power off
+	menu-0-1-exec = menu-open-2
+	
+	menu-1-0 = cancel
+	menu-1-0-exec = menu-open-0
+	menu-1-1 = reboot
+	menu-1-1-exec = sudo reboot
+	
+	menu-2-0 = power off
+	menu-2-0-exec = sudo poweroff
+	menu-2-1 = cancel
+	menu-2-1-exec = menu-open-0
+	
+	[settings]
+	screenchange-reload = true
+	;compositing-background = xor
+	;compositing-background = screen
+	;compositing-foreground = source
+	;compositing-border = over
+	;pseudo-transparency = false
+	
+	[global/wm]
+	margin-top = 5
+	margin-bottom = 0
+	
+	; vim:ft=dosini
+f37485dfb874206d80b6c227a000554f|file:///usr/ring/.config/polybar/config|80|1|V|dosini
+	
+	;[module/xwindow]
+	;type = internal/xwindow
+	;label = %title:0:30:...%
+	;
+	;[module/xkeyboard]
+	;type = internal/xkeyboard
+	;blacklist-0 = num lock
+	;
+	;format-prefix = " "
+	;format-prefix-foreground = ${colors.foreground-alt}
+	;format-prefix-underline = ${colors.secondary}
+	;
+	;label-layout = %layout%
+	;label-layout-underline = ${colors.secondary}
+	;
+	;label-indicator-padding = 2
+	;label-indicator-margin = 1
+	;label-indicator-background = ${colors.secondary}
+	;label-indicator-underline = ${colors.secondary}
+	;
+	;[module/filesystem]
+	;type = internal/fs
+	;interval = 25
+	;
+	;mount-0 = /
+	;
+	;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+	;label-unmounted = %mountpoint% not mounted
+	;label-unmounted-foreground = ${colors.foreground-alt}
+	
+	[module/bspwm]
+	type = internal/bspwm
+	
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	label-occupied = %index%
+	label-occupied-padding = 2
+	
+	label-urgent = %index%!
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	label-empty = %index%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-padding = 2
+	
+	;label-separator = |
+	
+	
+	;[module/i3]
+	;type = internal/i3
+	;format = <label-state> <label-mode>
+	;index-sort = true
+	;wrapping-scroll = false
+	;
+	;; Only show workspaces on the same output as the bar
+	;;pin-workspaces = true
+	;
+	;label-mode-padding = 2
+	;label-mode-foreground = #000
+	;label-mode-background = ${colors.primary}
+	;
+	;; focused = Active workspace on focused monitor
+	;label-focused = %index%
+	;label-focused-background = ${colors.background-alt}
+	;label-focused-underline= ${colors.primary}
+	;label-focused-padding = 2
+	;
+	;; unfocused = Inactive workspace on any monitor
+	;label-unfocused = %index%
+	;label-unfocused-padding = 2
+	;
+	;; visible = Active workspace on unfocused monitor
+	;label-visible = %index%
+	;label-visible-background = ${self.label-focused-background}
+	;label-visible-underline = ${self.label-focused-underline}
+	;label-visible-padding = ${self.label-focused-padding}
+	;
+	;; urgent = Workspace with urgency hint set
+	;label-urgent = %index%
+	;label-urgent-background = ${colors.alert}
+	;label-urgent-padding = 2
+	;
+	;; Separator in between workspaces
+	;; label-separator = |
+	;
+	;
+	;[module/mpd]
+	;type = internal/mpd
+	;format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+	;
+	;icon-prev = 
+	;icon-stop = 
+	;icon-play = 
+	;icon-pause = 
+	;icon-next = 
+	;
+	;label-song-maxlen = 25
+	;label-song-ellipsis = true
+	;
+	[module/xbacklight]
+	type = internal/xbacklight
+	
+	format = <label> <bar>
+	label = BL
+	
+	bar-width = 10
+	bar-indicator = |
+	bar-indicator-foreground = #fff
+	bar-indicator-font = 2
+	bar-fill = ─
+	bar-fill-font = 2
+	bar-fill-foreground = #9f78e1
+	bar-empty = ─
+	bar-empty-font = 2
+	bar-empty-foreground = ${colors.foreground-alt}
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	
+	[module/cpu]
+	type = internal/cpu
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #f90000
+	label = %percentage:2%%
+	
+	[module/memory]
+	type = internal/memory
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #4bffdc
+	label = %percentage_used%%
+	
+	[module/wlan]
+	type = internal/network
+	interface = wlp1s0
+	interval = 3.0
+	
+	format-connected = <ramp-signal> <label-connected>
+	format-connected-underline = #9f78e1
+	label-connected = %essid%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	ramp-signal-0 = 
+	ramp-signal-1 = 
+	ramp-signal-2 = 
+	ramp-signal-3 = 
+	ramp-signal-4 = 
+	ramp-signal-foreground = ${colors.foreground-alt}
+	
+	[module/eth]
+	type = internal/network
+	interface = net0
+	interval = 3.0
+	
+	format-connected-underline = #55aa55
+	format-connected-prefix = " "
+	format-connected-prefix-foreground = ${colors.foreground-alt}
+	label-connected = %local_ip%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	[module/date]
+	type = internal/date
+	interval = 5
+	
+	date =
+	date-alt = " %Y-%m-%d"
+	
+	time = %H:%M (%a)
+	time-alt = %H:%M:%S (%a)
+	
+	format-prefix = 
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #0a6cf5
+	
+	label = %date% %time%
+	
+	[module/pulseaudio]
+	type = internal/pulseaudio
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL %percentage%%
+	label-volume-foreground = ${root.foreground}
+	
+	label-muted = 🔇 muted
+	label-muted-foreground = #666
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/alsa]
+	type = internal/alsa
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL
+	label-volume-foreground = ${root.foreground}
+	
+	format-muted-prefix = " "
+	format-muted-foreground = ${colors.foreground-alt}
+	label-muted = sound muted
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP0
+	full-at = 98
+	
+	format-charging = <animation-charging> <label-charging>
+	format-charging-underline = #ffb52a
+	
+	format-discharging = <animation-discharging> <label-discharging>
+	format-discharging-underline = ${self.format-charging-underline}
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = ${colors.foreground-alt}
+	format-full-underline = ${self.format-charging-underline}
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-foreground = ${colors.foreground-alt}
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-foreground = ${colors.foreground-alt}
+	animation-charging-framerate = 750
+	
+	animation-discharging-0 = 
+	animation-discharging-1 = 
+	animation-discharging-2 = 
+	animation-discharging-foreground = ${colors.foreground-alt}
+	animation-discharging-framerate = 750
+	
+	[module/temperature]
+	type = internal/temperature
+	thermal-zone = 0
+	warn-temperature = 60
+	
+	format = <ramp> <label>
+	format-underline = #f50a4d
+	format-warn = <ramp> <label-warn>
+	format-warn-underline = ${self.format-underline}
+	
+	label = %temperature-c%
+	label-warn = %temperature-c%
+	label-warn-foreground = ${colors.secondary}
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	ramp-foreground = ${colors.foreground-alt}
+	
+	[module/powermenu]
+	type = custom/menu
+	
+	expand-right = true
+	
+	format-spacing = 1
+	
+	label-open = 
+	label-open-foreground = ${colors.secondary}
+	label-close =  cancel
+	label-close-foreground = ${colors.secondary}
+	label-separator = |
+	label-separator-foreground = ${colors.foreground-alt}
+	
+	menu-0-0 = reboot
+	menu-0-0-exec = menu-open-1
+	menu-0-1 = power off
+	menu-0-1-exec = menu-open-2
+	
+	menu-1-0 = cancel
+	menu-1-0-exec = menu-open-0
+	menu-1-1 = reboot
+	menu-1-1-exec = sudo reboot
+	
+	menu-2-0 = power off
+	menu-2-0-exec = sudo poweroff
+	menu-2-1 = cancel
+	menu-2-1-exec = menu-open-0
+16d328a29b89c490504428bcc4f4686a|file:///usr/ring/.config/polybar/config|18|1|V|dosini
+	
+	[colors]
+	;background = ${xrdb:color0:#222}
+	background = #222
+	background-alt = #444
+	;foreground = ${xrdb:color7:#222}
+	foreground = #dfdfdf
+	foreground-alt = #555
+	primary = #ffb52a
+	secondary = #e60053
+	alert = #bd2c40
+	
+	[bar/mybar]
+	;monitor = ${env:MONITOR:HDMI-1}
+	bottom = true
+	width = 100%
+	height = 35
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #f00
+	
+	border-size = 4
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 2
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = Font Awesome 5 Free Mono:pixelsize=10;1
+	
+	
+	modules-left = bspwm 
+	modules-center = mpd
+	modules-right = xbacklight-acpi pulseaudio memory cpu wlan eth battery temperature date powermenu
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	;wm-restack = bspwm
+	;wm-restack = i3
+	
+	;override-redirect = true
+	
+	scroll-up = bspwm-desknext
+	scroll-down = bspwm-deskprev
+	
+	;scroll-up = i3wm-wsnext
+	;scroll-down = i3wm-wsprev
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	[settings]
+	screenchange-reload = true
+	;compositing-background = xor
+	;compositing-background = screen
+	;compositing-foreground = source
+	;compositing-border = over
+	;pseudo-transparency = false
+	
+	[global/wm]
+	margin-top = 5
+	margin-bottom = 0
+	
+	; vim:ft=dosini
+	
+36a4fe4095a354039751d3a4bf879404|file:///usr/ring/.config/polybar/config|21|1|V|dosini
+	bottom = true
+4f2c0f0acabab8da5631b9a40d8e3e8c|file:///usr/ring/.config/polybar/config|38|1|^v|dosini
+	;   
+	;   
+	;   
+	;   
+aa0fd66d27e9aa3ac3366c87eed84d28|file:///usr/ring/.config/polybar/config|39|10|v|dosini
+	MaterialIcons
+3b54f1d05ca55ae72ce9b91cd10d40cb|file:///usr/ring/.config/polybar/config|47|1|V|dosini
+	; Tray icon max size
+a36a79385b5e140b6bb9b87001196317|file:///usr/ring/.config/polybar/config|47|1|V|dosini
+	tray-maxsize = 16
+0d81ca9e4cf10816335995a949816626|file:///usr/ring/.config/polybar/config|46|1|V|dosini
+	;tray-detached = false
+46f41ce104a7b7c23ed3070de1c439bf|file:///usr/ring/.config/polybar/config|60|1|V|dosini
+	
+	; Adjust the _NET_WM_STRUT_PARTIAL bottom value
+2ea1c9205eecc5075646781eb285ca14|file:///usr/ring/.config/polybar/config|60|1|V|dosini
+	;   Used for bottom aligned bars
+8e972b0c29fed6b9c102e58a6102a2f6|file:///usr/ring/.config/polybar/config|57|1|V|dosini
+	; Adjust the _NET_WM_STRUT_PARTIAL top value
+	;   Used for top aligned bars
+8f7c6ff324a6847fc96ad64145290dff|file:///usr/ring/.config/polybar/config|39|10|v|dosini
+	Material Design Icons
+9c4d8d5c89768d801fe5c885e3fe2e73|file:///usr/ring/var/st/config.h|9|28|v|cpp
+	 Sans Mono Nerd Font
+5fb659572b237f6e258869914aad676b|file:///usr/ring/.config/polybar/config|39|18|v|
+	 Design Icons
+768ef1a20d21d4ae34dfbda591882583|file:///usr/ring/.config/polybar/config|45|1|^v|
+	;
+	;
+	;
+	;
+	;
+9f305f44fd3445e58bf55bb8ebf82a7f|file:///usr/ring/.config/polybar/config|45|25|v|
+	   <---------------------------
+	
+43e665fd5b5e88289136defef5a4ff2f|file:///usr/ring/.config/polybar/config|38|30|V|
+	font-0 = NotoSans-Regular:size=8;2
+	font-1 = Material:size=10
+	font-2 = Termsynu:size=8;-1
+	font-3 = Font Awesome 5 Free Regular:size=10
+c738bf1ddf7d33a5107f9ef09135e529|file:///usr/ring/var/st/config.h|12|1|V|cpp
+		"SauceCodePro Nerd Font Mono:pixelsize=30:antialias=true",
+8297f0d8438315556dc44f79b81c6119|file:///usr/ring/var/st/config.h|12|1|V|cpp
+		"Font Awesome 5 Free:pixelsize=30:antialias=true",
+f531cedd205a9c33961c3c8ab59bfcfb|file:///usr/ring/var/st/config.h|13|1|V|cpp
+		"Matarial:pixelsize=30:antialias=true",
+985a772ee0792722ad8d8151f34fffaf|file:///usr/ring/var/st/config.h|12|3|v|cpp
+	Matarial
+fcab6e03a720a2645b78519376b6b3b3|file:///usr/ring/var/st/config.h|12|3|v|cpp
+	Noto
+7db5b0827b4a90befe86dad2ec58c728|file:///usr/ring/.config/polybar/config|39|11|v|
+	Tamsyn
+b29ef6f611982d23b890831920e3fbac|file:///tmp/zshcehwm5|1|1|v|zsh
+	sudo 
+3a18f83fdc8bedddf36acec014b810e5|file:///usr/share/doc/polybar/config|54|1|V|dosini
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = siji:pixelsize=10;1
+a81d62c7cb8752bab08d7a3c80d47df9|file:///usr/ring/.config/polybar/config|58|10|v|dosini
+	Font Awesome 5 Free Mono
+f328a6e446645509074cdfd837b40054|file:///usr/ring/.config/polybar/config|56|10|v|dosini
+	noto
+63d6db9e9845e46a9fc2608802ddafd3|file:///tmp/zshP2MuRh|1|8|v|zsh
+	noto-fonts-sc noto-fonts-tc
+b8fe299b22b685b06e7cac4a657e2e89|file:///etc/systemd/system/slock%40.service|1|1|V|systemd
+	[Unit]
+	Description=Lock X session using slock for user %i
+	Before=sleep.target
+	
+	[Service]
+	User=%i
+	Environment=DISPLAY=:0
+	ExecStartPre=/usr/bin/xset dpms force suspend
+	ExecStart=/usr/bin/slock
+	
+	[Install]
+	WantedBy=sleep.target
+0c785499fd268edd182c54cad10d47d1|file:///tmp/zshADMMUi|1|8|v|zsh
+	adobe-source-han-serif-cn-fonts adobe-source-han-sans-cn-fonts 

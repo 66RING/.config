@@ -153,15 +153,18 @@ super + b
 #
 ## volume up
 #0x1008ff13
-#    pamixer -i 7
+XF86AudioRaiseVolume
+    pamixer -i 7
 #
 ## volume down
 #0x1008ff11
-#    pamixer -d 7
+XF86AudioLowerVolume
+    pamixer -d 7
 #
 ## volume mute
 #0x1008ff12
-#    pamixer -t
+XF86AudioMute
+    pamixer -t
 #
 ## light up
 #0x1008ff02

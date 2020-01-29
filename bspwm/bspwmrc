@@ -1,6 +1,7 @@
 #! /bin/sh
 
 $HOME/scripts/autostart.sh
+$HOME/.config/polybar/launch.sh
 sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -12,12 +13,13 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium     desktop='^2'
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a Chromium     desktop='^2'
 bspc rule -a Kupfer.py    focus=on
 bspc rule -a Screenkey    manage=off
 
-bspc rule -a mplayer2     state=floating
-bspc rule -a Goldendict   state=floating
-bspc rule -a uGet         state=floating
-bspc rule -a Transmission state=floating
+bspc rule -a Uget-gtk         desktop='^9' state=floating
+bspc rule -a Transmission-gtk desktop='^9'state=floating
+
+bspc rule -a Qq               desktop='^8'state=floating
+bspc rule -a GoldenDict       desktop='^8' state=floating
