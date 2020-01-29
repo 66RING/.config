@@ -1,3 +1,4 @@
+/usr/ring/.config/.gitignore
 /usr/ring/.config/bspwm/bspwmrc
 /etc/systemd/system/slock@.service
 /usr/ring/scripts/autostart_wait.sh
@@ -25,7 +26,6 @@
 /usr/share/dbus-1/services/org.freedesktop.Notifications.service
 /usr/ring/scripts/dmenu-emoji-selection.sh
 /etc/bluetooth/main.conf
-/usr/ring/.config/.gitignore
 /usr/ring/.dwm.log
 /usr/ring/.python_history
 /usr/ring/.mysql_history
