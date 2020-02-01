@@ -2,6 +2,7 @@ configstore
 google
 .DS_Store
 
+Code - OSS
 tencent-qq
 electron-ssr
 google-chrome
@@ -29,3 +30,6 @@ uGet
 xfce4
 calibre
 dconf
+
+emoj-nodejs
+unity3d

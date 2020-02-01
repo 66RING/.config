@@ -27,8 +27,10 @@ super + {shift + q,shift + r}
 	bspc {quit,wm -r}
 
 # close and kill
+#super + {_,shift + }w
+#	bspc node -{c,k}
 super + q
-	bspc node -{c,k}
+	bspc node -c
 
 # alternate between the tiled and monocle layout
 super + m
@@ -147,29 +149,19 @@ super + b
     /usr/ring/scripts/wp-change.sh
 
 
-##
-## Pc config
-##
 #
-## volume up
-#0x1008ff13
+# Pc config
+#
+
+# volume up
 XF86AudioRaiseVolume
     pamixer -i 7
-#
-## volume down
-#0x1008ff11
+
+# volume down
 XF86AudioLowerVolume
     pamixer -d 7
-#
-## volume mute
-#0x1008ff12
+
+# volume mute
 XF86AudioMute
     pamixer -t
-#
-## light up
-#0x1008ff02
-#    light -A 5
-#
-## light down
-#0x1008ff03
-#    light -U 5
+
