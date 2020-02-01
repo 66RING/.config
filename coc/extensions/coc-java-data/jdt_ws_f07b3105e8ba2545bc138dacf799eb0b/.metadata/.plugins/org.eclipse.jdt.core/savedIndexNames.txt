@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+/Users/ring/.config/coc/extensions/coc-java-data/jdt_ws_f07b3105e8ba2545bc138dacf799eb0b/.metadata/.plugins/org.eclipse.jdt.core
-3192138176.index
-3842426239.index

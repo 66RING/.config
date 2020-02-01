@@ -1,2 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="52,org.eclipse.jdt.internal.launching.macosx.MacOSXType13,1577266813964" defaultVMConnector\="">\n    <vmType id\="org.eclipse.jdt.internal.launching.macosx.MacOSXType">\n        <vm id\="1577266813964" name\="JRE [13.0.1]" path\="/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home"/>\n    </vmType>\n</vmSettings>\n
