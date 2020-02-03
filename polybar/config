@@ -76,7 +76,7 @@ font-3 =  Weather Icons:pixelsize=15;1
 
 modules-left = bspwm 
 ;modules-center = mpd
-modules-right = pulseaudio memory cpu battery date
+modules-right = pulseaudio memory cpu cputemp battery date
 tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
@@ -204,6 +204,17 @@ ramp-load-1-foreground = ${colors.warning}
 
 ramp-load-2 = 
 ramp-load-2-foreground = ${colors.urgent}
+
+[module/cputemp]
+type = custom/script
+exec = ~/scripts/polybar/gettemper.sh 
+
+format = <label>
+;format-background = #999
+;format-foreground = #000
+
+label =  %output%
+;internal = 60
 
 [module/memory]
 type = internal/memory

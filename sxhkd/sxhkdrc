@@ -165,3 +165,15 @@ XF86AudioLowerVolume
 XF86AudioMute
     pamixer -t
 
+# light up
+XF86MonBrightnessUp
+    xbacklight -inc 5
+
+# light down
+XF86MonBrightnessDown
+    xbacklight -dec 5
+
+# screenshot
+alt + shift + 4
+    scrot -s -e 'mv $f ~/Desktop/'
+
