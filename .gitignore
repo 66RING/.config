@@ -2,6 +2,7 @@ configstore
 google
 .DS_Store
 
+nvim
 Code - OSS
 tencent-qq
 electron-ssr
@@ -37,3 +38,7 @@ yarn
 neofetch
 dask
 pip
+
+GIMP
+
+kdenliverc

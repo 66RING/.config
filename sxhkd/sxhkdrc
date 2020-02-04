@@ -23,8 +23,8 @@ super + c
 #
 
 # quit/restart bspwm
-super + {shift + q,shift + r}
-	bspc {quit,wm -r}
+super + shift + r
+	bspc wm -r
 
 # close and kill
 #super + {_,shift + }w
@@ -138,15 +138,15 @@ super + {Left,Down,Up,Right}
 
 # trayer
 super + shift + t
-    /usr/ring/scripts/tr-toggle.sh
+    /home/ring/scripts/tr-toggle.sh
 
 # emoji selecter
 super + e
-    /usr/ring/scripts/dmenu-emoji-selection.sh
+    /home/ring/scripts/dmenu-emoji-selection.sh
 
 # wallpaper change
 super + b
-    /usr/ring/scripts/wp-change.sh
+    /home/ring/scripts/wp-change.sh
 
 
 #
@@ -175,5 +175,5 @@ XF86MonBrightnessDown
 
 # screenshot
 alt + shift + 4
-    scrot -s -e 'mv $f ~/Desktop/'
+    scrot -s -e'mv $f ~/Desktop/'
 
