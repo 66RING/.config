@@ -60,8 +60,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-;border-size = 4
-;border-color = #00000000
+; border-size = 4
+; border-color = #00000000
 
 padding-left = 0
 padding-right = 0
@@ -78,11 +78,11 @@ font-5 = Weather Icons:pixelsize=15;1
 
 
 modules-left = bspwm 
-;modules-center = mpd
-modules-right = pulseaudio memory cpu temperature battery date
+; modules-center = mpd
+modules-right = pulseaudio  memory cpu cputemp battery date
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
+; tray-background = #0063ff
 
 wm-restack = bspwm
 
@@ -91,42 +91,42 @@ cursor-scroll = ns-resize
 
 
 [module/bspwm]
-;type = internal/bspwm
-;
-format = <label-state> <label-mode>
-;
-;; icons
-;ws-icon-0 = 1:Home;
-ws-icon-1 = 2:Browser;
-ws-icon-2 = 3:Coding;
-ws-icon-3 = 4:Learning;
-ws-icon-4 = 5:Fun;
-ws-icon-5 = 9:Desktop;
-;ws-icon-default = 
-;
-;; color
-;label-focused = 
-;label-focused-underline = ${colors.nord7}
-;label-focused-foreground = ${colors.nord7}
-;label-focused-padding = 2
-;
-;label-unfocused = •
-;label-unfocused-foreground = ${colors.nord9}
-;label-unfocused-padding = 2
-;
-;label-urgent = 
-;label-urgent-foreground = ${colors.urgent}
-;label-urgent-background = ${colors.foreground}
-;label-urgent-padding = 2
-;
-;; seperator
-;label-separator-foreground = ${colors.buffer}
+; type = internal/bspwm
+; 
+; format = <label-state> <label-mode>
+; 
+; ; icons
+; ws-icon-0 = 1:Home;
+; ws-icon-1 = 2:Browser;
+; ws-icon-2 = 3:Coding;
+; ws-icon-3 = 4:Learning;
+; ws-icon-4 = 5:Fun;
+; ws-icon-5 = 9:Desktop;
+; ws-icon-default = 
+; 
+; ; color
+; label-focused = 
+; label-focused-underline = ${colors.nord7}
+; label-focused-foreground = ${colors.nord7}
+; label-focused-padding = 2
+; 
+; label-unfocused = •
+; label-unfocused-foreground = ${colors.nord9}
+; label-unfocused-padding = 2
+; 
+; label-urgent = 
+; label-urgent-foreground = ${colors.urgent}
+; label-urgent-background = ${colors.foreground}
+; label-urgent-padding = 2
+; 
+; ; seperator
+; label-separator-foreground = ${colors.buffer}
 ;
 type = internal/bspwm
 
-;label-focused = 
+; label-focused = 
 label-focused = %index%
-;label-focused-background = #0063ff
+; label-focused-background = #0063ff
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -242,7 +242,7 @@ time-alt = %H:%M:%S (%a)
 format = <label>
 label = %date% %time%
 label-margin = 1
-;label-underline = ${colors.nord8}
+; label-underline = ${colors.nord8}
 
 [module/alsa]
 type = internal/alsa
@@ -255,11 +255,11 @@ master-mixer = ${config.master-mixer}
 
 ; Format 
 format-volume = <ramp-volume> <label-volume>
-;format-volume-underline = ${colors.function}
+; format-volume-underline = ${colors.function}
 
 label-muted =  muted
 label-muted-foreground = ${colors.urgent}
-;label-muted-underline = ${colors.urgent}
+; label-muted-underline = ${colors.urgent}
 
 ramp-volume-0 = 
 ramp-volume-0-foreground = ${colors.success}
@@ -294,12 +294,13 @@ ramp-volume-foreground = ${colors.nord7}
 [module/battery]
 type = internal/battery
 
-full-at = 98
-battery = ${config.battery-bat}
-adapter = ${config.battery-adp}
+full-at = 99
+battery = BAT0
+adapter = ADP0
 
 format-charging = <animation-charging> <label-charging>
-;format-charging-underline = ${colors.foreground}
+; format-charging-underline = ${colors.foreground}
+format-charging-foreground = ${colors.nord8}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
@@ -308,23 +309,20 @@ animation-charging-4 = 
 animation-charging-framerate = 750
 
 format-discharging = <ramp-capacity> <label-discharging>
-;format-discharging-underline = ${colors.notify}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.notify}
 
 label-full = 
 label-full-foreground = ${colors.success}
-;label-full-underline = ${colors.success}
 
 
-[module/temperature]
+[module/cputemp]
 type = internal/temperature
 
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input
 thermal-zone = 0
 
 base-temperature = 20
@@ -332,8 +330,8 @@ base-temperature = 20
 warn-temperature = 70
 
 ; Format
-format = <ramp> <label>
-format-warn = <label-warn>
+format = <ramp> <label> 
+format-warn = <label-warn> 
 
 label-warn =  %temperature-c%
 label-warn-padding = 1
@@ -355,18 +353,16 @@ ramp-4-foreground = ${colors.warning}
 type = custom/script
 exec = ~/scripts/polybar/gettemper.sh
 interval = 600
-;label-font = 5
+; label-font = 5
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
-
+; compositing-background = xor
+; compositing-background = screen
+; compositing-foreground = source
+; compositing-border = over
+; pseudo-transparency = false
 
 
 ; vim:ft=dosini
 ; vim:ft=dosini
-

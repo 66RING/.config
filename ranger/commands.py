@@ -114,36 +114,30 @@ class compress(Command):
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
 
 
-class extracthere(Command):
+class extract(Command):
+    """:extract <paths>
+    
+    Extract archives using 7z
+    """
     def execute(self):
-        """ Extract copied files to current directory """
-        copied_files = tuple(self.fm.copy_buffer)
-
-        if not copied_files:
-            return
-
-        def refresh(_):
-            cwd = self.fm.get_directory(original_path)
-            cwd.load_content()
-
-        one_file = copied_files[0]
-        cwd = self.fm.thisdir
-        original_path = cwd.path
-        au_flags = ['-X', cwd.path]
-        au_flags += self.line.split()[1:]
-        au_flags += ['-e']
-
-        self.fm.copy_buffer.clear()
-        self.fm.cut_buffer = False
-        if len(copied_files) == 1:
-            descr = "extracting: " + os.path.basename(one_file.path)
-        else:
-            descr = "extracting files from: " + os.path.basename(one_file.dirname)
-        obj = CommandLoader(args=['aunpack'] + au_flags \
-                + [f.path for f in copied_files], descr=descr)
-
-        obj.signal_bind('after', refresh)
-        self.fm.loader.add(obj)
+        import os
+        fail=[]
+        for i in self.fm.thistab.get_selection():
+            ExtractProg='7z x'
+            if i.path.endswith('.zip'):
+                # zip encoding issue
+                ExtractProg='unzip -O gbk'
+            elif i.path.endswith('.tar.gz'):
+                ExtractProg='tar xvf'
+            elif i.path.endswith('.tar.xz'):
+                ExtractProg='tar xJvf'
+            elif i.path.endswith('.tar.bz2'):
+                ExtractProg='tar xjvf'
+            if os.system('{0} "{1}"'.format(ExtractProg, i.path)):
+                fail.append(i.path)
+        if len(fail) > 0:
+            self.fm.notify("Fail to extract: {0}".format(' '.join(fail)), duration=10, bad=True)
+        self.fm.redraw_window()
 
 
 class show_files_in_finder(Command):

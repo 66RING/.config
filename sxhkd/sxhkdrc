@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-    dmenu_run -fn "Lucida Mac:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
+    dmenu_run -fn "Inconsolata:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
 
 # chromuim launcher
 super + c
@@ -32,9 +32,11 @@ super + shift + r
 super + q
 	bspc node -c
 
-# alternate between the tiled and monocle layout
+## alternate between the tiled and monocle layout
+#super + m
+#	bspc desktop -l next
 super + m
-	bspc desktop -l next
+    $HOME/scripts/bspwm/bspfullscreen.sh
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -51,8 +53,11 @@ super + g
 # set the window state 
 #super + {t,shift + t,shift + f,f}
 #	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-super + {t,f,shift + f}
-	bspc node -t {tiled,floating,fullscreen}
+super + {t,shift + f}
+	bspc node -t {tiled,floating}
+
+super + f
+    $HOME/scripts/bspwm/bsphideandfullscreen.sh
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -78,15 +83,10 @@ super + {_,shift} + {j,k,i,l}
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
-# focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+# focus the last desktop
+super + Tab
+	bspc desktop -f last
 
-## focus the older or newer node in the focus history
-#super + {o,i}
-#	bspc wm -h off; \
-#	bspc node {older,newer} -f; \
-#	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -138,15 +138,15 @@ super + {Left,Down,Up,Right}
 
 # trayer
 super + shift + t
-    /home/ring/scripts/tr-toggle.sh
+    $HOME/scripts/tr-toggle.sh
 
 # emoji selecter
 super + e
-    /home/ring/scripts/dmenu-emoji-selection.sh
+    $HOME/scripts/dmenu-emoji-selection.sh
 
 # wallpaper change
 super + b
-    /home/ring/scripts/wp-change.sh
+    $HOME/scripts/wp-change.sh
 
 
 #
@@ -175,5 +175,4 @@ XF86MonBrightnessDown
 
 # screenshot
 alt + shift + 4
-    scrot -s -e'mv $f ~/Desktop/'
-
+    scrot -s -e 'mv $f ~/Desktop/'

@@ -2,7 +2,7 @@
 font:
   # The normal (roman) font face to use.
   normal:
-    family: monospace
+    family: DejaVu Sans Mono Nerd Font
     # Style can be specified to pick a specific face.
     style: Regular
 
@@ -17,3 +17,6 @@ font:
     family: monospace
     # Style can be specified to pick a specific face.
     # style: Italic
+
+
+background_opacity: 0.85
