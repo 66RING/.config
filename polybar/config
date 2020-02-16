@@ -162,7 +162,7 @@ format-foreground = #FFFDFD
 format-underline = #721ADF
 format-padding = 0
 
-label-maxlen = 200
+label-maxlen = 100
 label-empty = Desktop
 
 [module/mpd]
