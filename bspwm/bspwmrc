@@ -29,5 +29,5 @@ bspc rule -a Qq                  desktop='^8' state=floating
 bspc rule -a GoldenDict          desktop='^8' state=floating
 
 bspc rule -a Steam               desktop='^7' state=floating
-bspc rule -a Wine                             state=floating
 
+bspc rule -a scratchpad          sticky=on state=floating

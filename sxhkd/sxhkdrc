@@ -6,6 +6,10 @@
 super + Return
 	st
 
+# st scratchpad
+super + grave
+    $HOME/scripts/bspwm/scratchpad.sh 
+
 # program launcher
 super + @space
     dmenu_run -fn "Inconsolata:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
@@ -175,4 +179,8 @@ XF86MonBrightnessDown
 
 # screenshot
 alt + shift + 4
-    scrot -s -e 'mv $f ~/Desktop/'
+    sleep 0.1 && scrot -s -e 'mv $f ~/Desktop/' > /dev/null
+
+# picom toggle
+super + u
+    $HOME/scripts/alpha-toggle.sh
