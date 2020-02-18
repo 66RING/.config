@@ -6,13 +6,15 @@ alias s='neofetch'
 alias ra='ranger'
 alias m='neomutt'
 
+# default
+export EDITOR=nvim
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 export PIPENV_IGNORE_VIRTUALENVS=1 
 export XDG_CONFIG_HOME="$HOME/.config"
-#export https_proxy=127.0.0.1:8118
-#export http_proxy=127.0.0.1:8118
+export http_proxy="127.0.0.1:8118"
+export https_proxy="127.0.0.1:8118"
 
 
 plugins=(
@@ -31,8 +33,6 @@ export PATH=$PATH:$GOPATH/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 
-# neovim
-export EDITOR=nvim
 #
 # vi-mode 
 # reduce delay to 0.1 seconds
