@@ -13,16 +13,15 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PIPENV_IGNORE_VIRTUALENVS=1 
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# proxy
 export http_proxy="127.0.0.1:8118"
 export https_proxy="127.0.0.1:8118"
-
 
 plugins=(
          vi-mode
          zsh-autosuggestions
     )
-
-
 
 
 # GOPATH
@@ -60,8 +59,6 @@ export FZF_TMUX_HEIGHT='80%'
 export FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500'
 source ~/.config/zsh/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
 
 
 

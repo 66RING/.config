@@ -16,7 +16,7 @@ super + @space
 
 # chromuim launcher
 super + c
-    chromium
+    brave
 
 ## make sxhkd reload its configuration files:
 #super + Escape
