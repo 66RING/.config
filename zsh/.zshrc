@@ -5,23 +5,37 @@ alias vi='/usr/bin/nvim'
 alias s='neofetch'
 alias ra='ranger'
 alias m='neomutt'
+alias grep='grep --color'
+
 
 # default
 export EDITOR=nvim
-
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
-export PIPENV_IGNORE_VIRTUALENVS=1 
 export XDG_CONFIG_HOME="$HOME/.config"
+
+
+#pipenv
+export PIPENV_IGNORE_VIRTUALENVS=1 
+
 
 # proxy
 export http_proxy="127.0.0.1:8118"
 export https_proxy="127.0.0.1:8118"
 
-plugins=(
-         vi-mode
-         zsh-autosuggestions
-    )
+
+# Basic auto/tab complete:
+autoload -U compinit
+compinit
+# control with arrow key
+zstyle ':completion:*' menu select
+# Auto complete with case insenstivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/.zsh_history
+# ignore duplicating history
+setopt HIST_IGNORE_DUPS
 
 
 # GOPATH
@@ -31,19 +45,6 @@ export GOPATH=$HOME/Documents/code/go
 export PATH=$PATH:$GOPATH/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
-
-#
-# vi-mode 
-# reduce delay to 0.1 seconds
-export KEYTIMEOUT=1
-#
-## mysql PATH
-#export PATH="/usr/local/mysql/bin:$PATH"
-#
-## maven
-#export M2_HOME=/Users/ring/Documents/apache-maven-3.6.2
-#export PATH=$PATH:$M2_HOME/bin
-
 
 
 # xorg(arch)
@@ -61,19 +62,11 @@ source ~/.config/zsh/key-bindings.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-
-## zsh
-#              
-export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="mytheme"
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-DISABLE_MAGIC_FUNCTIONS=true
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-source $ZSH/oh-my-zsh.sh
+# zsh plugin/theme
+autoload -U colors && colors
+source $HOME/.config/zsh/themes/mytheme.zsh-theme
+source $HOME/.config/zsh/plugins/vi-mode/vi-mode.plugin.zsh
+source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 

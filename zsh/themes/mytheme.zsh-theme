@@ -1,7 +1,7 @@
 autoload -U colors && colors 
 
-PROMPT="%(?:%{$fg_bold[red]%}[%{$fg_bold[magenta]%}%n%{$fg_bold[yellow]%}@%{$fg[green]%}%c%{$fg[cyan]%}]:%{$fg_bold[red]%}[%n@%c])"
-PROMPT+="%{$reset_color%} "
+PROMPT="%B%(?:%{$fg[red]%}[%{$fg[magenta]%}%n%{$fg[yellow]%}@%{$fg[green]%}%c%{$fg[cyan]%}]%{$fg[blue]%}%%:%{$fg[red]%}[%n@%c]%%)"
+PROMPT+="%{$reset_color%}%b "
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "

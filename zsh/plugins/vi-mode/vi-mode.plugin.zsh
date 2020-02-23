@@ -1,4 +1,4 @@
-
+export KEYTIMEOUT=1
 
 # Updates editor information when the keymap changes.
 function zle-keymap-select() {

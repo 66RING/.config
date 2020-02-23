@@ -1,0 +1,168 @@
+# _           _ _     _ _             
+#| |__  _   _(_) | __| (_)_ __   __ _ 
+#| '_ \| | | | | |/ _` | | '_ \ / _` |
+#| |_) | |_| | | | (_| | | | | | (_| |
+#|_.__/ \__,_|_|_|\__,_|_|_| |_|\__, |
+#                               |___/ 
+
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+set scrolloff 10
+set color256
+set icons
+set previewer ~/.config/lf/scope.sh
+
+
+cmd open ${{
+    case $(file --mime-type $f -b) in
+        text/*) $EDITOR $fx;;
+        audio/*) mpv --input-ipc-server=/tmp/mpvsoc$(date +%%s) $f ;;
+	    video/*) vlc $f  >/dev/null 2>&1 & ;;
+        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd bulk-rename ${{
+    old=$(mktemp)
+    new=$(mktemp)
+    printf "$fs\n" > $old
+    printf "$fs\n" > $new
+    selected=$(cat $new | wc -l)
+    if (( selected==1 )); then
+        printf "rename:\n"
+        read ans
+        [ -n "$ans" ] && mv $f $ans
+    else
+        $EDITOR $new
+        paste $old $new | while read names; do
+            src=$(printf $names | cut -f1)
+            dst=$(printf $names | cut -f2)
+            [ $src = $dst ] && continue
+            [ -e $dst ] && continue
+            mv $src $dst
+        done
+        rm $old $new
+        lf -remote "send $id unselect"
+    fi
+}}
+
+# move to ~/tem
+cmd trash %set -f; mv $fx ~/tem
+
+cmd delete ${{
+    set -f
+    printf "$fx\n"
+    printf "delete?[y/n]"
+    read ans
+    [ $ans = "y" ] && rm -rf $fx
+}}
+
+cmd mkdir ${{
+  printf "mkdir:\n"
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "nvim:\n"
+  read ans
+  $EDITOR $ans
+}}
+
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod $ans $file
+  done
+}}
+
+cmd extract ${{
+    set -f
+    printf "$fx\n"
+    printf "extract?[y/n]"
+    read ans
+    [ $ans = "y" ] && 
+    case $f in
+        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+        *.tar.gz|*.tgz) tar xzvf $f;;
+        *.tar.xz|*.txz) tar xJvf $f;;
+        *.zip) unzip $f;;
+        *.rar) unrar x $f;;
+        *.7z) 7z x $f;;
+    esac
+}}
+
+# compress current file or selected files with tar and gunzip
+cmd tar ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    tar czf $1.tar.gz $1
+    rm -rf $1
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+# unbind some default key
+map h
+map y
+map d
+map y
+map m
+map w
+map c
+
+# basic control
+map i up
+map k down
+map I push 5i
+map K push 5k
+map j updir
+map l open
+
+map yy copy
+map dd cut
+map dD delete
+map DD trash
+map X extract
+map Q quite
+map r rename
+map r bulk-rename
+map S $$SHELL
+map cz zip
+map ct tar
+
+map md mkdir
+map mf mkfile
+
+# quick move
+map gf cd ~/.config
+map gm cd ~/Videos
+map gc cd ~/Documents/code
+map gs cd ~/scripts
+map gv cd ~/var
+
+
+cmd video_preview ${{
+    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
+    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
+    /home/ring/.config/lf/draw_img.sh $CACHE && rm $CACHE
+}}
+map + :video_preview
+map - $/home/ring/.config/lf/draw_img.sh $f
+
+
+# use enter for shell commands
+map <enter> shell
+
