@@ -1,0 +1,21 @@
+#!/bin/sh
+while read file
+do
+        case "$1" in
+        "C-d")
+                mv "$file" ~/tem &&
+                notify-send "$file move to HOME/tem" & ;;
+        "C-r")
+                convert -rotate 90 "$file" "$file" ;;
+        "C-R")
+                convert -rotate -90 "$file" "$file" ;;
+        "C-c")
+                echo -n "$file" | xsel -b &&
+                notify-send "$file copied to clipboard" & ;;
+        "C-C")
+                readlink -f "$file" | xsel -b &&
+			    notify-send "$(readlink -f "$file") copied to clipboard" & ;;
+        "C-w")
+                nitrogen --save --set-zoom-fill "$file" ;;
+        esac
+done

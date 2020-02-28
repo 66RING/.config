@@ -31,9 +31,11 @@ compinit
 zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# history
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/.zsh_history
+setopt SHARE_HISTORY
 # ignore duplicating history
 setopt HIST_IGNORE_DUPS
 
