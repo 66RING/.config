@@ -6,6 +6,9 @@ alias s='neofetch'
 alias ra='ranger'
 alias m='neomutt'
 alias grep='grep --color'
+# tools
+alias venvon='source /usr/bin/virtualenvwrapper.sh'
+alias proxyon='export http_proxy="127.0.0.1:8118" export https_proxy="127.0.0.1:8118"'
 
 
 # default
@@ -15,13 +18,15 @@ export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
 
 
-#pipenv
-export PIPENV_IGNORE_VIRTUALENVS=1 
+#python env
+export WORKON_HOME=~/.virtualenvs
+# active manually
+# source /usr/bin/virtualenvwrapper.sh
 
 
-# proxy
-export http_proxy="127.0.0.1:8118"
-export https_proxy="127.0.0.1:8118"
+## proxy for terminal
+#export http_proxy="127.0.0.1:8118"
+#export https_proxy="127.0.0.1:8118"
 
 
 # Basic auto/tab complete:
