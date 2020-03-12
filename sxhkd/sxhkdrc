@@ -159,11 +159,11 @@ super + b
 
 # volume up
 XF86AudioRaiseVolume
-    pamixer -i 7
+    pamixer --allow-boost -i 7
 
 # volume down
 XF86AudioLowerVolume
-    pamixer -d 7
+    pamixer --allow-boost -d 7
 
 # volume mute
 XF86AudioMute
