@@ -2,14 +2,14 @@
 #    / __/___  / __/
 #   / /_/_  / / /_
 #  / __/ / /_/ __/
-# /_/   /___/_/-completion.zsh
+# /_/   /___/_/
 #
 # - <Ctrl-r>  fzf-history-widget             
 # - <Ctrl-t>  fzf-cd-widget      
 # - <Ctrl-p>  fzf-find-widget
 # - <Ctrl-f>  find-in-file
 #
-export FZF_DEFAULT_OPTS='--bind=ctrl-t:top,change:top --bind ctrl-e:down,ctrl-u:up'
+export FZF_DEFAULT_OPTS='--bind=ctrl-t:top,change:top --bind ctrl-k:down,ctrl-i:up'
 
 
 _fzf_fpath=${0:h}/fzf

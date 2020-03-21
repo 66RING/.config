@@ -7,19 +7,8 @@ export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 
 
-# xorg(arch)
-export XAUTHORITY=~/.Xauthority
-
-
-### fzf
-## fzf
-#export FZF_DEFAULT_OPTS='--bind ctrl-k:down,ctrl-i:up --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500"'
-#export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-#export FZF_COMPLETION_TRIGGER='\'
-#export FZF_TMUX_HEIGHT='80%'
-#export FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500'
-#source ~/.config/zsh/key-bindings.zsh
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+## xorg(arch)
+#export XAUTHORITY=~/.Xauthority
 
 
 # default items
