@@ -347,7 +347,7 @@ thermal-zone = 0
 
 base-temperature = 20
 
-warn-temperature = 70
+warn-temperature = 80
 
 ; Format
 format = <ramp> <label> 
