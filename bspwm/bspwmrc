@@ -12,7 +12,7 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config focus_follows_pointer true
+#bspc config focus_follows_pointer true
 
 
 bspc rule -a Kupfer.py           focus=on
@@ -26,7 +26,7 @@ bspc rule -a Uget-gtk            desktop='^9' state=floating
 bspc rule -a Transmission-gtk    desktop='^9' state=floating
 bspc rule -a baidunetdisk        desktop='^9' state=floating
 
-bspc rule -a Qq                  desktop='^8' state=floating
+#bspc rule -a Qq                  desktop='^8' state=floating
 bspc rule -a GoldenDict          desktop='^8' state=floating
 
 bspc rule -a netease-cloud-music desktop='^7' state=floating
