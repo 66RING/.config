@@ -64,6 +64,10 @@ super + {t,shift + f}
 super + f
     $HOME/scripts/bspwm/bsphideandfullscreen.sh
 
+# hide polybar
+super + h
+    $HOME/scripts/bspwm/hidebar.sh
+
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
