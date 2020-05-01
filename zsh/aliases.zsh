@@ -13,3 +13,4 @@ alias venvon='source /usr/bin/virtualenvwrapper.sh'
 alias proxyon='export http_proxy="127.0.0.1:8118" export https_proxy="127.0.0.1:8118"'
 alias proxyoff='unset http_proxy ; unset export https_proxy'
 
+alias tsr='/home/ring/scripts/tools/translator.py'
