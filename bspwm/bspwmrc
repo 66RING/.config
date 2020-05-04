@@ -24,10 +24,10 @@ bspc rule -a VirtualBox\ Manager desktop='^10'
 
 bspc rule -a Uget-gtk            desktop='^9' state=floating
 bspc rule -a Transmission-gtk    desktop='^9' state=floating
-bspc rule -a baidunetdisk        desktop='^9' state=floating
+# bspc rule -a baidunetdisk        desktop='^9' state=floating
 
 #bspc rule -a Qq                  desktop='^8' state=floating
-bspc rule -a GoldenDict          desktop='^8' state=floating
+#bspc rule -a GoldenDict          desktop='^8' state=floating
 
 bspc rule -a netease-cloud-music desktop='^7' state=floating
 bspc rule -a Steam               desktop='^7' state=floating

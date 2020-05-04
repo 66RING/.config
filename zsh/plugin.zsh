@@ -13,6 +13,8 @@ HISTFILE=~/.cache/.zsh_history
 setopt SHARE_HISTORY
 # ignore duplicating history
 setopt HIST_IGNORE_DUPS
+# do not save history when command begin with space
+setopt hist_ignore_space
 
 
 # zsh plugin/theme
