@@ -1,4 +1,5 @@
 alias lg='lazygit'
+alias pc='proxychains'
 alias vim='/usr/bin/nvim'
 alias vi='/usr/bin/nvim'
 alias s='neofetch'
