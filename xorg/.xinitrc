@@ -38,7 +38,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 #exec ~/scripts/startdwm
-exec bspwm
+#exec ~/scripts/autostart.sh
+#exec bspwm
 
 
 
