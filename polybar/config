@@ -94,6 +94,7 @@ modules-center = title
 modules-right = pulseaudio  memory cpu cputemp battery date
 tray-position = right
 tray-padding = 2
+tray-maxsize = 20
 ; tray-background = #0063ff
 
 wm-restack = bspwm
@@ -160,7 +161,7 @@ label-empty-padding = 2
 [module/title]
 type = internal/xwindow
 format-foreground = #FFFDFD
-format-underline = #721ADF
+;format-underline = #721ADF
 format-padding = 0
 
 label-maxlen = 60
