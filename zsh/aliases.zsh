@@ -6,7 +6,7 @@ alias s='neofetch | lolcat'
 alias ra='ranger'
 alias m='neomutt'
 alias grep='grep --color'
-alias top='htop'
+alias top='gotop'
 
 
 # tools
