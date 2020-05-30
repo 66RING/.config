@@ -20,6 +20,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 #python env
 export WORKON_HOME=~/.virtualenvs
+#pip
+export PATH=$PATH:$HOME/.local/bin
 # active manually by alias
 # source /usr/bin/virtualenvwrapper.sh
 
