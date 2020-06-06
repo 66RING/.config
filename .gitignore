@@ -1,7 +1,6 @@
 configstore
 google
 .DS_Store
-
 nvim
 Code - OSS
 tencent-qq
@@ -18,7 +17,6 @@ Kingsoft
 chromium
 Electron
 fcitx
-
 QtProject.conf
 Trolltech.conf
 enchant
@@ -59,6 +57,8 @@ DELTARUNE
 screenkey.json
 RedneckBottleShooter
 ibus
-
 ktouch2rc
 mpv/watch_later
+GeoGebra
+Code - Insiders
+Team17 Digital Limited

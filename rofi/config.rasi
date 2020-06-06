@@ -1,9 +1,9 @@
 configuration {
 	modi: "window,run,ssh,drun";
-	width: 50;
-	lines: 15;
+	width: 40;
+	lines: 12;
 /*	columns: 1;*/
-	font: "monospace 30";
+	font: "monospace 24";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 5;*/
