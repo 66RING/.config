@@ -7,6 +7,7 @@ alias ra='ranger'
 alias m='neomutt'
 alias grep='grep --color'
 alias top='gotop'
+alias cp='cp -iv'
 
 
 # tools
