@@ -112,13 +112,13 @@ local settings = {
   showamount = 16,
 
   --font size scales by window, if false requires larger font and padding sizes
-  scale_playlist_by_window=true,
+  scale_playlist_by_window=false,
   --playlist ass style overrides inside curly brackets, \keyvalue is one field, extra \ for escape in lua
   --example {\\fnUbuntu\\fs10\\b0\\bord1} equals: font=Ubuntu, size=10, bold=no, border=1
   --read http://docs.aegisub.org/3.2/ASS_Tags/ for reference of tags
   --undeclared tags will use default osd settings
   --these styles will be used for the whole playlist
-  style_ass_tags = "{}",
+  style_ass_tags = "{fnDejavu\\fs30\\b0\\bord1}",
   --paddings from top left corner
   text_padding_x = 10,
   text_padding_y = 30,
