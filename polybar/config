@@ -35,26 +35,16 @@ margin-top = 0
 margin-bottom = 0
 
 [colors]
-background = #2E3440
-buffer = #3B4252
-foreground = #D8DEE9
-nord6 = #ECEFF4
 nord7 = #8FBCBB
-nord8 = #88C0D0
-nord9 = #81A1C1
-urgent = #BF616A
-warning = #D08770
-notify = #EBCB8B
-success = #3CB371
-function = #B48EAD
+nord8 = #2bcec2
+success = #50fa7b
+notice = #f1fa8c
+warning = #ff5555
 
-;background = #222
+background = #000000
+foreground = #ffffff
 background-alt = #444
-;foreground = #dfdfdf
 foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
 
 [bar/example]
 enable-ipc = true
@@ -82,7 +72,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Lucida Mac:pixelsize=15;1
+font-0 = MacGrande:pixelsize=15;1
 font-1 = FontAwesome5Free:style=Solid:pixelsize=15;1
 font-2 = FontAwesome5Brands:pixelsize=15;1
 font-3 = Weather Icons:pixelsize=15;1
@@ -104,50 +94,19 @@ cursor-scroll = ns-resize
 
 
 [module/bspwm]
-; type = internal/bspwm
-; 
-; format = <label-state> <label-mode>
-; 
-; ; icons
-; ws-icon-0 = 1:Home;
-; ws-icon-1 = 2:Browser;
-; ws-icon-2 = 3:Coding;
-; ws-icon-3 = 4:Learning;
-; ws-icon-4 = 5:Fun;
-; ws-icon-5 = 9:Desktop;
-; ws-icon-default = 
-; 
-; ; color
-; label-focused = 
-; label-focused-underline = ${colors.nord7}
-; label-focused-foreground = ${colors.nord7}
-; label-focused-padding = 2
-; 
-; label-unfocused = •
-; label-unfocused-foreground = ${colors.nord9}
-; label-unfocused-padding = 2
-; 
-; label-urgent = 
-; label-urgent-foreground = ${colors.urgent}
-; label-urgent-background = ${colors.foreground}
-; label-urgent-padding = 2
-; 
-; ; seperator
-; label-separator-foreground = ${colors.buffer}
-;
 type = internal/bspwm
 
-; label-focused = 
-label-focused = %index%
+label-focused = 
 ; label-focused-background = #0063ff
-label-focused-underline= ${colors.primary}
+label-focused-foreground = ${colors.notice}
+#label-focused-underline= ${colors.notice}
 label-focused-padding = 2
 
 label-occupied = %index%
 label-occupied-padding = 2
 
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
+label-urgent = 
+label-urgent-background = ${colors.warning}
 label-urgent-padding = 2
 
 label-empty = %index%
@@ -167,52 +126,6 @@ format-padding = 0
 label-maxlen = 30
 label-empty = Desktop
 
-[module/mpd]
-type = internal/mpd
-
-host = 
-port = 
-
-; Format
-format-online = <toggle> <icon-prev> <label-song> <icon-next> <icon-stop> | <bar-progress> | <icon-repeat> <icon-random>
-format-paused = <toggle> <icon-prev> <label-song> <icon-next> <icon-stop>
-format-stopped =  <toggle>
-
-label-song-underline = ${colors.nord8}
-label-song = %artist:0:10:...% - %title:0:10:...%
-
-icon-play = 
-icon-play-foreground = ${colors.success}
-icon-play-margin = 1
-icon-pause = 
-icon-pause-foreground = ${colors.warning}
-icon-pause-margin = 1
-icon-stop = 
-icon-stop-foreground = ${colors.urgent}
-icon-stop-margin = 1
-icon-prev = 
-icon-prev-foreground = ${colors.function}
-icon-prev-margin = 1
-icon-next = 
-icon-next-foreground = ${colors.function}
-icon-next-margin = 1
-icon-repeat = 
-icon-repeat-margin = 1
-icon-random = 
-icon-random-margin = 1
-
-toggle-on-foreground = ${colors.success}
-toggle-off-foreground = ${colors.urgent}
-
-bar-progress-width = 20
-bar-progress-indicator = |
-bar-progress-fill = -
-bar-progress-empty = -
-bar-progress-gradient = true
-bar-progress-foreground-0 = ${colors.nord7}
-bar-progress-foreground-1 = ${colors.nord8}
-bar-progress-foreground-2 = ${colors.nord9}
-
 
 [module/cpu]
 type = internal/cpu
@@ -224,10 +137,10 @@ ramp-load-0 = 
 ramp-load-0-foreground = ${colors.success}
 
 ramp-load-1 = 
-ramp-load-1-foreground = ${colors.warning}
+ramp-load-1-foreground = ${colors.notice}
 
 ramp-load-2 = 
-ramp-load-2-foreground = ${colors.urgent}
+ramp-load-2-foreground = ${colors.warning}
 
 
 [module/memory]
@@ -242,10 +155,10 @@ ramp-used-0 = 
 ramp-used-0-foreground = ${colors.success}
 
 ramp-used-1 = 
-ramp-used-1-foreground = ${colors.warning}
+ramp-used-1-foreground = ${colors.notice}
 
 ramp-used-2 = 
-ramp-used-2-foreground = ${colors.urgent}
+ramp-used-2-foreground = ${colors.warning}
 
 
 [module/date]
@@ -276,18 +189,16 @@ master-mixer = Master
 
 ; Format 
 format-volume = <ramp-volume> <label-volume>
-; format-volume-underline = ${colors.function}
 
 label-muted =  muted
-label-muted-foreground = ${colors.urgent}
-; label-muted-underline = ${colors.urgent}
+label-muted-foreground = ${colors.warning}
 
 ramp-volume-0 = 
 ramp-volume-0-foreground = ${colors.success}
 ramp-volume-1 = 
-ramp-volume-1-foreground = ${colors.notify}
+ramp-volume-1-foreground = ${colors.notice}
 ramp-volume-2 = 
-ramp-volume-2-foreground = ${colors.urgent}
+ramp-volume-2-foreground = ${colors.warning}
 
 ramp-headphones-0 = 
 
@@ -305,9 +216,9 @@ label-muted-foreground = #666
 ramp-volume-0 = 
 ramp-volume-0-foreground = ${colors.success}
 ramp-volume-1 = 
-ramp-volume-1-foreground = ${colors.notify}
+ramp-volume-1-foreground = ${colors.notice}
 ramp-volume-2 = 
-ramp-volume-2-foreground = ${colors.urgent}
+ramp-volume-2-foreground = ${colors.warning}
 
 ramp-volume-foreground = ${colors.nord7}
 
@@ -356,7 +267,7 @@ format-warn = <label-warn>
 
 label-warn =  %temperature-c%
 label-warn-padding = 1
-label-warn-foreground = ${colors.urgent}
+label-warn-foreground = ${colors.warning}
 
 ramp-0 = 
 ramp-1 = 

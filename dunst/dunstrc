@@ -1,16 +1,17 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "0x0-24+16"
+    geometry = "0x0-24+50"
     indicate_hidden = yes
     shrink = no
-    transparency = 0
+    transparency = 10
     notification_height = 0
     separator_height = 2
     padding = 8
     horizontal_padding = 8
     frame_width = 3
-    frame_color = "#aaaaaa"
+    #frame_color = "#aaaaaa"
+    frame_color = "#404040"
     corner_radius = 5
 
     # Define a color for the separator.
@@ -88,18 +89,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2b2b2b"
+    background = "#404040"
     foreground = "#ffffff"
     timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
-    icon = /home/ring/.config/dunst/normal.png
+    #icon = /home/ring/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#2b2b2b"
+    background = "#404040"
     foreground = "#ffffff"
     timeout = 3
     # Icon for notifications with normal urgency, uncomment to enable
-    icon = /home/ring/.config/dunst/normal.png
+    #icon = /home/ring/.config/dunst/normal.png
 
 [urgency_critical]
     background = "#cc2421"
