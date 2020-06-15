@@ -8,8 +8,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 
 
 # history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=2000
+SAVEHIST=2000
 HISTFILE=~/.cache/.zsh_history
 setopt SHARE_HISTORY
 # ignore duplicating history
@@ -20,10 +20,11 @@ setopt hist_ignore_space
 
 # zsh plugin/theme
 autoload -U colors && colors
-source $HOME/.config/zsh/themes/mytheme.zsh-theme
 source $HOME/.config/zsh/plugins/vi-mode/vi-mode.plugin.zsh
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# theme
+source $HOME/.config/zsh/themes/mytheme.zsh-theme
 
 # dress up man page
 export LESS_TERMCAP_mb=$'\e[6m'          # begin blinking
