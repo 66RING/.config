@@ -188,7 +188,8 @@ XF86MonBrightnessDown
 
 # screenshot
 alt + shift + 4
-    sleep 0.4 && scrot -s -e 'mv $f ~/Desktop/' > /dev/null
+    flameshot gui
+    #sleep 0.4 && scrot -s -e 'mv $f ~/Desktop/' > /dev/null
 
 # picom toggle
 super + u

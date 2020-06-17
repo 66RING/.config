@@ -22,10 +22,15 @@ set icons
 cmd open ${{
     case $(file --mime-type $f -b) in
         text/*) $EDITOR $fx;;
-        audio/*) mpv --input-ipc-server=/tmp/mpvsoc$(date +%%s) $f &;;
-	    video/*) mpv $f  >/dev/null 2>&1 & ;;
-        image/*) sxiv $f &;;
-        *) $EDITOR $fx;;
+        audio/*) mpv --audio-display=no $f ;;
+        video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
+        #office things
+        image/vnd.djvu|application/pdf|application/octet-stream|application/epub*) setsid -f wpspdf $fx >/dev/null 2>&1 ;;
+        application/ppt) setsid -f wpp $fx >/dev/null 2>&1 ;;
+        application/xlsx) setsid -f et $fx >/dev/null 2>&1 ;;
+        application/docx|application/doc) setsid -f wps $fx >/dev/null 2>&1 ;;
+        #default
+        image/*) setsid -f sxiv -a $fx 2>/dev/null ;;
         *) for f in $f; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
