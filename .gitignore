@@ -7,7 +7,6 @@ tencent-qq
 electron-ssr
 google-chrome
 gtk-2.0
-jesseduffield
 menus
 mimeapps.list
 pulse
@@ -64,3 +63,5 @@ Code - Insiders
 Team17 Digital Limited
 pavucontrol.ini
 Dharkael
+
+jesseduffield/lazygit/state.yml
