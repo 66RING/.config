@@ -8,7 +8,8 @@
 #************************
 #* global setting 
 #************************
-set shell sh
+set previewer /home/ring/.config/lf/scope.sh
+set shell bash
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
@@ -21,16 +22,17 @@ set icons
 #************************
 cmd open ${{
     case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
+        text/*|application/octet-stream) $EDITOR $fx;;
         audio/*) mpv --audio-display=no $f ;;
         video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
         #office things
-        image/vnd.djvu|application/pdf|application/octet-stream|application/epub*) setsid -f wpspdf $fx >/dev/null 2>&1 ;;
+        image/vnd.djvu|application/pdf|application/epub*) setsid -f wpspdf $fx >/dev/null 2>&1 ;;
         application/ppt) setsid -f wpp $fx >/dev/null 2>&1 ;;
         application/xlsx) setsid -f et $fx >/dev/null 2>&1 ;;
         application/docx|application/doc) setsid -f wps $fx >/dev/null 2>&1 ;;
         #default
         image/*) setsid -f sxiv -a $fx 2>/dev/null ;;
+        *) $EDITOR $fx;;
         *) for f in $f; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
@@ -57,7 +59,7 @@ cmd bulk-rename ${{
 # move to ~/tem
 cmd trash ${{
     if [ $# -lt 2 ]; then
-        ans="y"
+        ans="N"
     else
         ans=$2
     fi
@@ -66,7 +68,7 @@ cmd trash ${{
 
 cmd delete ${{
     if [ $# -lt 2 ]; then
-        ans="y"
+        ans="N"
     else
         ans=$2
     fi
@@ -167,8 +169,8 @@ map <enter> shell
 map yy copy
 map pp paste
 map dd cut
-map dD push :delete<space>?[Y/n]<space>
-map DD push :trash<space>?[Y/n]<space>
+map dD push :delete<space>?[y/N]<space>
+map DD push :trash<space>?[y/N]<space>
 map Q quit
 map r rename
 map cw bulk-rename
