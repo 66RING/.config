@@ -8,8 +8,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 
 
 # history
-HISTSIZE=2000
-SAVEHIST=2000
+HISTSIZE=20000
+SAVEHIST=20000
 HISTFILE=~/.cache/.zsh_history
 setopt SHARE_HISTORY
 # ignore duplicating history
