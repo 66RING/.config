@@ -135,6 +135,7 @@ lf -remote "send $id $cmd \"$res\""
 
 # drag-and-drop
 cmd dragon %dragon-drag-and-drop -a -x $fx
+cmd dlfile %dlfile
 
 
 #************************
@@ -200,5 +201,7 @@ map gd cd ~/Downloads
 #************************
 # jump with fuzzy
 map <c-f> :fzf_jump
+
 # drag and drop
-map <c-d> dragon
+map dr dragon
+map dl dlfile
