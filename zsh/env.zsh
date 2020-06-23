@@ -7,10 +7,6 @@ export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 
 
-## xorg(arch)
-#export XAUTHORITY=~/.Xauthority
-
-
 #python env
 export WORKON_HOME=~/.virtualenvs
 #pip

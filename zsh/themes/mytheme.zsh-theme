@@ -1,5 +1,3 @@
-autoload -U colors && colors 
-
 PROMPT="%B%(?:%{$fg[red]%}[%{$fg[magenta]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%m %{$fg[green]%}%c%{$fg[blue]%}]%{$fg[white]%}%%:%{$fg[red]%}[%n@%c]%%)"
 PROMPT+="%{$reset_color%}%b "
 
