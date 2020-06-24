@@ -75,9 +75,9 @@ cmd delete ${{
     [ $ans = "y" ] || [ $ans = "Y" ] && rm -rf $fx
 }}
 
-cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
+cmd mkdirs $mkdir -p $*
 
-cmd mkfile $nvim "$(echo $* | tr ' ' '\ ')"
+cmd mkfiles $touch $*
 
 cmd chmod ${{
     if [ $# -gt 0 ]; then
@@ -184,8 +184,8 @@ map cz creat_zip
 map ct creat_tar
 
 # file
-map md push :mkdir<space>
-map mf push :mkfile<space>
+map md push :mkdirs<space>
+map mf push :mkfiles<space>
 
 # quick move
 map gf cd ~/.config
