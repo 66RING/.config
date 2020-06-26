@@ -77,7 +77,7 @@ cmd delete ${{
 
 cmd mkdirs $mkdir -p $*
 
-cmd mkfiles $touch $*
+cmd mkfiles $nvim $*
 
 cmd chmod ${{
     if [ $# -gt 0 ]; then

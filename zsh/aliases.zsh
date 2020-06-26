@@ -9,6 +9,7 @@ alias grep='grep --color'
 alias top='gotop'
 alias cp='cp -iv'
 alias yg='you-get'
+alias docker='sudo docker'
 
 
 # tools
