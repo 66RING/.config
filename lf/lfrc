@@ -40,8 +40,8 @@ cmd open ${{
 cmd bulk-rename ${{
     old=$(mktemp)
     new=$(mktemp)
-    printf "$fs\n" > $old
-    printf "$fs\n" > $new
+    printf "$fx\n" > $old
+    printf "$fx\n" > $new
     selected=$(cat $new | wc -l)
     
     $EDITOR $new

@@ -77,10 +77,10 @@ font-1 = FontAwesome5Free:style=Solid:pixelsize=15;1
 font-2 = FontAwesome5Brands:pixelsize=15;1
 font-3 = Weather Icons:pixelsize=15;1
 font-4 = Source Han Sans CN:pixelsize=15;1
-font-5 = DejaVuSansMono NF:pixelsize=15;1
+font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;1
 
 
-modules-left = bspwm weather
+modules-left = bspwm terminal weather 
 modules-center = title
 modules-right = pulseaudio  memory cpu cputemp battery date
 tray-position = right
@@ -287,6 +287,13 @@ type = custom/script
 exec = ~/scripts/polybar/getweather.sh
 interval = 600
 label-font = 4
+
+[module/terminal]
+type = custom/text
+content = 
+content-foreground = #fff
+content-padding = 
+click-left = ~/scripts/bspwm/scratchpad.sh
 
 [settings]
 screenchange-reload = true
