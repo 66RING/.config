@@ -293,7 +293,7 @@ type = custom/text
 content = 
 content-foreground = #fff
 content-padding = 
-click-left = ~/scripts/bspwm/scratchpad.sh
+click-left = ~/scripts/bspwm/scratchpad.sh &
 
 [settings]
 screenchange-reload = true
