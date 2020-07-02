@@ -14,5 +14,9 @@ do
         "C")
                 readlink -f "$file" | xsel -b &&
 			    notify-send "$(readlink -f "$file") copied to clipboard" & ;;
+        "d")
+			    mv "$file" /home/ring/tem/ ;;
+        "b")
+			    feh --recursive --randomize --bg-fill --no-fehbg "$file" ;;
         esac
 done
