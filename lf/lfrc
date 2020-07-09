@@ -134,9 +134,11 @@ lf -remote "send $id $cmd \"$res\""
 }}
 
 # drag-and-drop
-cmd dragon %dragon-drag-and-drop -a -x $fx
-cmd dlfile %dlfile
+cmd dragon $dragon-drag-and-drop -a -x $fx
+cmd dlfile $dlfile
 
+# copy files path
+cmd cpath $echo $fx | tr -d '\n' |  xsel -b
 
 #************************
 #* unbind some default key
@@ -168,6 +170,7 @@ map <enter> shell
 #* function key
 #************************
 map yy copy
+map yp cpath
 map pp paste
 map dd cut
 map dD push :delete<space>?[y/N]<space>
@@ -180,8 +183,8 @@ map S $$SHELL
 
 # archive things
 map X push :extract<space>?[Y/n]<space>
-map cz creat_zip
-map ct creat_tar
+map cz push :creat_zip
+map ct push :creat_tar
 
 # file
 map md push :mkdirs<space>

@@ -3,13 +3,14 @@ alias lg='lazygit'
 alias pc='proxychains'
 alias vim='/usr/bin/nvim'
 alias vi='/usr/bin/nvim'
+alias ra='ranger'
 alias s='neofetch | lolcat'
 alias m='neomutt'
 alias grep='grep --color'
 alias top='gotop'
 alias cp='cp -iv'
 alias yg='you-get'
-alias docker='sudo docker'
+alias qrcp='qrcp -k'
 
 
 # tools

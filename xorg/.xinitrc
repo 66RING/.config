@@ -39,7 +39,7 @@ fi
 
 #exec ~/scripts/startdwm
 #exec ~/scripts/autostart.sh
-#exec bspwm
+exec bspwm
 
 
 

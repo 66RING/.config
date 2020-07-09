@@ -4,14 +4,14 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	st
 
 # st scratchpad
 super + grave
     $HOME/scripts/bspwm/scratchpad.sh 
 
 # program launcher
-super + @space
+super + space
     rofi -show drun 
     #dmenu_run -fn "Inconsolata:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
 
