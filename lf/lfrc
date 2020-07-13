@@ -20,6 +20,13 @@ set icons
 #************************
 #* scripts
 #************************
+cmd open_with ${{
+    if [ $# -gt 0 ]; then
+        $1 $fx
+    fi
+    lf -remote "send $id unselect"
+}}
+
 cmd open ${{
     case $(file --mime-type $f -b) in
         text/*|application/octet-stream) $EDITOR $fx;;
@@ -33,7 +40,6 @@ cmd open ${{
         #default
         image/*) setsid -f sxiv -a $fx 2>/dev/null ;;
         *) $EDITOR $fx;;
-        *) for f in $f; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
 
@@ -43,15 +49,18 @@ cmd bulk-rename ${{
     printf "$fx\n" > $old
     printf "$fx\n" > $new
     selected=$(cat $new | wc -l)
-    
-    $EDITOR $new
-    paste $old $new | while read names; do
-        src=$(printf $names | cut -f1)
-        dst=$(printf $names | cut -f2)
-        [ $src = $dst ] && continue
-        [ -e $dst ] && continue
-        mv $src $dst
-    done
+    if (( selected <=1 )); then
+        lf -remote "send $id rename"
+    else
+        $EDITOR $new
+        paste $old $new | while read names; do
+            src=$(printf $names | cut -f1)
+            dst=$(printf $names | cut -f2)
+            [ $src = $dst ] && continue
+            [ -e $dst ] && continue
+            mv $src $dst
+        done
+    fi
     rm $old $new
     lf -remote "send $id unselect"
 }}
@@ -86,6 +95,7 @@ cmd chmod ${{
           chmod $1 $file
         done
     fi
+    lf -remote "send reload"
 }}
 
 cmd extract ${{
@@ -124,13 +134,13 @@ cmd creat_zip ${{
 }}
 
 cmd fzf_jump ${{
-   res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
-   if [ -f "$res" ]; then
-     cmd="select"
-   elif [ -d "$res" ]; then
-     cmd="cd"                                                       
-   fi
-lf -remote "send $id $cmd \"$res\""
+    res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
+    if [ -f "$res" ]; then
+      cmd="select"
+    elif [ -d "$res" ]; then
+      cmd="cd"                                                       
+    fi
+    lf -remote "send $id $cmd \"$res\""
 }}
 
 # drag-and-drop
@@ -151,6 +161,7 @@ map m
 map w
 map c
 map p
+map e
 
 
 #************************
@@ -162,6 +173,7 @@ map I push 5i
 map K push 5k
 map j updir
 map l open
+map e push :open_with<space>
 # use enter for shell commands
 map <enter> shell
 
@@ -176,10 +188,10 @@ map dd cut
 map dD push :delete<space>?[y/N]<space>
 map DD push :trash<space>?[y/N]<space>
 map Q quit
-map r rename
 map cw bulk-rename
 map cm push :chmod<space>
 map S $$SHELL
+map U !du -sh $fx
 
 # archive things
 map X push :extract<space>?[Y/n]<space>

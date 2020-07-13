@@ -48,7 +48,7 @@ foreground-alt = #555
 
 [bar/example]
 enable-ipc = true
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:fallback-value}
 width = 100%
 height = 27
 bottom = false
@@ -72,12 +72,13 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = MacGrande:pixelsize=15;1
+font-0 = MacGrande:pixelsize=15;3
 font-1 = FontAwesome5Free:style=Solid:pixelsize=15;1
 font-2 = FontAwesome5Brands:pixelsize=15;1
 font-3 = Weather Icons:pixelsize=15;1
 font-4 = Source Han Sans CN:pixelsize=15;1
 font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;1
+font-6 = twemoji:scale=4;2
 
 
 modules-left = bspwm terminal weather 
@@ -216,8 +217,10 @@ ramp-volume-0 = 
 ramp-volume-0-foreground = ${colors.success}
 ramp-volume-1 = 
 ramp-volume-1-foreground = ${colors.notice}
-ramp-volume-2 = 
-ramp-volume-2-foreground = ${colors.warning}
+ramp-volume-2 = 
+ramp-volume-2-foreground = ${colors.notice}
+ramp-volume-3 = 
+ramp-volume-3-foreground = ${colors.warning}
 
 ramp-volume-foreground = ${colors.nord7}
 

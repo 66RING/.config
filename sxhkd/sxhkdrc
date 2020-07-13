@@ -73,7 +73,7 @@ super + f
     $HOME/scripts/bspwm/bsphideandfullscreen.sh
 
 # hide polybar
-super + h
+super + p
     $HOME/scripts/bspwm/hidebar.sh
 
 ## set the node flags
@@ -198,3 +198,9 @@ alt + shift + 4
 # picom toggle
 super + u
     $HOME/scripts/alpha-toggle.sh
+
+super + h
+    bspc node $(bspc query -N -n .focused) -g hidden=on
+
+super + shift + h
+    /home/ring/scripts/bspwm/unhide.sh
