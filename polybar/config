@@ -81,7 +81,7 @@ font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;1
 font-6 = twemoji:scale=4;2
 
 
-modules-left = bspwm terminal weather 
+modules-left = terminal bspwm  weather 
 modules-center = title
 modules-right = pulseaudio  memory cpu cputemp battery date
 tray-position = right
@@ -293,7 +293,7 @@ label-font = 4
 
 [module/terminal]
 type = custom/text
-content = 
+content = "   😈"
 content-foreground = #fff
 content-padding = 
 click-left = ~/scripts/bspwm/scratchpad.sh &

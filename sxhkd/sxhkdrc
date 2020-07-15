@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	st
+	alacritty
 
 # st scratchpad
 super + grave
@@ -67,7 +67,7 @@ super + shift + r
 #super + {t,shift + t,shift + f,f}
 #	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 super + {t,shift + f}
-	bspc node -t {tiled,floating}
+	bspc node -t {\~tiled,\~floating}
 
 super + f
     $HOME/scripts/bspwm/bsphideandfullscreen.sh
@@ -152,10 +152,6 @@ super + {Left,Down,Up,Right}
 #
 # User config
 #
-
-# trayer
-#super + shift + t
-#    $HOME/scripts/tr-toggle.sh
 
 # emoji selecter
 super + e
