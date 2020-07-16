@@ -25,6 +25,9 @@ source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # theme
 source $HOME/.config/zsh/themes/mytheme.zsh-theme
+# theme-depandency
+setopt prompt_subst
+source $HOME/.config/zsh/lib/git.zsh
 
 # dress up man page
 export LESS_TERMCAP_mb=$'\e[6m'          # begin blinking
