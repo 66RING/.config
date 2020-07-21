@@ -1,4 +1,5 @@
 alias ll='ls -l'
+alias sctl='systemctl'
 alias lg='lazygit'
 alias pc='proxychains'
 alias vim='/usr/bin/nvim'

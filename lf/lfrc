@@ -29,17 +29,17 @@ cmd open_with ${{
 
 cmd open ${{
     case $(file --mime-type $f -b) in
-        text/*|application/octet-stream) $EDITOR $fx;;
+        text/*|application/octet-stream|*/json|*/x-empty) $EDITOR $fx;;
         audio/*) mpv --audio-display=no $f ;;
         video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
         #office things
         image/vnd.djvu|application/pdf|application/epub*) setsid -f wpspdf $fx >/dev/null 2>&1 ;;
         application/ppt) setsid -f wpp $fx >/dev/null 2>&1 ;;
         application/xlsx) setsid -f et $fx >/dev/null 2>&1 ;;
-        application/docx|application/doc) setsid -f wps $fx >/dev/null 2>&1 ;;
+        application/docx|application/doc|application/*officedocument*|application/msword) setsid -f wps $fx >/dev/null 2>&1 ;;
         #default
         image/*) setsid -f sxiv -a $fx 2>/dev/null ;;
-        *) $EDITOR $fx;;
+        *) lf -remote "send $id push :open_with<space>"
     esac
 }}
 
@@ -84,9 +84,9 @@ cmd delete ${{
     [ $ans = "y" ] || [ $ans = "Y" ] && rm -rf $fx
 }}
 
-cmd mkdirs $mkdir -p $*
+cmd mkdirs $mkdir -p "$(echo $* | tr ' ' '\ ')"
 
-cmd mkfiles $nvim $*
+cmd mkfiles $nvim "$(echo $* | tr ' ' '\ ')"
 
 cmd chmod ${{
     if [ $# -gt 0 ]; then
@@ -146,6 +146,7 @@ cmd fzf_jump ${{
 # drag-and-drop
 cmd dragon $dragon-drag-and-drop -a -x $fx
 cmd dlfile $dlfile
+cmd dragon-individual %dragon-drag-and-drop $fx
 
 # copy files path
 cmd cpath $echo $fx | tr -d '\n' |  xsel -b
@@ -220,3 +221,7 @@ map <c-f> :fzf_jump
 # drag and drop
 map dr dragon
 map dl dlfile
+map di dragon-individual
+
+# qrcp
+map tp !qrcp $fx
