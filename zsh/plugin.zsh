@@ -1,35 +1,51 @@
+# _____        __       ____  __            _     
+#/__  /  _____/ /_     / __ \/ /_  ______ _(_)___ 
+#  / /  / ___/ __ \   / /_/ / / / / / __ `/ / __ \
+# / /__(__  ) / / /  / ____/ / /_/ / /_/ / / / / /
+#/____/____/_/ /_/  /_/   /_/\__,_/\__, /_/_/ /_/ 
+#                                 /____/          
+#
+# Author: github@66RING
+
+#************************
+#* plugin
+#************************
 # Basic auto/tab complete:
 autoload -U compinit
+autoload -U colors && colors
 compinit
 # control with arrow key
 zstyle ':completion:*' menu select
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-
 # history
 HISTSIZE=20000
 SAVEHIST=20000
 HISTFILE=~/.cache/.zsh_history
 setopt SHARE_HISTORY
-# ignore duplicating history
-setopt HIST_IGNORE_DUPS
-# do not save history when command begin with space
-setopt hist_ignore_space
+setopt HIST_IGNORE_DUPS     # ignore duplicating history
+setopt hist_ignore_space    # do not save history when command begin with space
 
-
-# zsh plugin/theme
-autoload -U colors && colors
 source $HOME/.config/zsh/plugins/vi-mode/vi-mode.plugin.zsh
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# theme
+# fzf
+source $HOME/.config/zsh/fzf.zsh
+
+
+#************************
+#* theme
+#************************
 source $HOME/.config/zsh/themes/mytheme.zsh-theme
 # theme-depandency
 setopt prompt_subst
 source $HOME/.config/zsh/lib/git.zsh
 
-# dress up man page
+
+#************************
+#* colorful man page
+#************************
 export LESS_TERMCAP_mb=$'\e[6m'          # begin blinking
 export LESS_TERMCAP_md=$'\e[34m'         # begin bold
 export LESS_TERMCAP_us=$'\e[4;32m'       # begin underline

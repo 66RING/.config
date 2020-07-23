@@ -1,4 +1,14 @@
-# GOPATH
+# _____            
+#| ____|_ ____   __
+#|  _| | '_ \ \ / /
+#| |___| | | \ V / 
+#|_____|_| |_|\_/  
+#                  
+# Author: github@66RING
+
+#************************
+#* Golang
+#************************
 export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/Documents/code/go
@@ -7,7 +17,9 @@ export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 
 
-#python env
+#************************
+#* python
+#************************
 export WORKON_HOME=~/.virtualenvs
 #pip
 export PATH=$PATH:$HOME/.local/bin
@@ -15,16 +27,16 @@ export PATH=$PATH:$HOME/.local/bin
 # source /usr/bin/virtualenvwrapper.sh
 
 
-# default things
+#************************
+#* default env
+#************************
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g')
 export EDITOR="nvim"
-#export READER="zathura"
 export VISUAL="nvim"
-export TERMINAL="alacritty"
 export BROWSER="google-chrome-stable"
 export VIDEO="mpv"
 export IMAGE="sxiv"

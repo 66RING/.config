@@ -29,7 +29,10 @@ cmd open_with ${{
 
 cmd open ${{
     case $(file --mime-type $f -b) in
+        # text file
         text/*|application/octet-stream|*/json|*/x-empty) $EDITOR $fx;;
+        */csv|inode/symlink) $EDITOR $fx;;
+
         audio/*) mpv --audio-display=no $f ;;
         video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
         #office things
