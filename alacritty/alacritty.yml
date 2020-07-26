@@ -39,6 +39,10 @@ mouse:
     modifiers: None
 
 
+cursor:
+  vi_mode_style: Block
+
+
 colors:
   primary:
     background: '#2c323b'
@@ -78,6 +82,10 @@ colors:
     cyan:    '#2bcec2'
     white:   '#bbbbbb'
 
+  vi_mode_cursor:
+    text: '#000000'
+    cursor: '#f1fa8c'
+
 
 key_bindings:
   - { key: V, mods: Alt,         action: Paste           }
@@ -86,3 +94,14 @@ key_bindings:
   - { key: K, mods: Alt,         action: ScrollLineDown, mode: ~Alt }
   - { key: I, mods: Alt|Control, action: ScrollPageUp,   mode: ~Alt }
   - { key: K, mods: Alt|Control, action: ScrollPageDown, mode: ~Alt }
+  - { key: Space,  mods: Alt,           action: ToggleViMode            }
+
+    # Vi mode
+  - { key: I, mode: Vi, action: Up                      }
+  - { key: K, mode: Vi, action: Down                    }
+  - { key: J, mode: Vi, action: Left                    }
+  - { key: L, mode: Vi, action: Right                   }
+  - { key: J,      mods: Shift,         mode: Vi, action: WordLeft                }
+  - { key: L,      mods: Shift,         mode: Vi, action: WordRight               }
+  - { key: I, mods: Shift, action: ScrollHalfPageUp,   mode: Vi }
+  - { key: K, mods: Shift, action: ScrollHalfPageDown, mode: Vi }

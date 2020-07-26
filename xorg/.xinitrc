@@ -40,7 +40,7 @@
 xmodmap /home/ring/.Xmodmap
 # exec ~/scripts/dwm/dwm-status.sh
 # exec /home/ring/scripts/autostart.sh
-exec bspwm
+# exec bspwm
 
 
 
