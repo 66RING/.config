@@ -194,7 +194,7 @@ map DD push :trash<space>?[y/N]<space>
 map Q quit
 map cw bulk-rename
 map cm push :chmod<space>
-map S $$SHELL
+map S quit
 map U !du -sh $fx
 
 # archive things
