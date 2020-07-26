@@ -45,6 +45,13 @@ export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
 
+# LF
+LFCD="/home/ring/.config/lf/lfcd.sh" 
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+alias l="lfcd"
+alias lf="lfcd"
 export LF_ICONS="\
 di=:\
 fi=:\

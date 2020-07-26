@@ -32,6 +32,7 @@ source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fzf
 source $HOME/.config/zsh/fzf.zsh
+source $HOME/.config/zsh/fzf/fzf-tab/fzf-tab.zsh
 
 
 #************************
