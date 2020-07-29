@@ -20,6 +20,11 @@ set icons
 #************************
 #* scripts
 #************************
+cmd quit_back ${{
+    lf -remote "send $id cd $LF_BACK"
+    lf -remote "send $id quit"
+}}
+
 cmd open_with ${{
     if [ $# -gt 0 ]; then
         $1 $fx
@@ -89,7 +94,7 @@ cmd delete ${{
 
 cmd mkdirs $mkdir -p "$(echo $* | tr ' ' '\ ')"
 
-cmd mkfiles $nvim "$(echo $* | tr ' ' '\ ')"
+cmd mkfiles $nvim $*
 
 cmd chmod ${{
     if [ $# -gt 0 ]; then
@@ -166,6 +171,7 @@ map w
 map c
 map p
 map e
+map q
 
 
 #************************
@@ -191,7 +197,7 @@ map pp paste
 map dd cut
 map dD push :delete<space>?[y/N]<space>
 map DD push :trash<space>?[y/N]<space>
-map Q quit
+map Q quit_back
 map cw bulk-rename
 map cm push :chmod<space>
 map S quit
