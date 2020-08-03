@@ -51,6 +51,7 @@ cmd open ${{
     esac
 }}
 
+
 cmd bulk-rename ${{
     old=$(mktemp)
     new=$(mktemp)
@@ -73,6 +74,7 @@ cmd bulk-rename ${{
     lf -remote "send $id unselect"
 }}
 
+
 # move to ~/tem
 cmd trash ${{
     if [ $# -lt 2 ]; then
@@ -92,9 +94,17 @@ cmd delete ${{
     [ $ans = "y" ] || [ $ans = "Y" ] && rm -rf $fx
 }}
 
-cmd mkdirs $mkdir -p "$(echo $* | tr ' ' '\ ')"
+
+# cmd mkdirs $mkdir -p "$(echo $* | tr ' ' '\ ')"
+cmd mkdirs ${{
+    DIR="$(echo $* | tr ' ' '\ ')"
+    mkdir -p $DIR
+    lf -remote "send $id cd $DIR"
+}}
+
 
 cmd mkfiles $nvim $*
+
 
 cmd chmod ${{
     if [ $# -gt 0 ]; then
@@ -105,6 +115,7 @@ cmd chmod ${{
     fi
     lf -remote "send reload"
 }}
+
 
 cmd extract ${{
     if [ $# -lt 2 ]; then
@@ -123,6 +134,7 @@ cmd extract ${{
     esac
 }}
 
+
 # compress current file or selected files with tar and gunzip
 cmd creat_tar ${{
     set -f
@@ -132,6 +144,7 @@ cmd creat_tar ${{
     rm -rf $1
 }}
 
+
 # compress current file or selected files with zip
 cmd creat_zip ${{
     set -f
@@ -140,6 +153,7 @@ cmd creat_zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
+
 
 cmd fzf_jump ${{
     res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
@@ -151,10 +165,12 @@ cmd fzf_jump ${{
     lf -remote "send $id $cmd \"$res\""
 }}
 
+
 # drag-and-drop
 cmd dragon $dragon-drag-and-drop -a -x $fx
 cmd dlfile $dlfile
 cmd dragon-individual %dragon-drag-and-drop $fx
+
 
 # copy files path
 cmd cpath $echo $fx | tr -d '\n' |  xsel -b
