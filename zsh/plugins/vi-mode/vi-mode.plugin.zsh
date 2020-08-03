@@ -22,8 +22,8 @@ zle -N vi-accept-line
 bindkey -v
 
 # use custom accept-line widget to update $VI_KEYMAP
-bindkey -M vicmd '^J' vi-accept-line
-bindkey -M vicmd '^M' vi-accept-line
+# bindkey -M vicmd '^J' vi-accept-line
+# bindkey -M vicmd '^M' vi-accept-line
 
 # allow v to edit the command line (standard behaviour)
 autoload -Uz edit-command-line
@@ -31,7 +31,7 @@ zle -N edit-command-line
 bindkey -M vicmd 'v' edit-command-line
 
 # allow ctrl-h, ctrl-w, ctrl-? for char and word deletion (standard behaviour)
-bindkey '^?' backward-delete-char
+# bindkey '^?' backward-delete-char
 bindkey '^w' backward-kill-word
 
 # allow ctrl-a and ctrl-e to move to beginning/end of line
@@ -53,10 +53,10 @@ bindkey -M vicmd "I" up-line-or-history
 bindkey -M vicmd "gg" vi-beginning-of-line
 bindkey -M vicmd "G" vi-end-of-line
 bindkey -M vicmd "u" undo
-bindkey -M vicmd "=" vi-repeat-search
-bindkey -M vicmd "n" vi-forward-word-end
-bindkey -M vicmd "f" history-incremental-search-backward
-bindkey -M vicmd "F" history-incremental-search-forward
+# bindkey -M vicmd "=" vi-repeat-search
+# bindkey -M vicmd "n" vi-forward-word-end
+# bindkey -M vicmd "f" history-incremental-search-backward
+# bindkey -M vicmd "F" history-incremental-search-forward
 
 function zle-keymap-select {
 	if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
