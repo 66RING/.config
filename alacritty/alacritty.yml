@@ -105,3 +105,7 @@ key_bindings:
   - { key: L,      mods: Shift,         mode: Vi, action: WordRight               }
   - { key: I, mods: Shift, action: ScrollHalfPageUp,   mode: Vi }
   - { key: K, mods: Shift, action: ScrollHalfPageDown, mode: Vi }
+
+    # unbind
+  - { key: L,         mods: Control,             action: ReceiveChar }
+
