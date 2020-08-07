@@ -6,9 +6,11 @@
 #                                   
 # Author: github@66RING
 
+alias c='clear'
 alias cp='cp -iv'
 alias grep='grep --color'
 alias g='git'
+alias gct='git clone --depth=1'
 alias ll='ls -l'
 alias lg='lazygit'
 alias m='neomutt'
