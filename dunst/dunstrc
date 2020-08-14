@@ -54,7 +54,7 @@
 
     sticky_history = yes
     history_length = 20
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -i -p dunst:
     #browser = /usr/bin/chromium -new-tab
     browser = /usr/bin/google-chrome-stable
 
