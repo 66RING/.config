@@ -170,8 +170,13 @@ alt + shift + 4
 super + u
     $HOME/scripts/alpha-toggle.sh
 
+# bspwm window hidden toggle
 super + h
     bspc node $(bspc query -N -n .focused) -g hidden=on
 
 super + shift + h
     /home/ring/scripts/bspwm/unhide.sh
+
+# lock screen
+super + BackSpace
+    slock
