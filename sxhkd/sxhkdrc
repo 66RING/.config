@@ -6,9 +6,10 @@
 super + Return
 	st
 
-# set to main workplace
+# send to current monitor
 super + shift + Return
-    bspc node -s biggest.local
+    bspc node -m pointed
+
 
 # st scratchpad
 super + grave

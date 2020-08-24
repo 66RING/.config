@@ -9,6 +9,7 @@
 alias c='clear'
 alias cp='cp -iv'
 alias grep='grep --color'
+alias egrep='egrep --color'
 alias g='git'
 alias gct='git clone --depth=1'
 alias ls='ls --color'
