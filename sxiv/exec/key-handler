@@ -18,5 +18,7 @@ do
 			    mv "$file" /home/ring/tem/ ;;
         "b")
 			    feh --recursive --randomize --bg-fill --no-fehbg "$file" ;;
+        "o")
+			    dragon-drag-and-drop -a -x "$file" ;;
         esac
 done
