@@ -6,6 +6,12 @@
 #                  
 # Author: github@66RING
 
+#========================
+# Global
+#========================
+export SUDO_ASKPASS="/$HOME/scripts/global/rofipass.sh"
+
+
 #************************
 #* Golang
 #************************

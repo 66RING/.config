@@ -5,8 +5,8 @@
   text-color: rgb(253, 246, 227);
   spacing: 0;
   border-radius: 10px;
-  width: 800px;
-  height: 700px;
+  width: 40%;
+  height: 60%;
 }
 
 inputbar {

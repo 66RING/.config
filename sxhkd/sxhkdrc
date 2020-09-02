@@ -17,7 +17,7 @@ super + grave
 
 # program launcher
 super + space
-    rofi -show drun 
+    rofi -theme "~/.config/rofi/rofi-themes/slate_without_prompt.rasi" -show drun 
     #dmenu_run -fn "Inconsolata:size=25" -nb "#222222" -nf "#bbbbbb" -sb "#0099CC" -sf "#ffffff"
 
 # chromuim launcher
@@ -116,7 +116,7 @@ super + {Left,Down,Up,Right}
 
 # emoji selecter
 super + e
-    $HOME/scripts/dmenu-emoji-selection.sh
+    $HOME/scripts/global/emoji-selector.sh
 
 # wallpaper change
 super + b

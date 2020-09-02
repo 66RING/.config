@@ -202,6 +202,7 @@ map l open
 map e push :open_with<space>
 # use enter for shell commands
 map <enter> shell
+map M mark-save
 
 
 #************************
