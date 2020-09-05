@@ -14,7 +14,7 @@ configuration {
   spacing: 0;
   border-radius: 10px;
   width: 40%;
-  height: 700px;
+  /* height: 700px; */
 }
 
 inputbar {
@@ -41,6 +41,7 @@ listview {
   cycle: true;
   margin: 0 0 -1px 0;
   scrollbar: false;
+  lines: 7;
 }
 
 element {
