@@ -75,7 +75,7 @@ font-0 = MacGrande:pixelsize=15;4
 font-1 = FontAwesome5Free:style=Solid:pixelsize=15;3
 font-2 = FontAwesome5Brands:pixelsize=15;3
 font-3 = Weather Icons:pixelsize=15;2
-font-4 = Source Han Sans CN:pixelsize=15;4
+font-4 = Source Han Sans CN:pixelsize=15;2
 font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;2
 font-6 = twemoji:scale=4;2
 

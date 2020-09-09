@@ -2,14 +2,13 @@
 # wm independent hotkeys
 #
 
+#
+# Laucher
+#
+
 # terminal emulator
 super + Return
 	st
-
-# send to current monitor
-super + shift + Return
-    bspc node -m pointed
-
 
 # st scratchpad
 super + grave
@@ -24,12 +23,14 @@ super + space
 super + c
     google-chrome-stable
 
+
+#
+# state/flags
+#
+
+# close window
 super + q
 	bspc node -c
-
-super + m
-    $HOME/scripts/bspwm/bspfullscreen.sh
-
 
 # rotate
 super + r
@@ -38,14 +39,12 @@ super + r
 super + shift + r
     bspc node @focused:parent/ -R 90
 
-
-#
-# state/flags
-#
-
 # set the window state 
 super + {t,shift + f}
 	bspc node -t {\~tiled,\~floating}
+
+super + m
+    $HOME/scripts/bspwm/bspfullscreen.sh
 
 super + f
     $HOME/scripts/bspwm/bsphideandfullscreen.sh
@@ -63,6 +62,13 @@ super + p
 super + {_,shift} + {j,k,i,l}
 	bspc node -{f,s} {west,south,north,east}
 
+# send to current monitor
+super + shift + Return
+    bspc node -m pointed
+
+# send to next/prev monitor
+super + shift + bracket{left,right}
+    bspc node -m {prev,next}
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -71,7 +77,6 @@ super + bracket{left,right}
 # focus the last desktop
 super + Tab
 	bspc desktop -f last
-
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -97,13 +102,13 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
+
 #
 # move/resize
 #
 
 super + alt + {j,k,i,l}
 	bspc node -z {right -20 0,top 0 20,top 0 -20,right 20 0}
-
 
 # move a floating window
 super + {Left,Down,Up,Right}

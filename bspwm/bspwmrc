@@ -21,7 +21,6 @@ bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config merge_overlapping_monitors true
 # When focusing a monitor, put the pointer at its center.
-bspc config pointer_follows_monitor true
 
 
 bspc rule -a Screenkey           manage=off
