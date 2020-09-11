@@ -35,7 +35,7 @@ cmd open_with ${{
 cmd open ${{
     case $(file --mime-type $f -b) in
         # text file
-        text/*|application/octet-stream|*/json|*/x-empty) $EDITOR $fx;;
+        text/*|application/octet-stream|*/json|*/x-empty) $EDITOR $f;;
         */csv|inode/symlink) $EDITOR $fx;;
 
         audio/*) mpv --audio-display=no $f ;;
@@ -58,18 +58,16 @@ cmd bulk-rename ${{
     printf "$fx\n" > $old
     printf "$fx\n" > $new
     selected=$(cat $new | wc -l)
-    if (( selected <=1 )); then
-        lf -remote "send $id rename"
-    else
-        $EDITOR $new
-        paste $old $new | while read names; do
-            src=$(printf $names | cut -f1)
-            dst=$(printf $names | cut -f2)
-            [ $src = $dst ] && continue
-            [ -e $dst ] && continue
-            mv $src $dst
-        done
-    fi
+    
+    $EDITOR $new
+    paste $old $new | while read names; do
+        src=$(printf $names | cut -f1)
+        dst=$(printf $names | cut -f2)
+        [ $src = $dst ] && continue
+        [ -e $dst ] && continue
+        mv $src $dst
+    done
+
     rm $old $new
     lf -remote "send $id unselect"
 }}
