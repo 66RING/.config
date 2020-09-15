@@ -190,3 +190,12 @@ super + shift + h
 # lock screen
 super + BackSpace
     slock
+
+# monitor toggle
+super + shift + p
+    $HOME/scripts/global/all-monitors.sh
+
+# monitor selector
+super + shift + M
+    $HOME/scripts/global/displayselect.sh
+

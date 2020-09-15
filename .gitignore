@@ -63,14 +63,16 @@ Code - Insiders
 Team17 Digital Limited
 pavucontrol.ini
 Dharkael
-
 jesseduffield/lazygit/state.yml
 wireshark
 mpv/playlists
 kdeglobals
 dingtalk
 vue
-
 glade.conf
 mpv/history.log
 balena-etcher-electron
+kdenlive-layoutsrc
+
+zsh/plugins/secondary_theme.zsh
+autostart
