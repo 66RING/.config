@@ -8,4 +8,6 @@ source ~/.config/zsh/env.zsh
 source ~/.config/zsh/plugin.zsh
 source ~/.config/zsh/aliases.zsh
 
+export LFS=/home/ring/var/LFS
+
 

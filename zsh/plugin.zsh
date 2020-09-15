@@ -29,10 +29,13 @@ setopt hist_ignore_space    # do not save history when command begin with space
 
 source $HOME/.config/zsh/plugins/vi-mode/vi-mode.plugin.zsh
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 # fzf
 source $HOME/.config/zsh/fzf.zsh
 source $HOME/.config/zsh/plugins/fzf-tab/fzf-tab.zsh
+source $HOME/.config/zsh/plugins/zsh-autopair/autopair.zsh
+# autopair-init
 
 
 #************************
