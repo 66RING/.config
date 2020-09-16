@@ -97,6 +97,9 @@ cmd delete ${{
 cmd mkdirs ${{
     DIR="$(echo $* | tr ' ' '\ ')"
     mkdir -p $DIR
+    if [ ! -z "$fs" ]; then
+        mv $fs $DIR
+    fi
     lf -remote "send $id cd $DIR"
 }}
 
@@ -154,7 +157,7 @@ cmd creat_zip ${{
 
 
 cmd fzf_jump ${{
-    res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
+    res="$(find . -maxdepth 4 | fzf --reverse --preview='head -$LINES {}' --header='Jump to location')"
     if [ -f "$res" ]; then
       cmd="select"
     elif [ -d "$res" ]; then
