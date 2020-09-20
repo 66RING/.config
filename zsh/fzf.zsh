@@ -63,7 +63,7 @@ fif() {
 }
 
 find-in-file() {
-	grep --line-buffered --color=never -r "" * | fzf
+	grep --line-buffered --color=never -r "" * | fzf | cut -d":" -f1
 }
 zle -N find-in-file
 bindkey '^f' find-in-file
