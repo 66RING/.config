@@ -1,11 +1,3 @@
-configuration {
-	modi: "window,run,ssh,drun";
-	width: 40;
-	lines: 12;
-	font: "monospace 24";
-	show-icons: true;
-}
-
 * {
   background-color: rgba(76,77,86, 40%);
   foreground: rgba(253, 246, 227, 80%);

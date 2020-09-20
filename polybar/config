@@ -44,7 +44,7 @@ warning = #ff5555
 background = #8c000000
 foreground = #ffffff
 background-alt = #444
-foreground-alt = #555
+foreground-alt = #6272a4
 
 [bar/primary]
 enable-ipc = true
@@ -87,6 +87,52 @@ tray-position = right
 tray-padding = 2
 tray-maxsize = 60
 ; tray-background = #0063ff
+
+wm-restack = bspwm
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+monitor = ${env:MONITOR:}
+
+
+[bar/secondary]
+enable-ipc = true
+width = 100%
+height = 27
+bottom = false
+;offset-x = 1%
+;offset-y = 1%
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+; border-size = 4
+; border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = MacGrande:pixelsize=15;4
+font-1 = FontAwesome5Free:style=Solid:pixelsize=15;3
+font-2 = FontAwesome5Brands:pixelsize=15;3
+font-3 = Weather Icons:pixelsize=15;2
+font-4 = Source Han Sans CN:pixelsize=15;2
+font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;2
+font-6 = twemoji:scale=4;2
+
+
+modules-left = terminal bspwm 
+modules-center = title
+modules-right = pulseaudio updates uptime battery fulldate
 
 wm-restack = bspwm
 
@@ -177,6 +223,19 @@ format = <label>
 label = %date% %time%
 label-margin = 1
 ; label-underline = ${colors.nord8}
+
+
+[module/fulldate]
+type = internal/date
+interval = 1.0
+
+date = %Y-%m-%d%
+time = %H:%M:%S (%a)
+
+format = <label>
+label =  %date% %time%
+label-margin = 1
+
 
 [module/alsa]
 type = internal/alsa
@@ -297,6 +356,21 @@ content = "   😈"
 content-foreground = #fff
 content-padding = 
 click-left = ~/scripts/bspwm/scratchpad.sh &
+
+
+[module/updates]
+type = custom/script
+exec = yay -Qu 2> /dev/null | wc -l
+format-prefix = " "
+interval = 7200
+
+
+[module/uptime]
+type = custom/script
+exec = uptime | awk '{printf $3}' | tr -d ","
+format-prefix = " Uptime "
+interval = 60
+
 
 [settings]
 screenchange-reload = true
