@@ -140,35 +140,35 @@ super + shift +b
 XF86AudioRaiseVolume
     pamixer --allow-boost -i 7
 
-super + period
+super + shift + period
     pamixer --allow-boost -i 7
 
 # volume down
 XF86AudioLowerVolume
     pamixer --allow-boost -d 7
 
-super + comma
+super + shift + comma
     pamixer --allow-boost -d 7
 
 # volume mute
 XF86AudioMute
     pamixer -t
 
-super + slash
+super + shift + slash
     pamixer -t
 
 # light up
 XF86MonBrightnessUp
     xbacklight -inc 5
 
-super + greater
+super + period
     xbacklight -inc 5
 
 # light down
 XF86MonBrightnessDown
     xbacklight -dec 5
 
-super + less
+super + comma
     xbacklight -dec 5
 
 # screenshot
