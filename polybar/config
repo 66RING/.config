@@ -132,7 +132,7 @@ font-6 = twemoji:scale=4;2
 
 modules-left = terminal bspwm 
 modules-center = title
-modules-right = pulseaudio updates uptime battery fulldate
+modules-right = pulseaudio updates uptime fulldate
 
 wm-restack = bspwm
 
@@ -367,7 +367,7 @@ interval = 7200
 
 [module/uptime]
 type = custom/script
-exec = uptime | awk '{printf $3}' | tr -d ","
+exec = uptime -p | cut -d " " -f 2-
 format-prefix = " Uptime "
 interval = 60
 
