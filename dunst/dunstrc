@@ -11,7 +11,7 @@
     horizontal_padding = 8
     frame_width = 3
     # frame_color = "#4C4D56"
-    frame_color = "#767676cc"
+    frame_color = "#e4e4e499"
     corner_radius = 7
 
     # Define a color for the separator.
@@ -90,7 +90,7 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     # background = "#4C4D56"
-    background = "#767676cc"
+    background = "#e4e4e499"
     foreground = "#0b0b0b"
     timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
@@ -98,7 +98,7 @@
 
 [urgency_normal]
     # background = "#4C4D56"
-    background = "#767676cc"
+    background = "#e4e4e499"
     foreground = "#0b0b0b"
     timeout = 3
     # Icon for notifications with normal urgency, uncomment to enable
