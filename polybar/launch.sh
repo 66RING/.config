@@ -4,11 +4,13 @@ while [ ! -z "$(pgrep polybar)" ]; do
     killall polybar
 done
 
+SUDO_ASKPASS="/home/ring/scripts/global/rofipass.sh"
+
 cat /tmp/polybar1.log > /tmp/polybar2.log
 printf "===== Polybar log =====\n\n" > /tmp/polybar1.log &
 
 IsPrimary=0
-if type "xrandr"; then
+if type "xrandr" &> /dev/null; then
   # for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
   for m in $(polybar -m|sed -e 's/:.*$//g'); do  # with a priority
     if [ $IsPrimary -eq 0 ]; then

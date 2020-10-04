@@ -130,7 +130,7 @@ font-5 = DejaVuSansMono Nerd Font Mono:pixelsize=15;2
 font-6 = twemoji:scale=4;2
 
 
-modules-left = terminal bspwm 
+modules-left = terminal bspwm
 modules-center = title
 modules-right = pulseaudio updates uptime fulldate
 
@@ -359,16 +359,17 @@ click-left = ~/scripts/bspwm/scratchpad.sh &
 
 
 [module/updates]
-type = custom/script
-exec = pacman -Qu 2> /dev/null | wc -l
-format-prefix = " "
-interval = 600
+type = custom/ipc
+hook-0 = pacman -Qu | wc -l 
+format-prefix = "📦 "
+click-left = notify-send "Checking for updates" && sudo -A pacman -Syu && polybar-msg -p %pid% hook updates 1 && notify-send "Check updates completed"
+initial = 1
 
 
 [module/uptime]
 type = custom/script
 exec = uptime -p | cut -d " " -f 2-
-format-prefix = " Uptime "
+format-prefix = "🚀 Uptime "
 interval = 60
 
 
