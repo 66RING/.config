@@ -4,7 +4,6 @@ while [ ! -z "$(pgrep polybar)" ]; do
     killall polybar
 done
 
-SUDO_ASKPASS="/home/ring/scripts/global/rofipass.sh"
 
 cat /tmp/polybar1.log > /tmp/polybar2.log
 printf "===== Polybar log =====\n\n" > /tmp/polybar1.log &
@@ -19,7 +18,7 @@ if type "xrandr" &> /dev/null; then
         IsPrimary=1
     else
         bspc monitor $m -d 1 2 3 4 5 6 7 8 9 10
-        MONITOR=$m polybar --reload secondary >> /tmp/polybar1.log 2>&1 &
+        SUDO_ASKPASS="/home/ring/scripts/global/rofipass.sh" MONITOR=$m polybar --reload secondary >> /tmp/polybar1.log 2>&1 &
     fi
   done
 else

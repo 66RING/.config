@@ -248,6 +248,7 @@ map gc cd ~/Documents/code
 map gv cd ~/var
 map gs cd ~/scripts
 map gd cd ~/Downloads
+map gu cd /usr
 
 
 #************************

@@ -362,7 +362,7 @@ click-left = ~/scripts/bspwm/scratchpad.sh &
 type = custom/ipc
 hook-0 = pacman -Qu | wc -l 
 format-prefix = "📦 "
-click-left = notify-send "Checking for updates" && sudo -A pacman -Syu && polybar-msg -p %pid% hook updates 1 && notify-send "Check updates completed"
+click-left = notify-send "Checking for updates" && sudo -A pacman -Syy && polybar-msg -p %pid% hook updates 1 && notify-send "Check updates completed"
 initial = 1
 
 
