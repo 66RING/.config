@@ -46,7 +46,7 @@ cmd open ${{
         application/xlsx) setsid -f et $fx >/dev/null 2>&1 ;;
         application/docx|application/doc|application/*officedocument*|application/msword) setsid -f wps $fx >/dev/null 2>&1 ;;
         #default
-        image/*) setsid -f sxiv -a $f 2>/dev/null ;;
+        image/*) setsid -f sxiv -a $fx 2>/dev/null ;;
         *) lf -remote "send $id push :open_with<space>"
     esac
 }}
@@ -167,13 +167,16 @@ cmd fzf_jump ${{
 }}
 
 cmd fzf_find_in_file ${{
-    res="$(grep --line-buffered --color=never -r "" * | fzf --reverse --preview='head -$LINES {}' | cut -d":" -f1)"
+    res="$(grep --line-buffered --color=never -r "" * | fzf --reverse | cut -d":" -f1)"
+    cmd=""
     if [ -f "$res" ]; then
       cmd="select"
     elif [ -d "$res" ]; then
-      cmd="cd"                                                       
+      cmd="cd"
     fi
-    lf -remote "send $id $cmd \"$res\""
+    if [ ! -z "$cmd" ]; then
+      lf -remote "send $id $cmd \"$res\""
+    fi
 }}
 
 
